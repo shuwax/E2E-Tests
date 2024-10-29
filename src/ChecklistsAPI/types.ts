@@ -1,4 +1,4 @@
-import { ChecklistStatus } from './enums';
+import { ChecklistStatus } from "./enums";
 
 export interface GetChecklistsQuery {
   type?: ChecklistStatus;
@@ -7,12 +7,12 @@ export interface GetChecklistsQuery {
   skip?: number;
   limit?: number;
   sort?:
-    | 'name'
-    | 'nameDesc'
-    | 'createdDate'
-    | 'createdDateDesc'
-    | 'startedDate'
-    | 'startedDateDesc';
+    | "name"
+    | "nameDesc"
+    | "createdDate"
+    | "createdDateDesc"
+    | "startedDate"
+    | "startedDateDesc";
   /**
    * @description If true, will return checklists created by user making request
    * @default 'true'

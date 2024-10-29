@@ -1,10 +1,10 @@
-import { ApiService } from '../ApiService/index.js';
+import { ApiService } from "../ApiService/index.js";
 import {
   GetMessageQuery,
   GetMessagesQuery,
   PostMessageModel,
   PostReplyModel,
-} from './types.js';
+} from "./types.js";
 
 export class MessagesAPI {
   private apiService: ApiService;
@@ -25,11 +25,11 @@ export class MessagesAPI {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Messages', { params: { query } });
+        .GET("/api/Messages", { params: { query } });
 
       return data;
     } catch (error) {
-      console.error('Error fetching messages:', error);
+      console.error("Error fetching messages:", error);
       return error;
     }
   };
@@ -38,11 +38,11 @@ export class MessagesAPI {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .POST('/api/Messages', { body });
+        .POST("/api/Messages", { body });
 
       return data;
     } catch (error) {
-      console.error('Error posting message:', error);
+      console.error("Error posting message:", error);
       return error;
     }
   };
@@ -51,7 +51,7 @@ export class MessagesAPI {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Messages/{id}', {
+        .GET("/api/Messages/{id}", {
           params: {
             path: { id },
             query,
@@ -60,7 +60,7 @@ export class MessagesAPI {
 
       return data;
     } catch (error) {
-      console.error('Error fetching message:', error);
+      console.error("Error fetching message:", error);
       return error;
     }
   };
@@ -69,14 +69,14 @@ export class MessagesAPI {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .POST('/api/Messages/{messageID}/reply', {
+        .POST("/api/Messages/{messageID}/reply", {
           params: { path: { messageID: messageId } },
           body,
         });
 
       return data;
     } catch (error) {
-      console.error('Error posting reply:', error);
+      console.error("Error posting reply:", error);
       return error;
     }
   };
@@ -85,13 +85,13 @@ export class MessagesAPI {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Messages/{messageID}/recipients', {
+        .GET("/api/Messages/{messageID}/recipients", {
           params: { path: { messageID: messageId } },
         });
 
       return data;
     } catch (error) {
-      console.error('Error fetching message recipients:', error);
+      console.error("Error fetching message recipients:", error);
       return error;
     }
   };

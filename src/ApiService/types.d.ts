@@ -1,4 +1,4 @@
-import { paths } from '../schemas.ts';
+import { paths } from "../schemas.ts";
 
 export interface RequestOptions {
   body?: unknown;

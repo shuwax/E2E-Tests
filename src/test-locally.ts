@@ -1,7 +1,7 @@
-import { AccountAPI } from './AccountAPI/index.js';
-import { ApiService } from './ApiService/index.js';
-import { GroupsAPI } from './GroupsAPI/index.js';
-import { OrganizationsAPI } from './OrganizationsAPI/index.js';
+import { AccountAPI } from "./AccountAPI/index.js";
+import { ApiService } from "./ApiService/index.js";
+import { GroupsAPI } from "./GroupsAPI/index.js";
+import { OrganizationsAPI } from "./OrganizationsAPI/index.js";
 
 const apiService = new ApiService(process.env.BASE_URL);
 const accountsAPI = new AccountAPI(apiService);
@@ -20,11 +20,11 @@ const setup = async () => {
       await accountsAPI.loginAdminByEmailAndPassword(userCredentials);
     console.log(superAdminUser);
     const organization = await organizationsAPI.createOrganization({
-      name: 'E2E Test Organization',
+      name: "E2E Test Organization",
       HasUserLimit: true,
       UserLimit: 10,
     });
-    console.log('organization', organization.id); //Use this Id to teardown function
+    console.log("organization", organization.id); //Use this Id to teardown function
     await groupsAPI.registerGroup({
       name: `E2E Test Group 1`,
       organizationID: organization.id,

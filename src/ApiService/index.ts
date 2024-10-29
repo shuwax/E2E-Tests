@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
-import createOpenAPIClient, { FetchOptions } from 'openapi-fetch';
-import { ClientType } from './enums.js';
-import { paths } from '../schemas.js';
-import { RequestObject, RequestOptions, RequestResult } from './types.js';
-import * as qs from 'qs';
+import createOpenAPIClient, { FetchOptions } from "openapi-fetch";
+import { ClientType } from "./enums.js";
+import { paths } from "../schemas.js";
+import { RequestObject, RequestOptions, RequestResult } from "./types.js";
+import * as qs from "qs";
 import {
   FilterKeys,
   HttpMethod,
   PathsWithMethod,
-} from 'openapi-typescript-helpers';
-import { createError, getRequestHeaders } from './helpers.js';
+} from "openapi-typescript-helpers";
+import { createError, getRequestHeaders } from "./helpers.js";
 
 const emptyResponseStatuses = [200, 204];
 export class ApiService {
@@ -78,10 +78,10 @@ export class ApiService {
   getRequestHeaders(includeCsrfToken = true, includeCookies = true) {
     return {
       ...(includeCsrfToken &&
-        this.csrfToken && { 'X-XSRF-TOKEN': this.csrfToken }),
+        this.csrfToken && { "X-XSRF-TOKEN": this.csrfToken }),
       ...(includeCookies &&
         this.cookies && {
-          Cookie: `${this.cookies.join(';')}`,
+          Cookie: `${this.cookies.join(";")}`,
         }),
     };
   }
@@ -91,7 +91,7 @@ export class ApiService {
   ) {
     const options = {
       querySerializer: (query: unknown) => {
-        return qs.stringify(query, { arrayFormat: 'repeat' });
+        return qs.stringify(query, { arrayFormat: "repeat" });
       },
     };
 
@@ -115,9 +115,9 @@ export class ApiService {
     }
 
     return {
-      async GET<P extends PathsWithMethod<Paths, 'get'>>(
+      async GET<P extends PathsWithMethod<Paths, "get">>(
         url: P,
-        init?: FetchOptions<FilterKeys<Paths[P], 'get'>>,
+        init?: FetchOptions<FilterKeys<Paths[P], "get">>,
       ) {
         const { data, error, response } = await client.GET(
           url,
@@ -131,9 +131,9 @@ export class ApiService {
         throw createError(error, response);
       },
 
-      async PUT<P extends PathsWithMethod<Paths, 'put'>>(
+      async PUT<P extends PathsWithMethod<Paths, "put">>(
         url: P,
-        init?: FetchOptions<FilterKeys<Paths[P], 'put'>>,
+        init?: FetchOptions<FilterKeys<Paths[P], "put">>,
       ) {
         const { data, error, response } = await client.PUT(
           url,
@@ -147,9 +147,9 @@ export class ApiService {
         throw createError(error, response);
       },
 
-      async PATCH<P extends PathsWithMethod<Paths, 'patch'>>(
+      async PATCH<P extends PathsWithMethod<Paths, "patch">>(
         url: P,
-        init?: FetchOptions<FilterKeys<Paths[P], 'patch'>>,
+        init?: FetchOptions<FilterKeys<Paths[P], "patch">>,
       ) {
         const { data, error, response } = await client.PATCH(
           url,
@@ -163,9 +163,9 @@ export class ApiService {
         throw createError(error, response);
       },
 
-      async POST<P extends PathsWithMethod<Paths, 'post'>>(
+      async POST<P extends PathsWithMethod<Paths, "post">>(
         url: P,
-        init?: FetchOptions<FilterKeys<Paths[P], 'post'>>,
+        init?: FetchOptions<FilterKeys<Paths[P], "post">>,
       ) {
         const { data, error, response } = await client.POST(
           url,
@@ -178,9 +178,9 @@ export class ApiService {
         throw createError(error, response);
       },
 
-      async DELETE<P extends PathsWithMethod<Paths, 'delete'>>(
+      async DELETE<P extends PathsWithMethod<Paths, "delete">>(
         url: P,
-        init?: FetchOptions<FilterKeys<Paths[P], 'delete'>>,
+        init?: FetchOptions<FilterKeys<Paths[P], "delete">>,
       ) {
         const { data, error, response } = await client.DELETE(
           url,

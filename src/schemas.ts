@@ -4,7 +4,7 @@
  */
 
 export interface paths {
-  '/api/Account': {
+  "/api/Account": {
     parameters: {
       query?: never;
       header?: never;
@@ -23,13 +23,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserInfoBindingModel'];
-          'application/json': components['schemas']['UserInfoBindingModel'];
-          'text/json': components['schemas']['UserInfoBindingModel'];
-          'application/*+json': components['schemas']['UserInfoBindingModel'];
-          'application/xml': components['schemas']['UserInfoBindingModel'];
-          'text/xml': components['schemas']['UserInfoBindingModel'];
-          'application/*+xml': components['schemas']['UserInfoBindingModel'];
+          "application/json-patch+json": components["schemas"]["UserInfoBindingModel"];
+          "application/json": components["schemas"]["UserInfoBindingModel"];
+          "text/json": components["schemas"]["UserInfoBindingModel"];
+          "application/*+json": components["schemas"]["UserInfoBindingModel"];
+          "application/xml": components["schemas"]["UserInfoBindingModel"];
+          "text/xml": components["schemas"]["UserInfoBindingModel"];
+          "application/*+xml": components["schemas"]["UserInfoBindingModel"];
         };
       };
       responses: {
@@ -39,11 +39,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserViewModelFull'];
-            'application/json': components['schemas']['UserViewModelFull'];
-            'text/json': components['schemas']['UserViewModelFull'];
-            'application/xml': components['schemas']['UserViewModelFull'];
-            'text/xml': components['schemas']['UserViewModelFull'];
+            "text/plain": components["schemas"]["UserViewModelFull"];
+            "application/json": components["schemas"]["UserViewModelFull"];
+            "text/json": components["schemas"]["UserViewModelFull"];
+            "application/xml": components["schemas"]["UserViewModelFull"];
+            "text/xml": components["schemas"]["UserViewModelFull"];
           };
         };
       };
@@ -54,7 +54,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/validate-password': {
+  "/api/Account/validate-password": {
     parameters: {
       query?: never;
       header?: never;
@@ -76,13 +76,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['LoginBindingModel'];
-          'application/json': components['schemas']['LoginBindingModel'];
-          'text/json': components['schemas']['LoginBindingModel'];
-          'application/*+json': components['schemas']['LoginBindingModel'];
-          'application/xml': components['schemas']['LoginBindingModel'];
-          'text/xml': components['schemas']['LoginBindingModel'];
-          'application/*+xml': components['schemas']['LoginBindingModel'];
+          "application/json-patch+json": components["schemas"]["LoginBindingModel"];
+          "application/json": components["schemas"]["LoginBindingModel"];
+          "text/json": components["schemas"]["LoginBindingModel"];
+          "application/*+json": components["schemas"]["LoginBindingModel"];
+          "application/xml": components["schemas"]["LoginBindingModel"];
+          "text/xml": components["schemas"]["LoginBindingModel"];
+          "application/*+xml": components["schemas"]["LoginBindingModel"];
         };
       };
       responses: {
@@ -101,7 +101,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Login': {
+  "/api/Account/Login": {
     parameters: {
       query?: never;
       header?: never;
@@ -120,13 +120,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['LoginBindingModel'];
-          'application/json': components['schemas']['LoginBindingModel'];
-          'text/json': components['schemas']['LoginBindingModel'];
-          'application/*+json': components['schemas']['LoginBindingModel'];
-          'application/xml': components['schemas']['LoginBindingModel'];
-          'text/xml': components['schemas']['LoginBindingModel'];
-          'application/*+xml': components['schemas']['LoginBindingModel'];
+          "application/json-patch+json": components["schemas"]["LoginBindingModel"];
+          "application/json": components["schemas"]["LoginBindingModel"];
+          "text/json": components["schemas"]["LoginBindingModel"];
+          "application/*+json": components["schemas"]["LoginBindingModel"];
+          "application/xml": components["schemas"]["LoginBindingModel"];
+          "text/xml": components["schemas"]["LoginBindingModel"];
+          "application/*+xml": components["schemas"]["LoginBindingModel"];
         };
       };
       responses: {
@@ -136,11 +136,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserInfoViewModel'];
-            'application/json': components['schemas']['UserInfoViewModel'];
-            'text/json': components['schemas']['UserInfoViewModel'];
-            'application/xml': components['schemas']['UserInfoViewModel'];
-            'text/xml': components['schemas']['UserInfoViewModel'];
+            "text/plain": components["schemas"]["UserInfoViewModel"];
+            "application/json": components["schemas"]["UserInfoViewModel"];
+            "text/json": components["schemas"]["UserInfoViewModel"];
+            "application/xml": components["schemas"]["UserInfoViewModel"];
+            "text/xml": components["schemas"]["UserInfoViewModel"];
           };
         };
       };
@@ -151,7 +151,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/LoginAdmin': {
+  "/api/Account/LoginAdmin": {
     parameters: {
       query?: never;
       header?: never;
@@ -170,13 +170,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['LoginBindingModel'];
-          'application/json': components['schemas']['LoginBindingModel'];
-          'text/json': components['schemas']['LoginBindingModel'];
-          'application/*+json': components['schemas']['LoginBindingModel'];
-          'application/xml': components['schemas']['LoginBindingModel'];
-          'text/xml': components['schemas']['LoginBindingModel'];
-          'application/*+xml': components['schemas']['LoginBindingModel'];
+          "application/json-patch+json": components["schemas"]["LoginBindingModel"];
+          "application/json": components["schemas"]["LoginBindingModel"];
+          "text/json": components["schemas"]["LoginBindingModel"];
+          "application/*+json": components["schemas"]["LoginBindingModel"];
+          "application/xml": components["schemas"]["LoginBindingModel"];
+          "text/xml": components["schemas"]["LoginBindingModel"];
+          "application/*+xml": components["schemas"]["LoginBindingModel"];
         };
       };
       responses: {
@@ -186,11 +186,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserInfoViewModel'];
-            'application/json': components['schemas']['UserInfoViewModel'];
-            'text/json': components['schemas']['UserInfoViewModel'];
-            'application/xml': components['schemas']['UserInfoViewModel'];
-            'text/xml': components['schemas']['UserInfoViewModel'];
+            "text/plain": components["schemas"]["UserInfoViewModel"];
+            "application/json": components["schemas"]["UserInfoViewModel"];
+            "text/json": components["schemas"]["UserInfoViewModel"];
+            "application/xml": components["schemas"]["UserInfoViewModel"];
+            "text/xml": components["schemas"]["UserInfoViewModel"];
           };
         };
       };
@@ -201,7 +201,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/LoginDashboard': {
+  "/api/Account/LoginDashboard": {
     parameters: {
       query?: never;
       header?: never;
@@ -220,13 +220,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['LoginBindingModel'];
-          'application/json': components['schemas']['LoginBindingModel'];
-          'text/json': components['schemas']['LoginBindingModel'];
-          'application/*+json': components['schemas']['LoginBindingModel'];
-          'application/xml': components['schemas']['LoginBindingModel'];
-          'text/xml': components['schemas']['LoginBindingModel'];
-          'application/*+xml': components['schemas']['LoginBindingModel'];
+          "application/json-patch+json": components["schemas"]["LoginBindingModel"];
+          "application/json": components["schemas"]["LoginBindingModel"];
+          "text/json": components["schemas"]["LoginBindingModel"];
+          "application/*+json": components["schemas"]["LoginBindingModel"];
+          "application/xml": components["schemas"]["LoginBindingModel"];
+          "text/xml": components["schemas"]["LoginBindingModel"];
+          "application/*+xml": components["schemas"]["LoginBindingModel"];
         };
       };
       responses: {
@@ -236,11 +236,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserInfoViewModel'];
-            'application/json': components['schemas']['UserInfoViewModel'];
-            'text/json': components['schemas']['UserInfoViewModel'];
-            'application/xml': components['schemas']['UserInfoViewModel'];
-            'text/xml': components['schemas']['UserInfoViewModel'];
+            "text/plain": components["schemas"]["UserInfoViewModel"];
+            "application/json": components["schemas"]["UserInfoViewModel"];
+            "text/json": components["schemas"]["UserInfoViewModel"];
+            "application/xml": components["schemas"]["UserInfoViewModel"];
+            "text/xml": components["schemas"]["UserInfoViewModel"];
           };
         };
       };
@@ -251,7 +251,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Password/Token': {
+  "/api/Account/Password/Token": {
     parameters: {
       query?: never;
       header?: never;
@@ -270,13 +270,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SendPasswordTokenBindingModel'];
-          'application/json': components['schemas']['SendPasswordTokenBindingModel'];
-          'text/json': components['schemas']['SendPasswordTokenBindingModel'];
-          'application/*+json': components['schemas']['SendPasswordTokenBindingModel'];
-          'application/xml': components['schemas']['SendPasswordTokenBindingModel'];
-          'text/xml': components['schemas']['SendPasswordTokenBindingModel'];
-          'application/*+xml': components['schemas']['SendPasswordTokenBindingModel'];
+          "application/json-patch+json": components["schemas"]["SendPasswordTokenBindingModel"];
+          "application/json": components["schemas"]["SendPasswordTokenBindingModel"];
+          "text/json": components["schemas"]["SendPasswordTokenBindingModel"];
+          "application/*+json": components["schemas"]["SendPasswordTokenBindingModel"];
+          "application/xml": components["schemas"]["SendPasswordTokenBindingModel"];
+          "text/xml": components["schemas"]["SendPasswordTokenBindingModel"];
+          "application/*+xml": components["schemas"]["SendPasswordTokenBindingModel"];
         };
       };
       responses: {
@@ -295,7 +295,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Password/Reset': {
+  "/api/Account/Password/Reset": {
     parameters: {
       query?: never;
       header?: never;
@@ -314,13 +314,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ResetPasswordBindingModel'];
-          'application/json': components['schemas']['ResetPasswordBindingModel'];
-          'text/json': components['schemas']['ResetPasswordBindingModel'];
-          'application/*+json': components['schemas']['ResetPasswordBindingModel'];
-          'application/xml': components['schemas']['ResetPasswordBindingModel'];
-          'text/xml': components['schemas']['ResetPasswordBindingModel'];
-          'application/*+xml': components['schemas']['ResetPasswordBindingModel'];
+          "application/json-patch+json": components["schemas"]["ResetPasswordBindingModel"];
+          "application/json": components["schemas"]["ResetPasswordBindingModel"];
+          "text/json": components["schemas"]["ResetPasswordBindingModel"];
+          "application/*+json": components["schemas"]["ResetPasswordBindingModel"];
+          "application/xml": components["schemas"]["ResetPasswordBindingModel"];
+          "text/xml": components["schemas"]["ResetPasswordBindingModel"];
+          "application/*+xml": components["schemas"]["ResetPasswordBindingModel"];
         };
       };
       responses: {
@@ -339,7 +339,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Password/ValidateToken': {
+  "/api/Account/Password/ValidateToken": {
     parameters: {
       query?: never;
       header?: never;
@@ -376,7 +376,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/AuthStatus': {
+  "/api/Account/AuthStatus": {
     parameters: {
       query?: never;
       header?: never;
@@ -399,11 +399,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['AuthenticationStatusViewModel'];
-            'application/json': components['schemas']['AuthenticationStatusViewModel'];
-            'text/json': components['schemas']['AuthenticationStatusViewModel'];
-            'application/xml': components['schemas']['AuthenticationStatusViewModel'];
-            'text/xml': components['schemas']['AuthenticationStatusViewModel'];
+            "text/plain": components["schemas"]["AuthenticationStatusViewModel"];
+            "application/json": components["schemas"]["AuthenticationStatusViewModel"];
+            "text/json": components["schemas"]["AuthenticationStatusViewModel"];
+            "application/xml": components["schemas"]["AuthenticationStatusViewModel"];
+            "text/xml": components["schemas"]["AuthenticationStatusViewModel"];
           };
         };
         /** @description It returns nothing. Just indicates that request worked successfully. */
@@ -423,7 +423,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Info': {
+  "/api/Account/Info": {
     parameters: {
       query?: never;
       header?: never;
@@ -446,11 +446,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserInfoViewModel'];
-            'application/json': components['schemas']['UserInfoViewModel'];
-            'text/json': components['schemas']['UserInfoViewModel'];
-            'application/xml': components['schemas']['UserInfoViewModel'];
-            'text/xml': components['schemas']['UserInfoViewModel'];
+            "text/plain": components["schemas"]["UserInfoViewModel"];
+            "application/json": components["schemas"]["UserInfoViewModel"];
+            "text/json": components["schemas"]["UserInfoViewModel"];
+            "application/xml": components["schemas"]["UserInfoViewModel"];
+            "text/xml": components["schemas"]["UserInfoViewModel"];
           };
         };
       };
@@ -463,7 +463,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Info/app': {
+  "/api/Account/Info/app": {
     parameters: {
       query?: never;
       header?: never;
@@ -486,11 +486,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserInfoViewModelApp'];
-            'application/json': components['schemas']['UserInfoViewModelApp'];
-            'text/json': components['schemas']['UserInfoViewModelApp'];
-            'application/xml': components['schemas']['UserInfoViewModelApp'];
-            'text/xml': components['schemas']['UserInfoViewModelApp'];
+            "text/plain": components["schemas"]["UserInfoViewModelApp"];
+            "application/json": components["schemas"]["UserInfoViewModelApp"];
+            "text/json": components["schemas"]["UserInfoViewModelApp"];
+            "application/xml": components["schemas"]["UserInfoViewModelApp"];
+            "text/xml": components["schemas"]["UserInfoViewModelApp"];
           };
         };
       };
@@ -503,7 +503,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Language': {
+  "/api/Account/Language": {
     parameters: {
       query?: never;
       header?: never;
@@ -522,13 +522,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SetPreferredLanguageBindingModel'];
-          'application/json': components['schemas']['SetPreferredLanguageBindingModel'];
-          'text/json': components['schemas']['SetPreferredLanguageBindingModel'];
-          'application/*+json': components['schemas']['SetPreferredLanguageBindingModel'];
-          'application/xml': components['schemas']['SetPreferredLanguageBindingModel'];
-          'text/xml': components['schemas']['SetPreferredLanguageBindingModel'];
-          'application/*+xml': components['schemas']['SetPreferredLanguageBindingModel'];
+          "application/json-patch+json": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "application/json": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "text/json": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "application/*+json": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "application/xml": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "text/xml": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "application/*+xml": components["schemas"]["SetPreferredLanguageBindingModel"];
         };
       };
       responses: {
@@ -547,7 +547,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Logout': {
+  "/api/Account/Logout": {
     parameters: {
       query?: never;
       header?: never;
@@ -584,7 +584,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/ChangePassword': {
+  "/api/Account/ChangePassword": {
     parameters: {
       query?: never;
       header?: never;
@@ -603,13 +603,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ChangePasswordBindingModel'];
-          'application/json': components['schemas']['ChangePasswordBindingModel'];
-          'text/json': components['schemas']['ChangePasswordBindingModel'];
-          'application/*+json': components['schemas']['ChangePasswordBindingModel'];
-          'application/xml': components['schemas']['ChangePasswordBindingModel'];
-          'text/xml': components['schemas']['ChangePasswordBindingModel'];
-          'application/*+xml': components['schemas']['ChangePasswordBindingModel'];
+          "application/json-patch+json": components["schemas"]["ChangePasswordBindingModel"];
+          "application/json": components["schemas"]["ChangePasswordBindingModel"];
+          "text/json": components["schemas"]["ChangePasswordBindingModel"];
+          "application/*+json": components["schemas"]["ChangePasswordBindingModel"];
+          "application/xml": components["schemas"]["ChangePasswordBindingModel"];
+          "text/xml": components["schemas"]["ChangePasswordBindingModel"];
+          "application/*+xml": components["schemas"]["ChangePasswordBindingModel"];
         };
       };
       responses: {
@@ -628,7 +628,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/AntiForgeryToken': {
+  "/api/Account/AntiForgeryToken": {
     parameters: {
       query?: never;
       header?: never;
@@ -651,11 +651,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['RequestVerificationTokenViewModel'];
-            'application/json': components['schemas']['RequestVerificationTokenViewModel'];
-            'text/json': components['schemas']['RequestVerificationTokenViewModel'];
-            'application/xml': components['schemas']['RequestVerificationTokenViewModel'];
-            'text/xml': components['schemas']['RequestVerificationTokenViewModel'];
+            "text/plain": components["schemas"]["RequestVerificationTokenViewModel"];
+            "application/json": components["schemas"]["RequestVerificationTokenViewModel"];
+            "text/json": components["schemas"]["RequestVerificationTokenViewModel"];
+            "application/xml": components["schemas"]["RequestVerificationTokenViewModel"];
+            "text/xml": components["schemas"]["RequestVerificationTokenViewModel"];
           };
         };
       };
@@ -668,7 +668,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/EmergencyTypes': {
+  "/api/Account/EmergencyTypes": {
     parameters: {
       query?: never;
       header?: never;
@@ -691,11 +691,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyTypeViewModel'][];
-            'application/json': components['schemas']['EmergencyTypeViewModel'][];
-            'text/json': components['schemas']['EmergencyTypeViewModel'][];
-            'application/xml': components['schemas']['EmergencyTypeViewModel'][];
-            'text/xml': components['schemas']['EmergencyTypeViewModel'][];
+            "text/plain": components["schemas"]["EmergencyTypeViewModel"][];
+            "application/json": components["schemas"]["EmergencyTypeViewModel"][];
+            "text/json": components["schemas"]["EmergencyTypeViewModel"][];
+            "application/xml": components["schemas"]["EmergencyTypeViewModel"][];
+            "text/xml": components["schemas"]["EmergencyTypeViewModel"][];
           };
         };
       };
@@ -708,7 +708,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/AuthorizationUrl': {
+  "/api/Account/AuthorizationUrl": {
     parameters: {
       query?: never;
       header?: never;
@@ -722,7 +722,7 @@ export interface paths {
           email?: string;
           redirectUrl?: string;
           /** @description sso provider */
-          provider?: components['schemas']['SsoProvider'];
+          provider?: components["schemas"]["SsoProvider"];
         };
         header?: never;
         path?: never;
@@ -736,11 +736,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['SsoRedirectViewModel'];
-            'application/json': components['schemas']['SsoRedirectViewModel'];
-            'text/json': components['schemas']['SsoRedirectViewModel'];
-            'application/xml': components['schemas']['SsoRedirectViewModel'];
-            'text/xml': components['schemas']['SsoRedirectViewModel'];
+            "text/plain": components["schemas"]["SsoRedirectViewModel"];
+            "application/json": components["schemas"]["SsoRedirectViewModel"];
+            "text/json": components["schemas"]["SsoRedirectViewModel"];
+            "application/xml": components["schemas"]["SsoRedirectViewModel"];
+            "text/xml": components["schemas"]["SsoRedirectViewModel"];
           };
         };
       };
@@ -753,7 +753,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/CodeLogin': {
+  "/api/Account/CodeLogin": {
     parameters: {
       query?: never;
       header?: never;
@@ -772,13 +772,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['CodeLoginBindingModel'];
-          'application/json': components['schemas']['CodeLoginBindingModel'];
-          'text/json': components['schemas']['CodeLoginBindingModel'];
-          'application/*+json': components['schemas']['CodeLoginBindingModel'];
-          'application/xml': components['schemas']['CodeLoginBindingModel'];
-          'text/xml': components['schemas']['CodeLoginBindingModel'];
-          'application/*+xml': components['schemas']['CodeLoginBindingModel'];
+          "application/json-patch+json": components["schemas"]["CodeLoginBindingModel"];
+          "application/json": components["schemas"]["CodeLoginBindingModel"];
+          "text/json": components["schemas"]["CodeLoginBindingModel"];
+          "application/*+json": components["schemas"]["CodeLoginBindingModel"];
+          "application/xml": components["schemas"]["CodeLoginBindingModel"];
+          "text/xml": components["schemas"]["CodeLoginBindingModel"];
+          "application/*+xml": components["schemas"]["CodeLoginBindingModel"];
         };
       };
       responses: {
@@ -788,11 +788,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserInfoViewModel'];
-            'application/json': components['schemas']['UserInfoViewModel'];
-            'text/json': components['schemas']['UserInfoViewModel'];
-            'application/xml': components['schemas']['UserInfoViewModel'];
-            'text/xml': components['schemas']['UserInfoViewModel'];
+            "text/plain": components["schemas"]["UserInfoViewModel"];
+            "application/json": components["schemas"]["UserInfoViewModel"];
+            "text/json": components["schemas"]["UserInfoViewModel"];
+            "application/xml": components["schemas"]["UserInfoViewModel"];
+            "text/xml": components["schemas"]["UserInfoViewModel"];
           };
         };
       };
@@ -803,7 +803,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/CodeGroupJoin': {
+  "/api/Account/CodeGroupJoin": {
     parameters: {
       query?: never;
       header?: never;
@@ -822,13 +822,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['CodeLoginBindingModel'];
-          'application/json': components['schemas']['CodeLoginBindingModel'];
-          'text/json': components['schemas']['CodeLoginBindingModel'];
-          'application/*+json': components['schemas']['CodeLoginBindingModel'];
-          'application/xml': components['schemas']['CodeLoginBindingModel'];
-          'text/xml': components['schemas']['CodeLoginBindingModel'];
-          'application/*+xml': components['schemas']['CodeLoginBindingModel'];
+          "application/json-patch+json": components["schemas"]["CodeLoginBindingModel"];
+          "application/json": components["schemas"]["CodeLoginBindingModel"];
+          "text/json": components["schemas"]["CodeLoginBindingModel"];
+          "application/*+json": components["schemas"]["CodeLoginBindingModel"];
+          "application/xml": components["schemas"]["CodeLoginBindingModel"];
+          "text/xml": components["schemas"]["CodeLoginBindingModel"];
+          "application/*+xml": components["schemas"]["CodeLoginBindingModel"];
         };
       };
       responses: {
@@ -847,7 +847,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/LeaveGroup/{id}': {
+  "/api/Account/LeaveGroup/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -884,7 +884,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/AlarmTest/Initiate': {
+  "/api/Account/AlarmTest/Initiate": {
     parameters: {
       query?: never;
       header?: never;
@@ -903,13 +903,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['InitiateAlarmTestBindingModel'];
-          'application/json': components['schemas']['InitiateAlarmTestBindingModel'];
-          'text/json': components['schemas']['InitiateAlarmTestBindingModel'];
-          'application/*+json': components['schemas']['InitiateAlarmTestBindingModel'];
-          'application/xml': components['schemas']['InitiateAlarmTestBindingModel'];
-          'text/xml': components['schemas']['InitiateAlarmTestBindingModel'];
-          'application/*+xml': components['schemas']['InitiateAlarmTestBindingModel'];
+          "application/json-patch+json": components["schemas"]["InitiateAlarmTestBindingModel"];
+          "application/json": components["schemas"]["InitiateAlarmTestBindingModel"];
+          "text/json": components["schemas"]["InitiateAlarmTestBindingModel"];
+          "application/*+json": components["schemas"]["InitiateAlarmTestBindingModel"];
+          "application/xml": components["schemas"]["InitiateAlarmTestBindingModel"];
+          "text/xml": components["schemas"]["InitiateAlarmTestBindingModel"];
+          "application/*+xml": components["schemas"]["InitiateAlarmTestBindingModel"];
         };
       };
       responses: {
@@ -919,11 +919,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['InitiateAlarmTestViewModel'];
-            'application/json': components['schemas']['InitiateAlarmTestViewModel'];
-            'text/json': components['schemas']['InitiateAlarmTestViewModel'];
-            'application/xml': components['schemas']['InitiateAlarmTestViewModel'];
-            'text/xml': components['schemas']['InitiateAlarmTestViewModel'];
+            "text/plain": components["schemas"]["InitiateAlarmTestViewModel"];
+            "application/json": components["schemas"]["InitiateAlarmTestViewModel"];
+            "text/json": components["schemas"]["InitiateAlarmTestViewModel"];
+            "application/xml": components["schemas"]["InitiateAlarmTestViewModel"];
+            "text/xml": components["schemas"]["InitiateAlarmTestViewModel"];
           };
         };
       };
@@ -934,7 +934,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/AlarmTest/ReportStatus': {
+  "/api/Account/AlarmTest/ReportStatus": {
     parameters: {
       query?: never;
       header?: never;
@@ -953,13 +953,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AlarmTestStatusBindingModel'];
-          'application/json': components['schemas']['AlarmTestStatusBindingModel'];
-          'text/json': components['schemas']['AlarmTestStatusBindingModel'];
-          'application/*+json': components['schemas']['AlarmTestStatusBindingModel'];
-          'application/xml': components['schemas']['AlarmTestStatusBindingModel'];
-          'text/xml': components['schemas']['AlarmTestStatusBindingModel'];
-          'application/*+xml': components['schemas']['AlarmTestStatusBindingModel'];
+          "application/json-patch+json": components["schemas"]["AlarmTestStatusBindingModel"];
+          "application/json": components["schemas"]["AlarmTestStatusBindingModel"];
+          "text/json": components["schemas"]["AlarmTestStatusBindingModel"];
+          "application/*+json": components["schemas"]["AlarmTestStatusBindingModel"];
+          "application/xml": components["schemas"]["AlarmTestStatusBindingModel"];
+          "text/xml": components["schemas"]["AlarmTestStatusBindingModel"];
+          "application/*+xml": components["schemas"]["AlarmTestStatusBindingModel"];
         };
       };
       responses: {
@@ -978,7 +978,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/Support': {
+  "/api/Account/Support": {
     parameters: {
       query?: never;
       header?: never;
@@ -1001,11 +1001,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModelWithSupportContacts'][];
-            'application/json': components['schemas']['OrganizationViewModelWithSupportContacts'][];
-            'text/json': components['schemas']['OrganizationViewModelWithSupportContacts'][];
-            'application/xml': components['schemas']['OrganizationViewModelWithSupportContacts'][];
-            'text/xml': components['schemas']['OrganizationViewModelWithSupportContacts'][];
+            "text/plain": components["schemas"]["OrganizationViewModelWithSupportContacts"][];
+            "application/json": components["schemas"]["OrganizationViewModelWithSupportContacts"][];
+            "text/json": components["schemas"]["OrganizationViewModelWithSupportContacts"][];
+            "application/xml": components["schemas"]["OrganizationViewModelWithSupportContacts"][];
+            "text/xml": components["schemas"]["OrganizationViewModelWithSupportContacts"][];
           };
         };
       };
@@ -1018,7 +1018,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/TestAPI': {
+  "/api/Account/TestAPI": {
     parameters: {
       query?: never;
       header?: never;
@@ -1041,11 +1041,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TestApiViewModel'];
-            'application/json': components['schemas']['TestApiViewModel'];
-            'text/json': components['schemas']['TestApiViewModel'];
-            'application/xml': components['schemas']['TestApiViewModel'];
-            'text/xml': components['schemas']['TestApiViewModel'];
+            "text/plain": components["schemas"]["TestApiViewModel"];
+            "application/json": components["schemas"]["TestApiViewModel"];
+            "text/json": components["schemas"]["TestApiViewModel"];
+            "application/xml": components["schemas"]["TestApiViewModel"];
+            "text/xml": components["schemas"]["TestApiViewModel"];
           };
         };
       };
@@ -1058,7 +1058,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/SamlRedirect': {
+  "/api/Account/SamlRedirect": {
     parameters: {
       query?: never;
       header?: never;
@@ -1100,7 +1100,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/GetIntercomToken': {
+  "/api/Account/GetIntercomToken": {
     parameters: {
       query?: never;
       header?: never;
@@ -1112,7 +1112,7 @@ export interface paths {
       parameters: {
         query?: {
           /** @description 0 - android, 1 - ios, 2 - web */
-          clientType?: components['schemas']['IntercomClientType'];
+          clientType?: components["schemas"]["IntercomClientType"];
         };
         header?: never;
         path?: never;
@@ -1126,11 +1126,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['IntercomTokenViewModel'];
-            'application/json': components['schemas']['IntercomTokenViewModel'];
-            'text/json': components['schemas']['IntercomTokenViewModel'];
-            'application/xml': components['schemas']['IntercomTokenViewModel'];
-            'text/xml': components['schemas']['IntercomTokenViewModel'];
+            "text/plain": components["schemas"]["IntercomTokenViewModel"];
+            "application/json": components["schemas"]["IntercomTokenViewModel"];
+            "text/json": components["schemas"]["IntercomTokenViewModel"];
+            "application/xml": components["schemas"]["IntercomTokenViewModel"];
+            "text/xml": components["schemas"]["IntercomTokenViewModel"];
           };
         };
       };
@@ -1143,7 +1143,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Account/roles': {
+  "/api/Account/roles": {
     parameters: {
       query?: never;
       header?: never;
@@ -1166,11 +1166,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserRolesViewModel'];
-            'application/json': components['schemas']['UserRolesViewModel'];
-            'text/json': components['schemas']['UserRolesViewModel'];
-            'application/xml': components['schemas']['UserRolesViewModel'];
-            'text/xml': components['schemas']['UserRolesViewModel'];
+            "text/plain": components["schemas"]["UserRolesViewModel"];
+            "application/json": components["schemas"]["UserRolesViewModel"];
+            "text/json": components["schemas"]["UserRolesViewModel"];
+            "application/xml": components["schemas"]["UserRolesViewModel"];
+            "text/xml": components["schemas"]["UserRolesViewModel"];
           };
         };
       };
@@ -1183,7 +1183,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/All': {
+  "/api/Admin/Groups/All": {
     parameters: {
       query?: never;
       header?: never;
@@ -1208,14 +1208,14 @@ export interface paths {
           Id?: number;
           Skip?: number;
           Limit?: number;
-          Asc?: components['schemas']['SortEnum'];
-          Sort?: components['schemas']['SortByEnum'];
+          Asc?: components["schemas"]["SortEnum"];
+          Sort?: components["schemas"]["SortByEnum"];
           Search?: string;
           OrgId?: number;
           Deleted?: boolean;
           IncludeSuborgs?: boolean;
           IncludeAlarmGroups?: boolean;
-          GroupType?: components['schemas']['GroupType'][];
+          GroupType?: components["schemas"]["GroupType"][];
           MenuItem?: string;
           IncludeMembers?: boolean;
         };
@@ -1231,11 +1231,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupsViewModel'];
-            'application/json': components['schemas']['GroupsViewModel'];
-            'text/json': components['schemas']['GroupsViewModel'];
-            'application/xml': components['schemas']['GroupsViewModel'];
-            'text/xml': components['schemas']['GroupsViewModel'];
+            "text/plain": components["schemas"]["GroupsViewModel"];
+            "application/json": components["schemas"]["GroupsViewModel"];
+            "text/json": components["schemas"]["GroupsViewModel"];
+            "application/xml": components["schemas"]["GroupsViewModel"];
+            "text/xml": components["schemas"]["GroupsViewModel"];
           };
         };
       };
@@ -1248,7 +1248,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/getallusers': {
+  "/api/Admin/Groups/getallusers": {
     parameters: {
       query?: never;
       header?: never;
@@ -1282,7 +1282,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/members': {
+  "/api/Admin/Groups/{id}/members": {
     parameters: {
       query?: never;
       header?: never;
@@ -1308,11 +1308,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupMemberViewModelFull'][];
-            'application/json': components['schemas']['GroupMemberViewModelFull'][];
-            'text/json': components['schemas']['GroupMemberViewModelFull'][];
-            'application/xml': components['schemas']['GroupMemberViewModelFull'][];
-            'text/xml': components['schemas']['GroupMemberViewModelFull'][];
+            "text/plain": components["schemas"]["GroupMemberViewModelFull"][];
+            "application/json": components["schemas"]["GroupMemberViewModelFull"][];
+            "text/json": components["schemas"]["GroupMemberViewModelFull"][];
+            "application/xml": components["schemas"]["GroupMemberViewModelFull"][];
+            "text/xml": components["schemas"]["GroupMemberViewModelFull"][];
           };
         };
       };
@@ -1325,7 +1325,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/Member': {
+  "/api/Admin/Groups/Member": {
     parameters: {
       query?: never;
       header?: never;
@@ -1344,13 +1344,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupMemberViewModel'];
-          'application/json': components['schemas']['GroupMemberViewModel'];
-          'text/json': components['schemas']['GroupMemberViewModel'];
-          'application/*+json': components['schemas']['GroupMemberViewModel'];
-          'application/xml': components['schemas']['GroupMemberViewModel'];
-          'text/xml': components['schemas']['GroupMemberViewModel'];
-          'application/*+xml': components['schemas']['GroupMemberViewModel'];
+          "application/json-patch+json": components["schemas"]["GroupMemberViewModel"];
+          "application/json": components["schemas"]["GroupMemberViewModel"];
+          "text/json": components["schemas"]["GroupMemberViewModel"];
+          "application/*+json": components["schemas"]["GroupMemberViewModel"];
+          "application/xml": components["schemas"]["GroupMemberViewModel"];
+          "text/xml": components["schemas"]["GroupMemberViewModel"];
+          "application/*+xml": components["schemas"]["GroupMemberViewModel"];
         };
       };
       responses: {
@@ -1369,7 +1369,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{groupID}/members/{userID}': {
+  "/api/Admin/Groups/{groupID}/members/{userID}": {
     parameters: {
       query?: never;
       header?: never;
@@ -1391,13 +1391,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SetGroupAdminBindingModel'];
-          'application/json': components['schemas']['SetGroupAdminBindingModel'];
-          'text/json': components['schemas']['SetGroupAdminBindingModel'];
-          'application/*+json': components['schemas']['SetGroupAdminBindingModel'];
-          'application/xml': components['schemas']['SetGroupAdminBindingModel'];
-          'text/xml': components['schemas']['SetGroupAdminBindingModel'];
-          'application/*+xml': components['schemas']['SetGroupAdminBindingModel'];
+          "application/json-patch+json": components["schemas"]["SetGroupAdminBindingModel"];
+          "application/json": components["schemas"]["SetGroupAdminBindingModel"];
+          "text/json": components["schemas"]["SetGroupAdminBindingModel"];
+          "application/*+json": components["schemas"]["SetGroupAdminBindingModel"];
+          "application/xml": components["schemas"]["SetGroupAdminBindingModel"];
+          "text/xml": components["schemas"]["SetGroupAdminBindingModel"];
+          "application/*+xml": components["schemas"]["SetGroupAdminBindingModel"];
         };
       };
       responses: {
@@ -1429,11 +1429,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserAndGroupViewModel'];
-            'application/json': components['schemas']['UserAndGroupViewModel'];
-            'text/json': components['schemas']['UserAndGroupViewModel'];
-            'application/xml': components['schemas']['UserAndGroupViewModel'];
-            'text/xml': components['schemas']['UserAndGroupViewModel'];
+            "text/plain": components["schemas"]["UserAndGroupViewModel"];
+            "application/json": components["schemas"]["UserAndGroupViewModel"];
+            "text/json": components["schemas"]["UserAndGroupViewModel"];
+            "application/xml": components["schemas"]["UserAndGroupViewModel"];
+            "text/xml": components["schemas"]["UserAndGroupViewModel"];
           };
         };
       };
@@ -1443,7 +1443,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/Register': {
+  "/api/Admin/Groups/Register": {
     parameters: {
       query?: never;
       header?: never;
@@ -1462,13 +1462,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupBindingModel'];
-          'application/json': components['schemas']['GroupBindingModel'];
-          'text/json': components['schemas']['GroupBindingModel'];
-          'application/*+json': components['schemas']['GroupBindingModel'];
-          'application/xml': components['schemas']['GroupBindingModel'];
-          'text/xml': components['schemas']['GroupBindingModel'];
-          'application/*+xml': components['schemas']['GroupBindingModel'];
+          "application/json-patch+json": components["schemas"]["GroupBindingModel"];
+          "application/json": components["schemas"]["GroupBindingModel"];
+          "text/json": components["schemas"]["GroupBindingModel"];
+          "application/*+json": components["schemas"]["GroupBindingModel"];
+          "application/xml": components["schemas"]["GroupBindingModel"];
+          "text/xml": components["schemas"]["GroupBindingModel"];
+          "application/*+xml": components["schemas"]["GroupBindingModel"];
         };
       };
       responses: {
@@ -1478,11 +1478,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupViewModel'];
-            'application/json': components['schemas']['GroupViewModel'];
-            'text/json': components['schemas']['GroupViewModel'];
-            'application/xml': components['schemas']['GroupViewModel'];
-            'text/xml': components['schemas']['GroupViewModel'];
+            "text/plain": components["schemas"]["GroupViewModel"];
+            "application/json": components["schemas"]["GroupViewModel"];
+            "text/json": components["schemas"]["GroupViewModel"];
+            "application/xml": components["schemas"]["GroupViewModel"];
+            "text/xml": components["schemas"]["GroupViewModel"];
           };
         };
       };
@@ -1493,7 +1493,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/editgroup': {
+  "/api/Admin/Groups/{id}/editgroup": {
     parameters: {
       query?: never;
       header?: never;
@@ -1515,13 +1515,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupBindingModel'];
-          'application/json': components['schemas']['GroupBindingModel'];
-          'text/json': components['schemas']['GroupBindingModel'];
-          'application/*+json': components['schemas']['GroupBindingModel'];
-          'application/xml': components['schemas']['GroupBindingModel'];
-          'text/xml': components['schemas']['GroupBindingModel'];
-          'application/*+xml': components['schemas']['GroupBindingModel'];
+          "application/json-patch+json": components["schemas"]["GroupBindingModel"];
+          "application/json": components["schemas"]["GroupBindingModel"];
+          "text/json": components["schemas"]["GroupBindingModel"];
+          "application/*+json": components["schemas"]["GroupBindingModel"];
+          "application/xml": components["schemas"]["GroupBindingModel"];
+          "text/xml": components["schemas"]["GroupBindingModel"];
+          "application/*+xml": components["schemas"]["GroupBindingModel"];
         };
       };
       responses: {
@@ -1531,11 +1531,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupViewModelExtended'];
-            'application/json': components['schemas']['GroupViewModelExtended'];
-            'text/json': components['schemas']['GroupViewModelExtended'];
-            'application/xml': components['schemas']['GroupViewModelExtended'];
-            'text/xml': components['schemas']['GroupViewModelExtended'];
+            "text/plain": components["schemas"]["GroupViewModelExtended"];
+            "application/json": components["schemas"]["GroupViewModelExtended"];
+            "text/json": components["schemas"]["GroupViewModelExtended"];
+            "application/xml": components["schemas"]["GroupViewModelExtended"];
+            "text/xml": components["schemas"]["GroupViewModelExtended"];
           };
         };
       };
@@ -1546,7 +1546,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/editgroupname': {
+  "/api/Admin/Groups/{id}/editgroupname": {
     parameters: {
       query?: never;
       header?: never;
@@ -1567,13 +1567,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupBindingChangeNameModel'];
-          'application/json': components['schemas']['GroupBindingChangeNameModel'];
-          'text/json': components['schemas']['GroupBindingChangeNameModel'];
-          'application/*+json': components['schemas']['GroupBindingChangeNameModel'];
-          'application/xml': components['schemas']['GroupBindingChangeNameModel'];
-          'text/xml': components['schemas']['GroupBindingChangeNameModel'];
-          'application/*+xml': components['schemas']['GroupBindingChangeNameModel'];
+          "application/json-patch+json": components["schemas"]["GroupBindingChangeNameModel"];
+          "application/json": components["schemas"]["GroupBindingChangeNameModel"];
+          "text/json": components["schemas"]["GroupBindingChangeNameModel"];
+          "application/*+json": components["schemas"]["GroupBindingChangeNameModel"];
+          "application/xml": components["schemas"]["GroupBindingChangeNameModel"];
+          "text/xml": components["schemas"]["GroupBindingChangeNameModel"];
+          "application/*+xml": components["schemas"]["GroupBindingChangeNameModel"];
         };
       };
       responses: {
@@ -1592,7 +1592,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/delete': {
+  "/api/Admin/Groups/{id}/delete": {
     parameters: {
       query?: never;
       header?: never;
@@ -1629,7 +1629,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups': {
+  "/api/Admin/Groups": {
     parameters: {
       query?: never;
       header?: never;
@@ -1650,13 +1650,13 @@ export interface paths {
       /** @description group ids */
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -1674,7 +1674,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/restore': {
+  "/api/Admin/Groups/{id}/restore": {
     parameters: {
       query?: never;
       header?: never;
@@ -1711,7 +1711,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/details': {
+  "/api/Admin/Groups/{id}/details": {
     parameters: {
       query?: never;
       header?: never;
@@ -1737,11 +1737,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupViewModelExtended'];
-            'application/json': components['schemas']['GroupViewModelExtended'];
-            'text/json': components['schemas']['GroupViewModelExtended'];
-            'application/xml': components['schemas']['GroupViewModelExtended'];
-            'text/xml': components['schemas']['GroupViewModelExtended'];
+            "text/plain": components["schemas"]["GroupViewModelExtended"];
+            "application/json": components["schemas"]["GroupViewModelExtended"];
+            "text/json": components["schemas"]["GroupViewModelExtended"];
+            "application/xml": components["schemas"]["GroupViewModelExtended"];
+            "text/xml": components["schemas"]["GroupViewModelExtended"];
           };
         };
       };
@@ -1754,7 +1754,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/addMember': {
+  "/api/Admin/Groups/{id}/addMember": {
     parameters: {
       query?: never;
       header?: never;
@@ -1779,13 +1779,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupAddMemberModel'];
-          'application/json': components['schemas']['GroupAddMemberModel'];
-          'text/json': components['schemas']['GroupAddMemberModel'];
-          'application/*+json': components['schemas']['GroupAddMemberModel'];
-          'application/xml': components['schemas']['GroupAddMemberModel'];
-          'text/xml': components['schemas']['GroupAddMemberModel'];
-          'application/*+xml': components['schemas']['GroupAddMemberModel'];
+          "application/json-patch+json": components["schemas"]["GroupAddMemberModel"];
+          "application/json": components["schemas"]["GroupAddMemberModel"];
+          "text/json": components["schemas"]["GroupAddMemberModel"];
+          "application/*+json": components["schemas"]["GroupAddMemberModel"];
+          "application/xml": components["schemas"]["GroupAddMemberModel"];
+          "text/xml": components["schemas"]["GroupAddMemberModel"];
+          "application/*+xml": components["schemas"]["GroupAddMemberModel"];
         };
       };
       responses: {
@@ -1795,11 +1795,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserAndGroupViewModel'];
-            'application/json': components['schemas']['UserAndGroupViewModel'];
-            'text/json': components['schemas']['UserAndGroupViewModel'];
-            'application/xml': components['schemas']['UserAndGroupViewModel'];
-            'text/xml': components['schemas']['UserAndGroupViewModel'];
+            "text/plain": components["schemas"]["UserAndGroupViewModel"];
+            "application/json": components["schemas"]["UserAndGroupViewModel"];
+            "text/json": components["schemas"]["UserAndGroupViewModel"];
+            "application/xml": components["schemas"]["UserAndGroupViewModel"];
+            "text/xml": components["schemas"]["UserAndGroupViewModel"];
           };
         };
       };
@@ -1810,7 +1810,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/addMembers': {
+  "/api/Admin/Groups/addMembers": {
     parameters: {
       query?: never;
       header?: never;
@@ -1832,13 +1832,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupAddMemberModel'][];
-          'application/json': components['schemas']['GroupAddMemberModel'][];
-          'text/json': components['schemas']['GroupAddMemberModel'][];
-          'application/*+json': components['schemas']['GroupAddMemberModel'][];
-          'application/xml': components['schemas']['GroupAddMemberModel'][];
-          'text/xml': components['schemas']['GroupAddMemberModel'][];
-          'application/*+xml': components['schemas']['GroupAddMemberModel'][];
+          "application/json-patch+json": components["schemas"]["GroupAddMemberModel"][];
+          "application/json": components["schemas"]["GroupAddMemberModel"][];
+          "text/json": components["schemas"]["GroupAddMemberModel"][];
+          "application/*+json": components["schemas"]["GroupAddMemberModel"][];
+          "application/xml": components["schemas"]["GroupAddMemberModel"][];
+          "text/xml": components["schemas"]["GroupAddMemberModel"][];
+          "application/*+xml": components["schemas"]["GroupAddMemberModel"][];
         };
       };
       responses: {
@@ -1848,11 +1848,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserAndGroupViewModel'];
-            'application/json': components['schemas']['UserAndGroupViewModel'];
-            'text/json': components['schemas']['UserAndGroupViewModel'];
-            'application/xml': components['schemas']['UserAndGroupViewModel'];
-            'text/xml': components['schemas']['UserAndGroupViewModel'];
+            "text/plain": components["schemas"]["UserAndGroupViewModel"];
+            "application/json": components["schemas"]["UserAndGroupViewModel"];
+            "text/json": components["schemas"]["UserAndGroupViewModel"];
+            "application/xml": components["schemas"]["UserAndGroupViewModel"];
+            "text/xml": components["schemas"]["UserAndGroupViewModel"];
           };
         };
       };
@@ -1863,7 +1863,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/copy': {
+  "/api/Admin/Groups/{id}/copy": {
     parameters: {
       query?: never;
       header?: never;
@@ -1891,11 +1891,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupViewModelExtended'];
-            'application/json': components['schemas']['GroupViewModelExtended'];
-            'text/json': components['schemas']['GroupViewModelExtended'];
-            'application/xml': components['schemas']['GroupViewModelExtended'];
-            'text/xml': components['schemas']['GroupViewModelExtended'];
+            "text/plain": components["schemas"]["GroupViewModelExtended"];
+            "application/json": components["schemas"]["GroupViewModelExtended"];
+            "text/json": components["schemas"]["GroupViewModelExtended"];
+            "application/xml": components["schemas"]["GroupViewModelExtended"];
+            "text/xml": components["schemas"]["GroupViewModelExtended"];
           };
         };
       };
@@ -1906,7 +1906,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/copy': {
+  "/api/Admin/Groups/copy": {
     parameters: {
       query?: never;
       header?: never;
@@ -1925,13 +1925,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['CopyGroupsBindingModel'];
-          'application/json': components['schemas']['CopyGroupsBindingModel'];
-          'text/json': components['schemas']['CopyGroupsBindingModel'];
-          'application/*+json': components['schemas']['CopyGroupsBindingModel'];
-          'application/xml': components['schemas']['CopyGroupsBindingModel'];
-          'text/xml': components['schemas']['CopyGroupsBindingModel'];
-          'application/*+xml': components['schemas']['CopyGroupsBindingModel'];
+          "application/json-patch+json": components["schemas"]["CopyGroupsBindingModel"];
+          "application/json": components["schemas"]["CopyGroupsBindingModel"];
+          "text/json": components["schemas"]["CopyGroupsBindingModel"];
+          "application/*+json": components["schemas"]["CopyGroupsBindingModel"];
+          "application/xml": components["schemas"]["CopyGroupsBindingModel"];
+          "text/xml": components["schemas"]["CopyGroupsBindingModel"];
+          "application/*+xml": components["schemas"]["CopyGroupsBindingModel"];
         };
       };
       responses: {
@@ -1941,11 +1941,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupCopyViewModel'];
-            'application/json': components['schemas']['GroupCopyViewModel'];
-            'text/json': components['schemas']['GroupCopyViewModel'];
-            'application/xml': components['schemas']['GroupCopyViewModel'];
-            'text/xml': components['schemas']['GroupCopyViewModel'];
+            "text/plain": components["schemas"]["GroupCopyViewModel"];
+            "application/json": components["schemas"]["GroupCopyViewModel"];
+            "text/json": components["schemas"]["GroupCopyViewModel"];
+            "application/xml": components["schemas"]["GroupCopyViewModel"];
+            "text/xml": components["schemas"]["GroupCopyViewModel"];
           };
         };
       };
@@ -1956,7 +1956,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/activate': {
+  "/api/Admin/Groups/{id}/activate": {
     parameters: {
       query?: never;
       header?: never;
@@ -1978,13 +1978,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ActivateGroupBindingModel'];
-          'application/json': components['schemas']['ActivateGroupBindingModel'];
-          'text/json': components['schemas']['ActivateGroupBindingModel'];
-          'application/*+json': components['schemas']['ActivateGroupBindingModel'];
-          'application/xml': components['schemas']['ActivateGroupBindingModel'];
-          'text/xml': components['schemas']['ActivateGroupBindingModel'];
-          'application/*+xml': components['schemas']['ActivateGroupBindingModel'];
+          "application/json-patch+json": components["schemas"]["ActivateGroupBindingModel"];
+          "application/json": components["schemas"]["ActivateGroupBindingModel"];
+          "text/json": components["schemas"]["ActivateGroupBindingModel"];
+          "application/*+json": components["schemas"]["ActivateGroupBindingModel"];
+          "application/xml": components["schemas"]["ActivateGroupBindingModel"];
+          "text/xml": components["schemas"]["ActivateGroupBindingModel"];
+          "application/*+xml": components["schemas"]["ActivateGroupBindingModel"];
         };
       };
       responses: {
@@ -1994,11 +1994,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupViewModelExtended'];
-            'application/json': components['schemas']['GroupViewModelExtended'];
-            'text/json': components['schemas']['GroupViewModelExtended'];
-            'application/xml': components['schemas']['GroupViewModelExtended'];
-            'text/xml': components['schemas']['GroupViewModelExtended'];
+            "text/plain": components["schemas"]["GroupViewModelExtended"];
+            "application/json": components["schemas"]["GroupViewModelExtended"];
+            "text/json": components["schemas"]["GroupViewModelExtended"];
+            "application/xml": components["schemas"]["GroupViewModelExtended"];
+            "text/xml": components["schemas"]["GroupViewModelExtended"];
           };
         };
       };
@@ -2009,7 +2009,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/codes': {
+  "/api/Admin/Groups/{id}/codes": {
     parameters: {
       query?: never;
       header?: never;
@@ -2035,9 +2035,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -2050,7 +2050,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Groups/{id}/regeneratecodes': {
+  "/api/Admin/Groups/{id}/regeneratecodes": {
     parameters: {
       query?: never;
       header?: never;
@@ -2087,7 +2087,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/accounts': {
+  "/api/Admin/Users/accounts": {
     parameters: {
       query?: never;
       header?: never;
@@ -2116,7 +2116,7 @@ export interface paths {
           /** @description in case true, return also deleted users */
           showDeleted?: boolean;
           /** @description in case is not null, return users with the specified invite status */
-          inviteStatus?: components['schemas']['UserInviteStatus'][];
+          inviteStatus?: components["schemas"]["UserInviteStatus"][];
           /** @description user in pair with "organization" parameter, in case true users from suborganizations are included in the list */
           includeSuborgs?: boolean;
           /** @description filter out users by menuItem of their organization */
@@ -2124,11 +2124,11 @@ export interface paths {
           /** @description in case is not null, filter out users by organization manager status */
           isOrgManager?: boolean;
           /** @description in case is not null, filter out users by creation method */
-          creationMethod?: components['schemas']['UserCreationMethod'][];
+          creationMethod?: components["schemas"]["UserCreationMethod"][];
           /** @description in case is not null, filter out users by last active date */
-          lastActive?: components['schemas']['UserLastActiveStatus'][];
+          lastActive?: components["schemas"]["UserLastActiveStatus"][];
           /** @description in case is not null, filter out users by alarm test status */
-          alarmTest?: components['schemas']['UserAlarmTestStatus'][];
+          alarmTest?: components["schemas"]["UserAlarmTestStatus"][];
         };
         header?: never;
         path?: never;
@@ -2142,11 +2142,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UsersAccountViewModel'];
-            'application/json': components['schemas']['UsersAccountViewModel'];
-            'text/json': components['schemas']['UsersAccountViewModel'];
-            'application/xml': components['schemas']['UsersAccountViewModel'];
-            'text/xml': components['schemas']['UsersAccountViewModel'];
+            "text/plain": components["schemas"]["UsersAccountViewModel"];
+            "application/json": components["schemas"]["UsersAccountViewModel"];
+            "text/json": components["schemas"]["UsersAccountViewModel"];
+            "application/xml": components["schemas"]["UsersAccountViewModel"];
+            "text/xml": components["schemas"]["UsersAccountViewModel"];
           };
         };
       };
@@ -2163,13 +2163,13 @@ export interface paths {
       /** @description filter out user, see parameter descriptions GET /api/admin/users/accounts */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GetAdminUsersAccountBindingModel'];
-          'application/json': components['schemas']['GetAdminUsersAccountBindingModel'];
-          'text/json': components['schemas']['GetAdminUsersAccountBindingModel'];
-          'application/*+json': components['schemas']['GetAdminUsersAccountBindingModel'];
-          'application/xml': components['schemas']['GetAdminUsersAccountBindingModel'];
-          'text/xml': components['schemas']['GetAdminUsersAccountBindingModel'];
-          'application/*+xml': components['schemas']['GetAdminUsersAccountBindingModel'];
+          "application/json-patch+json": components["schemas"]["GetAdminUsersAccountBindingModel"];
+          "application/json": components["schemas"]["GetAdminUsersAccountBindingModel"];
+          "text/json": components["schemas"]["GetAdminUsersAccountBindingModel"];
+          "application/*+json": components["schemas"]["GetAdminUsersAccountBindingModel"];
+          "application/xml": components["schemas"]["GetAdminUsersAccountBindingModel"];
+          "text/xml": components["schemas"]["GetAdminUsersAccountBindingModel"];
+          "application/*+xml": components["schemas"]["GetAdminUsersAccountBindingModel"];
         };
       };
       responses: {
@@ -2179,11 +2179,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UsersAccountViewModel'];
-            'application/json': components['schemas']['UsersAccountViewModel'];
-            'text/json': components['schemas']['UsersAccountViewModel'];
-            'application/xml': components['schemas']['UsersAccountViewModel'];
-            'text/xml': components['schemas']['UsersAccountViewModel'];
+            "text/plain": components["schemas"]["UsersAccountViewModel"];
+            "application/json": components["schemas"]["UsersAccountViewModel"];
+            "text/json": components["schemas"]["UsersAccountViewModel"];
+            "application/xml": components["schemas"]["UsersAccountViewModel"];
+            "text/xml": components["schemas"]["UsersAccountViewModel"];
           };
         };
       };
@@ -2194,7 +2194,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}': {
+  "/api/Admin/Users/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -2220,11 +2220,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserMemberViewModel'];
-            'application/json': components['schemas']['UserMemberViewModel'];
-            'text/json': components['schemas']['UserMemberViewModel'];
-            'application/xml': components['schemas']['UserMemberViewModel'];
-            'text/xml': components['schemas']['UserMemberViewModel'];
+            "text/plain": components["schemas"]["UserMemberViewModel"];
+            "application/json": components["schemas"]["UserMemberViewModel"];
+            "text/json": components["schemas"]["UserMemberViewModel"];
+            "application/xml": components["schemas"]["UserMemberViewModel"];
+            "text/xml": components["schemas"]["UserMemberViewModel"];
           };
         };
       };
@@ -2237,7 +2237,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/sendregistrationemails': {
+  "/api/Admin/sendregistrationemails": {
     parameters: {
       query?: never;
       header?: never;
@@ -2260,13 +2260,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SendRegistrationEmailModel'];
-          'application/json': components['schemas']['SendRegistrationEmailModel'];
-          'text/json': components['schemas']['SendRegistrationEmailModel'];
-          'application/*+json': components['schemas']['SendRegistrationEmailModel'];
-          'application/xml': components['schemas']['SendRegistrationEmailModel'];
-          'text/xml': components['schemas']['SendRegistrationEmailModel'];
-          'application/*+xml': components['schemas']['SendRegistrationEmailModel'];
+          "application/json-patch+json": components["schemas"]["SendRegistrationEmailModel"];
+          "application/json": components["schemas"]["SendRegistrationEmailModel"];
+          "text/json": components["schemas"]["SendRegistrationEmailModel"];
+          "application/*+json": components["schemas"]["SendRegistrationEmailModel"];
+          "application/xml": components["schemas"]["SendRegistrationEmailModel"];
+          "text/xml": components["schemas"]["SendRegistrationEmailModel"];
+          "application/*+xml": components["schemas"]["SendRegistrationEmailModel"];
         };
       };
       responses: {
@@ -2285,7 +2285,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/sendreminders': {
+  "/api/Admin/sendreminders": {
     parameters: {
       query?: never;
       header?: never;
@@ -2304,13 +2304,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ReminderEmailBindingModel'];
-          'application/json': components['schemas']['ReminderEmailBindingModel'];
-          'text/json': components['schemas']['ReminderEmailBindingModel'];
-          'application/*+json': components['schemas']['ReminderEmailBindingModel'];
-          'application/xml': components['schemas']['ReminderEmailBindingModel'];
-          'text/xml': components['schemas']['ReminderEmailBindingModel'];
-          'application/*+xml': components['schemas']['ReminderEmailBindingModel'];
+          "application/json-patch+json": components["schemas"]["ReminderEmailBindingModel"];
+          "application/json": components["schemas"]["ReminderEmailBindingModel"];
+          "text/json": components["schemas"]["ReminderEmailBindingModel"];
+          "application/*+json": components["schemas"]["ReminderEmailBindingModel"];
+          "application/xml": components["schemas"]["ReminderEmailBindingModel"];
+          "text/xml": components["schemas"]["ReminderEmailBindingModel"];
+          "application/*+xml": components["schemas"]["ReminderEmailBindingModel"];
         };
       };
       responses: {
@@ -2329,7 +2329,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/municipalitys': {
+  "/api/Admin/municipalitys": {
     parameters: {
       query?: never;
       header?: never;
@@ -2363,7 +2363,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/roles': {
+  "/api/Admin/roles": {
     parameters: {
       query?: never;
       header?: never;
@@ -2397,7 +2397,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/allroles': {
+  "/api/Admin/allroles": {
     parameters: {
       query?: never;
       header?: never;
@@ -2420,11 +2420,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserRoleViewModel'];
-            'application/json': components['schemas']['UserRoleViewModel'];
-            'text/json': components['schemas']['UserRoleViewModel'];
-            'application/xml': components['schemas']['UserRoleViewModel'];
-            'text/xml': components['schemas']['UserRoleViewModel'];
+            "text/plain": components["schemas"]["UserRoleViewModel"];
+            "application/json": components["schemas"]["UserRoleViewModel"];
+            "text/json": components["schemas"]["UserRoleViewModel"];
+            "application/xml": components["schemas"]["UserRoleViewModel"];
+            "text/xml": components["schemas"]["UserRoleViewModel"];
           };
         };
       };
@@ -2437,7 +2437,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/{id}/userGroups': {
+  "/api/Admin/{id}/userGroups": {
     parameters: {
       query?: never;
       header?: never;
@@ -2463,11 +2463,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupViewModel'];
-            'application/json': components['schemas']['GroupViewModel'];
-            'text/json': components['schemas']['GroupViewModel'];
-            'application/xml': components['schemas']['GroupViewModel'];
-            'text/xml': components['schemas']['GroupViewModel'];
+            "text/plain": components["schemas"]["GroupViewModel"];
+            "application/json": components["schemas"]["GroupViewModel"];
+            "text/json": components["schemas"]["GroupViewModel"];
+            "application/xml": components["schemas"]["GroupViewModel"];
+            "text/xml": components["schemas"]["GroupViewModel"];
           };
         };
       };
@@ -2480,7 +2480,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/Register': {
+  "/api/Admin/Users/Register": {
     parameters: {
       query?: never;
       header?: never;
@@ -2499,13 +2499,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserBindingModel'];
-          'application/json': components['schemas']['UserBindingModel'];
-          'text/json': components['schemas']['UserBindingModel'];
-          'application/*+json': components['schemas']['UserBindingModel'];
-          'application/xml': components['schemas']['UserBindingModel'];
-          'text/xml': components['schemas']['UserBindingModel'];
-          'application/*+xml': components['schemas']['UserBindingModel'];
+          "application/json-patch+json": components["schemas"]["UserBindingModel"];
+          "application/json": components["schemas"]["UserBindingModel"];
+          "text/json": components["schemas"]["UserBindingModel"];
+          "application/*+json": components["schemas"]["UserBindingModel"];
+          "application/xml": components["schemas"]["UserBindingModel"];
+          "text/xml": components["schemas"]["UserBindingModel"];
+          "application/*+xml": components["schemas"]["UserBindingModel"];
         };
       };
       responses: {
@@ -2515,11 +2515,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserViewModelExtended'];
-            'application/json': components['schemas']['UserViewModelExtended'];
-            'text/json': components['schemas']['UserViewModelExtended'];
-            'application/xml': components['schemas']['UserViewModelExtended'];
-            'text/xml': components['schemas']['UserViewModelExtended'];
+            "text/plain": components["schemas"]["UserViewModelExtended"];
+            "application/json": components["schemas"]["UserViewModelExtended"];
+            "text/json": components["schemas"]["UserViewModelExtended"];
+            "application/xml": components["schemas"]["UserViewModelExtended"];
+            "text/xml": components["schemas"]["UserViewModelExtended"];
           };
         };
       };
@@ -2530,7 +2530,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/Register-users': {
+  "/api/Admin/Users/Register-users": {
     parameters: {
       query?: never;
       header?: never;
@@ -2549,13 +2549,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserBindingModel'][];
-          'application/json': components['schemas']['UserBindingModel'][];
-          'text/json': components['schemas']['UserBindingModel'][];
-          'application/*+json': components['schemas']['UserBindingModel'][];
-          'application/xml': components['schemas']['UserBindingModel'][];
-          'text/xml': components['schemas']['UserBindingModel'][];
-          'application/*+xml': components['schemas']['UserBindingModel'][];
+          "application/json-patch+json": components["schemas"]["UserBindingModel"][];
+          "application/json": components["schemas"]["UserBindingModel"][];
+          "text/json": components["schemas"]["UserBindingModel"][];
+          "application/*+json": components["schemas"]["UserBindingModel"][];
+          "application/xml": components["schemas"]["UserBindingModel"][];
+          "text/xml": components["schemas"]["UserBindingModel"][];
+          "application/*+xml": components["schemas"]["UserBindingModel"][];
         };
       };
       responses: {
@@ -2574,7 +2574,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}/manageroles': {
+  "/api/Admin/Users/{id}/manageroles": {
     parameters: {
       query?: never;
       header?: never;
@@ -2601,13 +2601,13 @@ export interface paths {
       /** @description List of roles */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['RoleStatus'][];
-          'application/json': components['schemas']['RoleStatus'][];
-          'text/json': components['schemas']['RoleStatus'][];
-          'application/*+json': components['schemas']['RoleStatus'][];
-          'application/xml': components['schemas']['RoleStatus'][];
-          'text/xml': components['schemas']['RoleStatus'][];
-          'application/*+xml': components['schemas']['RoleStatus'][];
+          "application/json-patch+json": components["schemas"]["RoleStatus"][];
+          "application/json": components["schemas"]["RoleStatus"][];
+          "text/json": components["schemas"]["RoleStatus"][];
+          "application/*+json": components["schemas"]["RoleStatus"][];
+          "application/xml": components["schemas"]["RoleStatus"][];
+          "text/xml": components["schemas"]["RoleStatus"][];
+          "application/*+xml": components["schemas"]["RoleStatus"][];
         };
       };
       responses: {
@@ -2617,18 +2617,18 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserRolesStatuses'];
-            'application/json': components['schemas']['UserRolesStatuses'];
-            'text/json': components['schemas']['UserRolesStatuses'];
-            'application/xml': components['schemas']['UserRolesStatuses'];
-            'text/xml': components['schemas']['UserRolesStatuses'];
+            "text/plain": components["schemas"]["UserRolesStatuses"];
+            "application/json": components["schemas"]["UserRolesStatuses"];
+            "text/json": components["schemas"]["UserRolesStatuses"];
+            "application/xml": components["schemas"]["UserRolesStatuses"];
+            "text/xml": components["schemas"]["UserRolesStatuses"];
           };
         };
       };
     };
     trace?: never;
   };
-  '/api/Admin/Users/manageroles': {
+  "/api/Admin/Users/manageroles": {
     parameters: {
       query?: never;
       header?: never;
@@ -2652,13 +2652,13 @@ export interface paths {
       /** @description List of users roles data */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserRolesStatuses'][];
-          'application/json': components['schemas']['UserRolesStatuses'][];
-          'text/json': components['schemas']['UserRolesStatuses'][];
-          'application/*+json': components['schemas']['UserRolesStatuses'][];
-          'application/xml': components['schemas']['UserRolesStatuses'][];
-          'text/xml': components['schemas']['UserRolesStatuses'][];
-          'application/*+xml': components['schemas']['UserRolesStatuses'][];
+          "application/json-patch+json": components["schemas"]["UserRolesStatuses"][];
+          "application/json": components["schemas"]["UserRolesStatuses"][];
+          "text/json": components["schemas"]["UserRolesStatuses"][];
+          "application/*+json": components["schemas"]["UserRolesStatuses"][];
+          "application/xml": components["schemas"]["UserRolesStatuses"][];
+          "text/xml": components["schemas"]["UserRolesStatuses"][];
+          "application/*+xml": components["schemas"]["UserRolesStatuses"][];
         };
       };
       responses: {
@@ -2673,7 +2673,7 @@ export interface paths {
     };
     trace?: never;
   };
-  '/api/Admin/Users/{id}/manageUserGroups': {
+  "/api/Admin/Users/{id}/manageUserGroups": {
     parameters: {
       query?: never;
       header?: never;
@@ -2699,13 +2699,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupStatus'][];
-          'application/json': components['schemas']['GroupStatus'][];
-          'text/json': components['schemas']['GroupStatus'][];
-          'application/*+json': components['schemas']['GroupStatus'][];
-          'application/xml': components['schemas']['GroupStatus'][];
-          'text/xml': components['schemas']['GroupStatus'][];
-          'application/*+xml': components['schemas']['GroupStatus'][];
+          "application/json-patch+json": components["schemas"]["GroupStatus"][];
+          "application/json": components["schemas"]["GroupStatus"][];
+          "text/json": components["schemas"]["GroupStatus"][];
+          "application/*+json": components["schemas"]["GroupStatus"][];
+          "application/xml": components["schemas"]["GroupStatus"][];
+          "text/xml": components["schemas"]["GroupStatus"][];
+          "application/*+xml": components["schemas"]["GroupStatus"][];
         };
       };
       responses: {
@@ -2715,18 +2715,18 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ManageUserGroupsViewModel'];
-            'application/json': components['schemas']['ManageUserGroupsViewModel'];
-            'text/json': components['schemas']['ManageUserGroupsViewModel'];
-            'application/xml': components['schemas']['ManageUserGroupsViewModel'];
-            'text/xml': components['schemas']['ManageUserGroupsViewModel'];
+            "text/plain": components["schemas"]["ManageUserGroupsViewModel"];
+            "application/json": components["schemas"]["ManageUserGroupsViewModel"];
+            "text/json": components["schemas"]["ManageUserGroupsViewModel"];
+            "application/xml": components["schemas"]["ManageUserGroupsViewModel"];
+            "text/xml": components["schemas"]["ManageUserGroupsViewModel"];
           };
         };
       };
     };
     trace?: never;
   };
-  '/api/Admin/Users/manageUserGroups': {
+  "/api/Admin/Users/manageUserGroups": {
     parameters: {
       query?: never;
       header?: never;
@@ -2749,13 +2749,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ManageUserGroupsBindingModel'][];
-          'application/json': components['schemas']['ManageUserGroupsBindingModel'][];
-          'text/json': components['schemas']['ManageUserGroupsBindingModel'][];
-          'application/*+json': components['schemas']['ManageUserGroupsBindingModel'][];
-          'application/xml': components['schemas']['ManageUserGroupsBindingModel'][];
-          'text/xml': components['schemas']['ManageUserGroupsBindingModel'][];
-          'application/*+xml': components['schemas']['ManageUserGroupsBindingModel'][];
+          "application/json-patch+json": components["schemas"]["ManageUserGroupsBindingModel"][];
+          "application/json": components["schemas"]["ManageUserGroupsBindingModel"][];
+          "text/json": components["schemas"]["ManageUserGroupsBindingModel"][];
+          "application/*+json": components["schemas"]["ManageUserGroupsBindingModel"][];
+          "application/xml": components["schemas"]["ManageUserGroupsBindingModel"][];
+          "text/xml": components["schemas"]["ManageUserGroupsBindingModel"][];
+          "application/*+xml": components["schemas"]["ManageUserGroupsBindingModel"][];
         };
       };
       responses: {
@@ -2765,18 +2765,18 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ManageUserGroupsViewModel'];
-            'application/json': components['schemas']['ManageUserGroupsViewModel'];
-            'text/json': components['schemas']['ManageUserGroupsViewModel'];
-            'application/xml': components['schemas']['ManageUserGroupsViewModel'];
-            'text/xml': components['schemas']['ManageUserGroupsViewModel'];
+            "text/plain": components["schemas"]["ManageUserGroupsViewModel"];
+            "application/json": components["schemas"]["ManageUserGroupsViewModel"];
+            "text/json": components["schemas"]["ManageUserGroupsViewModel"];
+            "application/xml": components["schemas"]["ManageUserGroupsViewModel"];
+            "text/xml": components["schemas"]["ManageUserGroupsViewModel"];
           };
         };
       };
     };
     trace?: never;
   };
-  '/api/Admin/Users/{id}/OrganizationMemberships': {
+  "/api/Admin/Users/{id}/OrganizationMemberships": {
     parameters: {
       query?: never;
       header?: never;
@@ -2804,11 +2804,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationMemberViewModel'][];
-            'application/json': components['schemas']['OrganizationMemberViewModel'][];
-            'text/json': components['schemas']['OrganizationMemberViewModel'][];
-            'application/xml': components['schemas']['OrganizationMemberViewModel'][];
-            'text/xml': components['schemas']['OrganizationMemberViewModel'][];
+            "text/plain": components["schemas"]["OrganizationMemberViewModel"][];
+            "application/json": components["schemas"]["OrganizationMemberViewModel"][];
+            "text/json": components["schemas"]["OrganizationMemberViewModel"][];
+            "application/xml": components["schemas"]["OrganizationMemberViewModel"][];
+            "text/xml": components["schemas"]["OrganizationMemberViewModel"][];
           };
         };
       };
@@ -2821,7 +2821,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}/edit': {
+  "/api/Admin/Users/{id}/edit": {
     parameters: {
       query?: never;
       header?: never;
@@ -2843,13 +2843,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserBindingModel'];
-          'application/json': components['schemas']['UserBindingModel'];
-          'text/json': components['schemas']['UserBindingModel'];
-          'application/*+json': components['schemas']['UserBindingModel'];
-          'application/xml': components['schemas']['UserBindingModel'];
-          'text/xml': components['schemas']['UserBindingModel'];
-          'application/*+xml': components['schemas']['UserBindingModel'];
+          "application/json-patch+json": components["schemas"]["UserBindingModel"];
+          "application/json": components["schemas"]["UserBindingModel"];
+          "text/json": components["schemas"]["UserBindingModel"];
+          "application/*+json": components["schemas"]["UserBindingModel"];
+          "application/xml": components["schemas"]["UserBindingModel"];
+          "text/xml": components["schemas"]["UserBindingModel"];
+          "application/*+xml": components["schemas"]["UserBindingModel"];
         };
       };
       responses: {
@@ -2859,11 +2859,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserMemberViewModel'];
-            'application/json': components['schemas']['UserMemberViewModel'];
-            'text/json': components['schemas']['UserMemberViewModel'];
-            'application/xml': components['schemas']['UserMemberViewModel'];
-            'text/xml': components['schemas']['UserMemberViewModel'];
+            "text/plain": components["schemas"]["UserMemberViewModel"];
+            "application/json": components["schemas"]["UserMemberViewModel"];
+            "text/json": components["schemas"]["UserMemberViewModel"];
+            "application/xml": components["schemas"]["UserMemberViewModel"];
+            "text/xml": components["schemas"]["UserMemberViewModel"];
           };
         };
       };
@@ -2874,7 +2874,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}/changePassword': {
+  "/api/Admin/Users/{id}/changePassword": {
     parameters: {
       query?: never;
       header?: never;
@@ -2896,13 +2896,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserPasswordBindingModel'];
-          'application/json': components['schemas']['UserPasswordBindingModel'];
-          'text/json': components['schemas']['UserPasswordBindingModel'];
-          'application/*+json': components['schemas']['UserPasswordBindingModel'];
-          'application/xml': components['schemas']['UserPasswordBindingModel'];
-          'text/xml': components['schemas']['UserPasswordBindingModel'];
-          'application/*+xml': components['schemas']['UserPasswordBindingModel'];
+          "application/json-patch+json": components["schemas"]["UserPasswordBindingModel"];
+          "application/json": components["schemas"]["UserPasswordBindingModel"];
+          "text/json": components["schemas"]["UserPasswordBindingModel"];
+          "application/*+json": components["schemas"]["UserPasswordBindingModel"];
+          "application/xml": components["schemas"]["UserPasswordBindingModel"];
+          "text/xml": components["schemas"]["UserPasswordBindingModel"];
+          "application/*+xml": components["schemas"]["UserPasswordBindingModel"];
         };
       };
       responses: {
@@ -2921,7 +2921,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}/delete': {
+  "/api/Admin/Users/{id}/delete": {
     parameters: {
       query?: never;
       header?: never;
@@ -2944,13 +2944,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AccountDeleteBindingModel'];
-          'application/json': components['schemas']['AccountDeleteBindingModel'];
-          'text/json': components['schemas']['AccountDeleteBindingModel'];
-          'application/*+json': components['schemas']['AccountDeleteBindingModel'];
-          'application/xml': components['schemas']['AccountDeleteBindingModel'];
-          'text/xml': components['schemas']['AccountDeleteBindingModel'];
-          'application/*+xml': components['schemas']['AccountDeleteBindingModel'];
+          "application/json-patch+json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/json": components["schemas"]["AccountDeleteBindingModel"];
+          "text/json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/*+json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/xml": components["schemas"]["AccountDeleteBindingModel"];
+          "text/xml": components["schemas"]["AccountDeleteBindingModel"];
+          "application/*+xml": components["schemas"]["AccountDeleteBindingModel"];
         };
       };
       responses: {
@@ -2968,7 +2968,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}/deleteFully': {
+  "/api/Admin/Users/{id}/deleteFully": {
     parameters: {
       query?: never;
       header?: never;
@@ -2991,13 +2991,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AccountDeleteBindingModel'];
-          'application/json': components['schemas']['AccountDeleteBindingModel'];
-          'text/json': components['schemas']['AccountDeleteBindingModel'];
-          'application/*+json': components['schemas']['AccountDeleteBindingModel'];
-          'application/xml': components['schemas']['AccountDeleteBindingModel'];
-          'text/xml': components['schemas']['AccountDeleteBindingModel'];
-          'application/*+xml': components['schemas']['AccountDeleteBindingModel'];
+          "application/json-patch+json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/json": components["schemas"]["AccountDeleteBindingModel"];
+          "text/json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/*+json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/xml": components["schemas"]["AccountDeleteBindingModel"];
+          "text/xml": components["schemas"]["AccountDeleteBindingModel"];
+          "application/*+xml": components["schemas"]["AccountDeleteBindingModel"];
         };
       };
       responses: {
@@ -3015,7 +3015,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}/deleteNotReally': {
+  "/api/Admin/Users/{id}/deleteNotReally": {
     parameters: {
       query?: never;
       header?: never;
@@ -3038,13 +3038,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AccountDeleteBindingModel'];
-          'application/json': components['schemas']['AccountDeleteBindingModel'];
-          'text/json': components['schemas']['AccountDeleteBindingModel'];
-          'application/*+json': components['schemas']['AccountDeleteBindingModel'];
-          'application/xml': components['schemas']['AccountDeleteBindingModel'];
-          'text/xml': components['schemas']['AccountDeleteBindingModel'];
-          'application/*+xml': components['schemas']['AccountDeleteBindingModel'];
+          "application/json-patch+json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/json": components["schemas"]["AccountDeleteBindingModel"];
+          "text/json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/*+json": components["schemas"]["AccountDeleteBindingModel"];
+          "application/xml": components["schemas"]["AccountDeleteBindingModel"];
+          "text/xml": components["schemas"]["AccountDeleteBindingModel"];
+          "application/*+xml": components["schemas"]["AccountDeleteBindingModel"];
         };
       };
       responses: {
@@ -3062,7 +3062,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/delete': {
+  "/api/Admin/Users/delete": {
     parameters: {
       query?: never;
       header?: never;
@@ -3082,13 +3082,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/json': components['schemas']['AccountDeleteBindingModel'][];
-          'text/json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/*+json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/xml': components['schemas']['AccountDeleteBindingModel'][];
-          'text/xml': components['schemas']['AccountDeleteBindingModel'][];
-          'application/*+xml': components['schemas']['AccountDeleteBindingModel'][];
+          "application/json-patch+json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/json": components["schemas"]["AccountDeleteBindingModel"][];
+          "text/json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/*+json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/xml": components["schemas"]["AccountDeleteBindingModel"][];
+          "text/xml": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/*+xml": components["schemas"]["AccountDeleteBindingModel"][];
         };
       };
       responses: {
@@ -3106,7 +3106,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/deleteFully': {
+  "/api/Admin/Users/deleteFully": {
     parameters: {
       query?: never;
       header?: never;
@@ -3126,13 +3126,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/json': components['schemas']['AccountDeleteBindingModel'][];
-          'text/json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/*+json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/xml': components['schemas']['AccountDeleteBindingModel'][];
-          'text/xml': components['schemas']['AccountDeleteBindingModel'][];
-          'application/*+xml': components['schemas']['AccountDeleteBindingModel'][];
+          "application/json-patch+json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/json": components["schemas"]["AccountDeleteBindingModel"][];
+          "text/json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/*+json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/xml": components["schemas"]["AccountDeleteBindingModel"][];
+          "text/xml": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/*+xml": components["schemas"]["AccountDeleteBindingModel"][];
         };
       };
       responses: {
@@ -3150,7 +3150,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/deleteNotReally': {
+  "/api/Admin/Users/deleteNotReally": {
     parameters: {
       query?: never;
       header?: never;
@@ -3170,13 +3170,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/json': components['schemas']['AccountDeleteBindingModel'][];
-          'text/json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/*+json': components['schemas']['AccountDeleteBindingModel'][];
-          'application/xml': components['schemas']['AccountDeleteBindingModel'][];
-          'text/xml': components['schemas']['AccountDeleteBindingModel'][];
-          'application/*+xml': components['schemas']['AccountDeleteBindingModel'][];
+          "application/json-patch+json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/json": components["schemas"]["AccountDeleteBindingModel"][];
+          "text/json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/*+json": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/xml": components["schemas"]["AccountDeleteBindingModel"][];
+          "text/xml": components["schemas"]["AccountDeleteBindingModel"][];
+          "application/*+xml": components["schemas"]["AccountDeleteBindingModel"][];
         };
       };
       responses: {
@@ -3194,7 +3194,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}/UserTokens': {
+  "/api/Admin/Users/{id}/UserTokens": {
     parameters: {
       query?: never;
       header?: never;
@@ -3220,11 +3220,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['DeviceViewModel'][];
-            'application/json': components['schemas']['DeviceViewModel'][];
-            'text/json': components['schemas']['DeviceViewModel'][];
-            'application/xml': components['schemas']['DeviceViewModel'][];
-            'text/xml': components['schemas']['DeviceViewModel'][];
+            "text/plain": components["schemas"]["DeviceViewModel"][];
+            "application/json": components["schemas"]["DeviceViewModel"][];
+            "text/json": components["schemas"]["DeviceViewModel"][];
+            "application/xml": components["schemas"]["DeviceViewModel"][];
+            "text/xml": components["schemas"]["DeviceViewModel"][];
           };
         };
       };
@@ -3237,7 +3237,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/Inform': {
+  "/api/Admin/Users/Inform": {
     parameters: {
       query?: never;
       header?: never;
@@ -3256,13 +3256,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['InformUsersBindingModel'];
-          'application/json': components['schemas']['InformUsersBindingModel'];
-          'text/json': components['schemas']['InformUsersBindingModel'];
-          'application/*+json': components['schemas']['InformUsersBindingModel'];
-          'application/xml': components['schemas']['InformUsersBindingModel'];
-          'text/xml': components['schemas']['InformUsersBindingModel'];
-          'application/*+xml': components['schemas']['InformUsersBindingModel'];
+          "application/json-patch+json": components["schemas"]["InformUsersBindingModel"];
+          "application/json": components["schemas"]["InformUsersBindingModel"];
+          "text/json": components["schemas"]["InformUsersBindingModel"];
+          "application/*+json": components["schemas"]["InformUsersBindingModel"];
+          "application/xml": components["schemas"]["InformUsersBindingModel"];
+          "text/xml": components["schemas"]["InformUsersBindingModel"];
+          "application/*+xml": components["schemas"]["InformUsersBindingModel"];
         };
       };
       responses: {
@@ -3281,7 +3281,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/{id}/GetAlarmTests': {
+  "/api/Admin/Users/{id}/GetAlarmTests": {
     parameters: {
       query?: never;
       header?: never;
@@ -3307,11 +3307,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['AlarmTestViewModel'][];
-            'application/json': components['schemas']['AlarmTestViewModel'][];
-            'text/json': components['schemas']['AlarmTestViewModel'][];
-            'application/xml': components['schemas']['AlarmTestViewModel'][];
-            'text/xml': components['schemas']['AlarmTestViewModel'][];
+            "text/plain": components["schemas"]["AlarmTestViewModel"][];
+            "application/json": components["schemas"]["AlarmTestViewModel"][];
+            "text/json": components["schemas"]["AlarmTestViewModel"][];
+            "application/xml": components["schemas"]["AlarmTestViewModel"][];
+            "text/xml": components["schemas"]["AlarmTestViewModel"][];
           };
         };
       };
@@ -3324,7 +3324,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/ForceLogOut': {
+  "/api/Admin/Users/ForceLogOut": {
     parameters: {
       query?: never;
       header?: never;
@@ -3343,13 +3343,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AuthTokenDisposeRequest'];
-          'application/json': components['schemas']['AuthTokenDisposeRequest'];
-          'text/json': components['schemas']['AuthTokenDisposeRequest'];
-          'application/*+json': components['schemas']['AuthTokenDisposeRequest'];
-          'application/xml': components['schemas']['AuthTokenDisposeRequest'];
-          'text/xml': components['schemas']['AuthTokenDisposeRequest'];
-          'application/*+xml': components['schemas']['AuthTokenDisposeRequest'];
+          "application/json-patch+json": components["schemas"]["AuthTokenDisposeRequest"];
+          "application/json": components["schemas"]["AuthTokenDisposeRequest"];
+          "text/json": components["schemas"]["AuthTokenDisposeRequest"];
+          "application/*+json": components["schemas"]["AuthTokenDisposeRequest"];
+          "application/xml": components["schemas"]["AuthTokenDisposeRequest"];
+          "text/xml": components["schemas"]["AuthTokenDisposeRequest"];
+          "application/*+xml": components["schemas"]["AuthTokenDisposeRequest"];
         };
       };
       responses: {
@@ -3368,7 +3368,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/ForceLogOutUsers': {
+  "/api/Admin/Users/ForceLogOutUsers": {
     parameters: {
       query?: never;
       header?: never;
@@ -3387,13 +3387,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['DisposeAuthTokenForUsersBindingModel'];
-          'application/json': components['schemas']['DisposeAuthTokenForUsersBindingModel'];
-          'text/json': components['schemas']['DisposeAuthTokenForUsersBindingModel'];
-          'application/*+json': components['schemas']['DisposeAuthTokenForUsersBindingModel'];
-          'application/xml': components['schemas']['DisposeAuthTokenForUsersBindingModel'];
-          'text/xml': components['schemas']['DisposeAuthTokenForUsersBindingModel'];
-          'application/*+xml': components['schemas']['DisposeAuthTokenForUsersBindingModel'];
+          "application/json-patch+json": components["schemas"]["DisposeAuthTokenForUsersBindingModel"];
+          "application/json": components["schemas"]["DisposeAuthTokenForUsersBindingModel"];
+          "text/json": components["schemas"]["DisposeAuthTokenForUsersBindingModel"];
+          "application/*+json": components["schemas"]["DisposeAuthTokenForUsersBindingModel"];
+          "application/xml": components["schemas"]["DisposeAuthTokenForUsersBindingModel"];
+          "text/xml": components["schemas"]["DisposeAuthTokenForUsersBindingModel"];
+          "application/*+xml": components["schemas"]["DisposeAuthTokenForUsersBindingModel"];
         };
       };
       responses: {
@@ -3412,7 +3412,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Language': {
+  "/api/Admin/Language": {
     parameters: {
       query?: never;
       header?: never;
@@ -3431,13 +3431,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SetPreferredLanguageBindingModel'];
-          'application/json': components['schemas']['SetPreferredLanguageBindingModel'];
-          'text/json': components['schemas']['SetPreferredLanguageBindingModel'];
-          'application/*+json': components['schemas']['SetPreferredLanguageBindingModel'];
-          'application/xml': components['schemas']['SetPreferredLanguageBindingModel'];
-          'text/xml': components['schemas']['SetPreferredLanguageBindingModel'];
-          'application/*+xml': components['schemas']['SetPreferredLanguageBindingModel'];
+          "application/json-patch+json": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "application/json": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "text/json": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "application/*+json": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "application/xml": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "text/xml": components["schemas"]["SetPreferredLanguageBindingModel"];
+          "application/*+xml": components["schemas"]["SetPreferredLanguageBindingModel"];
         };
       };
       responses: {
@@ -3456,7 +3456,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/All': {
+  "/api/Admin/Organizations/All": {
     parameters: {
       query?: never;
       header?: never;
@@ -3499,11 +3499,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModel'][];
-            'application/json': components['schemas']['OrganizationViewModel'][];
-            'text/json': components['schemas']['OrganizationViewModel'][];
-            'application/xml': components['schemas']['OrganizationViewModel'][];
-            'text/xml': components['schemas']['OrganizationViewModel'][];
+            "text/plain": components["schemas"]["OrganizationViewModel"][];
+            "application/json": components["schemas"]["OrganizationViewModel"][];
+            "text/json": components["schemas"]["OrganizationViewModel"][];
+            "application/xml": components["schemas"]["OrganizationViewModel"][];
+            "text/xml": components["schemas"]["OrganizationViewModel"][];
           };
         };
       };
@@ -3516,7 +3516,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/List': {
+  "/api/Admin/Organizations/List": {
     parameters: {
       query?: never;
       header?: never;
@@ -3549,11 +3549,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModelShortest'][];
-            'application/json': components['schemas']['OrganizationViewModelShortest'][];
-            'text/json': components['schemas']['OrganizationViewModelShortest'][];
-            'application/xml': components['schemas']['OrganizationViewModelShortest'][];
-            'text/xml': components['schemas']['OrganizationViewModelShortest'][];
+            "text/plain": components["schemas"]["OrganizationViewModelShortest"][];
+            "application/json": components["schemas"]["OrganizationViewModelShortest"][];
+            "text/json": components["schemas"]["OrganizationViewModelShortest"][];
+            "application/xml": components["schemas"]["OrganizationViewModelShortest"][];
+            "text/xml": components["schemas"]["OrganizationViewModelShortest"][];
           };
         };
       };
@@ -3566,7 +3566,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/AddUsers': {
+  "/api/Admin/Organizations/{id}/AddUsers": {
     parameters: {
       query?: never;
       header?: never;
@@ -3592,13 +3592,13 @@ export interface paths {
       /** @description An array of user IDs to be added to the organization. */
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -3617,7 +3617,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}': {
+  "/api/Admin/Organizations/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -3643,11 +3643,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModel'];
-            'application/json': components['schemas']['OrganizationViewModel'];
-            'text/json': components['schemas']['OrganizationViewModel'];
-            'application/xml': components['schemas']['OrganizationViewModel'];
-            'text/xml': components['schemas']['OrganizationViewModel'];
+            "text/plain": components["schemas"]["OrganizationViewModel"];
+            "application/json": components["schemas"]["OrganizationViewModel"];
+            "text/json": components["schemas"]["OrganizationViewModel"];
+            "application/xml": components["schemas"]["OrganizationViewModel"];
+            "text/xml": components["schemas"]["OrganizationViewModel"];
           };
         };
       };
@@ -3660,7 +3660,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/organizations/{id}/sso': {
+  "/api/Admin/organizations/{id}/sso": {
     parameters: {
       query?: never;
       header?: never;
@@ -3686,13 +3686,13 @@ export interface paths {
       /** @description The SSO settings to be edited */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OrganizationSsoSettingsBindingModel'];
-          'application/json': components['schemas']['OrganizationSsoSettingsBindingModel'];
-          'text/json': components['schemas']['OrganizationSsoSettingsBindingModel'];
-          'application/*+json': components['schemas']['OrganizationSsoSettingsBindingModel'];
-          'application/xml': components['schemas']['OrganizationSsoSettingsBindingModel'];
-          'text/xml': components['schemas']['OrganizationSsoSettingsBindingModel'];
-          'application/*+xml': components['schemas']['OrganizationSsoSettingsBindingModel'];
+          "application/json-patch+json": components["schemas"]["OrganizationSsoSettingsBindingModel"];
+          "application/json": components["schemas"]["OrganizationSsoSettingsBindingModel"];
+          "text/json": components["schemas"]["OrganizationSsoSettingsBindingModel"];
+          "application/*+json": components["schemas"]["OrganizationSsoSettingsBindingModel"];
+          "application/xml": components["schemas"]["OrganizationSsoSettingsBindingModel"];
+          "text/xml": components["schemas"]["OrganizationSsoSettingsBindingModel"];
+          "application/*+xml": components["schemas"]["OrganizationSsoSettingsBindingModel"];
         };
       };
       responses: {
@@ -3711,7 +3711,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/Create': {
+  "/api/Admin/Organizations/Create": {
     parameters: {
       query?: never;
       header?: never;
@@ -3733,13 +3733,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OrganizationBindingModel'];
-          'application/json': components['schemas']['OrganizationBindingModel'];
-          'text/json': components['schemas']['OrganizationBindingModel'];
-          'application/*+json': components['schemas']['OrganizationBindingModel'];
-          'application/xml': components['schemas']['OrganizationBindingModel'];
-          'text/xml': components['schemas']['OrganizationBindingModel'];
-          'application/*+xml': components['schemas']['OrganizationBindingModel'];
+          "application/json-patch+json": components["schemas"]["OrganizationBindingModel"];
+          "application/json": components["schemas"]["OrganizationBindingModel"];
+          "text/json": components["schemas"]["OrganizationBindingModel"];
+          "application/*+json": components["schemas"]["OrganizationBindingModel"];
+          "application/xml": components["schemas"]["OrganizationBindingModel"];
+          "text/xml": components["schemas"]["OrganizationBindingModel"];
+          "application/*+xml": components["schemas"]["OrganizationBindingModel"];
         };
       };
       responses: {
@@ -3749,11 +3749,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModel'];
-            'application/json': components['schemas']['OrganizationViewModel'];
-            'text/json': components['schemas']['OrganizationViewModel'];
-            'application/xml': components['schemas']['OrganizationViewModel'];
-            'text/xml': components['schemas']['OrganizationViewModel'];
+            "text/plain": components["schemas"]["OrganizationViewModel"];
+            "application/json": components["schemas"]["OrganizationViewModel"];
+            "text/json": components["schemas"]["OrganizationViewModel"];
+            "application/xml": components["schemas"]["OrganizationViewModel"];
+            "text/xml": components["schemas"]["OrganizationViewModel"];
           };
         };
       };
@@ -3764,7 +3764,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/Edit': {
+  "/api/Admin/Organizations/{id}/Edit": {
     parameters: {
       query?: never;
       header?: never;
@@ -3790,13 +3790,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OrganizationBindingModel'];
-          'application/json': components['schemas']['OrganizationBindingModel'];
-          'text/json': components['schemas']['OrganizationBindingModel'];
-          'application/*+json': components['schemas']['OrganizationBindingModel'];
-          'application/xml': components['schemas']['OrganizationBindingModel'];
-          'text/xml': components['schemas']['OrganizationBindingModel'];
-          'application/*+xml': components['schemas']['OrganizationBindingModel'];
+          "application/json-patch+json": components["schemas"]["OrganizationBindingModel"];
+          "application/json": components["schemas"]["OrganizationBindingModel"];
+          "text/json": components["schemas"]["OrganizationBindingModel"];
+          "application/*+json": components["schemas"]["OrganizationBindingModel"];
+          "application/xml": components["schemas"]["OrganizationBindingModel"];
+          "text/xml": components["schemas"]["OrganizationBindingModel"];
+          "application/*+xml": components["schemas"]["OrganizationBindingModel"];
         };
       };
       responses: {
@@ -3806,11 +3806,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModel'];
-            'application/json': components['schemas']['OrganizationViewModel'];
-            'text/json': components['schemas']['OrganizationViewModel'];
-            'application/xml': components['schemas']['OrganizationViewModel'];
-            'text/xml': components['schemas']['OrganizationViewModel'];
+            "text/plain": components["schemas"]["OrganizationViewModel"];
+            "application/json": components["schemas"]["OrganizationViewModel"];
+            "text/json": components["schemas"]["OrganizationViewModel"];
+            "application/xml": components["schemas"]["OrganizationViewModel"];
+            "text/xml": components["schemas"]["OrganizationViewModel"];
           };
         };
       };
@@ -3821,7 +3821,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/Delete': {
+  "/api/Admin/Organizations/{id}/Delete": {
     parameters: {
       query?: never;
       header?: never;
@@ -3858,7 +3858,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/AssignMenuItem': {
+  "/api/Admin/Organizations/{id}/AssignMenuItem": {
     parameters: {
       query?: never;
       header?: never;
@@ -3881,13 +3881,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AssignMenuItemBindingModel'][];
-          'application/json': components['schemas']['AssignMenuItemBindingModel'][];
-          'text/json': components['schemas']['AssignMenuItemBindingModel'][];
-          'application/*+json': components['schemas']['AssignMenuItemBindingModel'][];
-          'application/xml': components['schemas']['AssignMenuItemBindingModel'][];
-          'text/xml': components['schemas']['AssignMenuItemBindingModel'][];
-          'application/*+xml': components['schemas']['AssignMenuItemBindingModel'][];
+          "application/json-patch+json": components["schemas"]["AssignMenuItemBindingModel"][];
+          "application/json": components["schemas"]["AssignMenuItemBindingModel"][];
+          "text/json": components["schemas"]["AssignMenuItemBindingModel"][];
+          "application/*+json": components["schemas"]["AssignMenuItemBindingModel"][];
+          "application/xml": components["schemas"]["AssignMenuItemBindingModel"][];
+          "text/xml": components["schemas"]["AssignMenuItemBindingModel"][];
+          "application/*+xml": components["schemas"]["AssignMenuItemBindingModel"][];
         };
       };
       responses: {
@@ -3906,7 +3906,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/EnableMenuItem': {
+  "/api/Admin/Organizations/{id}/EnableMenuItem": {
     parameters: {
       query?: never;
       header?: never;
@@ -3928,13 +3928,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EnableMenuItemBindingModel'];
-          'application/json': components['schemas']['EnableMenuItemBindingModel'];
-          'text/json': components['schemas']['EnableMenuItemBindingModel'];
-          'application/*+json': components['schemas']['EnableMenuItemBindingModel'];
-          'application/xml': components['schemas']['EnableMenuItemBindingModel'];
-          'text/xml': components['schemas']['EnableMenuItemBindingModel'];
-          'application/*+xml': components['schemas']['EnableMenuItemBindingModel'];
+          "application/json-patch+json": components["schemas"]["EnableMenuItemBindingModel"];
+          "application/json": components["schemas"]["EnableMenuItemBindingModel"];
+          "text/json": components["schemas"]["EnableMenuItemBindingModel"];
+          "application/*+json": components["schemas"]["EnableMenuItemBindingModel"];
+          "application/xml": components["schemas"]["EnableMenuItemBindingModel"];
+          "text/xml": components["schemas"]["EnableMenuItemBindingModel"];
+          "application/*+xml": components["schemas"]["EnableMenuItemBindingModel"];
         };
       };
       responses: {
@@ -3953,7 +3953,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/EnableMenuItems': {
+  "/api/Admin/Organizations/{id}/EnableMenuItems": {
     parameters: {
       query?: never;
       header?: never;
@@ -3979,13 +3979,13 @@ export interface paths {
       /** @description An array of EnableMenuItemBindingModel objects containing information about which menu items to enable or disable. */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EnableMenuItemBindingModel'][];
-          'application/json': components['schemas']['EnableMenuItemBindingModel'][];
-          'text/json': components['schemas']['EnableMenuItemBindingModel'][];
-          'application/*+json': components['schemas']['EnableMenuItemBindingModel'][];
-          'application/xml': components['schemas']['EnableMenuItemBindingModel'][];
-          'text/xml': components['schemas']['EnableMenuItemBindingModel'][];
-          'application/*+xml': components['schemas']['EnableMenuItemBindingModel'][];
+          "application/json-patch+json": components["schemas"]["EnableMenuItemBindingModel"][];
+          "application/json": components["schemas"]["EnableMenuItemBindingModel"][];
+          "text/json": components["schemas"]["EnableMenuItemBindingModel"][];
+          "application/*+json": components["schemas"]["EnableMenuItemBindingModel"][];
+          "application/xml": components["schemas"]["EnableMenuItemBindingModel"][];
+          "text/xml": components["schemas"]["EnableMenuItemBindingModel"][];
+          "application/*+xml": components["schemas"]["EnableMenuItemBindingModel"][];
         };
       };
       responses: {
@@ -4004,7 +4004,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/EmergencyTypes': {
+  "/api/Admin/Organizations/{id}/EmergencyTypes": {
     parameters: {
       query?: never;
       header?: never;
@@ -4030,11 +4030,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyTypeViewModel'][];
-            'application/json': components['schemas']['EmergencyTypeViewModel'][];
-            'text/json': components['schemas']['EmergencyTypeViewModel'][];
-            'application/xml': components['schemas']['EmergencyTypeViewModel'][];
-            'text/xml': components['schemas']['EmergencyTypeViewModel'][];
+            "text/plain": components["schemas"]["EmergencyTypeViewModel"][];
+            "application/json": components["schemas"]["EmergencyTypeViewModel"][];
+            "text/json": components["schemas"]["EmergencyTypeViewModel"][];
+            "application/xml": components["schemas"]["EmergencyTypeViewModel"][];
+            "text/xml": components["schemas"]["EmergencyTypeViewModel"][];
           };
         };
       };
@@ -4047,7 +4047,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/ReorderEmergencyTypes': {
+  "/api/Admin/Organizations/{id}/ReorderEmergencyTypes": {
     parameters: {
       query?: never;
       header?: never;
@@ -4069,13 +4069,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ReorderEmergencyTypeBindingModel'][];
-          'application/json': components['schemas']['ReorderEmergencyTypeBindingModel'][];
-          'text/json': components['schemas']['ReorderEmergencyTypeBindingModel'][];
-          'application/*+json': components['schemas']['ReorderEmergencyTypeBindingModel'][];
-          'application/xml': components['schemas']['ReorderEmergencyTypeBindingModel'][];
-          'text/xml': components['schemas']['ReorderEmergencyTypeBindingModel'][];
-          'application/*+xml': components['schemas']['ReorderEmergencyTypeBindingModel'][];
+          "application/json-patch+json": components["schemas"]["ReorderEmergencyTypeBindingModel"][];
+          "application/json": components["schemas"]["ReorderEmergencyTypeBindingModel"][];
+          "text/json": components["schemas"]["ReorderEmergencyTypeBindingModel"][];
+          "application/*+json": components["schemas"]["ReorderEmergencyTypeBindingModel"][];
+          "application/xml": components["schemas"]["ReorderEmergencyTypeBindingModel"][];
+          "text/xml": components["schemas"]["ReorderEmergencyTypeBindingModel"][];
+          "application/*+xml": components["schemas"]["ReorderEmergencyTypeBindingModel"][];
         };
       };
       responses: {
@@ -4094,7 +4094,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/MenuItems': {
+  "/api/Admin/Organizations/{id}/MenuItems": {
     parameters: {
       query?: never;
       header?: never;
@@ -4120,11 +4120,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MenuItemViewModel'][];
-            'application/json': components['schemas']['MenuItemViewModel'][];
-            'text/json': components['schemas']['MenuItemViewModel'][];
-            'application/xml': components['schemas']['MenuItemViewModel'][];
-            'text/xml': components['schemas']['MenuItemViewModel'][];
+            "text/plain": components["schemas"]["MenuItemViewModel"][];
+            "application/json": components["schemas"]["MenuItemViewModel"][];
+            "text/json": components["schemas"]["MenuItemViewModel"][];
+            "application/xml": components["schemas"]["MenuItemViewModel"][];
+            "text/xml": components["schemas"]["MenuItemViewModel"][];
           };
         };
       };
@@ -4137,7 +4137,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyTypeIcons': {
+  "/api/Admin/EmergencyTypeIcons": {
     parameters: {
       query?: never;
       header?: never;
@@ -4160,11 +4160,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyTypeIconViewModel'][];
-            'application/json': components['schemas']['EmergencyTypeIconViewModel'][];
-            'text/json': components['schemas']['EmergencyTypeIconViewModel'][];
-            'application/xml': components['schemas']['EmergencyTypeIconViewModel'][];
-            'text/xml': components['schemas']['EmergencyTypeIconViewModel'][];
+            "text/plain": components["schemas"]["EmergencyTypeIconViewModel"][];
+            "application/json": components["schemas"]["EmergencyTypeIconViewModel"][];
+            "text/json": components["schemas"]["EmergencyTypeIconViewModel"][];
+            "application/xml": components["schemas"]["EmergencyTypeIconViewModel"][];
+            "text/xml": components["schemas"]["EmergencyTypeIconViewModel"][];
           };
         };
       };
@@ -4177,7 +4177,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/AddManager': {
+  "/api/Admin/Organizations/{id}/AddManager": {
     parameters: {
       query?: never;
       header?: never;
@@ -4199,13 +4199,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupAddMemberModel'];
-          'application/json': components['schemas']['GroupAddMemberModel'];
-          'text/json': components['schemas']['GroupAddMemberModel'];
-          'application/*+json': components['schemas']['GroupAddMemberModel'];
-          'application/xml': components['schemas']['GroupAddMemberModel'];
-          'text/xml': components['schemas']['GroupAddMemberModel'];
-          'application/*+xml': components['schemas']['GroupAddMemberModel'];
+          "application/json-patch+json": components["schemas"]["GroupAddMemberModel"];
+          "application/json": components["schemas"]["GroupAddMemberModel"];
+          "text/json": components["schemas"]["GroupAddMemberModel"];
+          "application/*+json": components["schemas"]["GroupAddMemberModel"];
+          "application/xml": components["schemas"]["GroupAddMemberModel"];
+          "text/xml": components["schemas"]["GroupAddMemberModel"];
+          "application/*+xml": components["schemas"]["GroupAddMemberModel"];
         };
       };
       responses: {
@@ -4224,7 +4224,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/RemoveManager': {
+  "/api/Admin/Organizations/{id}/RemoveManager": {
     parameters: {
       query?: never;
       header?: never;
@@ -4246,13 +4246,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupAddMemberModel'];
-          'application/json': components['schemas']['GroupAddMemberModel'];
-          'text/json': components['schemas']['GroupAddMemberModel'];
-          'application/*+json': components['schemas']['GroupAddMemberModel'];
-          'application/xml': components['schemas']['GroupAddMemberModel'];
-          'text/xml': components['schemas']['GroupAddMemberModel'];
-          'application/*+xml': components['schemas']['GroupAddMemberModel'];
+          "application/json-patch+json": components["schemas"]["GroupAddMemberModel"];
+          "application/json": components["schemas"]["GroupAddMemberModel"];
+          "text/json": components["schemas"]["GroupAddMemberModel"];
+          "application/*+json": components["schemas"]["GroupAddMemberModel"];
+          "application/xml": components["schemas"]["GroupAddMemberModel"];
+          "text/xml": components["schemas"]["GroupAddMemberModel"];
+          "application/*+xml": components["schemas"]["GroupAddMemberModel"];
         };
       };
       responses: {
@@ -4271,7 +4271,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/SetManagers': {
+  "/api/Admin/Organizations/{id}/SetManagers": {
     parameters: {
       query?: never;
       header?: never;
@@ -4301,13 +4301,13 @@ export interface paths {
       /** @description An array of user IDs representing the managers to set. */
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -4326,7 +4326,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/RemoveUser/{userId}': {
+  "/api/Admin/Organizations/{id}/RemoveUser/{userId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -4365,7 +4365,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/RemoveUsers': {
+  "/api/Admin/Organizations/{id}/RemoveUsers": {
     parameters: {
       query?: never;
       header?: never;
@@ -4388,13 +4388,13 @@ export interface paths {
       /** @description user ids */
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -4413,7 +4413,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/SendEmail': {
+  "/api/Admin/Organizations/SendEmail": {
     parameters: {
       query?: never;
       header?: never;
@@ -4432,13 +4432,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SendEmailToOrganizationsBindingModel'];
-          'application/json': components['schemas']['SendEmailToOrganizationsBindingModel'];
-          'text/json': components['schemas']['SendEmailToOrganizationsBindingModel'];
-          'application/*+json': components['schemas']['SendEmailToOrganizationsBindingModel'];
-          'application/xml': components['schemas']['SendEmailToOrganizationsBindingModel'];
-          'text/xml': components['schemas']['SendEmailToOrganizationsBindingModel'];
-          'application/*+xml': components['schemas']['SendEmailToOrganizationsBindingModel'];
+          "application/json-patch+json": components["schemas"]["SendEmailToOrganizationsBindingModel"];
+          "application/json": components["schemas"]["SendEmailToOrganizationsBindingModel"];
+          "text/json": components["schemas"]["SendEmailToOrganizationsBindingModel"];
+          "application/*+json": components["schemas"]["SendEmailToOrganizationsBindingModel"];
+          "application/xml": components["schemas"]["SendEmailToOrganizationsBindingModel"];
+          "text/xml": components["schemas"]["SendEmailToOrganizationsBindingModel"];
+          "application/*+xml": components["schemas"]["SendEmailToOrganizationsBindingModel"];
         };
       };
       responses: {
@@ -4457,7 +4457,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/SendEmailToMembers': {
+  "/api/Admin/Organizations/SendEmailToMembers": {
     parameters: {
       query?: never;
       header?: never;
@@ -4476,13 +4476,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SendEmailsToOrganizationsMembersBindingModel'];
-          'application/json': components['schemas']['SendEmailsToOrganizationsMembersBindingModel'];
-          'text/json': components['schemas']['SendEmailsToOrganizationsMembersBindingModel'];
-          'application/*+json': components['schemas']['SendEmailsToOrganizationsMembersBindingModel'];
-          'application/xml': components['schemas']['SendEmailsToOrganizationsMembersBindingModel'];
-          'text/xml': components['schemas']['SendEmailsToOrganizationsMembersBindingModel'];
-          'application/*+xml': components['schemas']['SendEmailsToOrganizationsMembersBindingModel'];
+          "application/json-patch+json": components["schemas"]["SendEmailsToOrganizationsMembersBindingModel"];
+          "application/json": components["schemas"]["SendEmailsToOrganizationsMembersBindingModel"];
+          "text/json": components["schemas"]["SendEmailsToOrganizationsMembersBindingModel"];
+          "application/*+json": components["schemas"]["SendEmailsToOrganizationsMembersBindingModel"];
+          "application/xml": components["schemas"]["SendEmailsToOrganizationsMembersBindingModel"];
+          "text/xml": components["schemas"]["SendEmailsToOrganizationsMembersBindingModel"];
+          "application/*+xml": components["schemas"]["SendEmailsToOrganizationsMembersBindingModel"];
         };
       };
       responses: {
@@ -4501,7 +4501,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/ExportUsersToExcel': {
+  "/api/Admin/Organizations/ExportUsersToExcel": {
     parameters: {
       query?: never;
       header?: never;
@@ -4520,13 +4520,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['RequestForUserExportToExcelBindingModel'];
-          'application/json': components['schemas']['RequestForUserExportToExcelBindingModel'];
-          'text/json': components['schemas']['RequestForUserExportToExcelBindingModel'];
-          'application/*+json': components['schemas']['RequestForUserExportToExcelBindingModel'];
-          'application/xml': components['schemas']['RequestForUserExportToExcelBindingModel'];
-          'text/xml': components['schemas']['RequestForUserExportToExcelBindingModel'];
-          'application/*+xml': components['schemas']['RequestForUserExportToExcelBindingModel'];
+          "application/json-patch+json": components["schemas"]["RequestForUserExportToExcelBindingModel"];
+          "application/json": components["schemas"]["RequestForUserExportToExcelBindingModel"];
+          "text/json": components["schemas"]["RequestForUserExportToExcelBindingModel"];
+          "application/*+json": components["schemas"]["RequestForUserExportToExcelBindingModel"];
+          "application/xml": components["schemas"]["RequestForUserExportToExcelBindingModel"];
+          "text/xml": components["schemas"]["RequestForUserExportToExcelBindingModel"];
+          "application/*+xml": components["schemas"]["RequestForUserExportToExcelBindingModel"];
         };
       };
       responses: {
@@ -4536,9 +4536,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -4549,7 +4549,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/ListSentEmails': {
+  "/api/Admin/Organizations/ListSentEmails": {
     parameters: {
       query?: never;
       header?: never;
@@ -4581,9 +4581,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -4596,7 +4596,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/ExportEmailRecipientsToExcel': {
+  "/api/Admin/Organizations/ExportEmailRecipientsToExcel": {
     parameters: {
       query?: never;
       header?: never;
@@ -4615,13 +4615,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['RequestForOrganizationEmailRecipientsBindingModel'];
-          'application/json': components['schemas']['RequestForOrganizationEmailRecipientsBindingModel'];
-          'text/json': components['schemas']['RequestForOrganizationEmailRecipientsBindingModel'];
-          'application/*+json': components['schemas']['RequestForOrganizationEmailRecipientsBindingModel'];
-          'application/xml': components['schemas']['RequestForOrganizationEmailRecipientsBindingModel'];
-          'text/xml': components['schemas']['RequestForOrganizationEmailRecipientsBindingModel'];
-          'application/*+xml': components['schemas']['RequestForOrganizationEmailRecipientsBindingModel'];
+          "application/json-patch+json": components["schemas"]["RequestForOrganizationEmailRecipientsBindingModel"];
+          "application/json": components["schemas"]["RequestForOrganizationEmailRecipientsBindingModel"];
+          "text/json": components["schemas"]["RequestForOrganizationEmailRecipientsBindingModel"];
+          "application/*+json": components["schemas"]["RequestForOrganizationEmailRecipientsBindingModel"];
+          "application/xml": components["schemas"]["RequestForOrganizationEmailRecipientsBindingModel"];
+          "text/xml": components["schemas"]["RequestForOrganizationEmailRecipientsBindingModel"];
+          "application/*+xml": components["schemas"]["RequestForOrganizationEmailRecipientsBindingModel"];
         };
       };
       responses: {
@@ -4631,9 +4631,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -4644,7 +4644,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/EventCodes': {
+  "/api/Admin/Organizations/{id}/EventCodes": {
     parameters: {
       query?: never;
       header?: never;
@@ -4670,11 +4670,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EventCodeViewModel'][];
-            'application/json': components['schemas']['EventCodeViewModel'][];
-            'text/json': components['schemas']['EventCodeViewModel'][];
-            'application/xml': components['schemas']['EventCodeViewModel'][];
-            'text/xml': components['schemas']['EventCodeViewModel'][];
+            "text/plain": components["schemas"]["EventCodeViewModel"][];
+            "application/json": components["schemas"]["EventCodeViewModel"][];
+            "text/json": components["schemas"]["EventCodeViewModel"][];
+            "application/xml": components["schemas"]["EventCodeViewModel"][];
+            "text/xml": components["schemas"]["EventCodeViewModel"][];
           };
         };
       };
@@ -4687,7 +4687,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/UsersStatistics': {
+  "/api/Admin/Organizations/UsersStatistics": {
     parameters: {
       query?: never;
       header?: never;
@@ -4703,7 +4703,7 @@ export interface paths {
           /** @description An array of integers representing the upper bounds of user count ranges. Organizations are counted in these ranges. */
           users?: number[];
           /** @description The type of organization to filter the statistics by. Can be 'Account' or 'SubAccount'. */
-          orgType?: components['schemas']['OrganizationType'];
+          orgType?: components["schemas"]["OrganizationType"];
         };
         header?: never;
         path?: never;
@@ -4717,11 +4717,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationsUsersStatisticsViewModel'][];
-            'application/json': components['schemas']['OrganizationsUsersStatisticsViewModel'][];
-            'text/json': components['schemas']['OrganizationsUsersStatisticsViewModel'][];
-            'application/xml': components['schemas']['OrganizationsUsersStatisticsViewModel'][];
-            'text/xml': components['schemas']['OrganizationsUsersStatisticsViewModel'][];
+            "text/plain": components["schemas"]["OrganizationsUsersStatisticsViewModel"][];
+            "application/json": components["schemas"]["OrganizationsUsersStatisticsViewModel"][];
+            "text/json": components["schemas"]["OrganizationsUsersStatisticsViewModel"][];
+            "application/xml": components["schemas"]["OrganizationsUsersStatisticsViewModel"][];
+            "text/xml": components["schemas"]["OrganizationsUsersStatisticsViewModel"][];
           };
         };
       };
@@ -4734,7 +4734,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts': {
+  "/api/Admin/ExternalContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -4753,13 +4753,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ExternalContactListBindingModel'];
-          'application/json': components['schemas']['ExternalContactListBindingModel'];
-          'text/json': components['schemas']['ExternalContactListBindingModel'];
-          'application/*+json': components['schemas']['ExternalContactListBindingModel'];
-          'application/xml': components['schemas']['ExternalContactListBindingModel'];
-          'text/xml': components['schemas']['ExternalContactListBindingModel'];
-          'application/*+xml': components['schemas']['ExternalContactListBindingModel'];
+          "application/json-patch+json": components["schemas"]["ExternalContactListBindingModel"];
+          "application/json": components["schemas"]["ExternalContactListBindingModel"];
+          "text/json": components["schemas"]["ExternalContactListBindingModel"];
+          "application/*+json": components["schemas"]["ExternalContactListBindingModel"];
+          "application/xml": components["schemas"]["ExternalContactListBindingModel"];
+          "text/xml": components["schemas"]["ExternalContactListBindingModel"];
+          "application/*+xml": components["schemas"]["ExternalContactListBindingModel"];
         };
       };
       responses: {
@@ -4769,11 +4769,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactListViewModel'][];
-            'application/json': components['schemas']['ExternalContactListViewModel'][];
-            'text/json': components['schemas']['ExternalContactListViewModel'][];
-            'application/xml': components['schemas']['ExternalContactListViewModel'][];
-            'text/xml': components['schemas']['ExternalContactListViewModel'][];
+            "text/plain": components["schemas"]["ExternalContactListViewModel"][];
+            "application/json": components["schemas"]["ExternalContactListViewModel"][];
+            "text/json": components["schemas"]["ExternalContactListViewModel"][];
+            "application/xml": components["schemas"]["ExternalContactListViewModel"][];
+            "text/xml": components["schemas"]["ExternalContactListViewModel"][];
           };
         };
       };
@@ -4784,7 +4784,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/{organizationId}': {
+  "/api/Admin/ExternalContacts/{organizationId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -4809,11 +4809,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactListViewModel'][];
-            'application/json': components['schemas']['ExternalContactListViewModel'][];
-            'text/json': components['schemas']['ExternalContactListViewModel'][];
-            'application/xml': components['schemas']['ExternalContactListViewModel'][];
-            'text/xml': components['schemas']['ExternalContactListViewModel'][];
+            "text/plain": components["schemas"]["ExternalContactListViewModel"][];
+            "application/json": components["schemas"]["ExternalContactListViewModel"][];
+            "text/json": components["schemas"]["ExternalContactListViewModel"][];
+            "application/xml": components["schemas"]["ExternalContactListViewModel"][];
+            "text/xml": components["schemas"]["ExternalContactListViewModel"][];
           };
         };
       };
@@ -4826,7 +4826,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/Organizations/{organizationId}': {
+  "/api/Admin/ExternalContacts/Organizations/{organizationId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -4860,9 +4860,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactViewModelPaginatedList'];
-            'application/json': components['schemas']['ExternalContactViewModelPaginatedList'];
-            'text/json': components['schemas']['ExternalContactViewModelPaginatedList'];
+            "text/plain": components["schemas"]["ExternalContactViewModelPaginatedList"];
+            "application/json": components["schemas"]["ExternalContactViewModelPaginatedList"];
+            "text/json": components["schemas"]["ExternalContactViewModelPaginatedList"];
           };
         };
       };
@@ -4875,7 +4875,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/Organizations/{organizationId}/ExportExcel': {
+  "/api/Admin/ExternalContacts/Organizations/{organizationId}/ExportExcel": {
     parameters: {
       query?: never;
       header?: never;
@@ -4904,9 +4904,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -4919,7 +4919,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/Organizations/{organizationId}/ImportExcel': {
+  "/api/Admin/ExternalContacts/Organizations/{organizationId}/ImportExcel": {
     parameters: {
       query?: never;
       header?: never;
@@ -4950,11 +4950,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactsImportCsvResultViewModel'];
-            'application/json': components['schemas']['ExternalContactsImportCsvResultViewModel'];
-            'text/json': components['schemas']['ExternalContactsImportCsvResultViewModel'];
-            'application/xml': components['schemas']['ExternalContactsImportCsvResultViewModel'];
-            'text/xml': components['schemas']['ExternalContactsImportCsvResultViewModel'];
+            "text/plain": components["schemas"]["ExternalContactsImportCsvResultViewModel"];
+            "application/json": components["schemas"]["ExternalContactsImportCsvResultViewModel"];
+            "text/json": components["schemas"]["ExternalContactsImportCsvResultViewModel"];
+            "application/xml": components["schemas"]["ExternalContactsImportCsvResultViewModel"];
+            "text/xml": components["schemas"]["ExternalContactsImportCsvResultViewModel"];
           };
         };
       };
@@ -4965,7 +4965,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/{contactListId}/Edit': {
+  "/api/Admin/ExternalContacts/{contactListId}/Edit": {
     parameters: {
       query?: never;
       header?: never;
@@ -4986,13 +4986,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ExternalContactListEditBindingModel'];
-          'application/json': components['schemas']['ExternalContactListEditBindingModel'];
-          'text/json': components['schemas']['ExternalContactListEditBindingModel'];
-          'application/*+json': components['schemas']['ExternalContactListEditBindingModel'];
-          'application/xml': components['schemas']['ExternalContactListEditBindingModel'];
-          'text/xml': components['schemas']['ExternalContactListEditBindingModel'];
-          'application/*+xml': components['schemas']['ExternalContactListEditBindingModel'];
+          "application/json-patch+json": components["schemas"]["ExternalContactListEditBindingModel"];
+          "application/json": components["schemas"]["ExternalContactListEditBindingModel"];
+          "text/json": components["schemas"]["ExternalContactListEditBindingModel"];
+          "application/*+json": components["schemas"]["ExternalContactListEditBindingModel"];
+          "application/xml": components["schemas"]["ExternalContactListEditBindingModel"];
+          "text/xml": components["schemas"]["ExternalContactListEditBindingModel"];
+          "application/*+xml": components["schemas"]["ExternalContactListEditBindingModel"];
         };
       };
       responses: {
@@ -5011,7 +5011,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/{contactListId}/GetAllContacts': {
+  "/api/Admin/ExternalContacts/{contactListId}/GetAllContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -5043,9 +5043,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactViewModelPaginatedList'];
-            'application/json': components['schemas']['ExternalContactViewModelPaginatedList'];
-            'text/json': components['schemas']['ExternalContactViewModelPaginatedList'];
+            "text/plain": components["schemas"]["ExternalContactViewModelPaginatedList"];
+            "application/json": components["schemas"]["ExternalContactViewModelPaginatedList"];
+            "text/json": components["schemas"]["ExternalContactViewModelPaginatedList"];
           };
         };
       };
@@ -5058,7 +5058,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/Contacts/{contactId}': {
+  "/api/Admin/ExternalContacts/Contacts/{contactId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -5083,11 +5083,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactViewModel'];
-            'application/json': components['schemas']['ExternalContactViewModel'];
-            'text/json': components['schemas']['ExternalContactViewModel'];
-            'application/xml': components['schemas']['ExternalContactViewModel'];
-            'text/xml': components['schemas']['ExternalContactViewModel'];
+            "text/plain": components["schemas"]["ExternalContactViewModel"];
+            "application/json": components["schemas"]["ExternalContactViewModel"];
+            "text/json": components["schemas"]["ExternalContactViewModel"];
+            "application/xml": components["schemas"]["ExternalContactViewModel"];
+            "text/xml": components["schemas"]["ExternalContactViewModel"];
           };
         };
       };
@@ -5100,7 +5100,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/{contactListId}/AddContacts': {
+  "/api/Admin/ExternalContacts/{contactListId}/AddContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -5124,13 +5124,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ExternalContactBindingModel'][];
-          'application/json': components['schemas']['ExternalContactBindingModel'][];
-          'text/json': components['schemas']['ExternalContactBindingModel'][];
-          'application/*+json': components['schemas']['ExternalContactBindingModel'][];
-          'application/xml': components['schemas']['ExternalContactBindingModel'][];
-          'text/xml': components['schemas']['ExternalContactBindingModel'][];
-          'application/*+xml': components['schemas']['ExternalContactBindingModel'][];
+          "application/json-patch+json": components["schemas"]["ExternalContactBindingModel"][];
+          "application/json": components["schemas"]["ExternalContactBindingModel"][];
+          "text/json": components["schemas"]["ExternalContactBindingModel"][];
+          "application/*+json": components["schemas"]["ExternalContactBindingModel"][];
+          "application/xml": components["schemas"]["ExternalContactBindingModel"][];
+          "text/xml": components["schemas"]["ExternalContactBindingModel"][];
+          "application/*+xml": components["schemas"]["ExternalContactBindingModel"][];
         };
       };
       responses: {
@@ -5140,11 +5140,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactViewModel'][];
-            'application/json': components['schemas']['ExternalContactViewModel'][];
-            'text/json': components['schemas']['ExternalContactViewModel'][];
-            'application/xml': components['schemas']['ExternalContactViewModel'][];
-            'text/xml': components['schemas']['ExternalContactViewModel'][];
+            "text/plain": components["schemas"]["ExternalContactViewModel"][];
+            "application/json": components["schemas"]["ExternalContactViewModel"][];
+            "text/json": components["schemas"]["ExternalContactViewModel"][];
+            "application/xml": components["schemas"]["ExternalContactViewModel"][];
+            "text/xml": components["schemas"]["ExternalContactViewModel"][];
           };
         };
       };
@@ -5155,7 +5155,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/{contactListId}/AddExistingContacts': {
+  "/api/Admin/ExternalContacts/{contactListId}/AddExistingContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -5176,13 +5176,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -5192,11 +5192,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactViewModel'][];
-            'application/json': components['schemas']['ExternalContactViewModel'][];
-            'text/json': components['schemas']['ExternalContactViewModel'][];
-            'application/xml': components['schemas']['ExternalContactViewModel'][];
-            'text/xml': components['schemas']['ExternalContactViewModel'][];
+            "text/plain": components["schemas"]["ExternalContactViewModel"][];
+            "application/json": components["schemas"]["ExternalContactViewModel"][];
+            "text/json": components["schemas"]["ExternalContactViewModel"][];
+            "application/xml": components["schemas"]["ExternalContactViewModel"][];
+            "text/xml": components["schemas"]["ExternalContactViewModel"][];
           };
         };
       };
@@ -5207,7 +5207,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/{contactListId}/RemoveContacts': {
+  "/api/Admin/ExternalContacts/{contactListId}/RemoveContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -5228,13 +5228,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -5253,7 +5253,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/CreateContacts': {
+  "/api/Admin/ExternalContacts/CreateContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -5272,13 +5272,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ExternalContactBindingModel'][];
-          'application/json': components['schemas']['ExternalContactBindingModel'][];
-          'text/json': components['schemas']['ExternalContactBindingModel'][];
-          'application/*+json': components['schemas']['ExternalContactBindingModel'][];
-          'application/xml': components['schemas']['ExternalContactBindingModel'][];
-          'text/xml': components['schemas']['ExternalContactBindingModel'][];
-          'application/*+xml': components['schemas']['ExternalContactBindingModel'][];
+          "application/json-patch+json": components["schemas"]["ExternalContactBindingModel"][];
+          "application/json": components["schemas"]["ExternalContactBindingModel"][];
+          "text/json": components["schemas"]["ExternalContactBindingModel"][];
+          "application/*+json": components["schemas"]["ExternalContactBindingModel"][];
+          "application/xml": components["schemas"]["ExternalContactBindingModel"][];
+          "text/xml": components["schemas"]["ExternalContactBindingModel"][];
+          "application/*+xml": components["schemas"]["ExternalContactBindingModel"][];
         };
       };
       responses: {
@@ -5297,7 +5297,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/EditContact/{contactId}': {
+  "/api/Admin/ExternalContacts/EditContact/{contactId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -5318,13 +5318,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ExternalContactBindingModel'];
-          'application/json': components['schemas']['ExternalContactBindingModel'];
-          'text/json': components['schemas']['ExternalContactBindingModel'];
-          'application/*+json': components['schemas']['ExternalContactBindingModel'];
-          'application/xml': components['schemas']['ExternalContactBindingModel'];
-          'text/xml': components['schemas']['ExternalContactBindingModel'];
-          'application/*+xml': components['schemas']['ExternalContactBindingModel'];
+          "application/json-patch+json": components["schemas"]["ExternalContactBindingModel"];
+          "application/json": components["schemas"]["ExternalContactBindingModel"];
+          "text/json": components["schemas"]["ExternalContactBindingModel"];
+          "application/*+json": components["schemas"]["ExternalContactBindingModel"];
+          "application/xml": components["schemas"]["ExternalContactBindingModel"];
+          "text/xml": components["schemas"]["ExternalContactBindingModel"];
+          "application/*+xml": components["schemas"]["ExternalContactBindingModel"];
         };
       };
       responses: {
@@ -5343,7 +5343,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/DeleteContacts': {
+  "/api/Admin/ExternalContacts/DeleteContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -5363,13 +5363,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ExternalContactsDeleteBindingModel'];
-          'application/json': components['schemas']['ExternalContactsDeleteBindingModel'];
-          'text/json': components['schemas']['ExternalContactsDeleteBindingModel'];
-          'application/*+json': components['schemas']['ExternalContactsDeleteBindingModel'];
-          'application/xml': components['schemas']['ExternalContactsDeleteBindingModel'];
-          'text/xml': components['schemas']['ExternalContactsDeleteBindingModel'];
-          'application/*+xml': components['schemas']['ExternalContactsDeleteBindingModel'];
+          "application/json-patch+json": components["schemas"]["ExternalContactsDeleteBindingModel"];
+          "application/json": components["schemas"]["ExternalContactsDeleteBindingModel"];
+          "text/json": components["schemas"]["ExternalContactsDeleteBindingModel"];
+          "application/*+json": components["schemas"]["ExternalContactsDeleteBindingModel"];
+          "application/xml": components["schemas"]["ExternalContactsDeleteBindingModel"];
+          "text/xml": components["schemas"]["ExternalContactsDeleteBindingModel"];
+          "application/*+xml": components["schemas"]["ExternalContactsDeleteBindingModel"];
         };
       };
       responses: {
@@ -5387,7 +5387,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/DeleteContactList/{contactListId}': {
+  "/api/Admin/ExternalContacts/DeleteContactList/{contactListId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -5423,7 +5423,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/DeleteContactLists': {
+  "/api/Admin/ExternalContacts/DeleteContactLists": {
     parameters: {
       query?: never;
       header?: never;
@@ -5443,13 +5443,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -5467,7 +5467,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/ExternalContacts/Organizations/{organizationId}/ExternalContactsSMSCount': {
+  "/api/Admin/ExternalContacts/Organizations/{organizationId}/ExternalContactsSMSCount": {
     parameters: {
       query?: never;
       header?: never;
@@ -5493,11 +5493,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactSMSCount'][];
-            'application/json': components['schemas']['ExternalContactSMSCount'][];
-            'text/json': components['schemas']['ExternalContactSMSCount'][];
-            'application/xml': components['schemas']['ExternalContactSMSCount'][];
-            'text/xml': components['schemas']['ExternalContactSMSCount'][];
+            "text/plain": components["schemas"]["ExternalContactSMSCount"][];
+            "application/json": components["schemas"]["ExternalContactSMSCount"][];
+            "text/json": components["schemas"]["ExternalContactSMSCount"][];
+            "application/xml": components["schemas"]["ExternalContactSMSCount"][];
+            "text/xml": components["schemas"]["ExternalContactSMSCount"][];
           };
         };
       };
@@ -5510,7 +5510,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/TextTemplatesForExternalContacts/{organizationId}': {
+  "/api/Admin/TextTemplatesForExternalContacts/{organizationId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -5535,11 +5535,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TextTemplateForExternalContactsViewModel'][];
-            'application/json': components['schemas']['TextTemplateForExternalContactsViewModel'][];
-            'text/json': components['schemas']['TextTemplateForExternalContactsViewModel'][];
-            'application/xml': components['schemas']['TextTemplateForExternalContactsViewModel'][];
-            'text/xml': components['schemas']['TextTemplateForExternalContactsViewModel'][];
+            "text/plain": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
+            "application/json": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
+            "text/json": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
+            "application/xml": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
+            "text/xml": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
           };
         };
       };
@@ -5557,13 +5557,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'application/json': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'text/json': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'application/*+json': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'application/xml': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'text/xml': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'application/*+xml': components['schemas']['TextTemplateForExternalContactsBindingModel'];
+          "application/json-patch+json": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "application/json": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "text/json": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "application/*+json": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "application/xml": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "text/xml": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "application/*+xml": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
         };
       };
       responses: {
@@ -5582,7 +5582,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/TextTemplatesForExternalContacts/Edit/{templateId}': {
+  "/api/Admin/TextTemplatesForExternalContacts/Edit/{templateId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -5603,13 +5603,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'application/json': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'text/json': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'application/*+json': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'application/xml': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'text/xml': components['schemas']['TextTemplateForExternalContactsBindingModel'];
-          'application/*+xml': components['schemas']['TextTemplateForExternalContactsBindingModel'];
+          "application/json-patch+json": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "application/json": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "text/json": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "application/*+json": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "application/xml": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "text/xml": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
+          "application/*+xml": components["schemas"]["TextTemplateForExternalContactsBindingModel"];
         };
       };
       responses: {
@@ -5628,7 +5628,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/TextTemplatesForExternalContacts/Delete/{templateId}': {
+  "/api/Admin/TextTemplatesForExternalContacts/Delete/{templateId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -5664,7 +5664,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/TextTemplatesForExternalContacts': {
+  "/api/Admin/TextTemplatesForExternalContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -5684,13 +5684,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -5708,7 +5708,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/SubOrganizations/All': {
+  "/api/Admin/SubOrganizations/All": {
     parameters: {
       query?: never;
       header?: never;
@@ -5742,7 +5742,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/SubOrganizations/{id}': {
+  "/api/Admin/SubOrganizations/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -5778,7 +5778,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/SubOrganizations/Create': {
+  "/api/Admin/SubOrganizations/Create": {
     parameters: {
       query?: never;
       header?: never;
@@ -5797,13 +5797,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SubOrganizationBindingModel'];
-          'application/json': components['schemas']['SubOrganizationBindingModel'];
-          'text/json': components['schemas']['SubOrganizationBindingModel'];
-          'application/*+json': components['schemas']['SubOrganizationBindingModel'];
-          'application/xml': components['schemas']['SubOrganizationBindingModel'];
-          'text/xml': components['schemas']['SubOrganizationBindingModel'];
-          'application/*+xml': components['schemas']['SubOrganizationBindingModel'];
+          "application/json-patch+json": components["schemas"]["SubOrganizationBindingModel"];
+          "application/json": components["schemas"]["SubOrganizationBindingModel"];
+          "text/json": components["schemas"]["SubOrganizationBindingModel"];
+          "application/*+json": components["schemas"]["SubOrganizationBindingModel"];
+          "application/xml": components["schemas"]["SubOrganizationBindingModel"];
+          "text/xml": components["schemas"]["SubOrganizationBindingModel"];
+          "application/*+xml": components["schemas"]["SubOrganizationBindingModel"];
         };
       };
       responses: {
@@ -5822,7 +5822,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/SubOrganizations/Bulk/Create': {
+  "/api/Admin/SubOrganizations/Bulk/Create": {
     parameters: {
       query?: never;
       header?: never;
@@ -5842,13 +5842,13 @@ export interface paths {
       /** @description The request - list of suborganization names and parent organization id. */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['BulkSubOrganizationBindingModel'];
-          'application/json': components['schemas']['BulkSubOrganizationBindingModel'];
-          'text/json': components['schemas']['BulkSubOrganizationBindingModel'];
-          'application/*+json': components['schemas']['BulkSubOrganizationBindingModel'];
-          'application/xml': components['schemas']['BulkSubOrganizationBindingModel'];
-          'text/xml': components['schemas']['BulkSubOrganizationBindingModel'];
-          'application/*+xml': components['schemas']['BulkSubOrganizationBindingModel'];
+          "application/json-patch+json": components["schemas"]["BulkSubOrganizationBindingModel"];
+          "application/json": components["schemas"]["BulkSubOrganizationBindingModel"];
+          "text/json": components["schemas"]["BulkSubOrganizationBindingModel"];
+          "application/*+json": components["schemas"]["BulkSubOrganizationBindingModel"];
+          "application/xml": components["schemas"]["BulkSubOrganizationBindingModel"];
+          "text/xml": components["schemas"]["BulkSubOrganizationBindingModel"];
+          "application/*+xml": components["schemas"]["BulkSubOrganizationBindingModel"];
         };
       };
       responses: {
@@ -5858,11 +5858,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModel'][];
-            'application/json': components['schemas']['OrganizationViewModel'][];
-            'text/json': components['schemas']['OrganizationViewModel'][];
-            'application/xml': components['schemas']['OrganizationViewModel'][];
-            'text/xml': components['schemas']['OrganizationViewModel'][];
+            "text/plain": components["schemas"]["OrganizationViewModel"][];
+            "application/json": components["schemas"]["OrganizationViewModel"][];
+            "text/json": components["schemas"]["OrganizationViewModel"][];
+            "application/xml": components["schemas"]["OrganizationViewModel"][];
+            "text/xml": components["schemas"]["OrganizationViewModel"][];
           };
         };
       };
@@ -5873,7 +5873,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/EnableCustomMenu': {
+  "/api/Admin/Organizations/{id}/EnableCustomMenu": {
     parameters: {
       query?: never;
       header?: never;
@@ -5895,13 +5895,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EnableCustomMenuBindingModel'];
-          'application/json': components['schemas']['EnableCustomMenuBindingModel'];
-          'text/json': components['schemas']['EnableCustomMenuBindingModel'];
-          'application/*+json': components['schemas']['EnableCustomMenuBindingModel'];
-          'application/xml': components['schemas']['EnableCustomMenuBindingModel'];
-          'text/xml': components['schemas']['EnableCustomMenuBindingModel'];
-          'application/*+xml': components['schemas']['EnableCustomMenuBindingModel'];
+          "application/json-patch+json": components["schemas"]["EnableCustomMenuBindingModel"];
+          "application/json": components["schemas"]["EnableCustomMenuBindingModel"];
+          "text/json": components["schemas"]["EnableCustomMenuBindingModel"];
+          "application/*+json": components["schemas"]["EnableCustomMenuBindingModel"];
+          "application/xml": components["schemas"]["EnableCustomMenuBindingModel"];
+          "text/xml": components["schemas"]["EnableCustomMenuBindingModel"];
+          "application/*+xml": components["schemas"]["EnableCustomMenuBindingModel"];
         };
       };
       responses: {
@@ -5920,7 +5920,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/ImportSettings': {
+  "/api/Admin/Organizations/{id}/ImportSettings": {
     parameters: {
       query?: never;
       header?: never;
@@ -5949,11 +5949,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationImportSettingsViewModel'];
-            'application/json': components['schemas']['OrganizationImportSettingsViewModel'];
-            'text/json': components['schemas']['OrganizationImportSettingsViewModel'];
-            'application/xml': components['schemas']['OrganizationImportSettingsViewModel'];
-            'text/xml': components['schemas']['OrganizationImportSettingsViewModel'];
+            "text/plain": components["schemas"]["OrganizationImportSettingsViewModel"];
+            "application/json": components["schemas"]["OrganizationImportSettingsViewModel"];
+            "text/json": components["schemas"]["OrganizationImportSettingsViewModel"];
+            "application/xml": components["schemas"]["OrganizationImportSettingsViewModel"];
+            "text/xml": components["schemas"]["OrganizationImportSettingsViewModel"];
           };
         };
       };
@@ -5978,13 +5978,13 @@ export interface paths {
       /** @description The model containing the new import settings to update. */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OrganizationImportSettingsBindingModel'];
-          'application/json': components['schemas']['OrganizationImportSettingsBindingModel'];
-          'text/json': components['schemas']['OrganizationImportSettingsBindingModel'];
-          'application/*+json': components['schemas']['OrganizationImportSettingsBindingModel'];
-          'application/xml': components['schemas']['OrganizationImportSettingsBindingModel'];
-          'text/xml': components['schemas']['OrganizationImportSettingsBindingModel'];
-          'application/*+xml': components['schemas']['OrganizationImportSettingsBindingModel'];
+          "application/json-patch+json": components["schemas"]["OrganizationImportSettingsBindingModel"];
+          "application/json": components["schemas"]["OrganizationImportSettingsBindingModel"];
+          "text/json": components["schemas"]["OrganizationImportSettingsBindingModel"];
+          "application/*+json": components["schemas"]["OrganizationImportSettingsBindingModel"];
+          "application/xml": components["schemas"]["OrganizationImportSettingsBindingModel"];
+          "text/xml": components["schemas"]["OrganizationImportSettingsBindingModel"];
+          "application/*+xml": components["schemas"]["OrganizationImportSettingsBindingModel"];
         };
       };
       responses: {
@@ -5994,11 +5994,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationImportSettingsViewModel'];
-            'application/json': components['schemas']['OrganizationImportSettingsViewModel'];
-            'text/json': components['schemas']['OrganizationImportSettingsViewModel'];
-            'application/xml': components['schemas']['OrganizationImportSettingsViewModel'];
-            'text/xml': components['schemas']['OrganizationImportSettingsViewModel'];
+            "text/plain": components["schemas"]["OrganizationImportSettingsViewModel"];
+            "application/json": components["schemas"]["OrganizationImportSettingsViewModel"];
+            "text/json": components["schemas"]["OrganizationImportSettingsViewModel"];
+            "application/xml": components["schemas"]["OrganizationImportSettingsViewModel"];
+            "text/xml": components["schemas"]["OrganizationImportSettingsViewModel"];
           };
         };
       };
@@ -6034,7 +6034,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{id}/ImportSettings/Test': {
+  "/api/Admin/Organizations/{id}/ImportSettings/Test": {
     parameters: {
       query?: never;
       header?: never;
@@ -6064,11 +6064,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationImportSettingsTestViewModel'];
-            'application/json': components['schemas']['OrganizationImportSettingsTestViewModel'];
-            'text/json': components['schemas']['OrganizationImportSettingsTestViewModel'];
-            'application/xml': components['schemas']['OrganizationImportSettingsTestViewModel'];
-            'text/xml': components['schemas']['OrganizationImportSettingsTestViewModel'];
+            "text/plain": components["schemas"]["OrganizationImportSettingsTestViewModel"];
+            "application/json": components["schemas"]["OrganizationImportSettingsTestViewModel"];
+            "text/json": components["schemas"]["OrganizationImportSettingsTestViewModel"];
+            "application/xml": components["schemas"]["OrganizationImportSettingsTestViewModel"];
+            "text/xml": components["schemas"]["OrganizationImportSettingsTestViewModel"];
           };
         };
       };
@@ -6081,7 +6081,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EntityChangeLog': {
+  "/api/Admin/EntityChangeLog": {
     parameters: {
       query?: never;
       header?: never;
@@ -6122,11 +6122,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EntityChangeLogViewModel'][];
-            'application/json': components['schemas']['EntityChangeLogViewModel'][];
-            'text/json': components['schemas']['EntityChangeLogViewModel'][];
-            'application/xml': components['schemas']['EntityChangeLogViewModel'][];
-            'text/xml': components['schemas']['EntityChangeLogViewModel'][];
+            "text/plain": components["schemas"]["EntityChangeLogViewModel"][];
+            "application/json": components["schemas"]["EntityChangeLogViewModel"][];
+            "text/json": components["schemas"]["EntityChangeLogViewModel"][];
+            "application/xml": components["schemas"]["EntityChangeLogViewModel"][];
+            "text/xml": components["schemas"]["EntityChangeLogViewModel"][];
           };
         };
       };
@@ -6139,7 +6139,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Notifications': {
+  "/api/Admin/Notifications": {
     parameters: {
       query?: never;
       header?: never;
@@ -6169,11 +6169,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['NotificationsViewModel'][];
-            'application/json': components['schemas']['NotificationsViewModel'][];
-            'text/json': components['schemas']['NotificationsViewModel'][];
-            'application/xml': components['schemas']['NotificationsViewModel'][];
-            'text/xml': components['schemas']['NotificationsViewModel'][];
+            "text/plain": components["schemas"]["NotificationsViewModel"][];
+            "application/json": components["schemas"]["NotificationsViewModel"][];
+            "text/json": components["schemas"]["NotificationsViewModel"][];
+            "application/xml": components["schemas"]["NotificationsViewModel"][];
+            "text/xml": components["schemas"]["NotificationsViewModel"][];
           };
         };
       };
@@ -6189,13 +6189,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': unknown;
-          'application/json': unknown;
-          'text/json': unknown;
-          'application/*+json': unknown;
-          'application/xml': unknown;
-          'text/xml': unknown;
-          'application/*+xml': unknown;
+          "application/json-patch+json": unknown;
+          "application/json": unknown;
+          "text/json": unknown;
+          "application/*+json": unknown;
+          "application/xml": unknown;
+          "text/xml": unknown;
+          "application/*+xml": unknown;
         };
       };
       responses: {
@@ -6205,11 +6205,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['FirebaseReport'];
-            'application/json': components['schemas']['FirebaseReport'];
-            'text/json': components['schemas']['FirebaseReport'];
-            'application/xml': components['schemas']['FirebaseReport'];
-            'text/xml': components['schemas']['FirebaseReport'];
+            "text/plain": components["schemas"]["FirebaseReport"];
+            "application/json": components["schemas"]["FirebaseReport"];
+            "text/json": components["schemas"]["FirebaseReport"];
+            "application/xml": components["schemas"]["FirebaseReport"];
+            "text/xml": components["schemas"]["FirebaseReport"];
           };
         };
       };
@@ -6220,7 +6220,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/NotificationTest': {
+  "/api/Admin/NotificationTest": {
     parameters: {
       query?: never;
       header?: never;
@@ -6239,13 +6239,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': unknown;
-          'application/json': unknown;
-          'text/json': unknown;
-          'application/*+json': unknown;
-          'application/xml': unknown;
-          'text/xml': unknown;
-          'application/*+xml': unknown;
+          "application/json-patch+json": unknown;
+          "application/json": unknown;
+          "text/json": unknown;
+          "application/*+json": unknown;
+          "application/xml": unknown;
+          "text/xml": unknown;
+          "application/*+xml": unknown;
         };
       };
       responses: {
@@ -6255,11 +6255,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['FirebaseReport'];
-            'application/json': components['schemas']['FirebaseReport'];
-            'text/json': components['schemas']['FirebaseReport'];
-            'application/xml': components['schemas']['FirebaseReport'];
-            'text/xml': components['schemas']['FirebaseReport'];
+            "text/plain": components["schemas"]["FirebaseReport"];
+            "application/json": components["schemas"]["FirebaseReport"];
+            "text/json": components["schemas"]["FirebaseReport"];
+            "application/xml": components["schemas"]["FirebaseReport"];
+            "text/xml": components["schemas"]["FirebaseReport"];
           };
         };
       };
@@ -6270,7 +6270,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyReport': {
+  "/api/Admin/EmergencyReport": {
     parameters: {
       query?: never;
       header?: never;
@@ -6397,13 +6397,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EmergencyReportBindingModel'];
-          'application/json': components['schemas']['EmergencyReportBindingModel'];
-          'text/json': components['schemas']['EmergencyReportBindingModel'];
-          'application/*+json': components['schemas']['EmergencyReportBindingModel'];
-          'application/xml': components['schemas']['EmergencyReportBindingModel'];
-          'text/xml': components['schemas']['EmergencyReportBindingModel'];
-          'application/*+xml': components['schemas']['EmergencyReportBindingModel'];
+          "application/json-patch+json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/json": components["schemas"]["EmergencyReportBindingModel"];
+          "text/json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/*+json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/xml": components["schemas"]["EmergencyReportBindingModel"];
+          "text/xml": components["schemas"]["EmergencyReportBindingModel"];
+          "application/*+xml": components["schemas"]["EmergencyReportBindingModel"];
         };
       };
       responses: {
@@ -6413,11 +6413,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyReportViewModel'];
-            'application/json': components['schemas']['EmergencyReportViewModel'];
-            'text/json': components['schemas']['EmergencyReportViewModel'];
-            'application/xml': components['schemas']['EmergencyReportViewModel'];
-            'text/xml': components['schemas']['EmergencyReportViewModel'];
+            "text/plain": components["schemas"]["EmergencyReportViewModel"];
+            "application/json": components["schemas"]["EmergencyReportViewModel"];
+            "text/json": components["schemas"]["EmergencyReportViewModel"];
+            "application/xml": components["schemas"]["EmergencyReportViewModel"];
+            "text/xml": components["schemas"]["EmergencyReportViewModel"];
           };
         };
       };
@@ -6428,7 +6428,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyReportDownload': {
+  "/api/Admin/EmergencyReportDownload": {
     parameters: {
       query?: never;
       header?: never;
@@ -6555,13 +6555,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EmergencyReportBindingModel'];
-          'application/json': components['schemas']['EmergencyReportBindingModel'];
-          'text/json': components['schemas']['EmergencyReportBindingModel'];
-          'application/*+json': components['schemas']['EmergencyReportBindingModel'];
-          'application/xml': components['schemas']['EmergencyReportBindingModel'];
-          'text/xml': components['schemas']['EmergencyReportBindingModel'];
-          'application/*+xml': components['schemas']['EmergencyReportBindingModel'];
+          "application/json-patch+json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/json": components["schemas"]["EmergencyReportBindingModel"];
+          "text/json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/*+json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/xml": components["schemas"]["EmergencyReportBindingModel"];
+          "text/xml": components["schemas"]["EmergencyReportBindingModel"];
+          "application/*+xml": components["schemas"]["EmergencyReportBindingModel"];
         };
       };
       responses: {
@@ -6571,11 +6571,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyReportViewModel'];
-            'application/json': components['schemas']['EmergencyReportViewModel'];
-            'text/json': components['schemas']['EmergencyReportViewModel'];
-            'application/xml': components['schemas']['EmergencyReportViewModel'];
-            'text/xml': components['schemas']['EmergencyReportViewModel'];
+            "text/plain": components["schemas"]["EmergencyReportViewModel"];
+            "application/json": components["schemas"]["EmergencyReportViewModel"];
+            "text/json": components["schemas"]["EmergencyReportViewModel"];
+            "application/xml": components["schemas"]["EmergencyReportViewModel"];
+            "text/xml": components["schemas"]["EmergencyReportViewModel"];
           };
         };
       };
@@ -6586,7 +6586,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyReport/pdf': {
+  "/api/Admin/EmergencyReport/pdf": {
     parameters: {
       query?: never;
       header?: never;
@@ -6713,13 +6713,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EmergencyReportBindingModel'];
-          'application/json': components['schemas']['EmergencyReportBindingModel'];
-          'text/json': components['schemas']['EmergencyReportBindingModel'];
-          'application/*+json': components['schemas']['EmergencyReportBindingModel'];
-          'application/xml': components['schemas']['EmergencyReportBindingModel'];
-          'text/xml': components['schemas']['EmergencyReportBindingModel'];
-          'application/*+xml': components['schemas']['EmergencyReportBindingModel'];
+          "application/json-patch+json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/json": components["schemas"]["EmergencyReportBindingModel"];
+          "text/json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/*+json": components["schemas"]["EmergencyReportBindingModel"];
+          "application/xml": components["schemas"]["EmergencyReportBindingModel"];
+          "text/xml": components["schemas"]["EmergencyReportBindingModel"];
+          "application/*+xml": components["schemas"]["EmergencyReportBindingModel"];
         };
       };
       responses: {
@@ -6729,11 +6729,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyReportViewModel'];
-            'application/json': components['schemas']['EmergencyReportViewModel'];
-            'text/json': components['schemas']['EmergencyReportViewModel'];
-            'application/xml': components['schemas']['EmergencyReportViewModel'];
-            'text/xml': components['schemas']['EmergencyReportViewModel'];
+            "text/plain": components["schemas"]["EmergencyReportViewModel"];
+            "application/json": components["schemas"]["EmergencyReportViewModel"];
+            "text/json": components["schemas"]["EmergencyReportViewModel"];
+            "application/xml": components["schemas"]["EmergencyReportViewModel"];
+            "text/xml": components["schemas"]["EmergencyReportViewModel"];
           };
         };
       };
@@ -6744,7 +6744,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyReportConfig': {
+  "/api/Admin/EmergencyReportConfig": {
     parameters: {
       query?: never;
       header?: never;
@@ -6767,11 +6767,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyReportConfigModel'];
-            'application/json': components['schemas']['EmergencyReportConfigModel'];
-            'text/json': components['schemas']['EmergencyReportConfigModel'];
-            'application/xml': components['schemas']['EmergencyReportConfigModel'];
-            'text/xml': components['schemas']['EmergencyReportConfigModel'];
+            "text/plain": components["schemas"]["EmergencyReportConfigModel"];
+            "application/json": components["schemas"]["EmergencyReportConfigModel"];
+            "text/json": components["schemas"]["EmergencyReportConfigModel"];
+            "application/xml": components["schemas"]["EmergencyReportConfigModel"];
+            "text/xml": components["schemas"]["EmergencyReportConfigModel"];
           };
         };
       };
@@ -6784,7 +6784,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/MenuItems': {
+  "/api/Admin/MenuItems": {
     parameters: {
       query?: never;
       header?: never;
@@ -6807,11 +6807,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MenuItemViewModel'][];
-            'application/json': components['schemas']['MenuItemViewModel'][];
-            'text/json': components['schemas']['MenuItemViewModel'][];
-            'application/xml': components['schemas']['MenuItemViewModel'][];
-            'text/xml': components['schemas']['MenuItemViewModel'][];
+            "text/plain": components["schemas"]["MenuItemViewModel"][];
+            "application/json": components["schemas"]["MenuItemViewModel"][];
+            "text/json": components["schemas"]["MenuItemViewModel"][];
+            "application/xml": components["schemas"]["MenuItemViewModel"][];
+            "text/xml": components["schemas"]["MenuItemViewModel"][];
           };
         };
       };
@@ -6824,7 +6824,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/AllMenuItems': {
+  "/api/Admin/AllMenuItems": {
     parameters: {
       query?: never;
       header?: never;
@@ -6847,11 +6847,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MenuItemViewModel'][];
-            'application/json': components['schemas']['MenuItemViewModel'][];
-            'text/json': components['schemas']['MenuItemViewModel'][];
-            'application/xml': components['schemas']['MenuItemViewModel'][];
-            'text/xml': components['schemas']['MenuItemViewModel'][];
+            "text/plain": components["schemas"]["MenuItemViewModel"][];
+            "application/json": components["schemas"]["MenuItemViewModel"][];
+            "text/json": components["schemas"]["MenuItemViewModel"][];
+            "application/xml": components["schemas"]["MenuItemViewModel"][];
+            "text/xml": components["schemas"]["MenuItemViewModel"][];
           };
         };
       };
@@ -6864,7 +6864,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyTypes': {
+  "/api/Admin/EmergencyTypes": {
     parameters: {
       query?: never;
       header?: never;
@@ -6883,13 +6883,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EmergencyTypeBindingModel'];
-          'application/json': components['schemas']['EmergencyTypeBindingModel'];
-          'text/json': components['schemas']['EmergencyTypeBindingModel'];
-          'application/*+json': components['schemas']['EmergencyTypeBindingModel'];
-          'application/xml': components['schemas']['EmergencyTypeBindingModel'];
-          'text/xml': components['schemas']['EmergencyTypeBindingModel'];
-          'application/*+xml': components['schemas']['EmergencyTypeBindingModel'];
+          "application/json-patch+json": components["schemas"]["EmergencyTypeBindingModel"];
+          "application/json": components["schemas"]["EmergencyTypeBindingModel"];
+          "text/json": components["schemas"]["EmergencyTypeBindingModel"];
+          "application/*+json": components["schemas"]["EmergencyTypeBindingModel"];
+          "application/xml": components["schemas"]["EmergencyTypeBindingModel"];
+          "text/xml": components["schemas"]["EmergencyTypeBindingModel"];
+          "application/*+xml": components["schemas"]["EmergencyTypeBindingModel"];
         };
       };
       responses: {
@@ -6899,11 +6899,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyTypeViewModel'];
-            'application/json': components['schemas']['EmergencyTypeViewModel'];
-            'text/json': components['schemas']['EmergencyTypeViewModel'];
-            'application/xml': components['schemas']['EmergencyTypeViewModel'];
-            'text/xml': components['schemas']['EmergencyTypeViewModel'];
+            "text/plain": components["schemas"]["EmergencyTypeViewModel"];
+            "application/json": components["schemas"]["EmergencyTypeViewModel"];
+            "text/json": components["schemas"]["EmergencyTypeViewModel"];
+            "application/xml": components["schemas"]["EmergencyTypeViewModel"];
+            "text/xml": components["schemas"]["EmergencyTypeViewModel"];
           };
         };
       };
@@ -6918,13 +6918,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -6942,7 +6942,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyTypes/{id}': {
+  "/api/Admin/EmergencyTypes/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -6964,13 +6964,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EmergencyTypeBindingModel'];
-          'application/json': components['schemas']['EmergencyTypeBindingModel'];
-          'text/json': components['schemas']['EmergencyTypeBindingModel'];
-          'application/*+json': components['schemas']['EmergencyTypeBindingModel'];
-          'application/xml': components['schemas']['EmergencyTypeBindingModel'];
-          'text/xml': components['schemas']['EmergencyTypeBindingModel'];
-          'application/*+xml': components['schemas']['EmergencyTypeBindingModel'];
+          "application/json-patch+json": components["schemas"]["EmergencyTypeBindingModel"];
+          "application/json": components["schemas"]["EmergencyTypeBindingModel"];
+          "text/json": components["schemas"]["EmergencyTypeBindingModel"];
+          "application/*+json": components["schemas"]["EmergencyTypeBindingModel"];
+          "application/xml": components["schemas"]["EmergencyTypeBindingModel"];
+          "text/xml": components["schemas"]["EmergencyTypeBindingModel"];
+          "application/*+xml": components["schemas"]["EmergencyTypeBindingModel"];
         };
       };
       responses: {
@@ -6980,11 +6980,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmergencyTypeViewModel'];
-            'application/json': components['schemas']['EmergencyTypeViewModel'];
-            'text/json': components['schemas']['EmergencyTypeViewModel'];
-            'application/xml': components['schemas']['EmergencyTypeViewModel'];
-            'text/xml': components['schemas']['EmergencyTypeViewModel'];
+            "text/plain": components["schemas"]["EmergencyTypeViewModel"];
+            "application/json": components["schemas"]["EmergencyTypeViewModel"];
+            "text/json": components["schemas"]["EmergencyTypeViewModel"];
+            "application/xml": components["schemas"]["EmergencyTypeViewModel"];
+            "text/xml": components["schemas"]["EmergencyTypeViewModel"];
           };
         };
       };
@@ -6995,7 +6995,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyTypes/{id}/LinkToSubOrgGroups': {
+  "/api/Admin/EmergencyTypes/{id}/LinkToSubOrgGroups": {
     parameters: {
       query?: never;
       header?: never;
@@ -7017,13 +7017,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['LinkEmergencyTypeToGroupsBindingModel'];
-          'application/json': components['schemas']['LinkEmergencyTypeToGroupsBindingModel'];
-          'text/json': components['schemas']['LinkEmergencyTypeToGroupsBindingModel'];
-          'application/*+json': components['schemas']['LinkEmergencyTypeToGroupsBindingModel'];
-          'application/xml': components['schemas']['LinkEmergencyTypeToGroupsBindingModel'];
-          'text/xml': components['schemas']['LinkEmergencyTypeToGroupsBindingModel'];
-          'application/*+xml': components['schemas']['LinkEmergencyTypeToGroupsBindingModel'];
+          "application/json-patch+json": components["schemas"]["LinkEmergencyTypeToGroupsBindingModel"];
+          "application/json": components["schemas"]["LinkEmergencyTypeToGroupsBindingModel"];
+          "text/json": components["schemas"]["LinkEmergencyTypeToGroupsBindingModel"];
+          "application/*+json": components["schemas"]["LinkEmergencyTypeToGroupsBindingModel"];
+          "application/xml": components["schemas"]["LinkEmergencyTypeToGroupsBindingModel"];
+          "text/xml": components["schemas"]["LinkEmergencyTypeToGroupsBindingModel"];
+          "application/*+xml": components["schemas"]["LinkEmergencyTypeToGroupsBindingModel"];
         };
       };
       responses: {
@@ -7042,7 +7042,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyTypes/{id}/AssignToSubOrganizations': {
+  "/api/Admin/EmergencyTypes/{id}/AssignToSubOrganizations": {
     parameters: {
       query?: never;
       header?: never;
@@ -7064,13 +7064,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['AssignEmergencyTypeToSubOrganizationsBindingModel'];
-          'application/json': components['schemas']['AssignEmergencyTypeToSubOrganizationsBindingModel'];
-          'text/json': components['schemas']['AssignEmergencyTypeToSubOrganizationsBindingModel'];
-          'application/*+json': components['schemas']['AssignEmergencyTypeToSubOrganizationsBindingModel'];
-          'application/xml': components['schemas']['AssignEmergencyTypeToSubOrganizationsBindingModel'];
-          'text/xml': components['schemas']['AssignEmergencyTypeToSubOrganizationsBindingModel'];
-          'application/*+xml': components['schemas']['AssignEmergencyTypeToSubOrganizationsBindingModel'];
+          "application/json-patch+json": components["schemas"]["AssignEmergencyTypeToSubOrganizationsBindingModel"];
+          "application/json": components["schemas"]["AssignEmergencyTypeToSubOrganizationsBindingModel"];
+          "text/json": components["schemas"]["AssignEmergencyTypeToSubOrganizationsBindingModel"];
+          "application/*+json": components["schemas"]["AssignEmergencyTypeToSubOrganizationsBindingModel"];
+          "application/xml": components["schemas"]["AssignEmergencyTypeToSubOrganizationsBindingModel"];
+          "text/xml": components["schemas"]["AssignEmergencyTypeToSubOrganizationsBindingModel"];
+          "application/*+xml": components["schemas"]["AssignEmergencyTypeToSubOrganizationsBindingModel"];
         };
       };
       responses: {
@@ -7089,7 +7089,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/EmergencyTypes/{id}/Delete': {
+  "/api/Admin/EmergencyTypes/{id}/Delete": {
     parameters: {
       query?: never;
       header?: never;
@@ -7126,7 +7126,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Roles/{id}': {
+  "/api/Admin/Roles/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -7148,13 +7148,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserRoleBindingModel'];
-          'application/json': components['schemas']['UserRoleBindingModel'];
-          'text/json': components['schemas']['UserRoleBindingModel'];
-          'application/*+json': components['schemas']['UserRoleBindingModel'];
-          'application/xml': components['schemas']['UserRoleBindingModel'];
-          'text/xml': components['schemas']['UserRoleBindingModel'];
-          'application/*+xml': components['schemas']['UserRoleBindingModel'];
+          "application/json-patch+json": components["schemas"]["UserRoleBindingModel"];
+          "application/json": components["schemas"]["UserRoleBindingModel"];
+          "text/json": components["schemas"]["UserRoleBindingModel"];
+          "application/*+json": components["schemas"]["UserRoleBindingModel"];
+          "application/xml": components["schemas"]["UserRoleBindingModel"];
+          "text/xml": components["schemas"]["UserRoleBindingModel"];
+          "application/*+xml": components["schemas"]["UserRoleBindingModel"];
         };
       };
       responses: {
@@ -7164,11 +7164,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserRoleViewModel'];
-            'application/json': components['schemas']['UserRoleViewModel'];
-            'text/json': components['schemas']['UserRoleViewModel'];
-            'application/xml': components['schemas']['UserRoleViewModel'];
-            'text/xml': components['schemas']['UserRoleViewModel'];
+            "text/plain": components["schemas"]["UserRoleViewModel"];
+            "application/json": components["schemas"]["UserRoleViewModel"];
+            "text/json": components["schemas"]["UserRoleViewModel"];
+            "application/xml": components["schemas"]["UserRoleViewModel"];
+            "text/xml": components["schemas"]["UserRoleViewModel"];
           };
         };
       };
@@ -7179,7 +7179,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Documents/List': {
+  "/api/Admin/Documents/List": {
     parameters: {
       query?: never;
       header?: never;
@@ -7216,11 +7216,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['DocumentAndFoldersViewModel'];
-            'application/json': components['schemas']['DocumentAndFoldersViewModel'];
-            'text/json': components['schemas']['DocumentAndFoldersViewModel'];
-            'application/xml': components['schemas']['DocumentAndFoldersViewModel'];
-            'text/xml': components['schemas']['DocumentAndFoldersViewModel'];
+            "text/plain": components["schemas"]["DocumentAndFoldersViewModel"];
+            "application/json": components["schemas"]["DocumentAndFoldersViewModel"];
+            "text/json": components["schemas"]["DocumentAndFoldersViewModel"];
+            "application/xml": components["schemas"]["DocumentAndFoldersViewModel"];
+            "text/xml": components["schemas"]["DocumentAndFoldersViewModel"];
           };
         };
       };
@@ -7233,7 +7233,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Documents/Add': {
+  "/api/Admin/Documents/Add": {
     parameters: {
       query?: never;
       header?: never;
@@ -7269,11 +7269,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PostDocumentsViewModel'];
-            'application/json': components['schemas']['PostDocumentsViewModel'];
-            'text/json': components['schemas']['PostDocumentsViewModel'];
-            'application/xml': components['schemas']['PostDocumentsViewModel'];
-            'text/xml': components['schemas']['PostDocumentsViewModel'];
+            "text/plain": components["schemas"]["PostDocumentsViewModel"];
+            "application/json": components["schemas"]["PostDocumentsViewModel"];
+            "text/json": components["schemas"]["PostDocumentsViewModel"];
+            "application/xml": components["schemas"]["PostDocumentsViewModel"];
+            "text/xml": components["schemas"]["PostDocumentsViewModel"];
           };
         };
       };
@@ -7284,7 +7284,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Documents/{id}/Share': {
+  "/api/Admin/Documents/{id}/Share": {
     parameters: {
       query?: never;
       header?: never;
@@ -7309,13 +7309,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['DocumentShareBindingModel'];
-          'application/json': components['schemas']['DocumentShareBindingModel'];
-          'text/json': components['schemas']['DocumentShareBindingModel'];
-          'application/*+json': components['schemas']['DocumentShareBindingModel'];
-          'application/xml': components['schemas']['DocumentShareBindingModel'];
-          'text/xml': components['schemas']['DocumentShareBindingModel'];
-          'application/*+xml': components['schemas']['DocumentShareBindingModel'];
+          "application/json-patch+json": components["schemas"]["DocumentShareBindingModel"];
+          "application/json": components["schemas"]["DocumentShareBindingModel"];
+          "text/json": components["schemas"]["DocumentShareBindingModel"];
+          "application/*+json": components["schemas"]["DocumentShareBindingModel"];
+          "application/xml": components["schemas"]["DocumentShareBindingModel"];
+          "text/xml": components["schemas"]["DocumentShareBindingModel"];
+          "application/*+xml": components["schemas"]["DocumentShareBindingModel"];
         };
       };
       responses: {
@@ -7325,11 +7325,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['DocumentViewModelBrief'];
-            'application/json': components['schemas']['DocumentViewModelBrief'];
-            'text/json': components['schemas']['DocumentViewModelBrief'];
-            'application/xml': components['schemas']['DocumentViewModelBrief'];
-            'text/xml': components['schemas']['DocumentViewModelBrief'];
+            "text/plain": components["schemas"]["DocumentViewModelBrief"];
+            "application/json": components["schemas"]["DocumentViewModelBrief"];
+            "text/json": components["schemas"]["DocumentViewModelBrief"];
+            "application/xml": components["schemas"]["DocumentViewModelBrief"];
+            "text/xml": components["schemas"]["DocumentViewModelBrief"];
           };
         };
       };
@@ -7340,7 +7340,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Documents/{id}/Unshare': {
+  "/api/Admin/Documents/{id}/Unshare": {
     parameters: {
       query?: never;
       header?: never;
@@ -7365,13 +7365,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['DocumentShareBindingModel'];
-          'application/json': components['schemas']['DocumentShareBindingModel'];
-          'text/json': components['schemas']['DocumentShareBindingModel'];
-          'application/*+json': components['schemas']['DocumentShareBindingModel'];
-          'application/xml': components['schemas']['DocumentShareBindingModel'];
-          'text/xml': components['schemas']['DocumentShareBindingModel'];
-          'application/*+xml': components['schemas']['DocumentShareBindingModel'];
+          "application/json-patch+json": components["schemas"]["DocumentShareBindingModel"];
+          "application/json": components["schemas"]["DocumentShareBindingModel"];
+          "text/json": components["schemas"]["DocumentShareBindingModel"];
+          "application/*+json": components["schemas"]["DocumentShareBindingModel"];
+          "application/xml": components["schemas"]["DocumentShareBindingModel"];
+          "text/xml": components["schemas"]["DocumentShareBindingModel"];
+          "application/*+xml": components["schemas"]["DocumentShareBindingModel"];
         };
       };
       responses: {
@@ -7381,11 +7381,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['DocumentViewModelBrief'];
-            'application/json': components['schemas']['DocumentViewModelBrief'];
-            'text/json': components['schemas']['DocumentViewModelBrief'];
-            'application/xml': components['schemas']['DocumentViewModelBrief'];
-            'text/xml': components['schemas']['DocumentViewModelBrief'];
+            "text/plain": components["schemas"]["DocumentViewModelBrief"];
+            "application/json": components["schemas"]["DocumentViewModelBrief"];
+            "text/json": components["schemas"]["DocumentViewModelBrief"];
+            "application/xml": components["schemas"]["DocumentViewModelBrief"];
+            "text/xml": components["schemas"]["DocumentViewModelBrief"];
           };
         };
       };
@@ -7396,7 +7396,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Documents': {
+  "/api/Admin/Documents": {
     parameters: {
       query?: never;
       header?: never;
@@ -7416,13 +7416,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['DocumentDeleteBindingModel'];
-          'application/json': components['schemas']['DocumentDeleteBindingModel'];
-          'text/json': components['schemas']['DocumentDeleteBindingModel'];
-          'application/*+json': components['schemas']['DocumentDeleteBindingModel'];
-          'application/xml': components['schemas']['DocumentDeleteBindingModel'];
-          'text/xml': components['schemas']['DocumentDeleteBindingModel'];
-          'application/*+xml': components['schemas']['DocumentDeleteBindingModel'];
+          "application/json-patch+json": components["schemas"]["DocumentDeleteBindingModel"];
+          "application/json": components["schemas"]["DocumentDeleteBindingModel"];
+          "text/json": components["schemas"]["DocumentDeleteBindingModel"];
+          "application/*+json": components["schemas"]["DocumentDeleteBindingModel"];
+          "application/xml": components["schemas"]["DocumentDeleteBindingModel"];
+          "text/xml": components["schemas"]["DocumentDeleteBindingModel"];
+          "application/*+xml": components["schemas"]["DocumentDeleteBindingModel"];
         };
       };
       responses: {
@@ -7440,7 +7440,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Documents/Download': {
+  "/api/Admin/Documents/Download": {
     parameters: {
       query?: never;
       header?: never;
@@ -7459,13 +7459,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['DownloadBindingModel'];
-          'application/json': components['schemas']['DownloadBindingModel'];
-          'text/json': components['schemas']['DownloadBindingModel'];
-          'application/*+json': components['schemas']['DownloadBindingModel'];
-          'application/xml': components['schemas']['DownloadBindingModel'];
-          'text/xml': components['schemas']['DownloadBindingModel'];
-          'application/*+xml': components['schemas']['DownloadBindingModel'];
+          "application/json-patch+json": components["schemas"]["DownloadBindingModel"];
+          "application/json": components["schemas"]["DownloadBindingModel"];
+          "text/json": components["schemas"]["DownloadBindingModel"];
+          "application/*+json": components["schemas"]["DownloadBindingModel"];
+          "application/xml": components["schemas"]["DownloadBindingModel"];
+          "text/xml": components["schemas"]["DownloadBindingModel"];
+          "application/*+xml": components["schemas"]["DownloadBindingModel"];
         };
       };
       responses: {
@@ -7475,9 +7475,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -7488,7 +7488,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Folders/Add': {
+  "/api/Admin/Folders/Add": {
     parameters: {
       query?: never;
       header?: never;
@@ -7507,13 +7507,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['FolderBindingModel'];
-          'application/json': components['schemas']['FolderBindingModel'];
-          'text/json': components['schemas']['FolderBindingModel'];
-          'application/*+json': components['schemas']['FolderBindingModel'];
-          'application/xml': components['schemas']['FolderBindingModel'];
-          'text/xml': components['schemas']['FolderBindingModel'];
-          'application/*+xml': components['schemas']['FolderBindingModel'];
+          "application/json-patch+json": components["schemas"]["FolderBindingModel"];
+          "application/json": components["schemas"]["FolderBindingModel"];
+          "text/json": components["schemas"]["FolderBindingModel"];
+          "application/*+json": components["schemas"]["FolderBindingModel"];
+          "application/xml": components["schemas"]["FolderBindingModel"];
+          "text/xml": components["schemas"]["FolderBindingModel"];
+          "application/*+xml": components["schemas"]["FolderBindingModel"];
         };
       };
       responses: {
@@ -7523,11 +7523,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['FolderViewModel'];
-            'application/json': components['schemas']['FolderViewModel'];
-            'text/json': components['schemas']['FolderViewModel'];
-            'application/xml': components['schemas']['FolderViewModel'];
-            'text/xml': components['schemas']['FolderViewModel'];
+            "text/plain": components["schemas"]["FolderViewModel"];
+            "application/json": components["schemas"]["FolderViewModel"];
+            "text/json": components["schemas"]["FolderViewModel"];
+            "application/xml": components["schemas"]["FolderViewModel"];
+            "text/xml": components["schemas"]["FolderViewModel"];
           };
         };
       };
@@ -7538,7 +7538,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Folders/AddFolders': {
+  "/api/Admin/Folders/AddFolders": {
     parameters: {
       query?: never;
       header?: never;
@@ -7557,13 +7557,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['FolderBindingModel'][];
-          'application/json': components['schemas']['FolderBindingModel'][];
-          'text/json': components['schemas']['FolderBindingModel'][];
-          'application/*+json': components['schemas']['FolderBindingModel'][];
-          'application/xml': components['schemas']['FolderBindingModel'][];
-          'text/xml': components['schemas']['FolderBindingModel'][];
-          'application/*+xml': components['schemas']['FolderBindingModel'][];
+          "application/json-patch+json": components["schemas"]["FolderBindingModel"][];
+          "application/json": components["schemas"]["FolderBindingModel"][];
+          "text/json": components["schemas"]["FolderBindingModel"][];
+          "application/*+json": components["schemas"]["FolderBindingModel"][];
+          "application/xml": components["schemas"]["FolderBindingModel"][];
+          "text/xml": components["schemas"]["FolderBindingModel"][];
+          "application/*+xml": components["schemas"]["FolderBindingModel"][];
         };
       };
       responses: {
@@ -7573,11 +7573,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['FolderViewModel'][];
-            'application/json': components['schemas']['FolderViewModel'][];
-            'text/json': components['schemas']['FolderViewModel'][];
-            'application/xml': components['schemas']['FolderViewModel'][];
-            'text/xml': components['schemas']['FolderViewModel'][];
+            "text/plain": components["schemas"]["FolderViewModel"][];
+            "application/json": components["schemas"]["FolderViewModel"][];
+            "text/json": components["schemas"]["FolderViewModel"][];
+            "application/xml": components["schemas"]["FolderViewModel"][];
+            "text/xml": components["schemas"]["FolderViewModel"][];
           };
         };
       };
@@ -7588,7 +7588,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Folders/{id}/Rename': {
+  "/api/Admin/Folders/{id}/Rename": {
     parameters: {
       query?: never;
       header?: never;
@@ -7610,13 +7610,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['FolderBindingModel'];
-          'application/json': components['schemas']['FolderBindingModel'];
-          'text/json': components['schemas']['FolderBindingModel'];
-          'application/*+json': components['schemas']['FolderBindingModel'];
-          'application/xml': components['schemas']['FolderBindingModel'];
-          'text/xml': components['schemas']['FolderBindingModel'];
-          'application/*+xml': components['schemas']['FolderBindingModel'];
+          "application/json-patch+json": components["schemas"]["FolderBindingModel"];
+          "application/json": components["schemas"]["FolderBindingModel"];
+          "text/json": components["schemas"]["FolderBindingModel"];
+          "application/*+json": components["schemas"]["FolderBindingModel"];
+          "application/xml": components["schemas"]["FolderBindingModel"];
+          "text/xml": components["schemas"]["FolderBindingModel"];
+          "application/*+xml": components["schemas"]["FolderBindingModel"];
         };
       };
       responses: {
@@ -7626,11 +7626,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['FolderViewModel'];
-            'application/json': components['schemas']['FolderViewModel'];
-            'text/json': components['schemas']['FolderViewModel'];
-            'application/xml': components['schemas']['FolderViewModel'];
-            'text/xml': components['schemas']['FolderViewModel'];
+            "text/plain": components["schemas"]["FolderViewModel"];
+            "application/json": components["schemas"]["FolderViewModel"];
+            "text/json": components["schemas"]["FolderViewModel"];
+            "application/xml": components["schemas"]["FolderViewModel"];
+            "text/xml": components["schemas"]["FolderViewModel"];
           };
         };
       };
@@ -7641,7 +7641,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Folders/{id}/Share': {
+  "/api/Admin/Folders/{id}/Share": {
     parameters: {
       query?: never;
       header?: never;
@@ -7663,13 +7663,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['DocumentShareBindingModel'];
-          'application/json': components['schemas']['DocumentShareBindingModel'];
-          'text/json': components['schemas']['DocumentShareBindingModel'];
-          'application/*+json': components['schemas']['DocumentShareBindingModel'];
-          'application/xml': components['schemas']['DocumentShareBindingModel'];
-          'text/xml': components['schemas']['DocumentShareBindingModel'];
-          'application/*+xml': components['schemas']['DocumentShareBindingModel'];
+          "application/json-patch+json": components["schemas"]["DocumentShareBindingModel"];
+          "application/json": components["schemas"]["DocumentShareBindingModel"];
+          "text/json": components["schemas"]["DocumentShareBindingModel"];
+          "application/*+json": components["schemas"]["DocumentShareBindingModel"];
+          "application/xml": components["schemas"]["DocumentShareBindingModel"];
+          "text/xml": components["schemas"]["DocumentShareBindingModel"];
+          "application/*+xml": components["schemas"]["DocumentShareBindingModel"];
         };
       };
       responses: {
@@ -7688,7 +7688,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Folders': {
+  "/api/Admin/Folders": {
     parameters: {
       query?: never;
       header?: never;
@@ -7708,13 +7708,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['FolderDeleteBindingModel'];
-          'application/json': components['schemas']['FolderDeleteBindingModel'];
-          'text/json': components['schemas']['FolderDeleteBindingModel'];
-          'application/*+json': components['schemas']['FolderDeleteBindingModel'];
-          'application/xml': components['schemas']['FolderDeleteBindingModel'];
-          'text/xml': components['schemas']['FolderDeleteBindingModel'];
-          'application/*+xml': components['schemas']['FolderDeleteBindingModel'];
+          "application/json-patch+json": components["schemas"]["FolderDeleteBindingModel"];
+          "application/json": components["schemas"]["FolderDeleteBindingModel"];
+          "text/json": components["schemas"]["FolderDeleteBindingModel"];
+          "application/*+json": components["schemas"]["FolderDeleteBindingModel"];
+          "application/xml": components["schemas"]["FolderDeleteBindingModel"];
+          "text/xml": components["schemas"]["FolderDeleteBindingModel"];
+          "application/*+xml": components["schemas"]["FolderDeleteBindingModel"];
         };
       };
       responses: {
@@ -7739,7 +7739,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Documents/setoffline': {
+  "/api/Admin/Documents/setoffline": {
     parameters: {
       query?: never;
       header?: never;
@@ -7758,13 +7758,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'application/json': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'text/json': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'application/*+json': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'application/xml': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'text/xml': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'application/*+xml': components['schemas']['SetDocumentOfflineBindingModel'][];
+          "application/json-patch+json": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "application/json": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "text/json": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "application/*+json": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "application/xml": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "text/xml": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "application/*+xml": components["schemas"]["SetDocumentOfflineBindingModel"][];
         };
       };
       responses: {
@@ -7783,7 +7783,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Tutorials/Create': {
+  "/api/Admin/Tutorials/Create": {
     parameters: {
       query?: never;
       header?: never;
@@ -7802,13 +7802,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['TutorialBindingModel'];
-          'application/json': components['schemas']['TutorialBindingModel'];
-          'text/json': components['schemas']['TutorialBindingModel'];
-          'application/*+json': components['schemas']['TutorialBindingModel'];
-          'application/xml': components['schemas']['TutorialBindingModel'];
-          'text/xml': components['schemas']['TutorialBindingModel'];
-          'application/*+xml': components['schemas']['TutorialBindingModel'];
+          "application/json-patch+json": components["schemas"]["TutorialBindingModel"];
+          "application/json": components["schemas"]["TutorialBindingModel"];
+          "text/json": components["schemas"]["TutorialBindingModel"];
+          "application/*+json": components["schemas"]["TutorialBindingModel"];
+          "application/xml": components["schemas"]["TutorialBindingModel"];
+          "text/xml": components["schemas"]["TutorialBindingModel"];
+          "application/*+xml": components["schemas"]["TutorialBindingModel"];
         };
       };
       responses: {
@@ -7818,11 +7818,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TutorialViewModel'];
-            'application/json': components['schemas']['TutorialViewModel'];
-            'text/json': components['schemas']['TutorialViewModel'];
-            'application/xml': components['schemas']['TutorialViewModel'];
-            'text/xml': components['schemas']['TutorialViewModel'];
+            "text/plain": components["schemas"]["TutorialViewModel"];
+            "application/json": components["schemas"]["TutorialViewModel"];
+            "text/json": components["schemas"]["TutorialViewModel"];
+            "application/xml": components["schemas"]["TutorialViewModel"];
+            "text/xml": components["schemas"]["TutorialViewModel"];
           };
         };
       };
@@ -7833,7 +7833,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Tutorials/{id}': {
+  "/api/Admin/Tutorials/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -7859,11 +7859,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TutorialViewModel'];
-            'application/json': components['schemas']['TutorialViewModel'];
-            'text/json': components['schemas']['TutorialViewModel'];
-            'application/xml': components['schemas']['TutorialViewModel'];
-            'text/xml': components['schemas']['TutorialViewModel'];
+            "text/plain": components["schemas"]["TutorialViewModel"];
+            "application/json": components["schemas"]["TutorialViewModel"];
+            "text/json": components["schemas"]["TutorialViewModel"];
+            "application/xml": components["schemas"]["TutorialViewModel"];
+            "text/xml": components["schemas"]["TutorialViewModel"];
           };
         };
       };
@@ -7882,13 +7882,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['TutorialBindingModel'];
-          'application/json': components['schemas']['TutorialBindingModel'];
-          'text/json': components['schemas']['TutorialBindingModel'];
-          'application/*+json': components['schemas']['TutorialBindingModel'];
-          'application/xml': components['schemas']['TutorialBindingModel'];
-          'text/xml': components['schemas']['TutorialBindingModel'];
-          'application/*+xml': components['schemas']['TutorialBindingModel'];
+          "application/json-patch+json": components["schemas"]["TutorialBindingModel"];
+          "application/json": components["schemas"]["TutorialBindingModel"];
+          "text/json": components["schemas"]["TutorialBindingModel"];
+          "application/*+json": components["schemas"]["TutorialBindingModel"];
+          "application/xml": components["schemas"]["TutorialBindingModel"];
+          "text/xml": components["schemas"]["TutorialBindingModel"];
+          "application/*+xml": components["schemas"]["TutorialBindingModel"];
         };
       };
       responses: {
@@ -7898,11 +7898,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TutorialViewModel'];
-            'application/json': components['schemas']['TutorialViewModel'];
-            'text/json': components['schemas']['TutorialViewModel'];
-            'application/xml': components['schemas']['TutorialViewModel'];
-            'text/xml': components['schemas']['TutorialViewModel'];
+            "text/plain": components["schemas"]["TutorialViewModel"];
+            "application/json": components["schemas"]["TutorialViewModel"];
+            "text/json": components["schemas"]["TutorialViewModel"];
+            "application/xml": components["schemas"]["TutorialViewModel"];
+            "text/xml": components["schemas"]["TutorialViewModel"];
           };
         };
       };
@@ -7941,7 +7941,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Tutorials/All': {
+  "/api/Admin/Tutorials/All": {
     parameters: {
       query?: never;
       header?: never;
@@ -7964,11 +7964,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TutorialViewModel'][];
-            'application/json': components['schemas']['TutorialViewModel'][];
-            'text/json': components['schemas']['TutorialViewModel'][];
-            'application/xml': components['schemas']['TutorialViewModel'][];
-            'text/xml': components['schemas']['TutorialViewModel'][];
+            "text/plain": components["schemas"]["TutorialViewModel"][];
+            "application/json": components["schemas"]["TutorialViewModel"][];
+            "text/json": components["schemas"]["TutorialViewModel"][];
+            "application/xml": components["schemas"]["TutorialViewModel"][];
+            "text/xml": components["schemas"]["TutorialViewModel"][];
           };
         };
       };
@@ -7981,7 +7981,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Tutorials/WebAdmin/{id}/{language}': {
+  "/api/Admin/Tutorials/WebAdmin/{id}/{language}": {
     parameters: {
       query?: never;
       header?: never;
@@ -8009,11 +8009,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TutorialViewModel'];
-            'application/json': components['schemas']['TutorialViewModel'];
-            'text/json': components['schemas']['TutorialViewModel'];
-            'application/xml': components['schemas']['TutorialViewModel'];
-            'text/xml': components['schemas']['TutorialViewModel'];
+            "text/plain": components["schemas"]["TutorialViewModel"];
+            "application/json": components["schemas"]["TutorialViewModel"];
+            "text/json": components["schemas"]["TutorialViewModel"];
+            "application/xml": components["schemas"]["TutorialViewModel"];
+            "text/xml": components["schemas"]["TutorialViewModel"];
           };
         };
       };
@@ -8026,7 +8026,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Tutorials/WebAdminTutorials/{language}': {
+  "/api/Admin/Tutorials/WebAdminTutorials/{language}": {
     parameters: {
       query?: never;
       header?: never;
@@ -8051,11 +8051,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TutorialViewModel'][];
-            'application/json': components['schemas']['TutorialViewModel'][];
-            'text/json': components['schemas']['TutorialViewModel'][];
-            'application/xml': components['schemas']['TutorialViewModel'][];
-            'text/xml': components['schemas']['TutorialViewModel'][];
+            "text/plain": components["schemas"]["TutorialViewModel"][];
+            "application/json": components["schemas"]["TutorialViewModel"][];
+            "text/json": components["schemas"]["TutorialViewModel"][];
+            "application/xml": components["schemas"]["TutorialViewModel"][];
+            "text/xml": components["schemas"]["TutorialViewModel"][];
           };
         };
       };
@@ -8068,7 +8068,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Tutorials/Reorder': {
+  "/api/Admin/Tutorials/Reorder": {
     parameters: {
       query?: never;
       header?: never;
@@ -8087,13 +8087,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EditTutorialSortOrderBindingModel'][];
-          'application/json': components['schemas']['EditTutorialSortOrderBindingModel'][];
-          'text/json': components['schemas']['EditTutorialSortOrderBindingModel'][];
-          'application/*+json': components['schemas']['EditTutorialSortOrderBindingModel'][];
-          'application/xml': components['schemas']['EditTutorialSortOrderBindingModel'][];
-          'text/xml': components['schemas']['EditTutorialSortOrderBindingModel'][];
-          'application/*+xml': components['schemas']['EditTutorialSortOrderBindingModel'][];
+          "application/json-patch+json": components["schemas"]["EditTutorialSortOrderBindingModel"][];
+          "application/json": components["schemas"]["EditTutorialSortOrderBindingModel"][];
+          "text/json": components["schemas"]["EditTutorialSortOrderBindingModel"][];
+          "application/*+json": components["schemas"]["EditTutorialSortOrderBindingModel"][];
+          "application/xml": components["schemas"]["EditTutorialSortOrderBindingModel"][];
+          "text/xml": components["schemas"]["EditTutorialSortOrderBindingModel"][];
+          "application/*+xml": components["schemas"]["EditTutorialSortOrderBindingModel"][];
         };
       };
       responses: {
@@ -8112,7 +8112,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Import/Summaries': {
+  "/api/Admin/Import/Summaries": {
     parameters: {
       query?: never;
       header?: never;
@@ -8127,7 +8127,7 @@ export interface paths {
           limit?: number;
           skip?: number;
           /** @description optional value: 0 - SSO, 1 - FTP, 3 - API */
-          source?: components['schemas']['ImportSource'];
+          source?: components["schemas"]["ImportSource"];
         };
         header?: never;
         path?: never;
@@ -8141,11 +8141,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ImportSummaryReportViewModel'];
-            'application/json': components['schemas']['ImportSummaryReportViewModel'];
-            'text/json': components['schemas']['ImportSummaryReportViewModel'];
-            'application/xml': components['schemas']['ImportSummaryReportViewModel'];
-            'text/xml': components['schemas']['ImportSummaryReportViewModel'];
+            "text/plain": components["schemas"]["ImportSummaryReportViewModel"];
+            "application/json": components["schemas"]["ImportSummaryReportViewModel"];
+            "text/json": components["schemas"]["ImportSummaryReportViewModel"];
+            "application/xml": components["schemas"]["ImportSummaryReportViewModel"];
+            "text/xml": components["schemas"]["ImportSummaryReportViewModel"];
           };
         };
       };
@@ -8158,7 +8158,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Contacts': {
+  "/api/Admin/Contacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -8187,11 +8187,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ContactViewModel'][];
-            'application/json': components['schemas']['ContactViewModel'][];
-            'text/json': components['schemas']['ContactViewModel'][];
-            'application/xml': components['schemas']['ContactViewModel'][];
-            'text/xml': components['schemas']['ContactViewModel'][];
+            "text/plain": components["schemas"]["ContactViewModel"][];
+            "application/json": components["schemas"]["ContactViewModel"][];
+            "text/json": components["schemas"]["ContactViewModel"][];
+            "application/xml": components["schemas"]["ContactViewModel"][];
+            "text/xml": components["schemas"]["ContactViewModel"][];
           };
         };
       };
@@ -8207,13 +8207,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ContactBindingModel'];
-          'application/json': components['schemas']['ContactBindingModel'];
-          'text/json': components['schemas']['ContactBindingModel'];
-          'application/*+json': components['schemas']['ContactBindingModel'];
-          'application/xml': components['schemas']['ContactBindingModel'];
-          'text/xml': components['schemas']['ContactBindingModel'];
-          'application/*+xml': components['schemas']['ContactBindingModel'];
+          "application/json-patch+json": components["schemas"]["ContactBindingModel"];
+          "application/json": components["schemas"]["ContactBindingModel"];
+          "text/json": components["schemas"]["ContactBindingModel"];
+          "application/*+json": components["schemas"]["ContactBindingModel"];
+          "application/xml": components["schemas"]["ContactBindingModel"];
+          "text/xml": components["schemas"]["ContactBindingModel"];
+          "application/*+xml": components["schemas"]["ContactBindingModel"];
         };
       };
       responses: {
@@ -8223,11 +8223,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ContactViewModel'];
-            'application/json': components['schemas']['ContactViewModel'];
-            'text/json': components['schemas']['ContactViewModel'];
-            'application/xml': components['schemas']['ContactViewModel'];
-            'text/xml': components['schemas']['ContactViewModel'];
+            "text/plain": components["schemas"]["ContactViewModel"];
+            "application/json": components["schemas"]["ContactViewModel"];
+            "text/json": components["schemas"]["ContactViewModel"];
+            "application/xml": components["schemas"]["ContactViewModel"];
+            "text/xml": components["schemas"]["ContactViewModel"];
           };
         };
       };
@@ -8238,7 +8238,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Contacts/{contactId}': {
+  "/api/Admin/Contacts/{contactId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -8259,13 +8259,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ContactBindingModel'];
-          'application/json': components['schemas']['ContactBindingModel'];
-          'text/json': components['schemas']['ContactBindingModel'];
-          'application/*+json': components['schemas']['ContactBindingModel'];
-          'application/xml': components['schemas']['ContactBindingModel'];
-          'text/xml': components['schemas']['ContactBindingModel'];
-          'application/*+xml': components['schemas']['ContactBindingModel'];
+          "application/json-patch+json": components["schemas"]["ContactBindingModel"];
+          "application/json": components["schemas"]["ContactBindingModel"];
+          "text/json": components["schemas"]["ContactBindingModel"];
+          "application/*+json": components["schemas"]["ContactBindingModel"];
+          "application/xml": components["schemas"]["ContactBindingModel"];
+          "text/xml": components["schemas"]["ContactBindingModel"];
+          "application/*+xml": components["schemas"]["ContactBindingModel"];
         };
       };
       responses: {
@@ -8275,11 +8275,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ContactViewModel'];
-            'application/json': components['schemas']['ContactViewModel'];
-            'text/json': components['schemas']['ContactViewModel'];
-            'application/xml': components['schemas']['ContactViewModel'];
-            'text/xml': components['schemas']['ContactViewModel'];
+            "text/plain": components["schemas"]["ContactViewModel"];
+            "application/json": components["schemas"]["ContactViewModel"];
+            "text/json": components["schemas"]["ContactViewModel"];
+            "application/xml": components["schemas"]["ContactViewModel"];
+            "text/xml": components["schemas"]["ContactViewModel"];
           };
         };
       };
@@ -8317,7 +8317,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Notices': {
+  "/api/Admin/Notices": {
     parameters: {
       query?: never;
       header?: never;
@@ -8336,7 +8336,7 @@ export interface paths {
           /** @description take the specified number of notices */
           take?: number;
           /** @description filter notices by type */
-          noticeTypes?: components['schemas']['NoticeType'][];
+          noticeTypes?: components["schemas"]["NoticeType"][];
         };
         header?: never;
         path?: never;
@@ -8350,11 +8350,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['NoticeViewModel'][];
-            'application/json': components['schemas']['NoticeViewModel'][];
-            'text/json': components['schemas']['NoticeViewModel'][];
-            'application/xml': components['schemas']['NoticeViewModel'][];
-            'text/xml': components['schemas']['NoticeViewModel'][];
+            "text/plain": components["schemas"]["NoticeViewModel"][];
+            "application/json": components["schemas"]["NoticeViewModel"][];
+            "text/json": components["schemas"]["NoticeViewModel"][];
+            "application/xml": components["schemas"]["NoticeViewModel"][];
+            "text/xml": components["schemas"]["NoticeViewModel"][];
           };
         };
       };
@@ -8367,7 +8367,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Notices/{noticeId}/Read': {
+  "/api/Admin/Notices/{noticeId}/Read": {
     parameters: {
       query?: never;
       header?: never;
@@ -8403,7 +8403,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Notices/ByType/{noticeType}/ReadAll': {
+  "/api/Admin/Notices/ByType/{noticeType}/ReadAll": {
     parameters: {
       query?: never;
       header?: never;
@@ -8419,7 +8419,7 @@ export interface paths {
         header?: never;
         path: {
           /** @description Notice type to filter */
-          noticeType: components['schemas']['NoticeType'];
+          noticeType: components["schemas"]["NoticeType"];
         };
         cookie?: never;
       };
@@ -8440,7 +8440,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/SkolonSchools': {
+  "/api/Admin/SkolonSchools": {
     parameters: {
       query?: never;
       header?: never;
@@ -8474,11 +8474,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['SkolonSchool'][];
-            'application/json': components['schemas']['SkolonSchool'][];
-            'text/json': components['schemas']['SkolonSchool'][];
-            'application/xml': components['schemas']['SkolonSchool'][];
-            'text/xml': components['schemas']['SkolonSchool'][];
+            "text/plain": components["schemas"]["SkolonSchool"][];
+            "application/json": components["schemas"]["SkolonSchool"][];
+            "text/json": components["schemas"]["SkolonSchool"][];
+            "application/xml": components["schemas"]["SkolonSchool"][];
+            "text/xml": components["schemas"]["SkolonSchool"][];
           };
         };
       };
@@ -8491,7 +8491,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Test': {
+  "/api/Admin/Test": {
     parameters: {
       query?: never;
       header?: never;
@@ -8514,11 +8514,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': unknown;
-            'application/json': unknown;
-            'text/json': unknown;
-            'application/xml': unknown;
-            'text/xml': unknown;
+            "text/plain": unknown;
+            "application/json": unknown;
+            "text/json": unknown;
+            "application/xml": unknown;
+            "text/xml": unknown;
           };
         };
       };
@@ -8531,7 +8531,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/TestError': {
+  "/api/Admin/TestError": {
     parameters: {
       query?: never;
       header?: never;
@@ -8565,7 +8565,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/TestStatus': {
+  "/api/Admin/TestStatus": {
     parameters: {
       query?: never;
       header?: never;
@@ -8588,11 +8588,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ProblemDetails'];
-            'application/json': components['schemas']['ProblemDetails'];
-            'text/json': components['schemas']['ProblemDetails'];
-            'application/xml': components['schemas']['ProblemDetails'];
-            'text/xml': components['schemas']['ProblemDetails'];
+            "text/plain": components["schemas"]["ProblemDetails"];
+            "application/json": components["schemas"]["ProblemDetails"];
+            "text/json": components["schemas"]["ProblemDetails"];
+            "application/xml": components["schemas"]["ProblemDetails"];
+            "text/xml": components["schemas"]["ProblemDetails"];
           };
         };
       };
@@ -8605,7 +8605,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/statistics': {
+  "/api/Admin/statistics": {
     parameters: {
       query?: never;
       header?: never;
@@ -8629,11 +8629,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['AdminStatisticsViewModel'];
-            'application/json': components['schemas']['AdminStatisticsViewModel'];
-            'text/json': components['schemas']['AdminStatisticsViewModel'];
-            'application/xml': components['schemas']['AdminStatisticsViewModel'];
-            'text/xml': components['schemas']['AdminStatisticsViewModel'];
+            "text/plain": components["schemas"]["AdminStatisticsViewModel"];
+            "application/json": components["schemas"]["AdminStatisticsViewModel"];
+            "text/json": components["schemas"]["AdminStatisticsViewModel"];
+            "application/xml": components["schemas"]["AdminStatisticsViewModel"];
+            "text/xml": components["schemas"]["AdminStatisticsViewModel"];
           };
         };
       };
@@ -8646,7 +8646,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/exceptions': {
+  "/api/Admin/exceptions": {
     parameters: {
       query?: never;
       header?: never;
@@ -8685,11 +8685,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': unknown[];
-            'application/json': unknown[];
-            'text/json': unknown[];
-            'application/xml': unknown[];
-            'text/xml': unknown[];
+            "text/plain": unknown[];
+            "application/json": unknown[];
+            "text/json": unknown[];
+            "application/xml": unknown[];
+            "text/xml": unknown[];
           };
         };
       };
@@ -8702,7 +8702,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Checklists': {
+  "/api/Admin/Checklists": {
     parameters: {
       query?: never;
       header?: never;
@@ -8721,13 +8721,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PostChecklistBindingModel'];
-          'application/json': components['schemas']['PostChecklistBindingModel'];
-          'text/json': components['schemas']['PostChecklistBindingModel'];
-          'application/*+json': components['schemas']['PostChecklistBindingModel'];
-          'application/xml': components['schemas']['PostChecklistBindingModel'];
-          'text/xml': components['schemas']['PostChecklistBindingModel'];
-          'application/*+xml': components['schemas']['PostChecklistBindingModel'];
+          "application/json-patch+json": components["schemas"]["PostChecklistBindingModel"];
+          "application/json": components["schemas"]["PostChecklistBindingModel"];
+          "text/json": components["schemas"]["PostChecklistBindingModel"];
+          "application/*+json": components["schemas"]["PostChecklistBindingModel"];
+          "application/xml": components["schemas"]["PostChecklistBindingModel"];
+          "text/xml": components["schemas"]["PostChecklistBindingModel"];
+          "application/*+xml": components["schemas"]["PostChecklistBindingModel"];
         };
       };
       responses: {
@@ -8737,11 +8737,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistViewModel'];
-            'application/json': components['schemas']['ChecklistViewModel'];
-            'text/json': components['schemas']['ChecklistViewModel'];
-            'application/xml': components['schemas']['ChecklistViewModel'];
-            'text/xml': components['schemas']['ChecklistViewModel'];
+            "text/plain": components["schemas"]["ChecklistViewModel"];
+            "application/json": components["schemas"]["ChecklistViewModel"];
+            "text/json": components["schemas"]["ChecklistViewModel"];
+            "application/xml": components["schemas"]["ChecklistViewModel"];
+            "text/xml": components["schemas"]["ChecklistViewModel"];
           };
         };
       };
@@ -8752,7 +8752,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Checklists/{id}/ExportCsv': {
+  "/api/Admin/Checklists/{id}/ExportCsv": {
     parameters: {
       query?: never;
       header?: never;
@@ -8778,9 +8778,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -8793,7 +8793,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Checklists/{id}/ExportExcel': {
+  "/api/Admin/Checklists/{id}/ExportExcel": {
     parameters: {
       query?: never;
       header?: never;
@@ -8819,9 +8819,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -8834,7 +8834,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Checklists/Download': {
+  "/api/Admin/Checklists/Download": {
     parameters: {
       query?: never;
       header?: never;
@@ -8853,13 +8853,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['DownloadChkecklistsBindingModel'];
-          'application/json': components['schemas']['DownloadChkecklistsBindingModel'];
-          'text/json': components['schemas']['DownloadChkecklistsBindingModel'];
-          'application/*+json': components['schemas']['DownloadChkecklistsBindingModel'];
-          'application/xml': components['schemas']['DownloadChkecklistsBindingModel'];
-          'text/xml': components['schemas']['DownloadChkecklistsBindingModel'];
-          'application/*+xml': components['schemas']['DownloadChkecklistsBindingModel'];
+          "application/json-patch+json": components["schemas"]["DownloadChkecklistsBindingModel"];
+          "application/json": components["schemas"]["DownloadChkecklistsBindingModel"];
+          "text/json": components["schemas"]["DownloadChkecklistsBindingModel"];
+          "application/*+json": components["schemas"]["DownloadChkecklistsBindingModel"];
+          "application/xml": components["schemas"]["DownloadChkecklistsBindingModel"];
+          "text/xml": components["schemas"]["DownloadChkecklistsBindingModel"];
+          "application/*+xml": components["schemas"]["DownloadChkecklistsBindingModel"];
         };
       };
       responses: {
@@ -8869,9 +8869,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -8882,7 +8882,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Checklists/Import': {
+  "/api/Admin/Checklists/Import": {
     parameters: {
       query?: never;
       header?: never;
@@ -8922,7 +8922,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{checklistID}/items': {
+  "/api/Admin/checklists/{checklistID}/items": {
     parameters: {
       query?: never;
       header?: never;
@@ -8947,11 +8947,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistItemViewModel'][];
-            'application/json': components['schemas']['ChecklistItemViewModel'][];
-            'text/json': components['schemas']['ChecklistItemViewModel'][];
-            'application/xml': components['schemas']['ChecklistItemViewModel'][];
-            'text/xml': components['schemas']['ChecklistItemViewModel'][];
+            "text/plain": components["schemas"]["ChecklistItemViewModel"][];
+            "application/json": components["schemas"]["ChecklistItemViewModel"][];
+            "text/json": components["schemas"]["ChecklistItemViewModel"][];
+            "application/xml": components["schemas"]["ChecklistItemViewModel"][];
+            "text/xml": components["schemas"]["ChecklistItemViewModel"][];
           };
         };
       };
@@ -8964,7 +8964,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{checklistID}': {
+  "/api/Admin/checklists/{checklistID}": {
     parameters: {
       query?: never;
       header?: never;
@@ -8985,13 +8985,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ModifyChecklistSharesBindingModel'];
-          'application/json': components['schemas']['ModifyChecklistSharesBindingModel'];
-          'text/json': components['schemas']['ModifyChecklistSharesBindingModel'];
-          'application/*+json': components['schemas']['ModifyChecklistSharesBindingModel'];
-          'application/xml': components['schemas']['ModifyChecklistSharesBindingModel'];
-          'text/xml': components['schemas']['ModifyChecklistSharesBindingModel'];
-          'application/*+xml': components['schemas']['ModifyChecklistSharesBindingModel'];
+          "application/json-patch+json": components["schemas"]["ModifyChecklistSharesBindingModel"];
+          "application/json": components["schemas"]["ModifyChecklistSharesBindingModel"];
+          "text/json": components["schemas"]["ModifyChecklistSharesBindingModel"];
+          "application/*+json": components["schemas"]["ModifyChecklistSharesBindingModel"];
+          "application/xml": components["schemas"]["ModifyChecklistSharesBindingModel"];
+          "text/xml": components["schemas"]["ModifyChecklistSharesBindingModel"];
+          "application/*+xml": components["schemas"]["ModifyChecklistSharesBindingModel"];
         };
       };
       responses: {
@@ -9037,7 +9037,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists': {
+  "/api/Admin/checklists": {
     parameters: {
       query?: never;
       header?: never;
@@ -9063,11 +9063,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistViewModel'][];
-            'application/json': components['schemas']['ChecklistViewModel'][];
-            'text/json': components['schemas']['ChecklistViewModel'][];
-            'application/xml': components['schemas']['ChecklistViewModel'][];
-            'text/xml': components['schemas']['ChecklistViewModel'][];
+            "text/plain": components["schemas"]["ChecklistViewModel"][];
+            "application/json": components["schemas"]["ChecklistViewModel"][];
+            "text/json": components["schemas"]["ChecklistViewModel"][];
+            "application/xml": components["schemas"]["ChecklistViewModel"][];
+            "text/xml": components["schemas"]["ChecklistViewModel"][];
           };
         };
       };
@@ -9084,13 +9084,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': number[];
-          'application/json': number[];
-          'text/json': number[];
-          'application/*+json': number[];
-          'application/xml': number[];
-          'text/xml': number[];
-          'application/*+xml': number[];
+          "application/json-patch+json": number[];
+          "application/json": number[];
+          "text/json": number[];
+          "application/*+json": number[];
+          "application/xml": number[];
+          "text/xml": number[];
+          "application/*+xml": number[];
         };
       };
       responses: {
@@ -9115,7 +9115,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Checklists/{checklistID}/rename': {
+  "/api/Admin/Checklists/{checklistID}/rename": {
     parameters: {
       query?: never;
       header?: never;
@@ -9139,13 +9139,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PostChecklistBindingModel'];
-          'application/json': components['schemas']['PostChecklistBindingModel'];
-          'text/json': components['schemas']['PostChecklistBindingModel'];
-          'application/*+json': components['schemas']['PostChecklistBindingModel'];
-          'application/xml': components['schemas']['PostChecklistBindingModel'];
-          'text/xml': components['schemas']['PostChecklistBindingModel'];
-          'application/*+xml': components['schemas']['PostChecklistBindingModel'];
+          "application/json-patch+json": components["schemas"]["PostChecklistBindingModel"];
+          "application/json": components["schemas"]["PostChecklistBindingModel"];
+          "text/json": components["schemas"]["PostChecklistBindingModel"];
+          "application/*+json": components["schemas"]["PostChecklistBindingModel"];
+          "application/xml": components["schemas"]["PostChecklistBindingModel"];
+          "text/xml": components["schemas"]["PostChecklistBindingModel"];
+          "application/*+xml": components["schemas"]["PostChecklistBindingModel"];
         };
       };
       responses: {
@@ -9164,7 +9164,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{checklistID}/sharelive/{groupIDs}': {
+  "/api/Admin/checklists/{checklistID}/sharelive/{groupIDs}": {
     parameters: {
       query?: never;
       header?: never;
@@ -9189,13 +9189,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': unknown;
-          'application/json': unknown;
-          'text/json': unknown;
-          'application/*+json': unknown;
-          'application/xml': unknown;
-          'text/xml': unknown;
-          'application/*+xml': unknown;
+          "application/json-patch+json": unknown;
+          "application/json": unknown;
+          "text/json": unknown;
+          "application/*+json": unknown;
+          "application/xml": unknown;
+          "text/xml": unknown;
+          "application/*+xml": unknown;
         };
       };
       responses: {
@@ -9214,7 +9214,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{checklistID}/usershare': {
+  "/api/Admin/checklists/{checklistID}/usershare": {
     parameters: {
       query?: never;
       header?: never;
@@ -9238,13 +9238,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'text/json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/*+json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'text/xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/*+xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
+          "application/json-patch+json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "text/json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/*+json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "text/xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/*+xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
         };
       };
       responses: {
@@ -9263,7 +9263,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{checklistID}/unshare/{groupIDs}': {
+  "/api/Admin/checklists/{checklistID}/unshare/{groupIDs}": {
     parameters: {
       query?: never;
       header?: never;
@@ -9303,7 +9303,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{checklistID}/userunshare': {
+  "/api/Admin/checklists/{checklistID}/userunshare": {
     parameters: {
       query?: never;
       header?: never;
@@ -9327,13 +9327,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'text/json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/*+json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'text/xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/*+xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
+          "application/json-patch+json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "text/json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/*+json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "text/xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/*+xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
         };
       };
       responses: {
@@ -9352,7 +9352,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{checklistID}/edititems': {
+  "/api/Admin/checklists/{checklistID}/edititems": {
     parameters: {
       query?: never;
       header?: never;
@@ -9376,13 +9376,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'application/json': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'text/json': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'application/*+json': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'application/xml': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'text/xml': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'application/*+xml': components['schemas']['EditChecklistItemsBulkBindingModel'];
+          "application/json-patch+json": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "application/json": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "text/json": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "application/*+json": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "application/xml": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "text/xml": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "application/*+xml": components["schemas"]["EditChecklistItemsBulkBindingModel"];
         };
       };
       responses: {
@@ -9401,7 +9401,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{checklistID}/itemsAndName': {
+  "/api/Admin/checklists/{checklistID}/itemsAndName": {
     parameters: {
       query?: never;
       header?: never;
@@ -9422,13 +9422,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ModifyChecklistNameAndItemsBindingModel'];
-          'application/json': components['schemas']['ModifyChecklistNameAndItemsBindingModel'];
-          'text/json': components['schemas']['ModifyChecklistNameAndItemsBindingModel'];
-          'application/*+json': components['schemas']['ModifyChecklistNameAndItemsBindingModel'];
-          'application/xml': components['schemas']['ModifyChecklistNameAndItemsBindingModel'];
-          'text/xml': components['schemas']['ModifyChecklistNameAndItemsBindingModel'];
-          'application/*+xml': components['schemas']['ModifyChecklistNameAndItemsBindingModel'];
+          "application/json-patch+json": components["schemas"]["ModifyChecklistNameAndItemsBindingModel"];
+          "application/json": components["schemas"]["ModifyChecklistNameAndItemsBindingModel"];
+          "text/json": components["schemas"]["ModifyChecklistNameAndItemsBindingModel"];
+          "application/*+json": components["schemas"]["ModifyChecklistNameAndItemsBindingModel"];
+          "application/xml": components["schemas"]["ModifyChecklistNameAndItemsBindingModel"];
+          "text/xml": components["schemas"]["ModifyChecklistNameAndItemsBindingModel"];
+          "application/*+xml": components["schemas"]["ModifyChecklistNameAndItemsBindingModel"];
         };
       };
       responses: {
@@ -9447,7 +9447,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/checklists/{id}': {
+  "/api/Admin/checklists/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -9473,11 +9473,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistViewModel'];
-            'application/json': components['schemas']['ChecklistViewModel'];
-            'text/json': components['schemas']['ChecklistViewModel'];
-            'application/xml': components['schemas']['ChecklistViewModel'];
-            'text/xml': components['schemas']['ChecklistViewModel'];
+            "text/plain": components["schemas"]["ChecklistViewModel"];
+            "application/json": components["schemas"]["ChecklistViewModel"];
+            "text/json": components["schemas"]["ChecklistViewModel"];
+            "application/xml": components["schemas"]["ChecklistViewModel"];
+            "text/xml": components["schemas"]["ChecklistViewModel"];
           };
         };
       };
@@ -9490,7 +9490,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Users/Import-users': {
+  "/api/Admin/Users/Import-users": {
     parameters: {
       query?: never;
       header?: never;
@@ -9512,13 +9512,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserBindingModelForImport'][];
-          'application/json': components['schemas']['UserBindingModelForImport'][];
-          'text/json': components['schemas']['UserBindingModelForImport'][];
-          'application/*+json': components['schemas']['UserBindingModelForImport'][];
-          'application/xml': components['schemas']['UserBindingModelForImport'][];
-          'text/xml': components['schemas']['UserBindingModelForImport'][];
-          'application/*+xml': components['schemas']['UserBindingModelForImport'][];
+          "application/json-patch+json": components["schemas"]["UserBindingModelForImport"][];
+          "application/json": components["schemas"]["UserBindingModelForImport"][];
+          "text/json": components["schemas"]["UserBindingModelForImport"][];
+          "application/*+json": components["schemas"]["UserBindingModelForImport"][];
+          "application/xml": components["schemas"]["UserBindingModelForImport"][];
+          "text/xml": components["schemas"]["UserBindingModelForImport"][];
+          "application/*+xml": components["schemas"]["UserBindingModelForImport"][];
         };
       };
       responses: {
@@ -9528,11 +9528,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserImportResult'][];
-            'application/json': components['schemas']['UserImportResult'][];
-            'text/json': components['schemas']['UserImportResult'][];
-            'application/xml': components['schemas']['UserImportResult'][];
-            'text/xml': components['schemas']['UserImportResult'][];
+            "text/plain": components["schemas"]["UserImportResult"][];
+            "application/json": components["schemas"]["UserImportResult"][];
+            "text/json": components["schemas"]["UserImportResult"][];
+            "application/xml": components["schemas"]["UserImportResult"][];
+            "text/xml": components["schemas"]["UserImportResult"][];
           };
         };
       };
@@ -9543,7 +9543,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/check-users-availability-excel': {
+  "/api/Admin/check-users-availability-excel": {
     parameters: {
       query?: never;
       header?: never;
@@ -9568,7 +9568,7 @@ export interface paths {
       /** @description Required parameter. MS Excel file with users data. */
       requestBody?: {
         content: {
-          'multipart/form-data': {
+          "multipart/form-data": {
             /** Format: binary */
             file?: string;
           };
@@ -9581,11 +9581,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserImportResponse'];
-            'application/json': components['schemas']['UserImportResponse'];
-            'text/json': components['schemas']['UserImportResponse'];
-            'application/xml': components['schemas']['UserImportResponse'];
-            'text/xml': components['schemas']['UserImportResponse'];
+            "text/plain": components["schemas"]["UserImportResponse"];
+            "application/json": components["schemas"]["UserImportResponse"];
+            "text/json": components["schemas"]["UserImportResponse"];
+            "application/xml": components["schemas"]["UserImportResponse"];
+            "text/xml": components["schemas"]["UserImportResponse"];
           };
         };
       };
@@ -9596,7 +9596,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/check-users-availability': {
+  "/api/Admin/check-users-availability": {
     parameters: {
       query?: never;
       header?: never;
@@ -9616,13 +9616,13 @@ export interface paths {
       /** @description info about users to import */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UserImportRequest'];
-          'application/json': components['schemas']['UserImportRequest'];
-          'text/json': components['schemas']['UserImportRequest'];
-          'application/*+json': components['schemas']['UserImportRequest'];
-          'application/xml': components['schemas']['UserImportRequest'];
-          'text/xml': components['schemas']['UserImportRequest'];
-          'application/*+xml': components['schemas']['UserImportRequest'];
+          "application/json-patch+json": components["schemas"]["UserImportRequest"];
+          "application/json": components["schemas"]["UserImportRequest"];
+          "text/json": components["schemas"]["UserImportRequest"];
+          "application/*+json": components["schemas"]["UserImportRequest"];
+          "application/xml": components["schemas"]["UserImportRequest"];
+          "text/xml": components["schemas"]["UserImportRequest"];
+          "application/*+xml": components["schemas"]["UserImportRequest"];
         };
       };
       responses: {
@@ -9632,11 +9632,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserImportResponse'];
-            'application/json': components['schemas']['UserImportResponse'];
-            'text/json': components['schemas']['UserImportResponse'];
-            'application/xml': components['schemas']['UserImportResponse'];
-            'text/xml': components['schemas']['UserImportResponse'];
+            "text/plain": components["schemas"]["UserImportResponse"];
+            "application/json": components["schemas"]["UserImportResponse"];
+            "text/json": components["schemas"]["UserImportResponse"];
+            "application/xml": components["schemas"]["UserImportResponse"];
+            "text/xml": components["schemas"]["UserImportResponse"];
           };
         };
       };
@@ -9647,7 +9647,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{organizationId}/meetingRooms': {
+  "/api/Admin/Organizations/{organizationId}/meetingRooms": {
     parameters: {
       query?: never;
       header?: never;
@@ -9671,11 +9671,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MeetingRoomViewModel'][];
-            'application/json': components['schemas']['MeetingRoomViewModel'][];
-            'text/json': components['schemas']['MeetingRoomViewModel'][];
-            'application/xml': components['schemas']['MeetingRoomViewModel'][];
-            'text/xml': components['schemas']['MeetingRoomViewModel'][];
+            "text/plain": components["schemas"]["MeetingRoomViewModel"][];
+            "application/json": components["schemas"]["MeetingRoomViewModel"][];
+            "text/json": components["schemas"]["MeetingRoomViewModel"][];
+            "application/xml": components["schemas"]["MeetingRoomViewModel"][];
+            "text/xml": components["schemas"]["MeetingRoomViewModel"][];
           };
         };
         /** @description Bad Request */
@@ -9684,11 +9684,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ErrorMessageViewModel'];
-            'application/json': components['schemas']['ErrorMessageViewModel'];
-            'text/json': components['schemas']['ErrorMessageViewModel'];
-            'application/xml': components['schemas']['ErrorMessageViewModel'];
-            'text/xml': components['schemas']['ErrorMessageViewModel'];
+            "text/plain": components["schemas"]["ErrorMessageViewModel"];
+            "application/json": components["schemas"]["ErrorMessageViewModel"];
+            "text/json": components["schemas"]["ErrorMessageViewModel"];
+            "application/xml": components["schemas"]["ErrorMessageViewModel"];
+            "text/xml": components["schemas"]["ErrorMessageViewModel"];
           };
         };
       };
@@ -9705,13 +9705,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['MeetingRoomCreationModel'];
-          'application/json': components['schemas']['MeetingRoomCreationModel'];
-          'text/json': components['schemas']['MeetingRoomCreationModel'];
-          'application/*+json': components['schemas']['MeetingRoomCreationModel'];
-          'application/xml': components['schemas']['MeetingRoomCreationModel'];
-          'text/xml': components['schemas']['MeetingRoomCreationModel'];
-          'application/*+xml': components['schemas']['MeetingRoomCreationModel'];
+          "application/json-patch+json": components["schemas"]["MeetingRoomCreationModel"];
+          "application/json": components["schemas"]["MeetingRoomCreationModel"];
+          "text/json": components["schemas"]["MeetingRoomCreationModel"];
+          "application/*+json": components["schemas"]["MeetingRoomCreationModel"];
+          "application/xml": components["schemas"]["MeetingRoomCreationModel"];
+          "text/xml": components["schemas"]["MeetingRoomCreationModel"];
+          "application/*+xml": components["schemas"]["MeetingRoomCreationModel"];
         };
       };
       responses: {
@@ -9721,11 +9721,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MeetingRoomViewModel'];
-            'application/json': components['schemas']['MeetingRoomViewModel'];
-            'text/json': components['schemas']['MeetingRoomViewModel'];
-            'application/xml': components['schemas']['MeetingRoomViewModel'];
-            'text/xml': components['schemas']['MeetingRoomViewModel'];
+            "text/plain": components["schemas"]["MeetingRoomViewModel"];
+            "application/json": components["schemas"]["MeetingRoomViewModel"];
+            "text/json": components["schemas"]["MeetingRoomViewModel"];
+            "application/xml": components["schemas"]["MeetingRoomViewModel"];
+            "text/xml": components["schemas"]["MeetingRoomViewModel"];
           };
         };
         /** @description Bad Request */
@@ -9734,11 +9734,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ApplicationValidationResult'];
-            'application/json': components['schemas']['ApplicationValidationResult'];
-            'text/json': components['schemas']['ApplicationValidationResult'];
-            'application/xml': components['schemas']['ApplicationValidationResult'];
-            'text/xml': components['schemas']['ApplicationValidationResult'];
+            "text/plain": components["schemas"]["ApplicationValidationResult"];
+            "application/json": components["schemas"]["ApplicationValidationResult"];
+            "text/json": components["schemas"]["ApplicationValidationResult"];
+            "application/xml": components["schemas"]["ApplicationValidationResult"];
+            "text/xml": components["schemas"]["ApplicationValidationResult"];
           };
         };
         /** @description Unauthorized */
@@ -9756,7 +9756,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Admin/Organizations/{organizationId}/meetingRooms/{id}': {
+  "/api/Admin/Organizations/{organizationId}/meetingRooms/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -9781,11 +9781,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MeetingRoomViewModel'];
-            'application/json': components['schemas']['MeetingRoomViewModel'];
-            'text/json': components['schemas']['MeetingRoomViewModel'];
-            'application/xml': components['schemas']['MeetingRoomViewModel'];
-            'text/xml': components['schemas']['MeetingRoomViewModel'];
+            "text/plain": components["schemas"]["MeetingRoomViewModel"];
+            "application/json": components["schemas"]["MeetingRoomViewModel"];
+            "text/json": components["schemas"]["MeetingRoomViewModel"];
+            "application/xml": components["schemas"]["MeetingRoomViewModel"];
+            "text/xml": components["schemas"]["MeetingRoomViewModel"];
           };
         };
         /** @description Bad Request */
@@ -9794,11 +9794,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ErrorMessageViewModel'];
-            'application/json': components['schemas']['ErrorMessageViewModel'];
-            'text/json': components['schemas']['ErrorMessageViewModel'];
-            'application/xml': components['schemas']['ErrorMessageViewModel'];
-            'text/xml': components['schemas']['ErrorMessageViewModel'];
+            "text/plain": components["schemas"]["ErrorMessageViewModel"];
+            "application/json": components["schemas"]["ErrorMessageViewModel"];
+            "text/json": components["schemas"]["ErrorMessageViewModel"];
+            "application/xml": components["schemas"]["ErrorMessageViewModel"];
+            "text/xml": components["schemas"]["ErrorMessageViewModel"];
           };
         };
       };
@@ -9815,13 +9815,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['MeetingRoomEditionModel'];
-          'application/json': components['schemas']['MeetingRoomEditionModel'];
-          'text/json': components['schemas']['MeetingRoomEditionModel'];
-          'application/*+json': components['schemas']['MeetingRoomEditionModel'];
-          'application/xml': components['schemas']['MeetingRoomEditionModel'];
-          'text/xml': components['schemas']['MeetingRoomEditionModel'];
-          'application/*+xml': components['schemas']['MeetingRoomEditionModel'];
+          "application/json-patch+json": components["schemas"]["MeetingRoomEditionModel"];
+          "application/json": components["schemas"]["MeetingRoomEditionModel"];
+          "text/json": components["schemas"]["MeetingRoomEditionModel"];
+          "application/*+json": components["schemas"]["MeetingRoomEditionModel"];
+          "application/xml": components["schemas"]["MeetingRoomEditionModel"];
+          "text/xml": components["schemas"]["MeetingRoomEditionModel"];
+          "application/*+xml": components["schemas"]["MeetingRoomEditionModel"];
         };
       };
       responses: {
@@ -9831,11 +9831,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MeetingRoomViewModel'];
-            'application/json': components['schemas']['MeetingRoomViewModel'];
-            'text/json': components['schemas']['MeetingRoomViewModel'];
-            'application/xml': components['schemas']['MeetingRoomViewModel'];
-            'text/xml': components['schemas']['MeetingRoomViewModel'];
+            "text/plain": components["schemas"]["MeetingRoomViewModel"];
+            "application/json": components["schemas"]["MeetingRoomViewModel"];
+            "text/json": components["schemas"]["MeetingRoomViewModel"];
+            "application/xml": components["schemas"]["MeetingRoomViewModel"];
+            "text/xml": components["schemas"]["MeetingRoomViewModel"];
           };
         };
         /** @description Bad Request */
@@ -9844,11 +9844,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ErrorMessageViewModel'][];
-            'application/json': components['schemas']['ErrorMessageViewModel'][];
-            'text/json': components['schemas']['ErrorMessageViewModel'][];
-            'application/xml': components['schemas']['ErrorMessageViewModel'][];
-            'text/xml': components['schemas']['ErrorMessageViewModel'][];
+            "text/plain": components["schemas"]["ErrorMessageViewModel"][];
+            "application/json": components["schemas"]["ErrorMessageViewModel"][];
+            "text/json": components["schemas"]["ErrorMessageViewModel"][];
+            "application/xml": components["schemas"]["ErrorMessageViewModel"][];
+            "text/xml": components["schemas"]["ErrorMessageViewModel"][];
           };
         };
       };
@@ -9860,7 +9860,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists': {
+  "/api/Checklists": {
     parameters: {
       query?: never;
       header?: never;
@@ -9900,11 +9900,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistViewModel'][];
-            'application/json': components['schemas']['ChecklistViewModel'][];
-            'text/json': components['schemas']['ChecklistViewModel'][];
-            'application/xml': components['schemas']['ChecklistViewModel'][];
-            'text/xml': components['schemas']['ChecklistViewModel'][];
+            "text/plain": components["schemas"]["ChecklistViewModel"][];
+            "application/json": components["schemas"]["ChecklistViewModel"][];
+            "text/json": components["schemas"]["ChecklistViewModel"][];
+            "application/xml": components["schemas"]["ChecklistViewModel"][];
+            "text/xml": components["schemas"]["ChecklistViewModel"][];
           };
         };
       };
@@ -9920,13 +9920,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PostChecklistBindingModel'];
-          'application/json': components['schemas']['PostChecklistBindingModel'];
-          'text/json': components['schemas']['PostChecklistBindingModel'];
-          'application/*+json': components['schemas']['PostChecklistBindingModel'];
-          'application/xml': components['schemas']['PostChecklistBindingModel'];
-          'text/xml': components['schemas']['PostChecklistBindingModel'];
-          'application/*+xml': components['schemas']['PostChecklistBindingModel'];
+          "application/json-patch+json": components["schemas"]["PostChecklistBindingModel"];
+          "application/json": components["schemas"]["PostChecklistBindingModel"];
+          "text/json": components["schemas"]["PostChecklistBindingModel"];
+          "application/*+json": components["schemas"]["PostChecklistBindingModel"];
+          "application/xml": components["schemas"]["PostChecklistBindingModel"];
+          "text/xml": components["schemas"]["PostChecklistBindingModel"];
+          "application/*+xml": components["schemas"]["PostChecklistBindingModel"];
         };
       };
       responses: {
@@ -9936,11 +9936,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistViewModel'];
-            'application/json': components['schemas']['ChecklistViewModel'];
-            'text/json': components['schemas']['ChecklistViewModel'];
-            'application/xml': components['schemas']['ChecklistViewModel'];
-            'text/xml': components['schemas']['ChecklistViewModel'];
+            "text/plain": components["schemas"]["ChecklistViewModel"];
+            "application/json": components["schemas"]["ChecklistViewModel"];
+            "text/json": components["schemas"]["ChecklistViewModel"];
+            "application/xml": components["schemas"]["ChecklistViewModel"];
+            "text/xml": components["schemas"]["ChecklistViewModel"];
           };
         };
       };
@@ -9951,7 +9951,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/Summary': {
+  "/api/Checklists/Summary": {
     parameters: {
       query?: never;
       header?: never;
@@ -9985,11 +9985,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistSummaryViewModel'];
-            'application/json': components['schemas']['ChecklistSummaryViewModel'];
-            'text/json': components['schemas']['ChecklistSummaryViewModel'];
-            'application/xml': components['schemas']['ChecklistSummaryViewModel'];
-            'text/xml': components['schemas']['ChecklistSummaryViewModel'];
+            "text/plain": components["schemas"]["ChecklistSummaryViewModel"];
+            "application/json": components["schemas"]["ChecklistSummaryViewModel"];
+            "text/json": components["schemas"]["ChecklistSummaryViewModel"];
+            "application/xml": components["schemas"]["ChecklistSummaryViewModel"];
+            "text/xml": components["schemas"]["ChecklistSummaryViewModel"];
           };
         };
       };
@@ -10002,7 +10002,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{id}': {
+  "/api/Checklists/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -10028,11 +10028,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistViewModel'];
-            'application/json': components['schemas']['ChecklistViewModel'];
-            'text/json': components['schemas']['ChecklistViewModel'];
-            'application/xml': components['schemas']['ChecklistViewModel'];
-            'text/xml': components['schemas']['ChecklistViewModel'];
+            "text/plain": components["schemas"]["ChecklistViewModel"];
+            "application/json": components["schemas"]["ChecklistViewModel"];
+            "text/json": components["schemas"]["ChecklistViewModel"];
+            "application/xml": components["schemas"]["ChecklistViewModel"];
+            "text/xml": components["schemas"]["ChecklistViewModel"];
           };
         };
       };
@@ -10066,7 +10066,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/items': {
+  "/api/Checklists/{checklistID}/items": {
     parameters: {
       query?: never;
       header?: never;
@@ -10091,11 +10091,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistItemViewModel'][];
-            'application/json': components['schemas']['ChecklistItemViewModel'][];
-            'text/json': components['schemas']['ChecklistItemViewModel'][];
-            'application/xml': components['schemas']['ChecklistItemViewModel'][];
-            'text/xml': components['schemas']['ChecklistItemViewModel'][];
+            "text/plain": components["schemas"]["ChecklistItemViewModel"][];
+            "application/json": components["schemas"]["ChecklistItemViewModel"][];
+            "text/json": components["schemas"]["ChecklistItemViewModel"][];
+            "application/xml": components["schemas"]["ChecklistItemViewModel"][];
+            "text/xml": components["schemas"]["ChecklistItemViewModel"][];
           };
         };
       };
@@ -10113,13 +10113,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PostChecklistItemBindingModel'][];
-          'application/json': components['schemas']['PostChecklistItemBindingModel'][];
-          'text/json': components['schemas']['PostChecklistItemBindingModel'][];
-          'application/*+json': components['schemas']['PostChecklistItemBindingModel'][];
-          'application/xml': components['schemas']['PostChecklistItemBindingModel'][];
-          'text/xml': components['schemas']['PostChecklistItemBindingModel'][];
-          'application/*+xml': components['schemas']['PostChecklistItemBindingModel'][];
+          "application/json-patch+json": components["schemas"]["PostChecklistItemBindingModel"][];
+          "application/json": components["schemas"]["PostChecklistItemBindingModel"][];
+          "text/json": components["schemas"]["PostChecklistItemBindingModel"][];
+          "application/*+json": components["schemas"]["PostChecklistItemBindingModel"][];
+          "application/xml": components["schemas"]["PostChecklistItemBindingModel"][];
+          "text/xml": components["schemas"]["PostChecklistItemBindingModel"][];
+          "application/*+xml": components["schemas"]["PostChecklistItemBindingModel"][];
         };
       };
       responses: {
@@ -10129,11 +10129,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistItemViewModel'][];
-            'application/json': components['schemas']['ChecklistItemViewModel'][];
-            'text/json': components['schemas']['ChecklistItemViewModel'][];
-            'application/xml': components['schemas']['ChecklistItemViewModel'][];
-            'text/xml': components['schemas']['ChecklistItemViewModel'][];
+            "text/plain": components["schemas"]["ChecklistItemViewModel"][];
+            "application/json": components["schemas"]["ChecklistItemViewModel"][];
+            "text/json": components["schemas"]["ChecklistItemViewModel"][];
+            "application/xml": components["schemas"]["ChecklistItemViewModel"][];
+            "text/xml": components["schemas"]["ChecklistItemViewModel"][];
           };
         };
       };
@@ -10144,7 +10144,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/share/{groupID}': {
+  "/api/Checklists/{checklistID}/share/{groupID}": {
     parameters: {
       query?: never;
       header?: never;
@@ -10181,7 +10181,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/sharelive/{groupIdString}': {
+  "/api/Checklists/{checklistID}/sharelive/{groupIdString}": {
     parameters: {
       query?: never;
       header?: never;
@@ -10204,13 +10204,13 @@ export interface paths {
       /** @description messageId(optional parameter) can be passed using this */
       requestBody?: {
         content: {
-          'application/json-patch+json': unknown;
-          'application/json': unknown;
-          'text/json': unknown;
-          'application/*+json': unknown;
-          'application/xml': unknown;
-          'text/xml': unknown;
-          'application/*+xml': unknown;
+          "application/json-patch+json": unknown;
+          "application/json": unknown;
+          "text/json": unknown;
+          "application/*+json": unknown;
+          "application/xml": unknown;
+          "text/xml": unknown;
+          "application/*+xml": unknown;
         };
       };
       responses: {
@@ -10229,7 +10229,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/unshare/{groupIdString}': {
+  "/api/Checklists/{checklistID}/unshare/{groupIdString}": {
     parameters: {
       query?: never;
       header?: never;
@@ -10266,7 +10266,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/sharelivewithusers': {
+  "/api/Checklists/{checklistID}/sharelivewithusers": {
     parameters: {
       query?: never;
       header?: never;
@@ -10291,13 +10291,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'text/json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/*+json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'text/xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/*+xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
+          "application/json-patch+json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "text/json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/*+json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "text/xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/*+xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
         };
       };
       responses: {
@@ -10316,7 +10316,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/unsharewithusers': {
+  "/api/Checklists/{checklistID}/unsharewithusers": {
     parameters: {
       query?: never;
       header?: never;
@@ -10337,13 +10337,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'text/json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/*+json': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'text/xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
-          'application/*+xml': components['schemas']['ShareChecklistWithUsersBindingModel'];
+          "application/json-patch+json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "text/json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/*+json": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "text/xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
+          "application/*+xml": components["schemas"]["ShareChecklistWithUsersBindingModel"];
         };
       };
       responses: {
@@ -10362,7 +10362,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/sharereadonly': {
+  "/api/Checklists/{checklistID}/sharereadonly": {
     parameters: {
       query?: never;
       header?: never;
@@ -10383,13 +10383,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ShareChecklistReadonlyBindingModel'];
-          'application/json': components['schemas']['ShareChecklistReadonlyBindingModel'];
-          'text/json': components['schemas']['ShareChecklistReadonlyBindingModel'];
-          'application/*+json': components['schemas']['ShareChecklistReadonlyBindingModel'];
-          'application/xml': components['schemas']['ShareChecklistReadonlyBindingModel'];
-          'text/xml': components['schemas']['ShareChecklistReadonlyBindingModel'];
-          'application/*+xml': components['schemas']['ShareChecklistReadonlyBindingModel'];
+          "application/json-patch+json": components["schemas"]["ShareChecklistReadonlyBindingModel"];
+          "application/json": components["schemas"]["ShareChecklistReadonlyBindingModel"];
+          "text/json": components["schemas"]["ShareChecklistReadonlyBindingModel"];
+          "application/*+json": components["schemas"]["ShareChecklistReadonlyBindingModel"];
+          "application/xml": components["schemas"]["ShareChecklistReadonlyBindingModel"];
+          "text/xml": components["schemas"]["ShareChecklistReadonlyBindingModel"];
+          "application/*+xml": components["schemas"]["ShareChecklistReadonlyBindingModel"];
         };
       };
       responses: {
@@ -10408,7 +10408,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/start/{groupIDs}': {
+  "/api/Checklists/{checklistID}/start/{groupIDs}": {
     parameters: {
       query?: never;
       header?: never;
@@ -10430,13 +10430,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['StartChecklistItemBindingModel'];
-          'application/json': components['schemas']['StartChecklistItemBindingModel'];
-          'text/json': components['schemas']['StartChecklistItemBindingModel'];
-          'application/*+json': components['schemas']['StartChecklistItemBindingModel'];
-          'application/xml': components['schemas']['StartChecklistItemBindingModel'];
-          'text/xml': components['schemas']['StartChecklistItemBindingModel'];
-          'application/*+xml': components['schemas']['StartChecklistItemBindingModel'];
+          "application/json-patch+json": components["schemas"]["StartChecklistItemBindingModel"];
+          "application/json": components["schemas"]["StartChecklistItemBindingModel"];
+          "text/json": components["schemas"]["StartChecklistItemBindingModel"];
+          "application/*+json": components["schemas"]["StartChecklistItemBindingModel"];
+          "application/xml": components["schemas"]["StartChecklistItemBindingModel"];
+          "text/xml": components["schemas"]["StartChecklistItemBindingModel"];
+          "application/*+xml": components["schemas"]["StartChecklistItemBindingModel"];
         };
       };
       responses: {
@@ -10446,11 +10446,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistViewModel'];
-            'application/json': components['schemas']['ChecklistViewModel'];
-            'text/json': components['schemas']['ChecklistViewModel'];
-            'application/xml': components['schemas']['ChecklistViewModel'];
-            'text/xml': components['schemas']['ChecklistViewModel'];
+            "text/plain": components["schemas"]["ChecklistViewModel"];
+            "application/json": components["schemas"]["ChecklistViewModel"];
+            "text/json": components["schemas"]["ChecklistViewModel"];
+            "application/xml": components["schemas"]["ChecklistViewModel"];
+            "text/xml": components["schemas"]["ChecklistViewModel"];
           };
         };
       };
@@ -10461,7 +10461,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/startWithUsersAndGroups': {
+  "/api/Checklists/{checklistID}/startWithUsersAndGroups": {
     parameters: {
       query?: never;
       header?: never;
@@ -10484,13 +10484,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['StartChecklistWithUsersAndGroupsBindingModel'];
-          'application/json': components['schemas']['StartChecklistWithUsersAndGroupsBindingModel'];
-          'text/json': components['schemas']['StartChecklistWithUsersAndGroupsBindingModel'];
-          'application/*+json': components['schemas']['StartChecklistWithUsersAndGroupsBindingModel'];
-          'application/xml': components['schemas']['StartChecklistWithUsersAndGroupsBindingModel'];
-          'text/xml': components['schemas']['StartChecklistWithUsersAndGroupsBindingModel'];
-          'application/*+xml': components['schemas']['StartChecklistWithUsersAndGroupsBindingModel'];
+          "application/json-patch+json": components["schemas"]["StartChecklistWithUsersAndGroupsBindingModel"];
+          "application/json": components["schemas"]["StartChecklistWithUsersAndGroupsBindingModel"];
+          "text/json": components["schemas"]["StartChecklistWithUsersAndGroupsBindingModel"];
+          "application/*+json": components["schemas"]["StartChecklistWithUsersAndGroupsBindingModel"];
+          "application/xml": components["schemas"]["StartChecklistWithUsersAndGroupsBindingModel"];
+          "text/xml": components["schemas"]["StartChecklistWithUsersAndGroupsBindingModel"];
+          "application/*+xml": components["schemas"]["StartChecklistWithUsersAndGroupsBindingModel"];
         };
       };
       responses: {
@@ -10500,11 +10500,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistViewModel'];
-            'application/json': components['schemas']['ChecklistViewModel'];
-            'text/json': components['schemas']['ChecklistViewModel'];
-            'application/xml': components['schemas']['ChecklistViewModel'];
-            'text/xml': components['schemas']['ChecklistViewModel'];
+            "text/plain": components["schemas"]["ChecklistViewModel"];
+            "application/json": components["schemas"]["ChecklistViewModel"];
+            "text/json": components["schemas"]["ChecklistViewModel"];
+            "application/xml": components["schemas"]["ChecklistViewModel"];
+            "text/xml": components["schemas"]["ChecklistViewModel"];
           };
         };
       };
@@ -10515,7 +10515,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/end': {
+  "/api/Checklists/{checklistID}/end": {
     parameters: {
       query?: never;
       header?: never;
@@ -10551,7 +10551,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/reactivate': {
+  "/api/Checklists/{checklistID}/reactivate": {
     parameters: {
       query?: never;
       header?: never;
@@ -10587,7 +10587,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/items/reset': {
+  "/api/Checklists/{checklistID}/items/reset": {
     parameters: {
       query?: never;
       header?: never;
@@ -10623,7 +10623,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/items/{itemID}': {
+  "/api/Checklists/{checklistID}/items/{itemID}": {
     parameters: {
       query?: never;
       header?: never;
@@ -10666,13 +10666,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EditChecklistItemBindingModel'];
-          'application/json': components['schemas']['EditChecklistItemBindingModel'];
-          'text/json': components['schemas']['EditChecklistItemBindingModel'];
-          'application/*+json': components['schemas']['EditChecklistItemBindingModel'];
-          'application/xml': components['schemas']['EditChecklistItemBindingModel'];
-          'text/xml': components['schemas']['EditChecklistItemBindingModel'];
-          'application/*+xml': components['schemas']['EditChecklistItemBindingModel'];
+          "application/json-patch+json": components["schemas"]["EditChecklistItemBindingModel"];
+          "application/json": components["schemas"]["EditChecklistItemBindingModel"];
+          "text/json": components["schemas"]["EditChecklistItemBindingModel"];
+          "application/*+json": components["schemas"]["EditChecklistItemBindingModel"];
+          "application/xml": components["schemas"]["EditChecklistItemBindingModel"];
+          "text/xml": components["schemas"]["EditChecklistItemBindingModel"];
+          "application/*+xml": components["schemas"]["EditChecklistItemBindingModel"];
         };
       };
       responses: {
@@ -10682,11 +10682,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ChecklistItemViewModel'][];
-            'application/json': components['schemas']['ChecklistItemViewModel'][];
-            'text/json': components['schemas']['ChecklistItemViewModel'][];
-            'application/xml': components['schemas']['ChecklistItemViewModel'][];
-            'text/xml': components['schemas']['ChecklistItemViewModel'][];
+            "text/plain": components["schemas"]["ChecklistItemViewModel"][];
+            "application/json": components["schemas"]["ChecklistItemViewModel"][];
+            "text/json": components["schemas"]["ChecklistItemViewModel"][];
+            "application/xml": components["schemas"]["ChecklistItemViewModel"][];
+            "text/xml": components["schemas"]["ChecklistItemViewModel"][];
           };
         };
       };
@@ -10718,7 +10718,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/edititems': {
+  "/api/Checklists/{checklistID}/edititems": {
     parameters: {
       query?: never;
       header?: never;
@@ -10739,13 +10739,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'application/json': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'text/json': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'application/*+json': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'application/xml': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'text/xml': components['schemas']['EditChecklistItemsBulkBindingModel'];
-          'application/*+xml': components['schemas']['EditChecklistItemsBulkBindingModel'];
+          "application/json-patch+json": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "application/json": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "text/json": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "application/*+json": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "application/xml": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "text/xml": components["schemas"]["EditChecklistItemsBulkBindingModel"];
+          "application/*+xml": components["schemas"]["EditChecklistItemsBulkBindingModel"];
         };
       };
       responses: {
@@ -10764,7 +10764,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/items/{itemID}/swap/{otherItemID}': {
+  "/api/Checklists/{checklistID}/items/{itemID}/swap/{otherItemID}": {
     parameters: {
       query?: never;
       header?: never;
@@ -10802,7 +10802,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/rename': {
+  "/api/Checklists/{checklistID}/rename": {
     parameters: {
       query?: never;
       header?: never;
@@ -10823,13 +10823,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PostChecklistBindingModel'];
-          'application/json': components['schemas']['PostChecklistBindingModel'];
-          'text/json': components['schemas']['PostChecklistBindingModel'];
-          'application/*+json': components['schemas']['PostChecklistBindingModel'];
-          'application/xml': components['schemas']['PostChecklistBindingModel'];
-          'text/xml': components['schemas']['PostChecklistBindingModel'];
-          'application/*+xml': components['schemas']['PostChecklistBindingModel'];
+          "application/json-patch+json": components["schemas"]["PostChecklistBindingModel"];
+          "application/json": components["schemas"]["PostChecklistBindingModel"];
+          "text/json": components["schemas"]["PostChecklistBindingModel"];
+          "application/*+json": components["schemas"]["PostChecklistBindingModel"];
+          "application/xml": components["schemas"]["PostChecklistBindingModel"];
+          "text/xml": components["schemas"]["PostChecklistBindingModel"];
+          "application/*+xml": components["schemas"]["PostChecklistBindingModel"];
         };
       };
       responses: {
@@ -10848,7 +10848,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/items/{itemID}/comment': {
+  "/api/Checklists/{checklistID}/items/{itemID}/comment": {
     parameters: {
       query?: never;
       header?: never;
@@ -10858,14 +10858,14 @@ export interface paths {
     get?: never;
     put?: never;
     /** Adding regular comment to checklist item neither marking it complete nor incomplete */
-    post: operations['PostComment'];
+    post: operations["PostComment"];
     delete?: never;
     options?: never;
     head?: never;
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/items/{itemID}/check': {
+  "/api/Checklists/{checklistID}/items/{itemID}/check": {
     parameters: {
       query?: never;
       header?: never;
@@ -10905,7 +10905,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Checklists/{checklistID}/items/{itemID}/uncheck': {
+  "/api/Checklists/{checklistID}/items/{itemID}/uncheck": {
     parameters: {
       query?: never;
       header?: never;
@@ -10945,7 +10945,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/versions': {
+  "/api/versions": {
     parameters: {
       query?: never;
       header?: never;
@@ -10968,11 +10968,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ClientVersionViewModel'];
-            'application/json': components['schemas']['ClientVersionViewModel'];
-            'text/json': components['schemas']['ClientVersionViewModel'];
-            'application/xml': components['schemas']['ClientVersionViewModel'];
-            'text/xml': components['schemas']['ClientVersionViewModel'];
+            "text/plain": components["schemas"]["ClientVersionViewModel"];
+            "application/json": components["schemas"]["ClientVersionViewModel"];
+            "text/json": components["schemas"]["ClientVersionViewModel"];
+            "application/xml": components["schemas"]["ClientVersionViewModel"];
+            "text/xml": components["schemas"]["ClientVersionViewModel"];
           };
         };
       };
@@ -10985,7 +10985,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Devices': {
+  "/api/Devices": {
     parameters: {
       query?: never;
       header?: never;
@@ -11004,13 +11004,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['Device'];
-          'application/json': components['schemas']['Device'];
-          'text/json': components['schemas']['Device'];
-          'application/*+json': components['schemas']['Device'];
-          'application/xml': components['schemas']['Device'];
-          'text/xml': components['schemas']['Device'];
-          'application/*+xml': components['schemas']['Device'];
+          "application/json-patch+json": components["schemas"]["Device"];
+          "application/json": components["schemas"]["Device"];
+          "text/json": components["schemas"]["Device"];
+          "application/*+json": components["schemas"]["Device"];
+          "application/xml": components["schemas"]["Device"];
+          "text/xml": components["schemas"]["Device"];
+          "application/*+xml": components["schemas"]["Device"];
         };
       };
       responses: {
@@ -11020,11 +11020,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['Device'];
-            'application/json': components['schemas']['Device'];
-            'text/json': components['schemas']['Device'];
-            'application/xml': components['schemas']['Device'];
-            'text/xml': components['schemas']['Device'];
+            "text/plain": components["schemas"]["Device"];
+            "application/json": components["schemas"]["Device"];
+            "text/json": components["schemas"]["Device"];
+            "application/xml": components["schemas"]["Device"];
+            "text/xml": components["schemas"]["Device"];
           };
         };
       };
@@ -11035,7 +11035,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Devices/{id}': {
+  "/api/Devices/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -11064,11 +11064,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['Device'];
-            'application/json': components['schemas']['Device'];
-            'text/json': components['schemas']['Device'];
-            'application/xml': components['schemas']['Device'];
-            'text/xml': components['schemas']['Device'];
+            "text/plain": components["schemas"]["Device"];
+            "application/json": components["schemas"]["Device"];
+            "text/json": components["schemas"]["Device"];
+            "application/xml": components["schemas"]["Device"];
+            "text/xml": components["schemas"]["Device"];
           };
         };
       };
@@ -11078,7 +11078,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Exceptions': {
+  "/api/Exceptions": {
     parameters: {
       query?: never;
       header?: never;
@@ -11106,13 +11106,13 @@ export interface paths {
       /** @description The data representing the front-end exception. */
       requestBody?: {
         content: {
-          'application/json-patch+json': unknown;
-          'application/json': unknown;
-          'text/json': unknown;
-          'application/*+json': unknown;
-          'application/xml': unknown;
-          'text/xml': unknown;
-          'application/*+xml': unknown;
+          "application/json-patch+json": unknown;
+          "application/json": unknown;
+          "text/json": unknown;
+          "application/*+json": unknown;
+          "application/xml": unknown;
+          "text/xml": unknown;
+          "application/*+xml": unknown;
         };
       };
       responses: {
@@ -11131,7 +11131,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/ExternalContacts': {
+  "/api/ExternalContacts": {
     parameters: {
       query?: never;
       header?: never;
@@ -11154,11 +11154,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ExternalContactListDetailedViewModel'][];
-            'application/json': components['schemas']['ExternalContactListDetailedViewModel'][];
-            'text/json': components['schemas']['ExternalContactListDetailedViewModel'][];
-            'application/xml': components['schemas']['ExternalContactListDetailedViewModel'][];
-            'text/xml': components['schemas']['ExternalContactListDetailedViewModel'][];
+            "text/plain": components["schemas"]["ExternalContactListDetailedViewModel"][];
+            "application/json": components["schemas"]["ExternalContactListDetailedViewModel"][];
+            "text/json": components["schemas"]["ExternalContactListDetailedViewModel"][];
+            "application/xml": components["schemas"]["ExternalContactListDetailedViewModel"][];
+            "text/xml": components["schemas"]["ExternalContactListDetailedViewModel"][];
           };
         };
       };
@@ -11171,7 +11171,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/ExternalContacts/SendMessage': {
+  "/api/ExternalContacts/SendMessage": {
     parameters: {
       query?: never;
       header?: never;
@@ -11191,13 +11191,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['MessageToExternalContactListsBindingModel'];
-          'application/json': components['schemas']['MessageToExternalContactListsBindingModel'];
-          'text/json': components['schemas']['MessageToExternalContactListsBindingModel'];
-          'application/*+json': components['schemas']['MessageToExternalContactListsBindingModel'];
-          'application/xml': components['schemas']['MessageToExternalContactListsBindingModel'];
-          'text/xml': components['schemas']['MessageToExternalContactListsBindingModel'];
-          'application/*+xml': components['schemas']['MessageToExternalContactListsBindingModel'];
+          "application/json-patch+json": components["schemas"]["MessageToExternalContactListsBindingModel"];
+          "application/json": components["schemas"]["MessageToExternalContactListsBindingModel"];
+          "text/json": components["schemas"]["MessageToExternalContactListsBindingModel"];
+          "application/*+json": components["schemas"]["MessageToExternalContactListsBindingModel"];
+          "application/xml": components["schemas"]["MessageToExternalContactListsBindingModel"];
+          "text/xml": components["schemas"]["MessageToExternalContactListsBindingModel"];
+          "application/*+xml": components["schemas"]["MessageToExternalContactListsBindingModel"];
         };
       };
       responses: {
@@ -11216,7 +11216,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/ExternalContacts/GetMessages': {
+  "/api/ExternalContacts/GetMessages": {
     parameters: {
       query?: never;
       header?: never;
@@ -11239,11 +11239,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageToExternalContactListViewModel'][];
-            'application/json': components['schemas']['MessageToExternalContactListViewModel'][];
-            'text/json': components['schemas']['MessageToExternalContactListViewModel'][];
-            'application/xml': components['schemas']['MessageToExternalContactListViewModel'][];
-            'text/xml': components['schemas']['MessageToExternalContactListViewModel'][];
+            "text/plain": components["schemas"]["MessageToExternalContactListViewModel"][];
+            "application/json": components["schemas"]["MessageToExternalContactListViewModel"][];
+            "text/json": components["schemas"]["MessageToExternalContactListViewModel"][];
+            "application/xml": components["schemas"]["MessageToExternalContactListViewModel"][];
+            "text/xml": components["schemas"]["MessageToExternalContactListViewModel"][];
           };
         };
       };
@@ -11256,7 +11256,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/ExternalContacts/Message/{messageId}': {
+  "/api/ExternalContacts/Message/{messageId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -11281,11 +11281,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageToExternalContactListWithRecipientsViewModel'];
-            'application/json': components['schemas']['MessageToExternalContactListWithRecipientsViewModel'];
-            'text/json': components['schemas']['MessageToExternalContactListWithRecipientsViewModel'];
-            'application/xml': components['schemas']['MessageToExternalContactListWithRecipientsViewModel'];
-            'text/xml': components['schemas']['MessageToExternalContactListWithRecipientsViewModel'];
+            "text/plain": components["schemas"]["MessageToExternalContactListWithRecipientsViewModel"];
+            "application/json": components["schemas"]["MessageToExternalContactListWithRecipientsViewModel"];
+            "text/json": components["schemas"]["MessageToExternalContactListWithRecipientsViewModel"];
+            "application/xml": components["schemas"]["MessageToExternalContactListWithRecipientsViewModel"];
+            "text/xml": components["schemas"]["MessageToExternalContactListWithRecipientsViewModel"];
           };
         };
       };
@@ -11298,7 +11298,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/ExternalContacts/ConfirmMessageDelivery/{token}': {
+  "/api/ExternalContacts/ConfirmMessageDelivery/{token}": {
     parameters: {
       query?: never;
       header?: never;
@@ -11334,7 +11334,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/ExternalContacts/CalculateSmsLength': {
+  "/api/ExternalContacts/CalculateSmsLength": {
     parameters: {
       query?: never;
       header?: never;
@@ -11368,7 +11368,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/ExternalContacts/GetTextTemplates': {
+  "/api/ExternalContacts/GetTextTemplates": {
     parameters: {
       query?: never;
       header?: never;
@@ -11391,11 +11391,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TextTemplateForExternalContactsViewModel'][];
-            'application/json': components['schemas']['TextTemplateForExternalContactsViewModel'][];
-            'text/json': components['schemas']['TextTemplateForExternalContactsViewModel'][];
-            'application/xml': components['schemas']['TextTemplateForExternalContactsViewModel'][];
-            'text/xml': components['schemas']['TextTemplateForExternalContactsViewModel'][];
+            "text/plain": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
+            "application/json": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
+            "text/json": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
+            "application/xml": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
+            "text/xml": components["schemas"]["TextTemplateForExternalContactsViewModel"][];
           };
         };
       };
@@ -11408,7 +11408,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Groups': {
+  "/api/Groups": {
     parameters: {
       query?: never;
       header?: never;
@@ -11447,11 +11447,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupViewModelExtended'][];
-            'application/json': components['schemas']['GroupViewModelExtended'][];
-            'text/json': components['schemas']['GroupViewModelExtended'][];
-            'application/xml': components['schemas']['GroupViewModelExtended'][];
-            'text/xml': components['schemas']['GroupViewModelExtended'][];
+            "text/plain": components["schemas"]["GroupViewModelExtended"][];
+            "application/json": components["schemas"]["GroupViewModelExtended"][];
+            "text/json": components["schemas"]["GroupViewModelExtended"][];
+            "application/xml": components["schemas"]["GroupViewModelExtended"][];
+            "text/xml": components["schemas"]["GroupViewModelExtended"][];
           };
         };
       };
@@ -11464,7 +11464,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Groups/{id}': {
+  "/api/Groups/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -11490,11 +11490,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupViewModelExtended'];
-            'application/json': components['schemas']['GroupViewModelExtended'];
-            'text/json': components['schemas']['GroupViewModelExtended'];
-            'application/xml': components['schemas']['GroupViewModelExtended'];
-            'text/xml': components['schemas']['GroupViewModelExtended'];
+            "text/plain": components["schemas"]["GroupViewModelExtended"];
+            "application/json": components["schemas"]["GroupViewModelExtended"];
+            "text/json": components["schemas"]["GroupViewModelExtended"];
+            "application/xml": components["schemas"]["GroupViewModelExtended"];
+            "text/xml": components["schemas"]["GroupViewModelExtended"];
           };
         };
       };
@@ -11507,7 +11507,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Groups/{id}/members': {
+  "/api/Groups/{id}/members": {
     parameters: {
       query?: never;
       header?: never;
@@ -11538,11 +11538,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['GroupMemberViewModel'][];
-            'application/json': components['schemas']['GroupMemberViewModel'][];
-            'text/json': components['schemas']['GroupMemberViewModel'][];
-            'application/xml': components['schemas']['GroupMemberViewModel'][];
-            'text/xml': components['schemas']['GroupMemberViewModel'][];
+            "text/plain": components["schemas"]["GroupMemberViewModel"][];
+            "application/json": components["schemas"]["GroupMemberViewModel"][];
+            "text/json": components["schemas"]["GroupMemberViewModel"][];
+            "application/xml": components["schemas"]["GroupMemberViewModel"][];
+            "text/xml": components["schemas"]["GroupMemberViewModel"][];
           };
         };
       };
@@ -11555,7 +11555,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Groups/{id}/locations': {
+  "/api/Groups/{id}/locations": {
     parameters: {
       query?: never;
       header?: never;
@@ -11581,11 +11581,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['LocationViewModel'][];
-            'application/json': components['schemas']['LocationViewModel'][];
-            'text/json': components['schemas']['LocationViewModel'][];
-            'application/xml': components['schemas']['LocationViewModel'][];
-            'text/xml': components['schemas']['LocationViewModel'][];
+            "text/plain": components["schemas"]["LocationViewModel"][];
+            "application/json": components["schemas"]["LocationViewModel"][];
+            "text/json": components["schemas"]["LocationViewModel"][];
+            "application/xml": components["schemas"]["LocationViewModel"][];
+            "text/xml": components["schemas"]["LocationViewModel"][];
           };
         };
       };
@@ -11598,7 +11598,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Groups/{id}/activateAlarm': {
+  "/api/Groups/{id}/activateAlarm": {
     parameters: {
       query?: never;
       header?: never;
@@ -11620,13 +11620,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupAlarmBindingModel'];
-          'application/json': components['schemas']['GroupAlarmBindingModel'];
-          'text/json': components['schemas']['GroupAlarmBindingModel'];
-          'application/*+json': components['schemas']['GroupAlarmBindingModel'];
-          'application/xml': components['schemas']['GroupAlarmBindingModel'];
-          'text/xml': components['schemas']['GroupAlarmBindingModel'];
-          'application/*+xml': components['schemas']['GroupAlarmBindingModel'];
+          "application/json-patch+json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/json": components["schemas"]["GroupAlarmBindingModel"];
+          "text/json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/*+json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/xml": components["schemas"]["GroupAlarmBindingModel"];
+          "text/xml": components["schemas"]["GroupAlarmBindingModel"];
+          "application/*+xml": components["schemas"]["GroupAlarmBindingModel"];
         };
       };
       responses: {
@@ -11645,7 +11645,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Groups/{id}/deactivateAlarm': {
+  "/api/Groups/{id}/deactivateAlarm": {
     parameters: {
       query?: never;
       header?: never;
@@ -11682,7 +11682,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Groups/activateAlarms': {
+  "/api/Groups/activateAlarms": {
     parameters: {
       query?: never;
       header?: never;
@@ -11701,13 +11701,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupAlarmBindingModel'];
-          'application/json': components['schemas']['GroupAlarmBindingModel'];
-          'text/json': components['schemas']['GroupAlarmBindingModel'];
-          'application/*+json': components['schemas']['GroupAlarmBindingModel'];
-          'application/xml': components['schemas']['GroupAlarmBindingModel'];
-          'text/xml': components['schemas']['GroupAlarmBindingModel'];
-          'application/*+xml': components['schemas']['GroupAlarmBindingModel'];
+          "application/json-patch+json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/json": components["schemas"]["GroupAlarmBindingModel"];
+          "text/json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/*+json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/xml": components["schemas"]["GroupAlarmBindingModel"];
+          "text/xml": components["schemas"]["GroupAlarmBindingModel"];
+          "application/*+xml": components["schemas"]["GroupAlarmBindingModel"];
         };
       };
       responses: {
@@ -11726,7 +11726,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Groups/deactivateAlarms': {
+  "/api/Groups/deactivateAlarms": {
     parameters: {
       query?: never;
       header?: never;
@@ -11745,13 +11745,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['GroupAlarmBindingModel'];
-          'application/json': components['schemas']['GroupAlarmBindingModel'];
-          'text/json': components['schemas']['GroupAlarmBindingModel'];
-          'application/*+json': components['schemas']['GroupAlarmBindingModel'];
-          'application/xml': components['schemas']['GroupAlarmBindingModel'];
-          'text/xml': components['schemas']['GroupAlarmBindingModel'];
-          'application/*+xml': components['schemas']['GroupAlarmBindingModel'];
+          "application/json-patch+json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/json": components["schemas"]["GroupAlarmBindingModel"];
+          "text/json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/*+json": components["schemas"]["GroupAlarmBindingModel"];
+          "application/xml": components["schemas"]["GroupAlarmBindingModel"];
+          "text/xml": components["schemas"]["GroupAlarmBindingModel"];
+          "application/*+xml": components["schemas"]["GroupAlarmBindingModel"];
         };
       };
       responses: {
@@ -11770,7 +11770,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Import/Skolon': {
+  "/api/Import/Skolon": {
     parameters: {
       query?: never;
       header?: never;
@@ -11794,13 +11794,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SkolonUpdateRequest'];
-          'application/json': components['schemas']['SkolonUpdateRequest'];
-          'text/json': components['schemas']['SkolonUpdateRequest'];
-          'application/*+json': components['schemas']['SkolonUpdateRequest'];
-          'application/xml': components['schemas']['SkolonUpdateRequest'];
-          'text/xml': components['schemas']['SkolonUpdateRequest'];
-          'application/*+xml': components['schemas']['SkolonUpdateRequest'];
+          "application/json-patch+json": components["schemas"]["SkolonUpdateRequest"];
+          "application/json": components["schemas"]["SkolonUpdateRequest"];
+          "text/json": components["schemas"]["SkolonUpdateRequest"];
+          "application/*+json": components["schemas"]["SkolonUpdateRequest"];
+          "application/xml": components["schemas"]["SkolonUpdateRequest"];
+          "text/xml": components["schemas"]["SkolonUpdateRequest"];
+          "application/*+xml": components["schemas"]["SkolonUpdateRequest"];
         };
       };
       responses: {
@@ -11819,7 +11819,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Import/Organizations': {
+  "/api/Import/Organizations": {
     parameters: {
       query?: never;
       header?: never;
@@ -11853,7 +11853,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Locations': {
+  "/api/Locations": {
     parameters: {
       query?: never;
       header?: never;
@@ -11876,11 +11876,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['LocationViewModel'][];
-            'application/json': components['schemas']['LocationViewModel'][];
-            'text/json': components['schemas']['LocationViewModel'][];
-            'application/xml': components['schemas']['LocationViewModel'][];
-            'text/xml': components['schemas']['LocationViewModel'][];
+            "text/plain": components["schemas"]["LocationViewModel"][];
+            "application/json": components["schemas"]["LocationViewModel"][];
+            "text/json": components["schemas"]["LocationViewModel"][];
+            "application/xml": components["schemas"]["LocationViewModel"][];
+            "text/xml": components["schemas"]["LocationViewModel"][];
           };
         };
       };
@@ -11896,13 +11896,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['CreateLocationBindingModel'];
-          'application/json': components['schemas']['CreateLocationBindingModel'];
-          'text/json': components['schemas']['CreateLocationBindingModel'];
-          'application/*+json': components['schemas']['CreateLocationBindingModel'];
-          'application/xml': components['schemas']['CreateLocationBindingModel'];
-          'text/xml': components['schemas']['CreateLocationBindingModel'];
-          'application/*+xml': components['schemas']['CreateLocationBindingModel'];
+          "application/json-patch+json": components["schemas"]["CreateLocationBindingModel"];
+          "application/json": components["schemas"]["CreateLocationBindingModel"];
+          "text/json": components["schemas"]["CreateLocationBindingModel"];
+          "application/*+json": components["schemas"]["CreateLocationBindingModel"];
+          "application/xml": components["schemas"]["CreateLocationBindingModel"];
+          "text/xml": components["schemas"]["CreateLocationBindingModel"];
+          "application/*+xml": components["schemas"]["CreateLocationBindingModel"];
         };
       };
       responses: {
@@ -11912,11 +11912,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['LocationViewModel'];
-            'application/json': components['schemas']['LocationViewModel'];
-            'text/json': components['schemas']['LocationViewModel'];
-            'application/xml': components['schemas']['LocationViewModel'];
-            'text/xml': components['schemas']['LocationViewModel'];
+            "text/plain": components["schemas"]["LocationViewModel"];
+            "application/json": components["schemas"]["LocationViewModel"];
+            "text/json": components["schemas"]["LocationViewModel"];
+            "application/xml": components["schemas"]["LocationViewModel"];
+            "text/xml": components["schemas"]["LocationViewModel"];
           };
         };
         /** @description Returns new location view model */
@@ -11934,7 +11934,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Locations/{id}': {
+  "/api/Locations/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -11960,11 +11960,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['LocationViewModel'];
-            'application/json': components['schemas']['LocationViewModel'];
-            'text/json': components['schemas']['LocationViewModel'];
-            'application/xml': components['schemas']['LocationViewModel'];
-            'text/xml': components['schemas']['LocationViewModel'];
+            "text/plain": components["schemas"]["LocationViewModel"];
+            "application/json": components["schemas"]["LocationViewModel"];
+            "text/json": components["schemas"]["LocationViewModel"];
+            "application/xml": components["schemas"]["LocationViewModel"];
+            "text/xml": components["schemas"]["LocationViewModel"];
           };
         };
       };
@@ -11977,7 +11977,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/MailDashboard/Organization/{id}/Provider': {
+  "/api/MailDashboard/Organization/{id}/Provider": {
     parameters: {
       query?: never;
       header?: never;
@@ -12000,13 +12000,13 @@ export interface paths {
       /** @description email provider data */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OrganizationEmailProviderBindingModel'];
-          'application/json': components['schemas']['OrganizationEmailProviderBindingModel'];
-          'text/json': components['schemas']['OrganizationEmailProviderBindingModel'];
-          'application/*+json': components['schemas']['OrganizationEmailProviderBindingModel'];
-          'application/xml': components['schemas']['OrganizationEmailProviderBindingModel'];
-          'text/xml': components['schemas']['OrganizationEmailProviderBindingModel'];
-          'application/*+xml': components['schemas']['OrganizationEmailProviderBindingModel'];
+          "application/json-patch+json": components["schemas"]["OrganizationEmailProviderBindingModel"];
+          "application/json": components["schemas"]["OrganizationEmailProviderBindingModel"];
+          "text/json": components["schemas"]["OrganizationEmailProviderBindingModel"];
+          "application/*+json": components["schemas"]["OrganizationEmailProviderBindingModel"];
+          "application/xml": components["schemas"]["OrganizationEmailProviderBindingModel"];
+          "text/xml": components["schemas"]["OrganizationEmailProviderBindingModel"];
+          "application/*+xml": components["schemas"]["OrganizationEmailProviderBindingModel"];
         };
       };
       responses: {
@@ -12025,7 +12025,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/MailDashboard/DailySummary': {
+  "/api/MailDashboard/DailySummary": {
     parameters: {
       query?: never;
       header?: never;
@@ -12056,11 +12056,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmailDailySummaryViewModel'][];
-            'application/json': components['schemas']['EmailDailySummaryViewModel'][];
-            'text/json': components['schemas']['EmailDailySummaryViewModel'][];
-            'application/xml': components['schemas']['EmailDailySummaryViewModel'][];
-            'text/xml': components['schemas']['EmailDailySummaryViewModel'][];
+            "text/plain": components["schemas"]["EmailDailySummaryViewModel"][];
+            "application/json": components["schemas"]["EmailDailySummaryViewModel"][];
+            "text/json": components["schemas"]["EmailDailySummaryViewModel"][];
+            "application/xml": components["schemas"]["EmailDailySummaryViewModel"][];
+            "text/xml": components["schemas"]["EmailDailySummaryViewModel"][];
           };
         };
       };
@@ -12073,7 +12073,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/MailDashboard/ProviderSummary': {
+  "/api/MailDashboard/ProviderSummary": {
     parameters: {
       query?: never;
       header?: never;
@@ -12086,7 +12086,7 @@ export interface paths {
       parameters: {
         query?: {
           /** @description email provider */
-          provider?: components['schemas']['EmailProvider'];
+          provider?: components["schemas"]["EmailProvider"];
           /** @description organization id */
           organizationId?: number;
           /** @description start date of email sent date */
@@ -12106,11 +12106,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmailProviderSummaryViewModel'][];
-            'application/json': components['schemas']['EmailProviderSummaryViewModel'][];
-            'text/json': components['schemas']['EmailProviderSummaryViewModel'][];
-            'application/xml': components['schemas']['EmailProviderSummaryViewModel'][];
-            'text/xml': components['schemas']['EmailProviderSummaryViewModel'][];
+            "text/plain": components["schemas"]["EmailProviderSummaryViewModel"][];
+            "application/json": components["schemas"]["EmailProviderSummaryViewModel"][];
+            "text/json": components["schemas"]["EmailProviderSummaryViewModel"][];
+            "application/xml": components["schemas"]["EmailProviderSummaryViewModel"][];
+            "text/xml": components["schemas"]["EmailProviderSummaryViewModel"][];
           };
         };
       };
@@ -12123,7 +12123,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/MailDashboard/Log': {
+  "/api/MailDashboard/Log": {
     parameters: {
       query?: never;
       header?: never;
@@ -12136,7 +12136,7 @@ export interface paths {
       parameters: {
         query?: {
           /** @description email provider */
-          provider?: components['schemas']['EmailProvider'];
+          provider?: components["schemas"]["EmailProvider"];
           /** @description organization id */
           organizationId?: number;
           /** @description start date of email sent date */
@@ -12160,11 +12160,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['EmailLogViewModel'][];
-            'application/json': components['schemas']['EmailLogViewModel'][];
-            'text/json': components['schemas']['EmailLogViewModel'][];
-            'application/xml': components['schemas']['EmailLogViewModel'][];
-            'text/xml': components['schemas']['EmailLogViewModel'][];
+            "text/plain": components["schemas"]["EmailLogViewModel"][];
+            "application/json": components["schemas"]["EmailLogViewModel"][];
+            "text/json": components["schemas"]["EmailLogViewModel"][];
+            "application/xml": components["schemas"]["EmailLogViewModel"][];
+            "text/xml": components["schemas"]["EmailLogViewModel"][];
           };
         };
       };
@@ -12177,7 +12177,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Image': {
+  "/api/Media/Image": {
     parameters: {
       query?: never;
       header?: never;
@@ -12204,11 +12204,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PutImageViewModel'];
-            'application/json': components['schemas']['PutImageViewModel'];
-            'text/json': components['schemas']['PutImageViewModel'];
-            'application/xml': components['schemas']['PutImageViewModel'];
-            'text/xml': components['schemas']['PutImageViewModel'];
+            "text/plain": components["schemas"]["PutImageViewModel"];
+            "application/json": components["schemas"]["PutImageViewModel"];
+            "text/json": components["schemas"]["PutImageViewModel"];
+            "application/xml": components["schemas"]["PutImageViewModel"];
+            "text/xml": components["schemas"]["PutImageViewModel"];
           };
         };
       };
@@ -12220,7 +12220,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Image/Cropped': {
+  "/api/Media/Image/Cropped": {
     parameters: {
       query?: never;
       header?: never;
@@ -12247,11 +12247,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PutImageViewModel'];
-            'application/json': components['schemas']['PutImageViewModel'];
-            'text/json': components['schemas']['PutImageViewModel'];
-            'application/xml': components['schemas']['PutImageViewModel'];
-            'text/xml': components['schemas']['PutImageViewModel'];
+            "text/plain": components["schemas"]["PutImageViewModel"];
+            "application/json": components["schemas"]["PutImageViewModel"];
+            "text/json": components["schemas"]["PutImageViewModel"];
+            "application/xml": components["schemas"]["PutImageViewModel"];
+            "text/xml": components["schemas"]["PutImageViewModel"];
           };
         };
       };
@@ -12263,7 +12263,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Document': {
+  "/api/Media/Document": {
     parameters: {
       query?: never;
       header?: never;
@@ -12287,11 +12287,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PutDocumentViewModel'];
-            'application/json': components['schemas']['PutDocumentViewModel'];
-            'text/json': components['schemas']['PutDocumentViewModel'];
-            'application/xml': components['schemas']['PutDocumentViewModel'];
-            'text/xml': components['schemas']['PutDocumentViewModel'];
+            "text/plain": components["schemas"]["PutDocumentViewModel"];
+            "application/json": components["schemas"]["PutDocumentViewModel"];
+            "text/json": components["schemas"]["PutDocumentViewModel"];
+            "application/xml": components["schemas"]["PutDocumentViewModel"];
+            "text/xml": components["schemas"]["PutDocumentViewModel"];
           };
         };
       };
@@ -12303,7 +12303,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument': {
+  "/api/Media/GroupDocument": {
     parameters: {
       query?: never;
       header?: never;
@@ -12326,11 +12326,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['DocumentViewModelBrief'][];
-            'application/json': components['schemas']['DocumentViewModelBrief'][];
-            'text/json': components['schemas']['DocumentViewModelBrief'][];
-            'application/xml': components['schemas']['DocumentViewModelBrief'][];
-            'text/xml': components['schemas']['DocumentViewModelBrief'][];
+            "text/plain": components["schemas"]["DocumentViewModelBrief"][];
+            "application/json": components["schemas"]["DocumentViewModelBrief"][];
+            "text/json": components["schemas"]["DocumentViewModelBrief"][];
+            "application/xml": components["schemas"]["DocumentViewModelBrief"][];
+            "text/xml": components["schemas"]["DocumentViewModelBrief"][];
           };
         };
       };
@@ -12343,7 +12343,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/document/{documentId}/favorite': {
+  "/api/Media/document/{documentId}/favorite": {
     parameters: {
       query?: never;
       header?: never;
@@ -12379,7 +12379,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/document/{documentId}/unfavorite': {
+  "/api/Media/document/{documentId}/unfavorite": {
     parameters: {
       query?: never;
       header?: never;
@@ -12415,7 +12415,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/{documentId}': {
+  "/api/Media/GroupDocument/{documentId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -12440,9 +12440,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -12455,7 +12455,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/AddDocument/{groupId}': {
+  "/api/Media/GroupDocument/AddDocument/{groupId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -12494,7 +12494,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/AddDocumentToGroups/{groupIds}': {
+  "/api/Media/GroupDocument/AddDocumentToGroups/{groupIds}": {
     parameters: {
       query?: never;
       header?: never;
@@ -12533,7 +12533,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/DeleteDocument/{documentIdList}': {
+  "/api/Media/GroupDocument/DeleteDocument/{documentIdList}": {
     parameters: {
       query?: never;
       header?: never;
@@ -12569,7 +12569,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/DeleteDocument/{documentId}/FromGroup/{groupId}': {
+  "/api/Media/GroupDocument/DeleteDocument/{documentId}/FromGroup/{groupId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -12606,7 +12606,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/setoffline': {
+  "/api/Media/GroupDocument/setoffline": {
     parameters: {
       query?: never;
       header?: never;
@@ -12625,13 +12625,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'application/json': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'text/json': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'application/*+json': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'application/xml': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'text/xml': components['schemas']['SetDocumentOfflineBindingModel'][];
-          'application/*+xml': components['schemas']['SetDocumentOfflineBindingModel'][];
+          "application/json-patch+json": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "application/json": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "text/json": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "application/*+json": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "application/xml": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "text/xml": components["schemas"]["SetDocumentOfflineBindingModel"][];
+          "application/*+xml": components["schemas"]["SetDocumentOfflineBindingModel"][];
         };
       };
       responses: {
@@ -12650,7 +12650,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/AmazonFile/{fileName}': {
+  "/api/Media/AmazonFile/{fileName}": {
     parameters: {
       query?: never;
       header?: never;
@@ -12675,9 +12675,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -12690,7 +12690,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/File/{fileName}': {
+  "/api/Media/File/{fileName}": {
     parameters: {
       query?: never;
       header?: never;
@@ -12715,9 +12715,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -12730,7 +12730,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Folders': {
+  "/api/Media/Folders": {
     parameters: {
       query?: never;
       header?: never;
@@ -12753,11 +12753,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['FolderViewModel'][];
-            'application/json': components['schemas']['FolderViewModel'][];
-            'text/json': components['schemas']['FolderViewModel'][];
-            'application/xml': components['schemas']['FolderViewModel'][];
-            'text/xml': components['schemas']['FolderViewModel'][];
+            "text/plain": components["schemas"]["FolderViewModel"][];
+            "application/json": components["schemas"]["FolderViewModel"][];
+            "text/json": components["schemas"]["FolderViewModel"][];
+            "application/xml": components["schemas"]["FolderViewModel"][];
+            "text/xml": components["schemas"]["FolderViewModel"][];
           };
         };
       };
@@ -12773,13 +12773,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['FolderBindingModel'];
-          'application/json': components['schemas']['FolderBindingModel'];
-          'text/json': components['schemas']['FolderBindingModel'];
-          'application/*+json': components['schemas']['FolderBindingModel'];
-          'application/xml': components['schemas']['FolderBindingModel'];
-          'text/xml': components['schemas']['FolderBindingModel'];
-          'application/*+xml': components['schemas']['FolderBindingModel'];
+          "application/json-patch+json": components["schemas"]["FolderBindingModel"];
+          "application/json": components["schemas"]["FolderBindingModel"];
+          "text/json": components["schemas"]["FolderBindingModel"];
+          "application/*+json": components["schemas"]["FolderBindingModel"];
+          "application/xml": components["schemas"]["FolderBindingModel"];
+          "text/xml": components["schemas"]["FolderBindingModel"];
+          "application/*+xml": components["schemas"]["FolderBindingModel"];
         };
       };
       responses: {
@@ -12798,7 +12798,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Folders/{id}/delete': {
+  "/api/Media/Folders/{id}/delete": {
     parameters: {
       query?: never;
       header?: never;
@@ -12835,7 +12835,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Folders/{id}/edit': {
+  "/api/Media/Folders/{id}/edit": {
     parameters: {
       query?: never;
       header?: never;
@@ -12857,13 +12857,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['FolderBindingModel'];
-          'application/json': components['schemas']['FolderBindingModel'];
-          'text/json': components['schemas']['FolderBindingModel'];
-          'application/*+json': components['schemas']['FolderBindingModel'];
-          'application/xml': components['schemas']['FolderBindingModel'];
-          'text/xml': components['schemas']['FolderBindingModel'];
-          'application/*+xml': components['schemas']['FolderBindingModel'];
+          "application/json-patch+json": components["schemas"]["FolderBindingModel"];
+          "application/json": components["schemas"]["FolderBindingModel"];
+          "text/json": components["schemas"]["FolderBindingModel"];
+          "application/*+json": components["schemas"]["FolderBindingModel"];
+          "application/xml": components["schemas"]["FolderBindingModel"];
+          "text/xml": components["schemas"]["FolderBindingModel"];
+          "application/*+xml": components["schemas"]["FolderBindingModel"];
         };
       };
       responses: {
@@ -12882,7 +12882,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Folders/{id}/documents': {
+  "/api/Media/Folders/{id}/documents": {
     parameters: {
       query?: never;
       header?: never;
@@ -12910,11 +12910,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['DocumentViewModel'][];
-            'application/json': components['schemas']['DocumentViewModel'][];
-            'text/json': components['schemas']['DocumentViewModel'][];
-            'application/xml': components['schemas']['DocumentViewModel'][];
-            'text/xml': components['schemas']['DocumentViewModel'][];
+            "text/plain": components["schemas"]["DocumentViewModel"][];
+            "application/json": components["schemas"]["DocumentViewModel"][];
+            "text/json": components["schemas"]["DocumentViewModel"][];
+            "application/xml": components["schemas"]["DocumentViewModel"][];
+            "text/xml": components["schemas"]["DocumentViewModel"][];
           };
         };
       };
@@ -12927,7 +12927,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Groups/{id}/documents': {
+  "/api/Media/Groups/{id}/documents": {
     parameters: {
       query?: never;
       header?: never;
@@ -12955,11 +12955,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['DocumentViewModel'][];
-            'application/json': components['schemas']['DocumentViewModel'][];
-            'text/json': components['schemas']['DocumentViewModel'][];
-            'application/xml': components['schemas']['DocumentViewModel'][];
-            'text/xml': components['schemas']['DocumentViewModel'][];
+            "text/plain": components["schemas"]["DocumentViewModel"][];
+            "application/json": components["schemas"]["DocumentViewModel"][];
+            "text/json": components["schemas"]["DocumentViewModel"][];
+            "application/xml": components["schemas"]["DocumentViewModel"][];
+            "text/xml": components["schemas"]["DocumentViewModel"][];
           };
         };
       };
@@ -12972,7 +12972,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Folders/AddDocument/{folderIds}': {
+  "/api/Media/Folders/AddDocument/{folderIds}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13010,7 +13010,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/{documentId}/AddToGroup/{groupId}': {
+  "/api/Media/GroupDocument/{documentId}/AddToGroup/{groupId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13050,7 +13050,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/folders/{id}/favorite': {
+  "/api/Media/folders/{id}/favorite": {
     parameters: {
       query?: never;
       header?: never;
@@ -13090,7 +13090,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/folders/{id}/unfavorite': {
+  "/api/Media/folders/{id}/unfavorite": {
     parameters: {
       query?: never;
       header?: never;
@@ -13130,7 +13130,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/{documentId}/AddToFolder/{folderId}': {
+  "/api/Media/GroupDocument/{documentId}/AddToFolder/{folderId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13170,7 +13170,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/GroupDocument/{documentId}/RemoveFromFolder/{folderId}': {
+  "/api/Media/GroupDocument/{documentId}/RemoveFromFolder/{folderId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13207,7 +13207,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Video': {
+  "/api/Media/Video": {
     parameters: {
       query?: never;
       header?: never;
@@ -13234,11 +13234,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PutImageViewModel'];
-            'application/json': components['schemas']['PutImageViewModel'];
-            'text/json': components['schemas']['PutImageViewModel'];
-            'application/xml': components['schemas']['PutImageViewModel'];
-            'text/xml': components['schemas']['PutImageViewModel'];
+            "text/plain": components["schemas"]["PutImageViewModel"];
+            "application/json": components["schemas"]["PutImageViewModel"];
+            "text/json": components["schemas"]["PutImageViewModel"];
+            "application/xml": components["schemas"]["PutImageViewModel"];
+            "text/xml": components["schemas"]["PutImageViewModel"];
           };
         };
       };
@@ -13250,7 +13250,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/VideoStream/{fileName}': {
+  "/api/Media/VideoStream/{fileName}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13275,9 +13275,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': string;
-            'application/json': string;
-            'text/json': string;
+            "text/plain": string;
+            "application/json": string;
+            "text/json": string;
           };
         };
       };
@@ -13290,7 +13290,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Audio': {
+  "/api/Media/Audio": {
     parameters: {
       query?: never;
       header?: never;
@@ -13317,11 +13317,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PutImageViewModel'];
-            'application/json': components['schemas']['PutImageViewModel'];
-            'text/json': components['schemas']['PutImageViewModel'];
-            'application/xml': components['schemas']['PutImageViewModel'];
-            'text/xml': components['schemas']['PutImageViewModel'];
+            "text/plain": components["schemas"]["PutImageViewModel"];
+            "application/json": components["schemas"]["PutImageViewModel"];
+            "text/json": components["schemas"]["PutImageViewModel"];
+            "application/xml": components["schemas"]["PutImageViewModel"];
+            "text/xml": components["schemas"]["PutImageViewModel"];
           };
         };
       };
@@ -13333,7 +13333,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Tutorials': {
+  "/api/Media/Tutorials": {
     parameters: {
       query?: never;
       header?: never;
@@ -13356,11 +13356,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TutorialViewModel'][];
-            'application/json': components['schemas']['TutorialViewModel'][];
-            'text/json': components['schemas']['TutorialViewModel'][];
-            'application/xml': components['schemas']['TutorialViewModel'][];
-            'text/xml': components['schemas']['TutorialViewModel'][];
+            "text/plain": components["schemas"]["TutorialViewModel"][];
+            "application/json": components["schemas"]["TutorialViewModel"][];
+            "text/json": components["schemas"]["TutorialViewModel"][];
+            "application/xml": components["schemas"]["TutorialViewModel"][];
+            "text/xml": components["schemas"]["TutorialViewModel"][];
           };
         };
       };
@@ -13373,7 +13373,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Media/Tutorials/{id}/{language}': {
+  "/api/Media/Tutorials/{id}/{language}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13401,11 +13401,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TutorialViewModel'];
-            'application/json': components['schemas']['TutorialViewModel'];
-            'text/json': components['schemas']['TutorialViewModel'];
-            'application/xml': components['schemas']['TutorialViewModel'];
-            'text/xml': components['schemas']['TutorialViewModel'];
+            "text/plain": components["schemas"]["TutorialViewModel"];
+            "application/json": components["schemas"]["TutorialViewModel"];
+            "text/json": components["schemas"]["TutorialViewModel"];
+            "application/xml": components["schemas"]["TutorialViewModel"];
+            "text/xml": components["schemas"]["TutorialViewModel"];
           };
         };
       };
@@ -13418,7 +13418,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/MeetingRooms': {
+  "/api/MeetingRooms": {
     parameters: {
       query?: never;
       header?: never;
@@ -13440,11 +13440,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MeetingRoomSimpleViewModel'][];
-            'application/json': components['schemas']['MeetingRoomSimpleViewModel'][];
-            'text/json': components['schemas']['MeetingRoomSimpleViewModel'][];
-            'application/xml': components['schemas']['MeetingRoomSimpleViewModel'][];
-            'text/xml': components['schemas']['MeetingRoomSimpleViewModel'][];
+            "text/plain": components["schemas"]["MeetingRoomSimpleViewModel"][];
+            "application/json": components["schemas"]["MeetingRoomSimpleViewModel"][];
+            "text/json": components["schemas"]["MeetingRoomSimpleViewModel"][];
+            "application/xml": components["schemas"]["MeetingRoomSimpleViewModel"][];
+            "text/xml": components["schemas"]["MeetingRoomSimpleViewModel"][];
           };
         };
       };
@@ -13457,7 +13457,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages': {
+  "/api/Messages": {
     parameters: {
       query?: never;
       header?: never;
@@ -13495,11 +13495,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageListViewModel'][];
-            'application/json': components['schemas']['MessageListViewModel'][];
-            'text/json': components['schemas']['MessageListViewModel'][];
-            'application/xml': components['schemas']['MessageListViewModel'][];
-            'text/xml': components['schemas']['MessageListViewModel'][];
+            "text/plain": components["schemas"]["MessageListViewModel"][];
+            "application/json": components["schemas"]["MessageListViewModel"][];
+            "text/json": components["schemas"]["MessageListViewModel"][];
+            "application/xml": components["schemas"]["MessageListViewModel"][];
+            "text/xml": components["schemas"]["MessageListViewModel"][];
           };
         };
       };
@@ -13517,13 +13517,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PostMessageBindingModel'];
-          'application/json': components['schemas']['PostMessageBindingModel'];
-          'text/json': components['schemas']['PostMessageBindingModel'];
-          'application/*+json': components['schemas']['PostMessageBindingModel'];
-          'application/xml': components['schemas']['PostMessageBindingModel'];
-          'text/xml': components['schemas']['PostMessageBindingModel'];
-          'application/*+xml': components['schemas']['PostMessageBindingModel'];
+          "application/json-patch+json": components["schemas"]["PostMessageBindingModel"];
+          "application/json": components["schemas"]["PostMessageBindingModel"];
+          "text/json": components["schemas"]["PostMessageBindingModel"];
+          "application/*+json": components["schemas"]["PostMessageBindingModel"];
+          "application/xml": components["schemas"]["PostMessageBindingModel"];
+          "text/xml": components["schemas"]["PostMessageBindingModel"];
+          "application/*+xml": components["schemas"]["PostMessageBindingModel"];
         };
       };
       responses: {
@@ -13533,11 +13533,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageViewModel'];
-            'application/json': components['schemas']['MessageViewModel'];
-            'text/json': components['schemas']['MessageViewModel'];
-            'application/xml': components['schemas']['MessageViewModel'];
-            'text/xml': components['schemas']['MessageViewModel'];
+            "text/plain": components["schemas"]["MessageViewModel"];
+            "application/json": components["schemas"]["MessageViewModel"];
+            "text/json": components["schemas"]["MessageViewModel"];
+            "application/xml": components["schemas"]["MessageViewModel"];
+            "text/xml": components["schemas"]["MessageViewModel"];
           };
         };
       };
@@ -13548,7 +13548,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/list': {
+  "/api/Messages/list": {
     parameters: {
       query?: never;
       header?: never;
@@ -13586,11 +13586,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageListViewModel'][];
-            'application/json': components['schemas']['MessageListViewModel'][];
-            'text/json': components['schemas']['MessageListViewModel'][];
-            'application/xml': components['schemas']['MessageListViewModel'][];
-            'text/xml': components['schemas']['MessageListViewModel'][];
+            "text/plain": components["schemas"]["MessageListViewModel"][];
+            "application/json": components["schemas"]["MessageListViewModel"][];
+            "text/json": components["schemas"]["MessageListViewModel"][];
+            "application/xml": components["schemas"]["MessageListViewModel"][];
+            "text/xml": components["schemas"]["MessageListViewModel"][];
           };
         };
       };
@@ -13603,7 +13603,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/v2/Messages': {
+  "/api/v2/Messages": {
     parameters: {
       query?: never;
       header?: never;
@@ -13641,11 +13641,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageListViewModelV2'][];
-            'application/json': components['schemas']['MessageListViewModelV2'][];
-            'text/json': components['schemas']['MessageListViewModelV2'][];
-            'application/xml': components['schemas']['MessageListViewModelV2'][];
-            'text/xml': components['schemas']['MessageListViewModelV2'][];
+            "text/plain": components["schemas"]["MessageListViewModelV2"][];
+            "application/json": components["schemas"]["MessageListViewModelV2"][];
+            "text/json": components["schemas"]["MessageListViewModelV2"][];
+            "application/xml": components["schemas"]["MessageListViewModelV2"][];
+            "text/xml": components["schemas"]["MessageListViewModelV2"][];
           };
         };
       };
@@ -13658,7 +13658,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/groups': {
+  "/api/Messages/groups": {
     parameters: {
       query?: never;
       header?: never;
@@ -13693,7 +13693,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/TotalUnread': {
+  "/api/Messages/TotalUnread": {
     parameters: {
       query?: never;
       header?: never;
@@ -13716,11 +13716,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['TotalUnreadViewModel'];
-            'application/json': components['schemas']['TotalUnreadViewModel'];
-            'text/json': components['schemas']['TotalUnreadViewModel'];
-            'application/xml': components['schemas']['TotalUnreadViewModel'];
-            'text/xml': components['schemas']['TotalUnreadViewModel'];
+            "text/plain": components["schemas"]["TotalUnreadViewModel"];
+            "application/json": components["schemas"]["TotalUnreadViewModel"];
+            "text/json": components["schemas"]["TotalUnreadViewModel"];
+            "application/xml": components["schemas"]["TotalUnreadViewModel"];
+            "text/xml": components["schemas"]["TotalUnreadViewModel"];
           };
         };
       };
@@ -13733,7 +13733,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/FooterData': {
+  "/api/Messages/FooterData": {
     parameters: {
       query?: never;
       header?: never;
@@ -13757,11 +13757,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['FooterDataViewModel'];
-            'application/json': components['schemas']['FooterDataViewModel'];
-            'text/json': components['schemas']['FooterDataViewModel'];
-            'application/xml': components['schemas']['FooterDataViewModel'];
-            'text/xml': components['schemas']['FooterDataViewModel'];
+            "text/plain": components["schemas"]["FooterDataViewModel"];
+            "application/json": components["schemas"]["FooterDataViewModel"];
+            "text/json": components["schemas"]["FooterDataViewModel"];
+            "application/xml": components["schemas"]["FooterDataViewModel"];
+            "text/xml": components["schemas"]["FooterDataViewModel"];
           };
         };
       };
@@ -13774,7 +13774,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/unread': {
+  "/api/Messages/unread": {
     parameters: {
       query?: never;
       header?: never;
@@ -13808,7 +13808,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{id}': {
+  "/api/Messages/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13824,7 +13824,7 @@ export interface paths {
           /** @description in case "true" retrieve replies */
           includeReplies?: boolean;
           /** @description filter replies by purpose */
-          replyPurpose?: components['schemas']['ReplyPurpose'][];
+          replyPurpose?: components["schemas"]["ReplyPurpose"][];
         };
         header?: never;
         path: {
@@ -13841,11 +13841,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageViewModel'];
-            'application/json': components['schemas']['MessageViewModel'];
-            'text/json': components['schemas']['MessageViewModel'];
-            'application/xml': components['schemas']['MessageViewModel'];
-            'text/xml': components['schemas']['MessageViewModel'];
+            "text/plain": components["schemas"]["MessageViewModel"];
+            "application/json": components["schemas"]["MessageViewModel"];
+            "text/json": components["schemas"]["MessageViewModel"];
+            "application/xml": components["schemas"]["MessageViewModel"];
+            "text/xml": components["schemas"]["MessageViewModel"];
           };
         };
       };
@@ -13858,7 +13858,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/v2/Messages/{id}': {
+  "/api/v2/Messages/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13888,11 +13888,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageViewModelV2'];
-            'application/json': components['schemas']['MessageViewModelV2'];
-            'text/json': components['schemas']['MessageViewModelV2'];
-            'application/xml': components['schemas']['MessageViewModelV2'];
-            'text/xml': components['schemas']['MessageViewModelV2'];
+            "text/plain": components["schemas"]["MessageViewModelV2"];
+            "application/json": components["schemas"]["MessageViewModelV2"];
+            "text/json": components["schemas"]["MessageViewModelV2"];
+            "application/xml": components["schemas"]["MessageViewModelV2"];
+            "text/xml": components["schemas"]["MessageViewModelV2"];
           };
         };
       };
@@ -13905,7 +13905,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{id}/addgroup/{groupId}': {
+  "/api/Messages/{id}/addgroup/{groupId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -13928,13 +13928,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PostMessageBindingModel'];
-          'application/json': components['schemas']['PostMessageBindingModel'];
-          'text/json': components['schemas']['PostMessageBindingModel'];
-          'application/*+json': components['schemas']['PostMessageBindingModel'];
-          'application/xml': components['schemas']['PostMessageBindingModel'];
-          'text/xml': components['schemas']['PostMessageBindingModel'];
-          'application/*+xml': components['schemas']['PostMessageBindingModel'];
+          "application/json-patch+json": components["schemas"]["PostMessageBindingModel"];
+          "application/json": components["schemas"]["PostMessageBindingModel"];
+          "text/json": components["schemas"]["PostMessageBindingModel"];
+          "application/*+json": components["schemas"]["PostMessageBindingModel"];
+          "application/xml": components["schemas"]["PostMessageBindingModel"];
+          "text/xml": components["schemas"]["PostMessageBindingModel"];
+          "application/*+xml": components["schemas"]["PostMessageBindingModel"];
         };
       };
       responses: {
@@ -13953,7 +13953,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{id}/addRecipients': {
+  "/api/Messages/{id}/addRecipients": {
     parameters: {
       query?: never;
       header?: never;
@@ -13977,13 +13977,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['MessageRecipientsBindingModel'];
-          'application/json': components['schemas']['MessageRecipientsBindingModel'];
-          'text/json': components['schemas']['MessageRecipientsBindingModel'];
-          'application/*+json': components['schemas']['MessageRecipientsBindingModel'];
-          'application/xml': components['schemas']['MessageRecipientsBindingModel'];
-          'text/xml': components['schemas']['MessageRecipientsBindingModel'];
-          'application/*+xml': components['schemas']['MessageRecipientsBindingModel'];
+          "application/json-patch+json": components["schemas"]["MessageRecipientsBindingModel"];
+          "application/json": components["schemas"]["MessageRecipientsBindingModel"];
+          "text/json": components["schemas"]["MessageRecipientsBindingModel"];
+          "application/*+json": components["schemas"]["MessageRecipientsBindingModel"];
+          "application/xml": components["schemas"]["MessageRecipientsBindingModel"];
+          "text/xml": components["schemas"]["MessageRecipientsBindingModel"];
+          "application/*+xml": components["schemas"]["MessageRecipientsBindingModel"];
         };
       };
       responses: {
@@ -14002,7 +14002,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{id}/forward': {
+  "/api/Messages/{id}/forward": {
     parameters: {
       query?: never;
       header?: never;
@@ -14024,13 +14024,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ForwardMessageBindingModel'];
-          'application/json': components['schemas']['ForwardMessageBindingModel'];
-          'text/json': components['schemas']['ForwardMessageBindingModel'];
-          'application/*+json': components['schemas']['ForwardMessageBindingModel'];
-          'application/xml': components['schemas']['ForwardMessageBindingModel'];
-          'text/xml': components['schemas']['ForwardMessageBindingModel'];
-          'application/*+xml': components['schemas']['ForwardMessageBindingModel'];
+          "application/json-patch+json": components["schemas"]["ForwardMessageBindingModel"];
+          "application/json": components["schemas"]["ForwardMessageBindingModel"];
+          "text/json": components["schemas"]["ForwardMessageBindingModel"];
+          "application/*+json": components["schemas"]["ForwardMessageBindingModel"];
+          "application/xml": components["schemas"]["ForwardMessageBindingModel"];
+          "text/xml": components["schemas"]["ForwardMessageBindingModel"];
+          "application/*+xml": components["schemas"]["ForwardMessageBindingModel"];
         };
       };
       responses: {
@@ -14040,11 +14040,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageViewModel'];
-            'application/json': components['schemas']['MessageViewModel'];
-            'text/json': components['schemas']['MessageViewModel'];
-            'application/xml': components['schemas']['MessageViewModel'];
-            'text/xml': components['schemas']['MessageViewModel'];
+            "text/plain": components["schemas"]["MessageViewModel"];
+            "application/json": components["schemas"]["MessageViewModel"];
+            "text/json": components["schemas"]["MessageViewModel"];
+            "application/xml": components["schemas"]["MessageViewModel"];
+            "text/xml": components["schemas"]["MessageViewModel"];
           };
         };
       };
@@ -14055,7 +14055,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{messageID}/read': {
+  "/api/Messages/{messageID}/read": {
     parameters: {
       query?: never;
       header?: never;
@@ -14076,13 +14076,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['MessageReadBindingModel'];
-          'application/json': components['schemas']['MessageReadBindingModel'];
-          'text/json': components['schemas']['MessageReadBindingModel'];
-          'application/*+json': components['schemas']['MessageReadBindingModel'];
-          'application/xml': components['schemas']['MessageReadBindingModel'];
-          'text/xml': components['schemas']['MessageReadBindingModel'];
-          'application/*+xml': components['schemas']['MessageReadBindingModel'];
+          "application/json-patch+json": components["schemas"]["MessageReadBindingModel"];
+          "application/json": components["schemas"]["MessageReadBindingModel"];
+          "text/json": components["schemas"]["MessageReadBindingModel"];
+          "application/*+json": components["schemas"]["MessageReadBindingModel"];
+          "application/xml": components["schemas"]["MessageReadBindingModel"];
+          "text/xml": components["schemas"]["MessageReadBindingModel"];
+          "application/*+xml": components["schemas"]["MessageReadBindingModel"];
         };
       };
       responses: {
@@ -14101,7 +14101,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{messageID}': {
+  "/api/Messages/{messageID}": {
     parameters: {
       query?: never;
       header?: never;
@@ -14122,13 +14122,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['EditMessageBindingModel'];
-          'application/json': components['schemas']['EditMessageBindingModel'];
-          'text/json': components['schemas']['EditMessageBindingModel'];
-          'application/*+json': components['schemas']['EditMessageBindingModel'];
-          'application/xml': components['schemas']['EditMessageBindingModel'];
-          'text/xml': components['schemas']['EditMessageBindingModel'];
-          'application/*+xml': components['schemas']['EditMessageBindingModel'];
+          "application/json-patch+json": components["schemas"]["EditMessageBindingModel"];
+          "application/json": components["schemas"]["EditMessageBindingModel"];
+          "text/json": components["schemas"]["EditMessageBindingModel"];
+          "application/*+json": components["schemas"]["EditMessageBindingModel"];
+          "application/xml": components["schemas"]["EditMessageBindingModel"];
+          "text/xml": components["schemas"]["EditMessageBindingModel"];
+          "application/*+xml": components["schemas"]["EditMessageBindingModel"];
         };
       };
       responses: {
@@ -14138,11 +14138,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageViewModel'];
-            'application/json': components['schemas']['MessageViewModel'];
-            'text/json': components['schemas']['MessageViewModel'];
-            'application/xml': components['schemas']['MessageViewModel'];
-            'text/xml': components['schemas']['MessageViewModel'];
+            "text/plain": components["schemas"]["MessageViewModel"];
+            "application/json": components["schemas"]["MessageViewModel"];
+            "text/json": components["schemas"]["MessageViewModel"];
+            "application/xml": components["schemas"]["MessageViewModel"];
+            "text/xml": components["schemas"]["MessageViewModel"];
           };
         };
       };
@@ -14173,7 +14173,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{messageID}/recall': {
+  "/api/Messages/{messageID}/recall": {
     parameters: {
       query?: never;
       header?: never;
@@ -14209,7 +14209,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{messageID}/reply': {
+  "/api/Messages/{messageID}/reply": {
     parameters: {
       query?: never;
       header?: never;
@@ -14232,13 +14232,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ReplyBindingModel'];
-          'application/json': components['schemas']['ReplyBindingModel'];
-          'text/json': components['schemas']['ReplyBindingModel'];
-          'application/*+json': components['schemas']['ReplyBindingModel'];
-          'application/xml': components['schemas']['ReplyBindingModel'];
-          'text/xml': components['schemas']['ReplyBindingModel'];
-          'application/*+xml': components['schemas']['ReplyBindingModel'];
+          "application/json-patch+json": components["schemas"]["ReplyBindingModel"];
+          "application/json": components["schemas"]["ReplyBindingModel"];
+          "text/json": components["schemas"]["ReplyBindingModel"];
+          "application/*+json": components["schemas"]["ReplyBindingModel"];
+          "application/xml": components["schemas"]["ReplyBindingModel"];
+          "text/xml": components["schemas"]["ReplyBindingModel"];
+          "application/*+xml": components["schemas"]["ReplyBindingModel"];
         };
       };
       responses: {
@@ -14248,11 +14248,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ReplyViewModel'];
-            'application/json': components['schemas']['ReplyViewModel'];
-            'text/json': components['schemas']['ReplyViewModel'];
-            'application/xml': components['schemas']['ReplyViewModel'];
-            'text/xml': components['schemas']['ReplyViewModel'];
+            "text/plain": components["schemas"]["ReplyViewModel"];
+            "application/json": components["schemas"]["ReplyViewModel"];
+            "text/json": components["schemas"]["ReplyViewModel"];
+            "application/xml": components["schemas"]["ReplyViewModel"];
+            "text/xml": components["schemas"]["ReplyViewModel"];
           };
         };
       };
@@ -14263,7 +14263,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/replies/{replyId}/edit': {
+  "/api/Messages/replies/{replyId}/edit": {
     parameters: {
       query?: never;
       header?: never;
@@ -14284,13 +14284,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ReplyBindingModel'];
-          'application/json': components['schemas']['ReplyBindingModel'];
-          'text/json': components['schemas']['ReplyBindingModel'];
-          'application/*+json': components['schemas']['ReplyBindingModel'];
-          'application/xml': components['schemas']['ReplyBindingModel'];
-          'text/xml': components['schemas']['ReplyBindingModel'];
-          'application/*+xml': components['schemas']['ReplyBindingModel'];
+          "application/json-patch+json": components["schemas"]["ReplyBindingModel"];
+          "application/json": components["schemas"]["ReplyBindingModel"];
+          "text/json": components["schemas"]["ReplyBindingModel"];
+          "application/*+json": components["schemas"]["ReplyBindingModel"];
+          "application/xml": components["schemas"]["ReplyBindingModel"];
+          "text/xml": components["schemas"]["ReplyBindingModel"];
+          "application/*+xml": components["schemas"]["ReplyBindingModel"];
         };
       };
       responses: {
@@ -14309,7 +14309,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{messageID}/replies': {
+  "/api/Messages/{messageID}/replies": {
     parameters: {
       query?: never;
       header?: never;
@@ -14325,12 +14325,12 @@ export interface paths {
           /** @description returns the specified number of replies, default = null, takes all replies */
           take?: number;
           /** @description sorting order for replies, possible values: 0,1. 0-asc, 1-desc. Reply sent time used for sorting. */
-          direction?: components['schemas']['SortEnum'];
+          direction?: components["schemas"]["SortEnum"];
           /** @description this parameter used to filter replies by last edit time and used in pair with "direction" parameter. In case direction is 0-asc, then return replies which edited(lastEdited property of reply) after the specified time,
            *                 if 1-desc which edited before the specified time. */
           threshold?: string;
           /** @description filters out replies based on types of attachments they have. Default value - null, no filter. Possible values: 0 - Document, 1 - Photo, 2 - Audio */
-          hasAttachments?: components['schemas']['AttachmentType'];
+          hasAttachments?: components["schemas"]["AttachmentType"];
           /** @description return replies with ID less than or equal to the specified ID */
           maxReplyId?: number;
           /** @description return replies with ID greater than or equal to the specified ID */
@@ -14338,7 +14338,7 @@ export interface paths {
           /** @description return message from database instead of cache */
           noCache?: boolean;
           /** @description filter replies by purpose */
-          replyPurpose?: components['schemas']['ReplyPurpose'][];
+          replyPurpose?: components["schemas"]["ReplyPurpose"][];
         };
         header?: never;
         path: {
@@ -14355,11 +14355,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ReplyViewModel'][];
-            'application/json': components['schemas']['ReplyViewModel'][];
-            'text/json': components['schemas']['ReplyViewModel'][];
-            'application/xml': components['schemas']['ReplyViewModel'][];
-            'text/xml': components['schemas']['ReplyViewModel'][];
+            "text/plain": components["schemas"]["ReplyViewModel"][];
+            "application/json": components["schemas"]["ReplyViewModel"][];
+            "text/json": components["schemas"]["ReplyViewModel"][];
+            "application/xml": components["schemas"]["ReplyViewModel"][];
+            "text/xml": components["schemas"]["ReplyViewModel"][];
           };
         };
       };
@@ -14372,7 +14372,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{messageID}/replies/{replyID}': {
+  "/api/Messages/{messageID}/replies/{replyID}": {
     parameters: {
       query?: never;
       header?: never;
@@ -14409,7 +14409,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{id}/reply/{replyId}/setRead': {
+  "/api/Messages/{id}/reply/{replyId}/setRead": {
     parameters: {
       query?: never;
       header?: never;
@@ -14446,7 +14446,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{id}/reply/{replyId}': {
+  "/api/Messages/{id}/reply/{replyId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -14472,11 +14472,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ReplyDataViewModel'];
-            'application/json': components['schemas']['ReplyDataViewModel'];
-            'text/json': components['schemas']['ReplyDataViewModel'];
-            'application/xml': components['schemas']['ReplyDataViewModel'];
-            'text/xml': components['schemas']['ReplyDataViewModel'];
+            "text/plain": components["schemas"]["ReplyDataViewModel"];
+            "application/json": components["schemas"]["ReplyDataViewModel"];
+            "text/json": components["schemas"]["ReplyDataViewModel"];
+            "application/xml": components["schemas"]["ReplyDataViewModel"];
+            "text/xml": components["schemas"]["ReplyDataViewModel"];
           };
         };
       };
@@ -14489,7 +14489,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{messageID}/recipients': {
+  "/api/Messages/{messageID}/recipients": {
     parameters: {
       query?: never;
       header?: never;
@@ -14514,11 +14514,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageRecipientViewModelFull'][];
-            'application/json': components['schemas']['MessageRecipientViewModelFull'][];
-            'text/json': components['schemas']['MessageRecipientViewModelFull'][];
-            'application/xml': components['schemas']['MessageRecipientViewModelFull'][];
-            'text/xml': components['schemas']['MessageRecipientViewModelFull'][];
+            "text/plain": components["schemas"]["MessageRecipientViewModelFull"][];
+            "application/json": components["schemas"]["MessageRecipientViewModelFull"][];
+            "text/json": components["schemas"]["MessageRecipientViewModelFull"][];
+            "application/xml": components["schemas"]["MessageRecipientViewModelFull"][];
+            "text/xml": components["schemas"]["MessageRecipientViewModelFull"][];
           };
         };
       };
@@ -14531,7 +14531,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{messageId}/ChangeType': {
+  "/api/Messages/{messageId}/ChangeType": {
     parameters: {
       query?: never;
       header?: never;
@@ -14552,13 +14552,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['ChangeMessageTypeBindingModel'];
-          'application/json': components['schemas']['ChangeMessageTypeBindingModel'];
-          'text/json': components['schemas']['ChangeMessageTypeBindingModel'];
-          'application/*+json': components['schemas']['ChangeMessageTypeBindingModel'];
-          'application/xml': components['schemas']['ChangeMessageTypeBindingModel'];
-          'text/xml': components['schemas']['ChangeMessageTypeBindingModel'];
-          'application/*+xml': components['schemas']['ChangeMessageTypeBindingModel'];
+          "application/json-patch+json": components["schemas"]["ChangeMessageTypeBindingModel"];
+          "application/json": components["schemas"]["ChangeMessageTypeBindingModel"];
+          "text/json": components["schemas"]["ChangeMessageTypeBindingModel"];
+          "application/*+json": components["schemas"]["ChangeMessageTypeBindingModel"];
+          "application/xml": components["schemas"]["ChangeMessageTypeBindingModel"];
+          "text/xml": components["schemas"]["ChangeMessageTypeBindingModel"];
+          "application/*+xml": components["schemas"]["ChangeMessageTypeBindingModel"];
         };
       };
       responses: {
@@ -14577,7 +14577,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/broadcast/organization': {
+  "/api/Messages/broadcast/organization": {
     parameters: {
       query?: never;
       header?: never;
@@ -14600,13 +14600,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OrganizationBroadcastBindingModel'];
-          'application/json': components['schemas']['OrganizationBroadcastBindingModel'];
-          'text/json': components['schemas']['OrganizationBroadcastBindingModel'];
-          'application/*+json': components['schemas']['OrganizationBroadcastBindingModel'];
-          'application/xml': components['schemas']['OrganizationBroadcastBindingModel'];
-          'text/xml': components['schemas']['OrganizationBroadcastBindingModel'];
-          'application/*+xml': components['schemas']['OrganizationBroadcastBindingModel'];
+          "application/json-patch+json": components["schemas"]["OrganizationBroadcastBindingModel"];
+          "application/json": components["schemas"]["OrganizationBroadcastBindingModel"];
+          "text/json": components["schemas"]["OrganizationBroadcastBindingModel"];
+          "application/*+json": components["schemas"]["OrganizationBroadcastBindingModel"];
+          "application/xml": components["schemas"]["OrganizationBroadcastBindingModel"];
+          "text/xml": components["schemas"]["OrganizationBroadcastBindingModel"];
+          "application/*+xml": components["schemas"]["OrganizationBroadcastBindingModel"];
         };
       };
       responses: {
@@ -14616,11 +14616,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MessageViewModel'];
-            'application/json': components['schemas']['MessageViewModel'];
-            'text/json': components['schemas']['MessageViewModel'];
-            'application/xml': components['schemas']['MessageViewModel'];
-            'text/xml': components['schemas']['MessageViewModel'];
+            "text/plain": components["schemas"]["MessageViewModel"];
+            "application/json": components["schemas"]["MessageViewModel"];
+            "text/json": components["schemas"]["MessageViewModel"];
+            "application/xml": components["schemas"]["MessageViewModel"];
+            "text/xml": components["schemas"]["MessageViewModel"];
           };
         };
       };
@@ -14631,7 +14631,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/broadcast/organizations': {
+  "/api/Messages/broadcast/organizations": {
     parameters: {
       query?: never;
       header?: never;
@@ -14655,11 +14655,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModelShortest'][];
-            'application/json': components['schemas']['OrganizationViewModelShortest'][];
-            'text/json': components['schemas']['OrganizationViewModelShortest'][];
-            'application/xml': components['schemas']['OrganizationViewModelShortest'][];
-            'text/xml': components['schemas']['OrganizationViewModelShortest'][];
+            "text/plain": components["schemas"]["OrganizationViewModelShortest"][];
+            "application/json": components["schemas"]["OrganizationViewModelShortest"][];
+            "text/json": components["schemas"]["OrganizationViewModelShortest"][];
+            "application/xml": components["schemas"]["OrganizationViewModelShortest"][];
+            "text/xml": components["schemas"]["OrganizationViewModelShortest"][];
           };
         };
       };
@@ -14672,7 +14672,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/broadcast/suborganization': {
+  "/api/Messages/broadcast/suborganization": {
     parameters: {
       query?: never;
       header?: never;
@@ -14696,11 +14696,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OrganizationViewModelShortest'][];
-            'application/json': components['schemas']['OrganizationViewModelShortest'][];
-            'text/json': components['schemas']['OrganizationViewModelShortest'][];
-            'application/xml': components['schemas']['OrganizationViewModelShortest'][];
-            'text/xml': components['schemas']['OrganizationViewModelShortest'][];
+            "text/plain": components["schemas"]["OrganizationViewModelShortest"][];
+            "application/json": components["schemas"]["OrganizationViewModelShortest"][];
+            "text/json": components["schemas"]["OrganizationViewModelShortest"][];
+            "application/xml": components["schemas"]["OrganizationViewModelShortest"][];
+            "text/xml": components["schemas"]["OrganizationViewModelShortest"][];
           };
         };
       };
@@ -14713,7 +14713,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{id}/attachment/{fileName}': {
+  "/api/Messages/{id}/attachment/{fileName}": {
     parameters: {
       query?: never;
       header?: never;
@@ -14752,7 +14752,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/{id}/Archive': {
+  "/api/Messages/{id}/Archive": {
     parameters: {
       query?: never;
       header?: never;
@@ -14788,7 +14788,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/GetBlockingAlarmUsers': {
+  "/api/Messages/GetBlockingAlarmUsers": {
     parameters: {
       query?: never;
       header?: never;
@@ -14807,13 +14807,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['UsersWithBlockingAlarmBindingModel'];
-          'application/json': components['schemas']['UsersWithBlockingAlarmBindingModel'];
-          'text/json': components['schemas']['UsersWithBlockingAlarmBindingModel'];
-          'application/*+json': components['schemas']['UsersWithBlockingAlarmBindingModel'];
-          'application/xml': components['schemas']['UsersWithBlockingAlarmBindingModel'];
-          'text/xml': components['schemas']['UsersWithBlockingAlarmBindingModel'];
-          'application/*+xml': components['schemas']['UsersWithBlockingAlarmBindingModel'];
+          "application/json-patch+json": components["schemas"]["UsersWithBlockingAlarmBindingModel"];
+          "application/json": components["schemas"]["UsersWithBlockingAlarmBindingModel"];
+          "text/json": components["schemas"]["UsersWithBlockingAlarmBindingModel"];
+          "application/*+json": components["schemas"]["UsersWithBlockingAlarmBindingModel"];
+          "application/xml": components["schemas"]["UsersWithBlockingAlarmBindingModel"];
+          "text/xml": components["schemas"]["UsersWithBlockingAlarmBindingModel"];
+          "application/*+xml": components["schemas"]["UsersWithBlockingAlarmBindingModel"];
         };
       };
       responses: {
@@ -14823,11 +14823,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserViewModel'][];
-            'application/json': components['schemas']['UserViewModel'][];
-            'text/json': components['schemas']['UserViewModel'][];
-            'application/xml': components['schemas']['UserViewModel'][];
-            'text/xml': components['schemas']['UserViewModel'][];
+            "text/plain": components["schemas"]["UserViewModel"][];
+            "application/json": components["schemas"]["UserViewModel"][];
+            "text/json": components["schemas"]["UserViewModel"][];
+            "application/xml": components["schemas"]["UserViewModel"][];
+            "text/xml": components["schemas"]["UserViewModel"][];
           };
         };
       };
@@ -14838,7 +14838,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Messages/ActiveAlarms': {
+  "/api/Messages/ActiveAlarms": {
     parameters: {
       query?: never;
       header?: never;
@@ -14870,9 +14870,9 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['ActiveMessageAlarmListViewModelPaginatedList'];
-            'application/json': components['schemas']['ActiveMessageAlarmListViewModelPaginatedList'];
-            'text/json': components['schemas']['ActiveMessageAlarmListViewModelPaginatedList'];
+            "text/plain": components["schemas"]["ActiveMessageAlarmListViewModelPaginatedList"];
+            "application/json": components["schemas"]["ActiveMessageAlarmListViewModelPaginatedList"];
+            "text/json": components["schemas"]["ActiveMessageAlarmListViewModelPaginatedList"];
           };
         };
       };
@@ -14885,7 +14885,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Muster': {
+  "/api/Muster": {
     parameters: {
       query?: never;
       header?: never;
@@ -14908,11 +14908,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MusterViewModel'][];
-            'application/json': components['schemas']['MusterViewModel'][];
-            'text/json': components['schemas']['MusterViewModel'][];
-            'application/xml': components['schemas']['MusterViewModel'][];
-            'text/xml': components['schemas']['MusterViewModel'][];
+            "text/plain": components["schemas"]["MusterViewModel"][];
+            "application/json": components["schemas"]["MusterViewModel"][];
+            "text/json": components["schemas"]["MusterViewModel"][];
+            "application/xml": components["schemas"]["MusterViewModel"][];
+            "text/xml": components["schemas"]["MusterViewModel"][];
           };
         };
       };
@@ -14928,13 +14928,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['MusterBindingModel'];
-          'application/json': components['schemas']['MusterBindingModel'];
-          'text/json': components['schemas']['MusterBindingModel'];
-          'application/*+json': components['schemas']['MusterBindingModel'];
-          'application/xml': components['schemas']['MusterBindingModel'];
-          'text/xml': components['schemas']['MusterBindingModel'];
-          'application/*+xml': components['schemas']['MusterBindingModel'];
+          "application/json-patch+json": components["schemas"]["MusterBindingModel"];
+          "application/json": components["schemas"]["MusterBindingModel"];
+          "text/json": components["schemas"]["MusterBindingModel"];
+          "application/*+json": components["schemas"]["MusterBindingModel"];
+          "application/xml": components["schemas"]["MusterBindingModel"];
+          "text/xml": components["schemas"]["MusterBindingModel"];
+          "application/*+xml": components["schemas"]["MusterBindingModel"];
         };
       };
       responses: {
@@ -14944,11 +14944,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MusterViewModel'];
-            'application/json': components['schemas']['MusterViewModel'];
-            'text/json': components['schemas']['MusterViewModel'];
-            'application/xml': components['schemas']['MusterViewModel'];
-            'text/xml': components['schemas']['MusterViewModel'];
+            "text/plain": components["schemas"]["MusterViewModel"];
+            "application/json": components["schemas"]["MusterViewModel"];
+            "text/json": components["schemas"]["MusterViewModel"];
+            "application/xml": components["schemas"]["MusterViewModel"];
+            "text/xml": components["schemas"]["MusterViewModel"];
           };
         };
       };
@@ -14959,7 +14959,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Muster/{id}': {
+  "/api/Muster/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -14985,11 +14985,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MusterViewModelFull'];
-            'application/json': components['schemas']['MusterViewModelFull'];
-            'text/json': components['schemas']['MusterViewModelFull'];
-            'application/xml': components['schemas']['MusterViewModelFull'];
-            'text/xml': components['schemas']['MusterViewModelFull'];
+            "text/plain": components["schemas"]["MusterViewModelFull"];
+            "application/json": components["schemas"]["MusterViewModelFull"];
+            "text/json": components["schemas"]["MusterViewModelFull"];
+            "application/xml": components["schemas"]["MusterViewModelFull"];
+            "text/xml": components["schemas"]["MusterViewModelFull"];
           };
         };
       };
@@ -15023,7 +15023,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Muster/{id}/SetStatus': {
+  "/api/Muster/{id}/SetStatus": {
     parameters: {
       query?: never;
       header?: never;
@@ -15045,13 +15045,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['MusterStatusBindingModel'];
-          'application/json': components['schemas']['MusterStatusBindingModel'];
-          'text/json': components['schemas']['MusterStatusBindingModel'];
-          'application/*+json': components['schemas']['MusterStatusBindingModel'];
-          'application/xml': components['schemas']['MusterStatusBindingModel'];
-          'text/xml': components['schemas']['MusterStatusBindingModel'];
-          'application/*+xml': components['schemas']['MusterStatusBindingModel'];
+          "application/json-patch+json": components["schemas"]["MusterStatusBindingModel"];
+          "application/json": components["schemas"]["MusterStatusBindingModel"];
+          "text/json": components["schemas"]["MusterStatusBindingModel"];
+          "application/*+json": components["schemas"]["MusterStatusBindingModel"];
+          "application/xml": components["schemas"]["MusterStatusBindingModel"];
+          "text/xml": components["schemas"]["MusterStatusBindingModel"];
+          "application/*+xml": components["schemas"]["MusterStatusBindingModel"];
         };
       };
       responses: {
@@ -15061,11 +15061,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MusterUserStatusViewModel'];
-            'application/json': components['schemas']['MusterUserStatusViewModel'];
-            'text/json': components['schemas']['MusterUserStatusViewModel'];
-            'application/xml': components['schemas']['MusterUserStatusViewModel'];
-            'text/xml': components['schemas']['MusterUserStatusViewModel'];
+            "text/plain": components["schemas"]["MusterUserStatusViewModel"];
+            "application/json": components["schemas"]["MusterUserStatusViewModel"];
+            "text/json": components["schemas"]["MusterUserStatusViewModel"];
+            "application/xml": components["schemas"]["MusterUserStatusViewModel"];
+            "text/xml": components["schemas"]["MusterUserStatusViewModel"];
           };
         };
       };
@@ -15076,7 +15076,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Muster/{id}/GetStatus': {
+  "/api/Muster/{id}/GetStatus": {
     parameters: {
       query?: never;
       header?: never;
@@ -15102,11 +15102,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MusterUserStatusViewModel'];
-            'application/json': components['schemas']['MusterUserStatusViewModel'];
-            'text/json': components['schemas']['MusterUserStatusViewModel'];
-            'application/xml': components['schemas']['MusterUserStatusViewModel'];
-            'text/xml': components['schemas']['MusterUserStatusViewModel'];
+            "text/plain": components["schemas"]["MusterUserStatusViewModel"];
+            "application/json": components["schemas"]["MusterUserStatusViewModel"];
+            "text/json": components["schemas"]["MusterUserStatusViewModel"];
+            "application/xml": components["schemas"]["MusterUserStatusViewModel"];
+            "text/xml": components["schemas"]["MusterUserStatusViewModel"];
           };
         };
       };
@@ -15119,7 +15119,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Muster/{id}/end': {
+  "/api/Muster/{id}/end": {
     parameters: {
       query?: never;
       header?: never;
@@ -15156,7 +15156,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Muster/{id}/edit': {
+  "/api/Muster/{id}/edit": {
     parameters: {
       query?: never;
       header?: never;
@@ -15179,13 +15179,13 @@ export interface paths {
       /** @description New data model, "name" and "subject" properties does matter */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['MusterBindingModel'];
-          'application/json': components['schemas']['MusterBindingModel'];
-          'text/json': components['schemas']['MusterBindingModel'];
-          'application/*+json': components['schemas']['MusterBindingModel'];
-          'application/xml': components['schemas']['MusterBindingModel'];
-          'text/xml': components['schemas']['MusterBindingModel'];
-          'application/*+xml': components['schemas']['MusterBindingModel'];
+          "application/json-patch+json": components["schemas"]["MusterBindingModel"];
+          "application/json": components["schemas"]["MusterBindingModel"];
+          "text/json": components["schemas"]["MusterBindingModel"];
+          "application/*+json": components["schemas"]["MusterBindingModel"];
+          "application/xml": components["schemas"]["MusterBindingModel"];
+          "text/xml": components["schemas"]["MusterBindingModel"];
+          "application/*+xml": components["schemas"]["MusterBindingModel"];
         };
       };
       responses: {
@@ -15195,11 +15195,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['MusterViewModel'];
-            'application/json': components['schemas']['MusterViewModel'];
-            'text/json': components['schemas']['MusterViewModel'];
-            'application/xml': components['schemas']['MusterViewModel'];
-            'text/xml': components['schemas']['MusterViewModel'];
+            "text/plain": components["schemas"]["MusterViewModel"];
+            "application/json": components["schemas"]["MusterViewModel"];
+            "text/json": components["schemas"]["MusterViewModel"];
+            "application/xml": components["schemas"]["MusterViewModel"];
+            "text/xml": components["schemas"]["MusterViewModel"];
           };
         };
       };
@@ -15210,7 +15210,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/News': {
+  "/api/News": {
     parameters: {
       query?: never;
       header?: never;
@@ -15235,11 +15235,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['NewsViewModel'][];
-            'application/json': components['schemas']['NewsViewModel'][];
-            'text/json': components['schemas']['NewsViewModel'][];
-            'application/xml': components['schemas']['NewsViewModel'][];
-            'text/xml': components['schemas']['NewsViewModel'][];
+            "text/plain": components["schemas"]["NewsViewModel"][];
+            "application/json": components["schemas"]["NewsViewModel"][];
+            "text/json": components["schemas"]["NewsViewModel"][];
+            "application/xml": components["schemas"]["NewsViewModel"][];
+            "text/xml": components["schemas"]["NewsViewModel"][];
           };
         };
       };
@@ -15252,7 +15252,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/OnCallAlerts/sent': {
+  "/api/OnCallAlerts/sent": {
     parameters: {
       query?: never;
       header?: never;
@@ -15275,11 +15275,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OnCallAlertViewModel'][];
-            'application/json': components['schemas']['OnCallAlertViewModel'][];
-            'text/json': components['schemas']['OnCallAlertViewModel'][];
-            'application/xml': components['schemas']['OnCallAlertViewModel'][];
-            'text/xml': components['schemas']['OnCallAlertViewModel'][];
+            "text/plain": components["schemas"]["OnCallAlertViewModel"][];
+            "application/json": components["schemas"]["OnCallAlertViewModel"][];
+            "text/json": components["schemas"]["OnCallAlertViewModel"][];
+            "application/xml": components["schemas"]["OnCallAlertViewModel"][];
+            "text/xml": components["schemas"]["OnCallAlertViewModel"][];
           };
         };
       };
@@ -15292,7 +15292,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/OnCallAlerts/received': {
+  "/api/OnCallAlerts/received": {
     parameters: {
       query?: never;
       header?: never;
@@ -15315,11 +15315,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OnCallAlertReceivedViewModel'][];
-            'application/json': components['schemas']['OnCallAlertReceivedViewModel'][];
-            'text/json': components['schemas']['OnCallAlertReceivedViewModel'][];
-            'application/xml': components['schemas']['OnCallAlertReceivedViewModel'][];
-            'text/xml': components['schemas']['OnCallAlertReceivedViewModel'][];
+            "text/plain": components["schemas"]["OnCallAlertReceivedViewModel"][];
+            "application/json": components["schemas"]["OnCallAlertReceivedViewModel"][];
+            "text/json": components["schemas"]["OnCallAlertReceivedViewModel"][];
+            "application/xml": components["schemas"]["OnCallAlertReceivedViewModel"][];
+            "text/xml": components["schemas"]["OnCallAlertReceivedViewModel"][];
           };
         };
       };
@@ -15332,7 +15332,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/OnCallAlerts': {
+  "/api/OnCallAlerts": {
     parameters: {
       query?: never;
       header?: never;
@@ -15351,13 +15351,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OnCallAlertBindingModel'];
-          'application/json': components['schemas']['OnCallAlertBindingModel'];
-          'text/json': components['schemas']['OnCallAlertBindingModel'];
-          'application/*+json': components['schemas']['OnCallAlertBindingModel'];
-          'application/xml': components['schemas']['OnCallAlertBindingModel'];
-          'text/xml': components['schemas']['OnCallAlertBindingModel'];
-          'application/*+xml': components['schemas']['OnCallAlertBindingModel'];
+          "application/json-patch+json": components["schemas"]["OnCallAlertBindingModel"];
+          "application/json": components["schemas"]["OnCallAlertBindingModel"];
+          "text/json": components["schemas"]["OnCallAlertBindingModel"];
+          "application/*+json": components["schemas"]["OnCallAlertBindingModel"];
+          "application/xml": components["schemas"]["OnCallAlertBindingModel"];
+          "text/xml": components["schemas"]["OnCallAlertBindingModel"];
+          "application/*+xml": components["schemas"]["OnCallAlertBindingModel"];
         };
       };
       responses: {
@@ -15367,11 +15367,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OnCallAlertViewModel'];
-            'application/json': components['schemas']['OnCallAlertViewModel'];
-            'text/json': components['schemas']['OnCallAlertViewModel'];
-            'application/xml': components['schemas']['OnCallAlertViewModel'];
-            'text/xml': components['schemas']['OnCallAlertViewModel'];
+            "text/plain": components["schemas"]["OnCallAlertViewModel"];
+            "application/json": components["schemas"]["OnCallAlertViewModel"];
+            "text/json": components["schemas"]["OnCallAlertViewModel"];
+            "application/xml": components["schemas"]["OnCallAlertViewModel"];
+            "text/xml": components["schemas"]["OnCallAlertViewModel"];
           };
         };
       };
@@ -15382,7 +15382,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/OnCallAlerts/{id}/setstatus': {
+  "/api/OnCallAlerts/{id}/setstatus": {
     parameters: {
       query?: never;
       header?: never;
@@ -15404,13 +15404,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OnCallAlertStatusBindingModel'];
-          'application/json': components['schemas']['OnCallAlertStatusBindingModel'];
-          'text/json': components['schemas']['OnCallAlertStatusBindingModel'];
-          'application/*+json': components['schemas']['OnCallAlertStatusBindingModel'];
-          'application/xml': components['schemas']['OnCallAlertStatusBindingModel'];
-          'text/xml': components['schemas']['OnCallAlertStatusBindingModel'];
-          'application/*+xml': components['schemas']['OnCallAlertStatusBindingModel'];
+          "application/json-patch+json": components["schemas"]["OnCallAlertStatusBindingModel"];
+          "application/json": components["schemas"]["OnCallAlertStatusBindingModel"];
+          "text/json": components["schemas"]["OnCallAlertStatusBindingModel"];
+          "application/*+json": components["schemas"]["OnCallAlertStatusBindingModel"];
+          "application/xml": components["schemas"]["OnCallAlertStatusBindingModel"];
+          "text/xml": components["schemas"]["OnCallAlertStatusBindingModel"];
+          "application/*+xml": components["schemas"]["OnCallAlertStatusBindingModel"];
         };
       };
       responses: {
@@ -15429,7 +15429,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/OnCallAlerts/{id}/statuses': {
+  "/api/OnCallAlerts/{id}/statuses": {
     parameters: {
       query?: never;
       header?: never;
@@ -15455,11 +15455,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OnCallAlertRecipientViewModel'][];
-            'application/json': components['schemas']['OnCallAlertRecipientViewModel'][];
-            'text/json': components['schemas']['OnCallAlertRecipientViewModel'][];
-            'application/xml': components['schemas']['OnCallAlertRecipientViewModel'][];
-            'text/xml': components['schemas']['OnCallAlertRecipientViewModel'][];
+            "text/plain": components["schemas"]["OnCallAlertRecipientViewModel"][];
+            "application/json": components["schemas"]["OnCallAlertRecipientViewModel"][];
+            "text/json": components["schemas"]["OnCallAlertRecipientViewModel"][];
+            "application/xml": components["schemas"]["OnCallAlertRecipientViewModel"][];
+            "text/xml": components["schemas"]["OnCallAlertRecipientViewModel"][];
           };
         };
       };
@@ -15472,7 +15472,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/OnCallAlerts/{id}/end': {
+  "/api/OnCallAlerts/{id}/end": {
     parameters: {
       query?: never;
       header?: never;
@@ -15509,7 +15509,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/OnCallAlerts/{id}/edit': {
+  "/api/OnCallAlerts/{id}/edit": {
     parameters: {
       query?: never;
       header?: never;
@@ -15532,13 +15532,13 @@ export interface paths {
       /** @description New data model, "text" and "subject" properties does matter */
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['OnCallAlertBindingModel'];
-          'application/json': components['schemas']['OnCallAlertBindingModel'];
-          'text/json': components['schemas']['OnCallAlertBindingModel'];
-          'application/*+json': components['schemas']['OnCallAlertBindingModel'];
-          'application/xml': components['schemas']['OnCallAlertBindingModel'];
-          'text/xml': components['schemas']['OnCallAlertBindingModel'];
-          'application/*+xml': components['schemas']['OnCallAlertBindingModel'];
+          "application/json-patch+json": components["schemas"]["OnCallAlertBindingModel"];
+          "application/json": components["schemas"]["OnCallAlertBindingModel"];
+          "text/json": components["schemas"]["OnCallAlertBindingModel"];
+          "application/*+json": components["schemas"]["OnCallAlertBindingModel"];
+          "application/xml": components["schemas"]["OnCallAlertBindingModel"];
+          "text/xml": components["schemas"]["OnCallAlertBindingModel"];
+          "application/*+xml": components["schemas"]["OnCallAlertBindingModel"];
         };
       };
       responses: {
@@ -15548,11 +15548,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['OnCallAlertViewModel'];
-            'application/json': components['schemas']['OnCallAlertViewModel'];
-            'text/json': components['schemas']['OnCallAlertViewModel'];
-            'application/xml': components['schemas']['OnCallAlertViewModel'];
-            'text/xml': components['schemas']['OnCallAlertViewModel'];
+            "text/plain": components["schemas"]["OnCallAlertViewModel"];
+            "application/json": components["schemas"]["OnCallAlertViewModel"];
+            "text/json": components["schemas"]["OnCallAlertViewModel"];
+            "application/xml": components["schemas"]["OnCallAlertViewModel"];
+            "text/xml": components["schemas"]["OnCallAlertViewModel"];
           };
         };
       };
@@ -15563,7 +15563,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/OnCallAlerts/{id}': {
+  "/api/OnCallAlerts/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -15600,7 +15600,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/PersonalAlarm': {
+  "/api/PersonalAlarm": {
     parameters: {
       query?: never;
       header?: never;
@@ -15623,11 +15623,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PersonalAlarmViewModel'];
-            'application/json': components['schemas']['PersonalAlarmViewModel'];
-            'text/json': components['schemas']['PersonalAlarmViewModel'];
-            'application/xml': components['schemas']['PersonalAlarmViewModel'];
-            'text/xml': components['schemas']['PersonalAlarmViewModel'];
+            "text/plain": components["schemas"]["PersonalAlarmViewModel"];
+            "application/json": components["schemas"]["PersonalAlarmViewModel"];
+            "text/json": components["schemas"]["PersonalAlarmViewModel"];
+            "application/xml": components["schemas"]["PersonalAlarmViewModel"];
+            "text/xml": components["schemas"]["PersonalAlarmViewModel"];
           };
         };
       };
@@ -15643,13 +15643,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PersonalAlarmBindingModels'];
-          'application/json': components['schemas']['PersonalAlarmBindingModels'];
-          'text/json': components['schemas']['PersonalAlarmBindingModels'];
-          'application/*+json': components['schemas']['PersonalAlarmBindingModels'];
-          'application/xml': components['schemas']['PersonalAlarmBindingModels'];
-          'text/xml': components['schemas']['PersonalAlarmBindingModels'];
-          'application/*+xml': components['schemas']['PersonalAlarmBindingModels'];
+          "application/json-patch+json": components["schemas"]["PersonalAlarmBindingModels"];
+          "application/json": components["schemas"]["PersonalAlarmBindingModels"];
+          "text/json": components["schemas"]["PersonalAlarmBindingModels"];
+          "application/*+json": components["schemas"]["PersonalAlarmBindingModels"];
+          "application/xml": components["schemas"]["PersonalAlarmBindingModels"];
+          "text/xml": components["schemas"]["PersonalAlarmBindingModels"];
+          "application/*+xml": components["schemas"]["PersonalAlarmBindingModels"];
         };
       };
       responses: {
@@ -15659,11 +15659,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PersonalAlarmViewModel'];
-            'application/json': components['schemas']['PersonalAlarmViewModel'];
-            'text/json': components['schemas']['PersonalAlarmViewModel'];
-            'application/xml': components['schemas']['PersonalAlarmViewModel'];
-            'text/xml': components['schemas']['PersonalAlarmViewModel'];
+            "text/plain": components["schemas"]["PersonalAlarmViewModel"];
+            "application/json": components["schemas"]["PersonalAlarmViewModel"];
+            "text/json": components["schemas"]["PersonalAlarmViewModel"];
+            "application/xml": components["schemas"]["PersonalAlarmViewModel"];
+            "text/xml": components["schemas"]["PersonalAlarmViewModel"];
           };
         };
       };
@@ -15674,7 +15674,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/PersonalAlarm/{id}': {
+  "/api/PersonalAlarm/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -15700,11 +15700,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PersonalAlarmViewModel'];
-            'application/json': components['schemas']['PersonalAlarmViewModel'];
-            'text/json': components['schemas']['PersonalAlarmViewModel'];
-            'application/xml': components['schemas']['PersonalAlarmViewModel'];
-            'text/xml': components['schemas']['PersonalAlarmViewModel'];
+            "text/plain": components["schemas"]["PersonalAlarmViewModel"];
+            "application/json": components["schemas"]["PersonalAlarmViewModel"];
+            "text/json": components["schemas"]["PersonalAlarmViewModel"];
+            "application/xml": components["schemas"]["PersonalAlarmViewModel"];
+            "text/xml": components["schemas"]["PersonalAlarmViewModel"];
           };
         };
       };
@@ -15717,7 +15717,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/PersonalAlarm/update': {
+  "/api/PersonalAlarm/update": {
     parameters: {
       query?: never;
       header?: never;
@@ -15736,13 +15736,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['PersonalAlarmBindingModels'];
-          'application/json': components['schemas']['PersonalAlarmBindingModels'];
-          'text/json': components['schemas']['PersonalAlarmBindingModels'];
-          'application/*+json': components['schemas']['PersonalAlarmBindingModels'];
-          'application/xml': components['schemas']['PersonalAlarmBindingModels'];
-          'text/xml': components['schemas']['PersonalAlarmBindingModels'];
-          'application/*+xml': components['schemas']['PersonalAlarmBindingModels'];
+          "application/json-patch+json": components["schemas"]["PersonalAlarmBindingModels"];
+          "application/json": components["schemas"]["PersonalAlarmBindingModels"];
+          "text/json": components["schemas"]["PersonalAlarmBindingModels"];
+          "application/*+json": components["schemas"]["PersonalAlarmBindingModels"];
+          "application/xml": components["schemas"]["PersonalAlarmBindingModels"];
+          "text/xml": components["schemas"]["PersonalAlarmBindingModels"];
+          "application/*+xml": components["schemas"]["PersonalAlarmBindingModels"];
         };
       };
       responses: {
@@ -15752,11 +15752,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PersonalAlarmViewModel'];
-            'application/json': components['schemas']['PersonalAlarmViewModel'];
-            'text/json': components['schemas']['PersonalAlarmViewModel'];
-            'application/xml': components['schemas']['PersonalAlarmViewModel'];
-            'text/xml': components['schemas']['PersonalAlarmViewModel'];
+            "text/plain": components["schemas"]["PersonalAlarmViewModel"];
+            "application/json": components["schemas"]["PersonalAlarmViewModel"];
+            "text/json": components["schemas"]["PersonalAlarmViewModel"];
+            "application/xml": components["schemas"]["PersonalAlarmViewModel"];
+            "text/xml": components["schemas"]["PersonalAlarmViewModel"];
           };
         };
       };
@@ -15767,7 +15767,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/PersonalAlarm/Cancel': {
+  "/api/PersonalAlarm/Cancel": {
     parameters: {
       query?: never;
       header?: never;
@@ -15792,11 +15792,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PersonalAlarmViewModel'];
-            'application/json': components['schemas']['PersonalAlarmViewModel'];
-            'text/json': components['schemas']['PersonalAlarmViewModel'];
-            'application/xml': components['schemas']['PersonalAlarmViewModel'];
-            'text/xml': components['schemas']['PersonalAlarmViewModel'];
+            "text/plain": components["schemas"]["PersonalAlarmViewModel"];
+            "application/json": components["schemas"]["PersonalAlarmViewModel"];
+            "text/json": components["schemas"]["PersonalAlarmViewModel"];
+            "application/xml": components["schemas"]["PersonalAlarmViewModel"];
+            "text/xml": components["schemas"]["PersonalAlarmViewModel"];
           };
         };
       };
@@ -15807,7 +15807,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/PersonalAlarm/SetOff': {
+  "/api/PersonalAlarm/SetOff": {
     parameters: {
       query?: never;
       header?: never;
@@ -15836,11 +15836,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['PersonalAlarmViewModel'];
-            'application/json': components['schemas']['PersonalAlarmViewModel'];
-            'text/json': components['schemas']['PersonalAlarmViewModel'];
-            'application/xml': components['schemas']['PersonalAlarmViewModel'];
-            'text/xml': components['schemas']['PersonalAlarmViewModel'];
+            "text/plain": components["schemas"]["PersonalAlarmViewModel"];
+            "application/json": components["schemas"]["PersonalAlarmViewModel"];
+            "text/json": components["schemas"]["PersonalAlarmViewModel"];
+            "application/xml": components["schemas"]["PersonalAlarmViewModel"];
+            "text/xml": components["schemas"]["PersonalAlarmViewModel"];
           };
         };
       };
@@ -15851,7 +15851,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Rss': {
+  "/api/Rss": {
     parameters: {
       query?: never;
       header?: never;
@@ -15877,11 +15877,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['RssFeedViewModel'][];
-            'application/json': components['schemas']['RssFeedViewModel'][];
-            'text/json': components['schemas']['RssFeedViewModel'][];
-            'application/xml': components['schemas']['RssFeedViewModel'][];
-            'text/xml': components['schemas']['RssFeedViewModel'][];
+            "text/plain": components["schemas"]["RssFeedViewModel"][];
+            "application/json": components["schemas"]["RssFeedViewModel"][];
+            "text/json": components["schemas"]["RssFeedViewModel"][];
+            "application/xml": components["schemas"]["RssFeedViewModel"][];
+            "text/xml": components["schemas"]["RssFeedViewModel"][];
           };
         };
       };
@@ -15897,13 +15897,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['RssFeedBindingModel'];
-          'application/json': components['schemas']['RssFeedBindingModel'];
-          'text/json': components['schemas']['RssFeedBindingModel'];
-          'application/*+json': components['schemas']['RssFeedBindingModel'];
-          'application/xml': components['schemas']['RssFeedBindingModel'];
-          'text/xml': components['schemas']['RssFeedBindingModel'];
-          'application/*+xml': components['schemas']['RssFeedBindingModel'];
+          "application/json-patch+json": components["schemas"]["RssFeedBindingModel"];
+          "application/json": components["schemas"]["RssFeedBindingModel"];
+          "text/json": components["schemas"]["RssFeedBindingModel"];
+          "application/*+json": components["schemas"]["RssFeedBindingModel"];
+          "application/xml": components["schemas"]["RssFeedBindingModel"];
+          "text/xml": components["schemas"]["RssFeedBindingModel"];
+          "application/*+xml": components["schemas"]["RssFeedBindingModel"];
         };
       };
       responses: {
@@ -15922,7 +15922,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Rss/{id}': {
+  "/api/Rss/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -15948,11 +15948,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['RssFeedViewModel'];
-            'application/json': components['schemas']['RssFeedViewModel'];
-            'text/json': components['schemas']['RssFeedViewModel'];
-            'application/xml': components['schemas']['RssFeedViewModel'];
-            'text/xml': components['schemas']['RssFeedViewModel'];
+            "text/plain": components["schemas"]["RssFeedViewModel"];
+            "application/json": components["schemas"]["RssFeedViewModel"];
+            "text/json": components["schemas"]["RssFeedViewModel"];
+            "application/xml": components["schemas"]["RssFeedViewModel"];
+            "text/xml": components["schemas"]["RssFeedViewModel"];
           };
         };
       };
@@ -15971,13 +15971,13 @@ export interface paths {
       };
       requestBody?: {
         content: {
-          'application/json-patch+json': components['schemas']['RssFeedBindingModel'];
-          'application/json': components['schemas']['RssFeedBindingModel'];
-          'text/json': components['schemas']['RssFeedBindingModel'];
-          'application/*+json': components['schemas']['RssFeedBindingModel'];
-          'application/xml': components['schemas']['RssFeedBindingModel'];
-          'text/xml': components['schemas']['RssFeedBindingModel'];
-          'application/*+xml': components['schemas']['RssFeedBindingModel'];
+          "application/json-patch+json": components["schemas"]["RssFeedBindingModel"];
+          "application/json": components["schemas"]["RssFeedBindingModel"];
+          "text/json": components["schemas"]["RssFeedBindingModel"];
+          "application/*+json": components["schemas"]["RssFeedBindingModel"];
+          "application/xml": components["schemas"]["RssFeedBindingModel"];
+          "text/xml": components["schemas"]["RssFeedBindingModel"];
+          "application/*+xml": components["schemas"]["RssFeedBindingModel"];
         };
       };
       responses: {
@@ -15996,7 +15996,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Rss/organization/{id}': {
+  "/api/Rss/organization/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -16022,11 +16022,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['RssFeedViewModel'][];
-            'application/json': components['schemas']['RssFeedViewModel'][];
-            'text/json': components['schemas']['RssFeedViewModel'][];
-            'application/xml': components['schemas']['RssFeedViewModel'][];
-            'text/xml': components['schemas']['RssFeedViewModel'][];
+            "text/plain": components["schemas"]["RssFeedViewModel"][];
+            "application/json": components["schemas"]["RssFeedViewModel"][];
+            "text/json": components["schemas"]["RssFeedViewModel"][];
+            "application/xml": components["schemas"]["RssFeedViewModel"][];
+            "text/xml": components["schemas"]["RssFeedViewModel"][];
           };
         };
       };
@@ -16039,7 +16039,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Rss/{id}/organization/{orgId}': {
+  "/api/Rss/{id}/organization/{orgId}": {
     parameters: {
       query?: never;
       header?: never;
@@ -16078,7 +16078,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Twilio/voice': {
+  "/api/Twilio/voice": {
     parameters: {
       query?: never;
       header?: never;
@@ -16103,11 +16103,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['HttpResponseMessage'];
-            'application/json': components['schemas']['HttpResponseMessage'];
-            'text/json': components['schemas']['HttpResponseMessage'];
-            'application/xml': components['schemas']['HttpResponseMessage'];
-            'text/xml': components['schemas']['HttpResponseMessage'];
+            "text/plain": components["schemas"]["HttpResponseMessage"];
+            "application/json": components["schemas"]["HttpResponseMessage"];
+            "text/json": components["schemas"]["HttpResponseMessage"];
+            "application/xml": components["schemas"]["HttpResponseMessage"];
+            "text/xml": components["schemas"]["HttpResponseMessage"];
           };
         };
       };
@@ -16120,7 +16120,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Twilio/voice.xml': {
+  "/api/Twilio/voice.xml": {
     parameters: {
       query?: never;
       header?: never;
@@ -16145,11 +16145,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['HttpResponseMessage'];
-            'application/json': components['schemas']['HttpResponseMessage'];
-            'text/json': components['schemas']['HttpResponseMessage'];
-            'application/xml': components['schemas']['HttpResponseMessage'];
-            'text/xml': components['schemas']['HttpResponseMessage'];
+            "text/plain": components["schemas"]["HttpResponseMessage"];
+            "application/json": components["schemas"]["HttpResponseMessage"];
+            "text/json": components["schemas"]["HttpResponseMessage"];
+            "application/xml": components["schemas"]["HttpResponseMessage"];
+            "text/xml": components["schemas"]["HttpResponseMessage"];
           };
         };
       };
@@ -16162,7 +16162,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Twilio/reminder.xml': {
+  "/api/Twilio/reminder.xml": {
     parameters: {
       query?: never;
       header?: never;
@@ -16187,7 +16187,7 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'application/xml': components['schemas']['ContentResult'];
+            "application/xml": components["schemas"]["ContentResult"];
           };
         };
       };
@@ -16211,7 +16211,7 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'application/xml': components['schemas']['ContentResult'];
+            "application/xml": components["schemas"]["ContentResult"];
           };
         };
       };
@@ -16222,7 +16222,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Twilio/externalContactVoiceCall.xml': {
+  "/api/Twilio/externalContactVoiceCall.xml": {
     parameters: {
       query?: never;
       header?: never;
@@ -16247,7 +16247,7 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'application/xml': components['schemas']['ContentResult'];
+            "application/xml": components["schemas"]["ContentResult"];
           };
         };
       };
@@ -16271,7 +16271,7 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'application/xml': components['schemas']['ContentResult'];
+            "application/xml": components["schemas"]["ContentResult"];
           };
         };
       };
@@ -16282,7 +16282,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Users': {
+  "/api/Users": {
     parameters: {
       query?: never;
       header?: never;
@@ -16317,11 +16317,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserViewModel'][];
-            'application/json': components['schemas']['UserViewModel'][];
-            'text/json': components['schemas']['UserViewModel'][];
-            'application/xml': components['schemas']['UserViewModel'][];
-            'text/xml': components['schemas']['UserViewModel'][];
+            "text/plain": components["schemas"]["UserViewModel"][];
+            "application/json": components["schemas"]["UserViewModel"][];
+            "text/json": components["schemas"]["UserViewModel"][];
+            "application/xml": components["schemas"]["UserViewModel"][];
+            "text/xml": components["schemas"]["UserViewModel"][];
           };
         };
       };
@@ -16334,7 +16334,7 @@ export interface paths {
     patch?: never;
     trace?: never;
   };
-  '/api/Users/{id}': {
+  "/api/Users/{id}": {
     parameters: {
       query?: never;
       header?: never;
@@ -16360,11 +16360,11 @@ export interface paths {
             [name: string]: unknown;
           };
           content: {
-            'text/plain': components['schemas']['UserViewModelExtended'];
-            'application/json': components['schemas']['UserViewModelExtended'];
-            'text/json': components['schemas']['UserViewModelExtended'];
-            'application/xml': components['schemas']['UserViewModelExtended'];
-            'text/xml': components['schemas']['UserViewModelExtended'];
+            "text/plain": components["schemas"]["UserViewModelExtended"];
+            "application/json": components["schemas"]["UserViewModelExtended"];
+            "text/json": components["schemas"]["UserViewModelExtended"];
+            "application/xml": components["schemas"]["UserViewModelExtended"];
+            "text/xml": components["schemas"]["UserViewModelExtended"];
           };
         };
       };
@@ -16395,7 +16395,7 @@ export interface components {
       id?: number;
       /** Format: date-time */
       sent?: string;
-      groups?: components['schemas']['IdNameWithOrganizationModel'][] | null;
+      groups?: components["schemas"]["IdNameWithOrganizationModel"][] | null;
       /** Format: int32 */
       senderId?: number | null;
       senderName?: string | null;
@@ -16406,7 +16406,7 @@ export interface components {
       emergencyTypeIconFileName?: string | null;
     };
     ActiveMessageAlarmListViewModelPaginatedList: {
-      items?: components['schemas']['ActiveMessageAlarmListViewModel'][] | null;
+      items?: components["schemas"]["ActiveMessageAlarmListViewModel"][] | null;
       /** Format: int32 */
       totalCount?: number;
     };
@@ -16430,7 +16430,7 @@ export interface components {
       testId?: number;
       /** Format: int32 */
       userId?: number;
-      deviceType?: components['schemas']['DeviceType'];
+      deviceType?: components["schemas"]["DeviceType"];
       success?: boolean | null;
       /** Format: date-time */
       date?: string;
@@ -16477,8 +16477,8 @@ export interface components {
       organizationID: number;
     };
     ChangeMessageTypeBindingModel: {
-      messageType?: components['schemas']['GroupMessageType'];
-      replyType?: components['schemas']['ReplyType'];
+      messageType?: components["schemas"]["GroupMessageType"];
+      replyType?: components["schemas"]["ReplyType"];
     };
     ChangePasswordBindingModel: {
       /** Format: password */
@@ -16517,7 +16517,7 @@ export interface components {
       sortIndex?: number;
       name?: string | null;
       complete?: boolean;
-      comments?: components['schemas']['ChecklistCommentViewModel'][] | null;
+      comments?: components["schemas"]["ChecklistCommentViewModel"][] | null;
     };
     ChecklistSummaryViewModel: {
       /** Format: int32 */
@@ -16544,8 +16544,8 @@ export interface components {
       /** Format: int32 */
       completeTasks?: number;
       sharedGroups?: number[] | null;
-      owner?: components['schemas']['UserViewModel'];
-      lastEditor?: components['schemas']['UserViewModel'];
+      owner?: components["schemas"]["UserViewModel"];
+      lastEditor?: components["schemas"]["UserViewModel"];
       /** Format: date-time */
       lastEdited?: string | null;
       /** Format: int32 */
@@ -16557,15 +16557,15 @@ export interface components {
       usersCount?: number;
       userNames?: string[] | null;
       userIds?: number[] | null;
-      directUserShares?: components['schemas']['UserSimpleViewModel'][] | null;
+      directUserShares?: components["schemas"]["UserSimpleViewModel"][] | null;
       userSharesViaGroups?:
-        | components['schemas']['UserSimpleViewModel'][]
+        | components["schemas"]["UserSimpleViewModel"][]
         | null;
       /** Format: int32 */
       organizationsCount?: number;
       organizationNames?: string[] | null;
       organizationIds?: number[] | null;
-      emergencyTypes?: components['schemas']['EmergencyTypeViewModel'][] | null;
+      emergencyTypes?: components["schemas"]["EmergencyTypeViewModel"][] | null;
     };
     /**
      * Format: int32
@@ -16637,7 +16637,7 @@ export interface components {
     };
     Device: {
       id?: string | null;
-      type?: components['schemas']['DeviceType'];
+      type?: components["schemas"]["DeviceType"];
       /** Format: int32 */
       userID?: number | null;
       deleted?: boolean;
@@ -16672,8 +16672,8 @@ export interface components {
       sendNotification?: boolean;
     };
     DocumentAndFoldersViewModel: {
-      documents?: components['schemas']['DocumentViewModelBrief'][] | null;
-      folders?: components['schemas']['FolderViewModelExtended'][] | null;
+      documents?: components["schemas"]["DocumentViewModelBrief"][] | null;
+      folders?: components["schemas"]["FolderViewModelExtended"][] | null;
       /**
        * Format: int32
        * @description the overall number of documents
@@ -16703,7 +16703,7 @@ export interface components {
       created?: string;
       /** Format: int32 */
       GroupID?: number;
-      type?: components['schemas']['GroupType'];
+      type?: components["schemas"]["GroupType"];
       /** Format: int32 */
       groupMembersCount?: number;
       /** Format: int32 */
@@ -16725,7 +16725,7 @@ export interface components {
       readonly document_url?: string | null;
       /** Format: int32 */
       group_id?: number | null;
-      groups?: components['schemas']['DocumentGroupViewModel'][] | null;
+      groups?: components["schemas"]["DocumentGroupViewModel"][] | null;
       /** Format: int64 */
       file_size?: number;
       /** Format: date-time */
@@ -16735,11 +16735,11 @@ export interface components {
       /** Format: int32 */
       userId?: number | null;
       userName?: string | null;
-      folders?: components['schemas']['FolderDocumentViewModel'][] | null;
+      folders?: components["schemas"]["FolderDocumentViewModel"][] | null;
       organizations?:
-        | components['schemas']['OrganizationViewModelShortest'][]
+        | components["schemas"]["OrganizationViewModelShortest"][]
         | null;
-      users?: components['schemas']['UserViewModel'][] | null;
+      users?: components["schemas"]["UserViewModel"][] | null;
       default?: boolean;
       favorite?: boolean;
     };
@@ -16751,7 +16751,7 @@ export interface components {
       readonly document_url?: string | null;
       /** Format: int32 */
       group_id?: number | null;
-      groups?: components['schemas']['DocumentGroupViewModel'][] | null;
+      groups?: components["schemas"]["DocumentGroupViewModel"][] | null;
       /** Format: int64 */
       file_size?: number;
       /** Format: date-time */
@@ -16761,11 +16761,11 @@ export interface components {
       /** Format: int32 */
       userId?: number | null;
       userName?: string | null;
-      folders?: components['schemas']['FolderDocumentViewModel'][] | null;
+      folders?: components["schemas"]["FolderDocumentViewModel"][] | null;
       organizations?:
-        | components['schemas']['OrganizationViewModelShortest'][]
+        | components["schemas"]["OrganizationViewModelShortest"][]
         | null;
-      users?: components['schemas']['UserViewModel'][] | null;
+      users?: components["schemas"]["UserViewModel"][] | null;
       default?: boolean;
       favorite?: boolean;
     };
@@ -16781,7 +16781,7 @@ export interface components {
       complete: boolean;
     };
     EditChecklistItemsBulkBindingModel: {
-      items?: components['schemas']['ChecklistItemBulkBindingModel'][] | null;
+      items?: components["schemas"]["ChecklistItemBulkBindingModel"][] | null;
     };
     EditMessageBindingModel: {
       /** Format: multiline */
@@ -16794,7 +16794,7 @@ export interface components {
       groupDocumentIds?: number[] | null;
       subject?: string | null;
       attachments?:
-        | components['schemas']['MessageAttachmentBindingModel'][]
+        | components["schemas"]["MessageAttachmentBindingModel"][]
         | null;
     };
     EditTutorialContentBindingModel: {
@@ -16812,8 +16812,8 @@ export interface components {
     EditedUserData: {
       /** Format: int32 */
       userId?: number;
-      oldData?: components['schemas']['UserImportData'];
-      newData?: components['schemas']['UserImportData'];
+      oldData?: components["schemas"]["UserImportData"];
+      newData?: components["schemas"]["UserImportData"];
       isImportedWithImportAccounts?: boolean;
     };
     EmailDailySummaryViewModel: {
@@ -16835,12 +16835,12 @@ export interface components {
       /** Format: date-time */
       date?: string;
       subject?: string | null;
-      emailProvider?: components['schemas']['EmailProvider'];
+      emailProvider?: components["schemas"]["EmailProvider"];
       /** Format: int32 */
       organizationId?: number;
       organizationName?: string | null;
       recipients?:
-        | components['schemas']['EmailRecipientRecordViewModel'][]
+        | components["schemas"]["EmailRecipientRecordViewModel"][]
         | null;
     };
     /**
@@ -16852,7 +16852,7 @@ export interface components {
       /** Format: int32 */
       organizationId?: number | null;
       organizationName?: string | null;
-      emailProvider?: components['schemas']['EmailProvider'];
+      emailProvider?: components["schemas"]["EmailProvider"];
       /** Format: int32 */
       total?: number;
       /** Format: int32 */
@@ -16877,15 +16877,15 @@ export interface components {
      */
     EmergencyReportAmplitude: 1 | 2 | 3 | 4 | 5;
     EmergencyReportBindingModel: {
-      type: components['schemas']['EmergencyReportType'];
+      type: components["schemas"]["EmergencyReportType"];
       /** Format: int32 */
       crisisID?: number | null;
       /** Format: date-time */
       startTime: string;
       /** Format: date-time */
       endTime: string;
-      amplitude?: components['schemas']['EmergencyReportAmplitude'];
-      depth?: components['schemas']['EmergencyReportDepth'];
+      amplitude?: components["schemas"]["EmergencyReportAmplitude"];
+      depth?: components["schemas"]["EmergencyReportDepth"];
       language?: string | null;
       /** Format: int32 */
       organizationID?: number | null;
@@ -16910,7 +16910,7 @@ export interface components {
       name?: string | null;
       hidden?: boolean;
       receivers?:
-        | components['schemas']['EmergencyReportReceiverViewModel'][]
+        | components["schemas"]["EmergencyReportReceiverViewModel"][]
         | null;
     };
     EmergencyReportItemViewModel: {
@@ -16929,14 +16929,14 @@ export interface components {
       documents?: string[] | null;
       audioFiles?: string[] | null;
       sender?: string | null;
-      sendertype?: components['schemas']['SenderType'];
+      sendertype?: components["schemas"]["SenderType"];
       in_groups?:
-        | components['schemas']['EmergencyReportGroupViewModel'][]
+        | components["schemas"]["EmergencyReportGroupViewModel"][]
         | null;
       /** Format: int32 */
       emergency_type?: number | null;
       emergency_type_name?:
-        | components['schemas']['LocalizedNameViewModel'][]
+        | components["schemas"]["LocalizedNameViewModel"][]
         | null;
       /** Format: double */
       latitude?: number | null;
@@ -16950,9 +16950,9 @@ export interface components {
       /** Format: int32 */
       initial_message_subtype?: number | null;
       message_recipients?:
-        | components['schemas']['MessageRecipientViewModel'][]
+        | components["schemas"]["MessageRecipientViewModel"][]
         | null;
-      organization?: components['schemas']['OrganizationViewModelShortest'];
+      organization?: components["schemas"]["OrganizationViewModelShortest"];
       ended?: boolean | null;
       isInitial?: boolean;
     };
@@ -16978,9 +16978,9 @@ export interface components {
      */
     EmergencyReportType: 1 | 2;
     EmergencyReportViewModel: {
-      emergency?: components['schemas']['EmergencyViewModel'];
-      stats?: components['schemas']['EmergencyReportStatsViewModel'];
-      items?: components['schemas']['EmergencyReportItemViewModel'][] | null;
+      emergency?: components["schemas"]["EmergencyViewModel"];
+      stats?: components["schemas"]["EmergencyReportStatsViewModel"];
+      items?: components["schemas"]["EmergencyReportItemViewModel"][] | null;
     };
     EmergencyTypeBindingModel: {
       /** Format: int32 */
@@ -16990,8 +16990,8 @@ export interface components {
       includeCrisisTeam?: boolean;
       noGroup?: boolean;
       skipMap?: boolean;
-      names?: components['schemas']['LocalizedNameBindingModel'][] | null;
-      texts?: components['schemas']['LocalizedTextBindingModel'][] | null;
+      names?: components["schemas"]["LocalizedNameBindingModel"][] | null;
+      texts?: components["schemas"]["LocalizedTextBindingModel"][] | null;
       groupIds?: number[] | null;
       /** Format: int32 */
       order: number;
@@ -17028,8 +17028,8 @@ export interface components {
       IncludeCrisisTeam?: boolean;
       Deleted?: boolean;
       NoGroup?: boolean;
-      Names?: components['schemas']['LocalizedNameViewModel'][] | null;
-      Texts?: components['schemas']['LocalizedTextViewModel'][] | null;
+      Names?: components["schemas"]["LocalizedNameViewModel"][] | null;
+      Texts?: components["schemas"]["LocalizedTextViewModel"][] | null;
       /** Format: int32 */
       Order?: number;
       SkipMap?: boolean;
@@ -17039,10 +17039,10 @@ export interface components {
       /** Format: int32 */
       checkListTemplateId?: number | null;
       allowCustomizedText?: boolean;
-      Groups?: components['schemas']['GroupViewModelSimple'][] | null;
+      Groups?: components["schemas"]["GroupViewModelSimple"][] | null;
       isMandatory?: boolean;
       linkedSubOrganizationsWithGroups?:
-        | components['schemas']['SubOrganizationSimpleViewModel'][]
+        | components["schemas"]["SubOrganizationSimpleViewModel"][]
         | null;
       configuredForSosAlarm?: boolean;
       warningStep?: boolean;
@@ -17059,7 +17059,7 @@ export interface components {
       /** Format: int32 */
       emergency_type?: number;
       emergency_type_name?:
-        | components['schemas']['LocalizedNameViewModel'][]
+        | components["schemas"]["LocalizedNameViewModel"][]
         | null;
       group_names?: string[] | null;
       /** Format: date-time */
@@ -17085,7 +17085,7 @@ export interface components {
       emergency_type_icon_file_name?: string | null;
       emergency_type_color?: string | null;
       location_time?: string | null;
-      groups?: components['schemas']['GroupViewModelSimple'][] | null;
+      groups?: components["schemas"]["GroupViewModelSimple"][] | null;
     };
     EnableCustomMenuBindingModel: {
       enable: boolean;
@@ -17175,10 +17175,10 @@ export interface components {
       email?: string | null;
       phoneNumber1?: string | null;
       phoneNumber2?: string | null;
-      contactLists?: components['schemas']['IdNameModel'][] | null;
+      contactLists?: components["schemas"]["IdNameModel"][] | null;
     };
     ExternalContactViewModelPaginatedList: {
-      items?: components['schemas']['ExternalContactViewModel'][] | null;
+      items?: components["schemas"]["ExternalContactViewModel"][] | null;
       /** Format: int32 */
       totalCount?: number;
     };
@@ -17200,7 +17200,7 @@ export interface components {
       failure?: number;
       /** Format: int32 */
       canonical_ids?: number;
-      results?: components['schemas']['NotificationResult'][] | null;
+      results?: components["schemas"]["NotificationResult"][] | null;
     };
     FolderBindingModel: {
       /** Format: string */
@@ -17249,10 +17249,10 @@ export interface components {
     };
     FolderViewModelExtended: {
       organizations?:
-        | components['schemas']['OrganizationViewModelShortest'][]
+        | components["schemas"]["OrganizationViewModelShortest"][]
         | null;
-      users?: components['schemas']['UserViewModel'][] | null;
-      groups?: components['schemas']['GroupViewModelSimple'][] | null;
+      users?: components["schemas"]["UserViewModel"][] | null;
+      groups?: components["schemas"]["GroupViewModelSimple"][] | null;
       /** Format: int32 */
       numberOfDocuments?: number;
       /** Format: int32 */
@@ -17291,13 +17291,13 @@ export interface components {
       unsentOnly?: boolean;
       neverLoggedIn?: boolean;
       showDeleted?: boolean;
-      inviteStatus?: components['schemas']['UserInviteStatus'][] | null;
+      inviteStatus?: components["schemas"]["UserInviteStatus"][] | null;
       includeSuborgs?: boolean;
       menuItem?: string | null;
       isOrgManager?: boolean | null;
-      creationMethod?: components['schemas']['UserCreationMethod'][] | null;
-      lastActive?: components['schemas']['UserLastActiveStatus'][] | null;
-      alarmTest?: components['schemas']['UserAlarmTestStatus'][] | null;
+      creationMethod?: components["schemas"]["UserCreationMethod"][] | null;
+      lastActive?: components["schemas"]["UserLastActiveStatus"][] | null;
+      alarmTest?: components["schemas"]["UserAlarmTestStatus"][] | null;
     };
     GroupAddMemberModel: {
       /** Format: int32 */
@@ -17337,7 +17337,7 @@ export interface components {
       /** Format: int32 */
       organizationID?: number | null;
       active?: boolean | null;
-      userResolve?: components['schemas']['UserResolveBindingModel'][] | null;
+      userResolve?: components["schemas"]["UserResolveBindingModel"][] | null;
       usableForSuborganizationEmergencyTypes?: boolean;
       description?: string | null;
       imageFileName?: string | null;
@@ -17456,7 +17456,7 @@ export interface components {
       created?: string;
       /** Format: int32 */
       GroupID?: number;
-      type?: components['schemas']['GroupType'];
+      type?: components["schemas"]["GroupType"];
     };
     GroupViewModelExtended: {
       municipality?: string | null;
@@ -17532,7 +17532,7 @@ export interface components {
       created?: string;
       /** Format: int32 */
       GroupID?: number;
-      type?: components['schemas']['GroupType'];
+      type?: components["schemas"]["GroupType"];
     };
     GroupViewModelSimple: {
       /** Format: int32 */
@@ -17542,7 +17542,7 @@ export interface components {
       created?: string;
       /** Format: int32 */
       GroupID?: number;
-      type?: components['schemas']['GroupType'];
+      type?: components["schemas"]["GroupType"];
       /** Format: int32 */
       groupMembersCount?: number;
       /** Format: int32 */
@@ -17551,11 +17551,11 @@ export interface components {
     GroupsViewModel: {
       /** Format: int32 */
       totalCount?: number;
-      groups?: components['schemas']['GroupViewModelExtended'][] | null;
+      groups?: components["schemas"]["GroupViewModelExtended"][] | null;
     };
     HttpContent: {
       readonly headers?:
-        | components['schemas']['StringStringIEnumerableKeyValuePair'][]
+        | components["schemas"]["StringStringIEnumerableKeyValuePair"][]
         | null;
     };
     HttpMethod: {
@@ -17563,13 +17563,13 @@ export interface components {
     };
     HttpRequestMessage: {
       version?: string | null;
-      versionPolicy?: components['schemas']['HttpVersionPolicy'];
-      content?: components['schemas']['HttpContent'];
-      method?: components['schemas']['HttpMethod'];
+      versionPolicy?: components["schemas"]["HttpVersionPolicy"];
+      content?: components["schemas"]["HttpContent"];
+      method?: components["schemas"]["HttpMethod"];
       /** Format: uri */
       requestUri?: string | null;
       readonly headers?:
-        | components['schemas']['StringStringIEnumerableKeyValuePair'][]
+        | components["schemas"]["StringStringIEnumerableKeyValuePair"][]
         | null;
       /** @deprecated */
       readonly properties?: {
@@ -17581,16 +17581,16 @@ export interface components {
     };
     HttpResponseMessage: {
       version?: string | null;
-      content?: components['schemas']['HttpContent'];
-      statusCode?: components['schemas']['HttpStatusCode'];
+      content?: components["schemas"]["HttpContent"];
+      statusCode?: components["schemas"]["HttpStatusCode"];
       reasonPhrase?: string | null;
       readonly headers?:
-        | components['schemas']['StringStringIEnumerableKeyValuePair'][]
+        | components["schemas"]["StringStringIEnumerableKeyValuePair"][]
         | null;
       readonly trailingHeaders?:
-        | components['schemas']['StringStringIEnumerableKeyValuePair'][]
+        | components["schemas"]["StringStringIEnumerableKeyValuePair"][]
         | null;
-      requestMessage?: components['schemas']['HttpRequestMessage'];
+      requestMessage?: components["schemas"]["HttpRequestMessage"];
       readonly isSuccessStatusCode?: boolean;
     };
     /**
@@ -17670,7 +17670,7 @@ export interface components {
       name?: string | null;
     };
     IdNameWithOrganizationModel: {
-      organization?: components['schemas']['IdNameModel'];
+      organization?: components["schemas"]["IdNameModel"];
       /** Format: int32 */
       id?: number;
       name?: string | null;
@@ -17682,7 +17682,7 @@ export interface components {
     ImportSource: 0 | 1 | 2;
     ImportSummaryReportViewModel: {
       readonly summaries?:
-        | components['schemas']['ImportSummaryViewModel'][]
+        | components["schemas"]["ImportSummaryViewModel"][]
         | null;
       /** Format: int32 */
       total?: number;
@@ -17722,7 +17722,7 @@ export interface components {
     };
     InitiateAlarmTestBindingModel: {
       token: string;
-      deviceType: components['schemas']['DeviceType'];
+      deviceType: components["schemas"]["DeviceType"];
     };
     InitiateAlarmTestViewModel: {
       /** Format: int32 */
@@ -17747,7 +17747,7 @@ export interface components {
       userID?: string | null;
       token?: string | null;
       organizations?:
-        | components['schemas']['OrganizationForIntercomViewModel'][]
+        | components["schemas"]["OrganizationForIntercomViewModel"][]
         | null;
     };
     LinkEmergencyTypeToGroupsBindingModel: {
@@ -17761,7 +17761,7 @@ export interface components {
       /** Format: int32 */
       checklistTemplateId?: number | null;
       blocking?: boolean | null;
-      texts?: components['schemas']['LocalizedTextBindingModel'][] | null;
+      texts?: components["schemas"]["LocalizedTextBindingModel"][] | null;
     };
     LocalizedNameBindingModel: {
       language?: string | null;
@@ -17818,14 +17818,14 @@ export interface components {
       IsDesktopApp?: boolean | null;
       oauth_code?: string | null;
       redirect_url?: string | null;
-      sso_provider?: components['schemas']['SsoProvider'];
+      sso_provider?: components["schemas"]["SsoProvider"];
       email_2fa_code?: boolean;
-      clientType?: components['schemas']['ClientType'];
+      clientType?: components["schemas"]["ClientType"];
     };
     ManageUserGroupsBindingModel: {
       /** Format: int32 */
       userId?: number;
-      groupStatuses?: components['schemas']['GroupStatus'][] | null;
+      groupStatuses?: components["schemas"]["GroupStatus"][] | null;
     };
     ManageUserGroupsViewModel: {
       /** Format: int32 */
@@ -17878,7 +17878,7 @@ export interface components {
       /** Format: int32 */
       sortOrder?: number | null;
       readonly displayNames?:
-        | components['schemas']['MenuItemDisplayNameViewModel'][]
+        | components["schemas"]["MenuItemDisplayNameViewModel"][]
         | null;
       assigned?: boolean | null;
       /** Format: int32 */
@@ -17892,13 +17892,13 @@ export interface components {
     };
     MessageAttachmentBindingModel: {
       fileName?: string | null;
-      type?: components['schemas']['AttachmentType'];
+      type?: components["schemas"]["AttachmentType"];
       /** Format: int64 */
       size?: number | null;
     };
     MessageAttachmentViewModel: {
       fileName?: string | null;
-      type?: components['schemas']['AttachmentType'];
+      type?: components["schemas"]["AttachmentType"];
       /** Format: int64 */
       size?: number | null;
       /** Format: int64 */
@@ -17907,10 +17907,10 @@ export interface components {
     MessageListViewModel: {
       /** Format: int32 */
       id?: number;
-      type?: components['schemas']['GroupMessageType'];
+      type?: components["schemas"]["GroupMessageType"];
       /** Format: int32 */
       subType?: number;
-      replyType?: components['schemas']['ReplyType'];
+      replyType?: components["schemas"]["ReplyType"];
       /** Format: int32 */
       senderID?: number | null;
       senderName?: string | null;
@@ -17926,7 +17926,7 @@ export interface components {
       photoFileName?: string | null;
       documentFileName?: string | null;
       attachments?:
-        | components['schemas']['MessageAttachmentViewModel'][]
+        | components["schemas"]["MessageAttachmentViewModel"][]
         | null;
       /** Format: date-time */
       sent?: string;
@@ -17951,7 +17951,7 @@ export interface components {
       recipientReadCount?: number | null;
       /** @description Returned only in case Message.Type == GroupMessageType.Message and message sent without any groups */
       readonly messageRecipients?:
-        | components['schemas']['MessageRecipientViewModel'][]
+        | components["schemas"]["MessageRecipientViewModel"][]
         | null;
       /** Format: int32 */
       checklistID?: number | null;
@@ -18000,10 +18000,10 @@ export interface components {
     MessageListViewModelV2: {
       /** Format: int32 */
       id?: number;
-      type?: components['schemas']['GroupMessageType'];
+      type?: components["schemas"]["GroupMessageType"];
       /** Format: int32 */
       subType?: number;
-      replyType?: components['schemas']['ReplyType'];
+      replyType?: components["schemas"]["ReplyType"];
       /** Format: int32 */
       senderID?: number | null;
       senderName?: string | null;
@@ -18029,7 +18029,7 @@ export interface components {
       lastReplyLocationID?: number | null;
       lastReplyLocationName?: string | null;
       messageRecipients?:
-        | components['schemas']['MessageRecipientViewModel'][]
+        | components["schemas"]["MessageRecipientViewModel"][]
         | null;
       /** Format: int32 */
       checklistID?: number | null;
@@ -18100,13 +18100,13 @@ export interface components {
       id?: number;
       text?: string | null;
       contactLists?:
-        | components['schemas']['ContactListDetailsViewModel'][]
+        | components["schemas"]["ContactListDetailsViewModel"][]
         | null;
       /** Format: int32 */
       numberOfReceivers?: number;
       /** Format: int32 */
       numberOfConfirmedReceivers?: number;
-      sendMethods?: components['schemas']['SendMethod'][] | null;
+      sendMethods?: components["schemas"]["SendMethod"][] | null;
       senderName?: string | null;
       /** Format: int32 */
       senderId?: number;
@@ -18116,19 +18116,19 @@ export interface components {
     };
     MessageToExternalContactListWithRecipientsViewModel: {
       recipients?:
-        | components['schemas']['MessageToExternalContactRecipientViewModel'][]
+        | components["schemas"]["MessageToExternalContactRecipientViewModel"][]
         | null;
       /** Format: int32 */
       id?: number;
       text?: string | null;
       contactLists?:
-        | components['schemas']['ContactListDetailsViewModel'][]
+        | components["schemas"]["ContactListDetailsViewModel"][]
         | null;
       /** Format: int32 */
       numberOfReceivers?: number;
       /** Format: int32 */
       numberOfConfirmedReceivers?: number;
-      sendMethods?: components['schemas']['SendMethod'][] | null;
+      sendMethods?: components["schemas"]["SendMethod"][] | null;
       senderName?: string | null;
       /** Format: int32 */
       senderId?: number;
@@ -18138,7 +18138,7 @@ export interface components {
     };
     MessageToExternalContactListsBindingModel: {
       text: string;
-      sendMethods: components['schemas']['SendMethod'][];
+      sendMethods: components["schemas"]["SendMethod"][];
       contactListIds: number[];
       generateToken?: boolean;
     };
@@ -18172,24 +18172,24 @@ export interface components {
       totalCompletedTasks?: number;
       /** Format: date-time */
       emergencyRecallTime?: string | null;
-      Organization?: components['schemas']['OrganizationViewModelShortest'];
+      Organization?: components["schemas"]["OrganizationViewModelShortest"];
       organizations?:
-        | components['schemas']['OrganizationViewModelShortest'][]
+        | components["schemas"]["OrganizationViewModelShortest"][]
         | null;
-      replies?: components['schemas']['ReplyViewModel'][] | null;
-      readonly groups?: components['schemas']['GroupViewModel'][] | null;
-      originalMessage?: components['schemas']['OriginalMessageViewModel'];
+      replies?: components["schemas"]["ReplyViewModel"][] | null;
+      readonly groups?: components["schemas"]["GroupViewModel"][] | null;
+      originalMessage?: components["schemas"]["OriginalMessageViewModel"];
       emergencyTypePrewrittenText?: string | null;
       emergencyTypePrewrittenTexts?:
-        | components['schemas']['LocalizedTextViewModel'][]
+        | components["schemas"]["LocalizedTextViewModel"][]
         | null;
-      OnCallAlert?: components['schemas']['OnCallAlertViewModel'];
+      OnCallAlert?: components["schemas"]["OnCallAlertViewModel"];
       /** Format: int32 */
       id?: number;
-      type?: components['schemas']['GroupMessageType'];
+      type?: components["schemas"]["GroupMessageType"];
       /** Format: int32 */
       subType?: number;
-      replyType?: components['schemas']['ReplyType'];
+      replyType?: components["schemas"]["ReplyType"];
       /** Format: int32 */
       senderID?: number | null;
       senderName?: string | null;
@@ -18205,7 +18205,7 @@ export interface components {
       photoFileName?: string | null;
       documentFileName?: string | null;
       attachments?:
-        | components['schemas']['MessageAttachmentViewModel'][]
+        | components["schemas"]["MessageAttachmentViewModel"][]
         | null;
       /** Format: date-time */
       sent?: string;
@@ -18230,7 +18230,7 @@ export interface components {
       recipientReadCount?: number | null;
       /** @description Returned only in case Message.Type == GroupMessageType.Message and message sent without any groups */
       readonly messageRecipients?:
-        | components['schemas']['MessageRecipientViewModel'][]
+        | components["schemas"]["MessageRecipientViewModel"][]
         | null;
       /** Format: int32 */
       checklistID?: number | null;
@@ -18279,10 +18279,10 @@ export interface components {
     MessageViewModelV2: {
       /** Format: int32 */
       id?: number;
-      type?: components['schemas']['GroupMessageType'];
+      type?: components["schemas"]["GroupMessageType"];
       /** Format: int32 */
       subType?: number;
-      replyType?: components['schemas']['ReplyType'];
+      replyType?: components["schemas"]["ReplyType"];
       /** Format: int32 */
       senderID?: number | null;
       senderName?: string | null;
@@ -18297,7 +18297,7 @@ export interface components {
       text?: string | null;
       photoFileName?: string | null;
       attachments?:
-        | components['schemas']['MessageAttachmentViewModel'][]
+        | components["schemas"]["MessageAttachmentViewModel"][]
         | null;
       /** Format: date-time */
       sent?: string;
@@ -18315,7 +18315,7 @@ export interface components {
       /** Format: int32 */
       recipientReadCount?: number | null;
       messageRecipients?:
-        | components['schemas']['MessageRecipientViewModel'][]
+        | components["schemas"]["MessageRecipientViewModel"][]
         | null;
       /** Format: int32 */
       checklistID?: number | null;
@@ -18337,22 +18337,22 @@ export interface components {
       ended?: string | null;
       musterDeleted?: boolean | null;
       goodStatus?: boolean | null;
-      Organization?: components['schemas']['OrganizationViewModelShortest'];
+      Organization?: components["schemas"]["OrganizationViewModelShortest"];
       organizations?:
-        | components['schemas']['OrganizationViewModelShortest'][]
+        | components["schemas"]["OrganizationViewModelShortest"][]
         | null;
-      replies?: components['schemas']['ReplyViewModel'][] | null;
-      groups?: components['schemas']['GroupViewModel'][] | null;
-      originalMessage?: components['schemas']['OriginalMessageViewModel'];
+      replies?: components["schemas"]["ReplyViewModel"][] | null;
+      groups?: components["schemas"]["GroupViewModel"][] | null;
+      originalMessage?: components["schemas"]["OriginalMessageViewModel"];
       emergencyTypePrewrittenText?: string | null;
       emergencyTypePrewrittenTexts?:
-        | components['schemas']['LocalizedTextViewModel'][]
+        | components["schemas"]["LocalizedTextViewModel"][]
         | null;
-      OnCallAlert?: components['schemas']['OnCallAlertViewModel'];
+      OnCallAlert?: components["schemas"]["OnCallAlertViewModel"];
     };
     ModifyChecklistNameAndItemsBindingModel: {
       name?: string | null;
-      items?: components['schemas']['ChecklistItemBulkBindingModel'][] | null;
+      items?: components["schemas"]["ChecklistItemBulkBindingModel"][] | null;
     };
     ModifyChecklistSharesBindingModel: {
       userIds?: number[] | null;
@@ -18406,8 +18406,8 @@ export interface components {
       /** Format: date-time */
       created?: string;
       ended?: boolean;
-      users?: components['schemas']['MusterUserStatusViewModel'][] | null;
-      groups?: components['schemas']['MusterGroupViewModel'][] | null;
+      users?: components["schemas"]["MusterUserStatusViewModel"][] | null;
+      groups?: components["schemas"]["MusterGroupViewModel"][] | null;
       /** Format: int32 */
       readonly recipients?: number;
       /** Format: int32 */
@@ -18426,8 +18426,8 @@ export interface components {
       /** Format: date-time */
       created?: string;
       ended?: boolean;
-      users?: components['schemas']['MusterUserStatusViewModel'][] | null;
-      groups?: components['schemas']['MusterGroupViewModel'][] | null;
+      users?: components["schemas"]["MusterUserStatusViewModel"][] | null;
+      groups?: components["schemas"]["MusterGroupViewModel"][] | null;
       /** Format: int32 */
       readonly recipients?: number;
       /** Format: int32 */
@@ -18463,7 +18463,7 @@ export interface components {
       createdTime?: string;
       subject?: string | null;
       text?: string | null;
-      type?: components['schemas']['NoticeType'];
+      type?: components["schemas"]["NoticeType"];
       /** Format: int32 */
       entityId?: number;
       /** Format: date-time */
@@ -18482,7 +18482,7 @@ export interface components {
       Comment?: string | null;
       /** Format: date-time */
       Time?: string;
-      Device?: components['schemas']['DeviceViewModel'];
+      Device?: components["schemas"]["DeviceViewModel"];
     };
     OnCallAlertBindingModel: {
       /** Format: string */
@@ -18494,7 +18494,7 @@ export interface components {
       recipientIds?: number[] | null;
     };
     OnCallAlertReceivedViewModel: {
-      status?: components['schemas']['AlertRecipientStatus'];
+      status?: components["schemas"]["AlertRecipientStatus"];
       /** Format: int32 */
       id?: number;
       text?: string | null;
@@ -18521,13 +18521,13 @@ export interface components {
       /** Format: int32 */
       userId?: number;
       userName?: string | null;
-      status?: components['schemas']['AlertRecipientStatus'];
+      status?: components["schemas"]["AlertRecipientStatus"];
       /** Format: date-time */
       responseTime?: string | null;
       hasPhoneNumber?: boolean;
     };
     OnCallAlertStatusBindingModel: {
-      status: components['schemas']['AlertRecipientStatus'];
+      status: components["schemas"]["AlertRecipientStatus"];
     };
     OnCallAlertViewModel: {
       /** Format: int32 */
@@ -18565,8 +18565,8 @@ export interface components {
       /** Format: int32 */
       locationID?: number | null;
       subOrganizationsEnabled?: boolean | null;
-      usersDeleteMethod?: components['schemas']['UsersDeleteMethod'];
-      pushSetting?: components['schemas']['PushSetting'];
+      usersDeleteMethod?: components["schemas"]["UsersDeleteMethod"];
+      pushSetting?: components["schemas"]["PushSetting"];
       logo?: string | null;
       website?: string | null;
       customMainMenuEnabled?: boolean | null;
@@ -18597,10 +18597,10 @@ export interface components {
       /** Format: int32 */
       UserLimit?: number | null;
       DesktopAppEnabled?: boolean | null;
-      EmailSendMethod?: components['schemas']['EmailSendMethod'];
+      EmailSendMethod?: components["schemas"]["EmailSendMethod"];
       /** Format: int32 */
       coForAllUsersLimit?: number | null;
-      musterCreateSetting?: components['schemas']['MusterCreateSetting'];
+      musterCreateSetting?: components["schemas"]["MusterCreateSetting"];
       /** Format: int32 */
       sessionLengthDaysMobile?: number | null;
       /** Format: int32 */
@@ -18615,7 +18615,7 @@ export interface components {
       thirdSessionReminderDays?: number | null;
       defaultLanguage?: string | null;
       userRegistrationTemplateName?: string | null;
-      SsoProvider?: components['schemas']['SsoProvider'];
+      SsoProvider?: components["schemas"]["SsoProvider"];
       SsoAccessToken?: string | null;
       SsoRefreshToken?: string | null;
       /** Format: date-time */
@@ -18646,11 +18646,11 @@ export interface components {
       groupDocumentIds?: number[] | null;
       subject?: string | null;
       attachments?:
-        | components['schemas']['MessageAttachmentBindingModel'][]
+        | components["schemas"]["MessageAttachmentBindingModel"][]
         | null;
     };
     OrganizationEmailProviderBindingModel: {
-      emailProvider?: components['schemas']['EmailProvider'];
+      emailProvider?: components["schemas"]["EmailProvider"];
     };
     OrganizationForIntercomViewModel: {
       id?: string | null;
@@ -18661,7 +18661,7 @@ export interface components {
       notificationEmail?: string | null;
       sendRegistrationEmail?: boolean;
       sendImportReport?: boolean;
-      importType?: components['schemas']['ImportType'];
+      importType?: components["schemas"]["ImportType"];
       ftpHost?: string | null;
       /** Format: int32 */
       ftpPort?: number | null;
@@ -18673,7 +18673,7 @@ export interface components {
       updateSecondaryPhoneNumberOnlyIfPresent?: boolean | null;
     };
     OrganizationImportSettingsTestViewModel: {
-      inputData?: components['schemas']['InputData'][] | null;
+      inputData?: components["schemas"]["InputData"][] | null;
       errorMessage?: string | null;
     };
     OrganizationImportSettingsViewModel: {
@@ -18683,7 +18683,7 @@ export interface components {
       notificationEmail?: string | null;
       sendRegistrationEmail?: boolean;
       sendImportReport?: boolean;
-      importType?: components['schemas']['ImportType'];
+      importType?: components["schemas"]["ImportType"];
       ftpHost?: string | null;
       /** Format: int32 */
       ftpPort?: number | null;
@@ -18736,13 +18736,13 @@ export interface components {
       domainNames?: string[] | null;
     };
     OrganizationSsoSettingsBindingModel: {
-      ssoProvider?: components['schemas']['SsoProvider'];
+      ssoProvider?: components["schemas"]["SsoProvider"];
       sendSSOSetupEmail?: boolean | null;
-      skolonSchools?: components['schemas']['OrganizationSsoSettingsSkolonSchools'];
+      skolonSchools?: components["schemas"]["OrganizationSsoSettingsSkolonSchools"];
       suborganizationSkolonSchools?: {
         [
           key: string
-        ]: components['schemas']['OrganizationSsoSettingsSkolonSchools'];
+        ]: components["schemas"]["OrganizationSsoSettingsSkolonSchools"];
       } | null;
       redirectUrl?: string | null;
       oAuthCode?: string | null;
@@ -18765,7 +18765,7 @@ export interface components {
       ldapNameAttribute?: string | null;
       domainNames?: string[] | null;
       samlSettings?:
-        | components['schemas']['OrganizationSamlSettingsBindingModel'][]
+        | components["schemas"]["OrganizationSamlSettingsBindingModel"][]
         | null;
     };
     OrganizationSsoSettingsSkolonSchools: {
@@ -18798,7 +18798,7 @@ export interface components {
       helpText?: string | null;
       externalLink?: string | null;
       useParentEmergencies?: boolean | null;
-      managers?: components['schemas']['OrganizationManagerViewModel'][] | null;
+      managers?: components["schemas"]["OrganizationManagerViewModel"][] | null;
       organizationName?: string | null;
       number?: string | null;
       address?: string | null;
@@ -18817,16 +18817,16 @@ export interface components {
       /** Format: int32 */
       alarmGroupsCount?: number;
       TwoFactorAuthEnabled?: boolean;
-      twoFactorType?: components['schemas']['TwoFactorType'];
+      twoFactorType?: components["schemas"]["TwoFactorType"];
       DesktopAppEnabled?: boolean;
-      EmailSendMethod?: components['schemas']['EmailSendMethod'];
+      EmailSendMethod?: components["schemas"]["EmailSendMethod"];
       /** Format: int32 */
       coForAllUsersLimit?: number | null;
       /** Format: int32 */
       coForAllUsersRemaining?: number | null;
       hasImportSettings?: boolean | null;
-      musterCreateSetting?: components['schemas']['MusterCreateSetting'];
-      emailProvider?: components['schemas']['EmailProvider'];
+      musterCreateSetting?: components["schemas"]["MusterCreateSetting"];
+      emailProvider?: components["schemas"]["EmailProvider"];
       /** Format: int32 */
       sessionLengthDaysMobile?: number | null;
       /** Format: int32 */
@@ -18840,7 +18840,7 @@ export interface components {
       /** Format: int32 */
       thirdSessionReminderDays?: number | null;
       defaultLanguage?: string | null;
-      ssoProvider?: components['schemas']['SsoProvider'];
+      ssoProvider?: components["schemas"]["SsoProvider"];
       sendSSOSetupEmail?: boolean;
       SsoAccessToken?: string | null;
       SsoRefreshToken?: string | null;
@@ -18850,7 +18850,7 @@ export interface components {
       openIdClientId?: string | null;
       openIdAudience?: string | null;
       openIdJwkEndpoint?: string | null;
-      skolonSchools?: components['schemas']['OrganizationSsoSettingsSkolonSchools'];
+      skolonSchools?: components["schemas"]["OrganizationSsoSettingsSkolonSchools"];
       ldapUrl?: string | null;
       ldapPort?: string | null;
       ldapBaseDn?: string | null;
@@ -18865,7 +18865,7 @@ export interface components {
       ldapTitleAttribute?: string | null;
       ldapNameAttribute?: string | null;
       samlSettings?:
-        | components['schemas']['OrganizationSamlSettingsViewModel'][]
+        | components["schemas"]["OrganizationSamlSettingsViewModel"][]
         | null;
       ssoEnabled?: boolean | null;
       sftpEnabled?: boolean | null;
@@ -18874,8 +18874,8 @@ export interface components {
       /** Format: int32 */
       userLimitAllocated?: number | null;
       hasUserLimit?: boolean;
-      usersDeleteMethod?: components['schemas']['UsersDeleteMethod'];
-      pushSetting?: components['schemas']['PushSetting'];
+      usersDeleteMethod?: components["schemas"]["UsersDeleteMethod"];
+      pushSetting?: components["schemas"]["PushSetting"];
       /** Format: int32 */
       id?: number;
       /** Format: int32 */
@@ -18890,8 +18890,8 @@ export interface components {
       numberOfUsersRemaining?: number | null;
     };
     OrganizationViewModelShort: {
-      usersDeleteMethod?: components['schemas']['UsersDeleteMethod'];
-      pushSetting?: components['schemas']['PushSetting'];
+      usersDeleteMethod?: components["schemas"]["UsersDeleteMethod"];
+      pushSetting?: components["schemas"]["PushSetting"];
       /** Format: int32 */
       id?: number;
       /** Format: int32 */
@@ -19001,7 +19001,7 @@ export interface components {
       name: string;
       /** Format: int32 */
       organizationId?: number | null;
-      items?: components['schemas']['PostChecklistItemBindingModel'][] | null;
+      items?: components["schemas"]["PostChecklistItemBindingModel"][] | null;
       userIds?: number[] | null;
       groupIds?: number[] | null;
     };
@@ -19013,8 +19013,8 @@ export interface components {
       documentIds?: number[] | null;
     };
     PostMessageBindingModel: {
-      type: components['schemas']['GroupMessageType'];
-      replyType?: components['schemas']['ReplyType'];
+      type: components["schemas"]["GroupMessageType"];
+      replyType?: components["schemas"]["ReplyType"];
       /** Format: int32 */
       subType?: number | null;
       /** Format: int32 */
@@ -19050,7 +19050,7 @@ export interface components {
       groupDocumentIds?: number[] | null;
       subject?: string | null;
       attachments?:
-        | components['schemas']['MessageAttachmentBindingModel'][]
+        | components["schemas"]["MessageAttachmentBindingModel"][]
         | null;
     };
     ProblemDetails: {
@@ -19093,18 +19093,18 @@ export interface components {
       documentFileNames?: string[] | null;
       audioFileNames?: string[] | null;
       attachments?:
-        | components['schemas']['MessageAttachmentBindingModel'][]
+        | components["schemas"]["MessageAttachmentBindingModel"][]
         | null;
       /** Format: int32 */
       locationID?: number | null;
       groupDocumentIds?: number[] | null;
       ceaseNotification?: boolean;
       replyToInitialMessage?: boolean;
-      replyPurpose?: components['schemas']['ReplyPurpose'];
+      replyPurpose?: components["schemas"]["ReplyPurpose"];
     };
     ReplyDataViewModel: {
-      reads?: components['schemas']['ReplyReadViewModel'][] | null;
-      notReads?: components['schemas']['MessageRecipientViewModel'][] | null;
+      reads?: components["schemas"]["ReplyReadViewModel"][] | null;
+      notReads?: components["schemas"]["MessageRecipientViewModel"][] | null;
     };
     /**
      * Format: int32
@@ -19156,7 +19156,7 @@ export interface components {
       documentFileNames?: string[] | null;
       audioFileNames?: string[] | null;
       attachments?:
-        | components['schemas']['MessageAttachmentViewModel'][]
+        | components["schemas"]["MessageAttachmentViewModel"][]
         | null;
       /** Format: int32 */
       locationID?: number | null;
@@ -19164,7 +19164,7 @@ export interface components {
       edited?: boolean;
       emergencyRecall?: boolean;
       replyToInitialMessage?: boolean;
-      purpose?: components['schemas']['ReplyPurpose'];
+      purpose?: components["schemas"]["ReplyPurpose"];
     };
     RequestForOrganizationEmailRecipientsBindingModel: {
       organizationIDs: number[];
@@ -19225,11 +19225,11 @@ export interface components {
       /** Format: int32 */
       type?: number;
       organizations?:
-        | components['schemas']['OrganizationViewModelShort'][]
+        | components["schemas"]["OrganizationViewModelShort"][]
         | null;
-      latestEntry?: components['schemas']['NewsViewModel'];
-      entries?: components['schemas']['NewsViewModel'][] | null;
-      status?: components['schemas']['RssFeedStatus'];
+      latestEntry?: components["schemas"]["NewsViewModel"];
+      entries?: components["schemas"]["NewsViewModel"][] | null;
+      status?: components["schemas"]["RssFeedStatus"];
       /** Format: date-time */
       lastLoad?: string | null;
       errorMessage?: string | null;
@@ -19273,7 +19273,7 @@ export interface components {
       /** Format: int32 */
       groupID?: number | null;
       offline?: boolean;
-      action?: components['schemas']['SetOfflineAction'];
+      action?: components["schemas"]["SetOfflineAction"];
     };
     SetGroupAdminBindingModel: {
       admin: boolean;
@@ -19303,11 +19303,11 @@ export interface components {
       zipcode?: string | null;
       city?: string | null;
       municipality?: string | null;
-      unitCodes?: components['schemas']['UnitCode'][] | null;
+      unitCodes?: components["schemas"]["UnitCode"][] | null;
     };
     SkolonUpdateRequest: {
       entities?:
-        | components['schemas']['SkolonUpdateRequestEntityType'][]
+        | components["schemas"]["SkolonUpdateRequestEntityType"][]
         | null;
       /** Format: int32 */
       organizationId?: number | null;
@@ -19361,7 +19361,7 @@ export interface components {
       id?: number;
       name?: string | null;
       groupIDs?: number[] | null;
-      groups?: components['schemas']['GroupViewModelSimple'][] | null;
+      groups?: components["schemas"]["GroupViewModelSimple"][] | null;
       noGroup?: boolean | null;
       skipMap?: boolean | null;
       allowCustomizedText?: boolean | null;
@@ -19369,7 +19369,7 @@ export interface components {
       /** Format: int32 */
       checklistTemplateId?: number | null;
       blocking?: boolean | null;
-      Texts?: components['schemas']['LocalizedTextViewModel'][] | null;
+      Texts?: components["schemas"]["LocalizedTextViewModel"][] | null;
     };
     TestApiViewModel: {
       DatabaseUp?: boolean;
@@ -19413,7 +19413,7 @@ export interface components {
       /** Format: int32 */
       menuItemId?: number | null;
       contents?:
-        | components['schemas']['EditTutorialContentBindingModel'][]
+        | components["schemas"]["EditTutorialContentBindingModel"][]
         | null;
     };
     TutorialContent: {
@@ -19436,7 +19436,7 @@ export interface components {
       sortOrder?: number;
       /** Format: int32 */
       parentId?: number | null;
-      tutorialContents?: components['schemas']['TutorialContent'][] | null;
+      tutorialContents?: components["schemas"]["TutorialContent"][] | null;
       roleName?: string | null;
       menuItemName?: string | null;
     };
@@ -19455,8 +19455,8 @@ export interface components {
      */
     UserAlarmTestStatus: 0 | 1 | 2 | 3;
     UserAndGroupViewModel: {
-      User?: components['schemas']['UserMemberViewModel'];
-      Group?: components['schemas']['GroupViewModelExtended'];
+      User?: components["schemas"]["UserMemberViewModel"];
+      Group?: components["schemas"]["GroupViewModelExtended"];
     };
     UserBindingModel: {
       name?: string | null;
@@ -19475,7 +19475,7 @@ export interface components {
       groupIDs?: number[] | null;
     };
     UserBindingModelForImport: {
-      userImportOperation?: components['schemas']['UserImportOperation'];
+      userImportOperation?: components["schemas"]["UserImportOperation"];
       /** Format: int32 */
       userID?: number | null;
       name?: string | null;
@@ -19514,14 +19514,14 @@ export interface components {
      */
     UserImportOperation: 0 | 1;
     UserImportRequest: {
-      usersToImport?: components['schemas']['UserImportData'][] | null;
+      usersToImport?: components["schemas"]["UserImportData"][] | null;
       /** Format: int32 */
       organizationID?: number;
     };
     UserImportResponse: {
-      newUsers?: components['schemas']['UserImportData'][] | null;
-      usersToEdit?: components['schemas']['EditedUserData'][] | null;
-      usersWithErrors?: components['schemas']['UserWithErrorData'][] | null;
+      newUsers?: components["schemas"]["UserImportData"][] | null;
+      usersToEdit?: components["schemas"]["EditedUserData"][] | null;
+      usersWithErrors?: components["schemas"]["UserWithErrorData"][] | null;
       /** Format: int32 */
       organizationId?: number;
     };
@@ -19531,8 +19531,8 @@ export interface components {
       email?: string | null;
       success?: boolean;
       comment?: string | null;
-      userImportOperation?: components['schemas']['UserImportOperation'];
-      originalUserData?: components['schemas']['UserBindingModelForImport'];
+      userImportOperation?: components["schemas"]["UserImportOperation"];
+      originalUserData?: components["schemas"]["UserBindingModelForImport"];
     };
     UserInfoBindingModel: {
       /** Format: string */
@@ -19572,12 +19572,12 @@ export interface components {
       subOrganizationsEnabled?: boolean | null;
       organizationCustomMainMenuEnabled?: boolean | null;
       isCrisisTeamMember?: boolean;
-      permissions?: components['schemas']['PermissionViewModel'][] | null;
+      permissions?: components["schemas"]["PermissionViewModel"][] | null;
       organizations?:
-        | components['schemas']['OrganizationViewModelShortest'][]
+        | components["schemas"]["OrganizationViewModelShortest"][]
         | null;
       managedOrganizations?:
-        | components['schemas']['OrganizationViewModelShortest'][]
+        | components["schemas"]["OrganizationViewModelShortest"][]
         | null;
       organizationSupportPersonName?: string | null;
       organizationSupportPhoneNumber?: string | null;
@@ -19587,7 +19587,7 @@ export interface components {
       /** Format: int32 */
       coForAllUsersRemaining?: number | null;
       readDisclaimer?: boolean;
-      menuItems?: components['schemas']['MenuItemViewModelBrief'][] | null;
+      menuItems?: components["schemas"]["MenuItemViewModelBrief"][] | null;
       roles?: string[] | null;
       preferredLanguage?: string | null;
       preferredLanguageAdminPanel?: string | null;
@@ -19599,9 +19599,9 @@ export interface components {
       organizationExternalLink?: string | null;
       /** Format: int32 */
       personalAlarmId?: number | null;
-      organizationMusterCreateSetting?: components['schemas']['MusterCreateSetting'];
+      organizationMusterCreateSetting?: components["schemas"]["MusterCreateSetting"];
       organizationHelpText?: string | null;
-      sso_provider?: components['schemas']['SsoProvider'];
+      sso_provider?: components["schemas"]["SsoProvider"];
       photoFileName?: string | null;
       notifyWithEmail?: boolean;
       notifyChecklists?: boolean;
@@ -19616,7 +19616,7 @@ export interface components {
       readonly available?: boolean;
     };
     UserInfoViewModelApp: {
-      menuItems?: components['schemas']['MenuItemViewModelBrief'][] | null;
+      menuItems?: components["schemas"]["MenuItemViewModelBrief"][] | null;
       roles?: string[] | null;
       preferredLanguage?: string | null;
       preferredLanguageAdminPanel?: string | null;
@@ -19628,9 +19628,9 @@ export interface components {
       organizationExternalLink?: string | null;
       /** Format: int32 */
       personalAlarmId?: number | null;
-      organizationMusterCreateSetting?: components['schemas']['MusterCreateSetting'];
+      organizationMusterCreateSetting?: components["schemas"]["MusterCreateSetting"];
       organizationHelpText?: string | null;
-      sso_provider?: components['schemas']['SsoProvider'];
+      sso_provider?: components["schemas"]["SsoProvider"];
       photoFileName?: string | null;
       notifyWithEmail?: boolean;
       notifyChecklists?: boolean;
@@ -19670,12 +19670,12 @@ export interface components {
       groupscount?: number;
       /** Format: int32 */
       messagescount?: number;
-      roles?: components['schemas']['RoleViewModel'][] | null;
+      roles?: components["schemas"]["RoleViewModel"][] | null;
       rolesIds?: number[] | null;
       location?: string | null;
       phoneNumber?: string | null;
-      creationMethod?: components['schemas']['UserCreationMethod'];
-      lastActiveStatus?: components['schemas']['UserLastActiveStatus'];
+      creationMethod?: components["schemas"]["UserCreationMethod"];
+      lastActiveStatus?: components["schemas"]["UserLastActiveStatus"];
       readonly organization?: string | null;
       /** Format: int32 */
       readonly organizationID?: number | null;
@@ -19689,7 +19689,7 @@ export interface components {
       readonly mainOrganization?: string | null;
       /** Format: int32 */
       readonly mainOrganizationID?: number | null;
-      inviteStatus?: components['schemas']['UserInviteStatus'];
+      inviteStatus?: components["schemas"]["UserInviteStatus"];
       /** Format: int32 */
       activeTokens?: number | null;
       twoFactorAuthEnabled?: boolean | null;
@@ -19697,12 +19697,12 @@ export interface components {
       photoFileName?: string | null;
       readonly multipleOrganisations?: boolean;
       readonly organizationIds?: number[] | null;
-      lastAlarmTestStatus?: components['schemas']['UserAlarmTestStatus'];
+      lastAlarmTestStatus?: components["schemas"]["UserAlarmTestStatus"];
       /** Format: date-time */
       lastAlarmTestDate?: string | null;
       structureManager?: boolean | null;
       readonly managedOrganizations?:
-        | components['schemas']['OrganizationViewModelShortest'][]
+        | components["schemas"]["OrganizationViewModelShortest"][]
         | null;
     };
     UserPasswordBindingModel: {
@@ -19711,7 +19711,7 @@ export interface components {
     UserResolveBindingModel: {
       /** Format: int32 */
       userId?: number;
-      resolveType?: components['schemas']['UserResolveType'];
+      resolveType?: components["schemas"]["UserResolveType"];
     };
     /**
      * Format: int32
@@ -19723,7 +19723,7 @@ export interface components {
       label?: string | null;
       roleExplained?: string | null;
       isPublicRole?: boolean;
-      names?: components['schemas']['LocalizedNameBindingModel'][] | null;
+      names?: components["schemas"]["LocalizedNameBindingModel"][] | null;
     };
     UserRoleViewModel: {
       /** Format: int32 */
@@ -19735,13 +19735,13 @@ export interface components {
       isPublicRole?: boolean;
       assignedToUser?: boolean | null;
       label?: string | null;
-      names?: components['schemas']['LocalizedNameViewModel'][] | null;
-      belonging?: components['schemas']['RoleBelonging'];
+      names?: components["schemas"]["LocalizedNameViewModel"][] | null;
+      belonging?: components["schemas"]["RoleBelonging"];
     };
     UserRolesStatuses: {
       /** Format: int32 */
       userId?: number;
-      roleStatuses?: components['schemas']['RoleStatus'][] | null;
+      roleStatuses?: components["schemas"]["RoleStatus"][] | null;
     };
     UserRolesViewModel: {
       /** Format: int32 */
@@ -19846,7 +19846,7 @@ export interface components {
       organizationIds?: number[] | null;
     };
     UsersAccountViewModel: {
-      users?: components['schemas']['UserMemberViewModel'][] | null;
+      users?: components["schemas"]["UserMemberViewModel"][] | null;
       /** Format: int32 */
       total?: number;
     };
@@ -19879,13 +19879,13 @@ export interface operations {
     };
     requestBody?: {
       content: {
-        'application/json-patch+json': components['schemas']['CommentBindingModel'];
-        'application/json': components['schemas']['CommentBindingModel'];
-        'text/json': components['schemas']['CommentBindingModel'];
-        'application/*+json': components['schemas']['CommentBindingModel'];
-        'application/xml': components['schemas']['CommentBindingModel'];
-        'text/xml': components['schemas']['CommentBindingModel'];
-        'application/*+xml': components['schemas']['CommentBindingModel'];
+        "application/json-patch+json": components["schemas"]["CommentBindingModel"];
+        "application/json": components["schemas"]["CommentBindingModel"];
+        "text/json": components["schemas"]["CommentBindingModel"];
+        "application/*+json": components["schemas"]["CommentBindingModel"];
+        "application/xml": components["schemas"]["CommentBindingModel"];
+        "text/xml": components["schemas"]["CommentBindingModel"];
+        "application/*+xml": components["schemas"]["CommentBindingModel"];
       };
     };
     responses: {
@@ -19895,11 +19895,11 @@ export interface operations {
           [name: string]: unknown;
         };
         content: {
-          'text/plain': components['schemas']['ChecklistCommentViewModel'];
-          'application/json': components['schemas']['ChecklistCommentViewModel'];
-          'text/json': components['schemas']['ChecklistCommentViewModel'];
-          'application/xml': components['schemas']['ChecklistCommentViewModel'];
-          'text/xml': components['schemas']['ChecklistCommentViewModel'];
+          "text/plain": components["schemas"]["ChecklistCommentViewModel"];
+          "application/json": components["schemas"]["ChecklistCommentViewModel"];
+          "text/json": components["schemas"]["ChecklistCommentViewModel"];
+          "application/xml": components["schemas"]["ChecklistCommentViewModel"];
+          "text/xml": components["schemas"]["ChecklistCommentViewModel"];
         };
       };
     };

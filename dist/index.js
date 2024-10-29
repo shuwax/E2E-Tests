@@ -9,22 +9,31 @@ var __export = (target, all) => {
     __defProp(target, name, { get: all[name], enumerable: true });
 };
 var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
+  if ((from && typeof from === "object") || typeof from === "function") {
     for (let key of __getOwnPropNames(from))
       if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+        __defProp(to, key, {
+          get: () => from[key],
+          enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable,
+        });
   }
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  // If the importer is in node compatibility mode or this is not an ESM
-  // file that has been converted to a CommonJS file using a Babel-
-  // compatible transform (i.e. "__esModule" has not been set), then set
-  // "default" to the CommonJS "module.exports" for node compatibility.
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-  mod
-));
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+var __toESM = (mod, isNodeMode, target) => (
+  (target = mod != null ? __create(__getProtoOf(mod)) : {}),
+  __copyProps(
+    // If the importer is in node compatibility mode or this is not an ESM
+    // file that has been converted to a CommonJS file using a Babel-
+    // compatible transform (i.e. "__esModule" has not been set), then set
+    // "default" to the CommonJS "module.exports" for node compatibility.
+    isNodeMode || !mod || !mod.__esModule
+      ? __defProp(target, "default", { value: mod, enumerable: true })
+      : target,
+    mod,
+  )
+);
+var __toCommonJS = (mod) =>
+  __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/index.ts
 var src_exports = {};
@@ -38,7 +47,7 @@ __export(src_exports, {
   LoneWorkerTimerAPI: () => LoneWorkerTimerAPI,
   MessagesAPI: () => MessagesAPI,
   OrganizationsAPI: () => OrganizationsAPI,
-  UsersAPI: () => UsersAPI
+  UsersAPI: () => UsersAPI,
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -53,10 +62,10 @@ var createError = (error, response) => {
 var getRequestHeaders = (csrfToken, cookies) => {
   return {
     "Content-Type": "application/json",
-    ...!!csrfToken && { "X-XSRF-TOKEN": csrfToken },
-    ...cookies?.length && {
-      Cookie: `${cookies.join(";")}`
-    }
+    ...(!!csrfToken && { "X-XSRF-TOKEN": csrfToken }),
+    ...(cookies?.length && {
+      Cookie: `${cookies.join(";")}`,
+    }),
   };
 };
 
@@ -71,18 +80,14 @@ var ApiService = class {
     this.clientType = clientType;
     this.openApiClient = this.createClient({ baseUrl });
   }
-  async makeRequest({
-    method,
-    path,
-    options
-  }) {
+  async makeRequest({ method, path, options }) {
     try {
       const requestOptions = {
         ...options,
-        headers: options?.headers ?? this.getRequestHeaders()
+        headers: options?.headers ?? this.getRequestHeaders(),
       };
       const res = await this.openApiClient[method](path, {
-        ...requestOptions
+        ...requestOptions,
       });
       const { data, response, error } = res;
       if (error) {
@@ -111,36 +116,39 @@ var ApiService = class {
   }
   getRequestHeaders(includeCsrfToken = true, includeCookies = true) {
     return {
-      ...includeCsrfToken && this.csrfToken && { "X-XSRF-TOKEN": this.csrfToken },
-      ...includeCookies && this.cookies && {
-        Cookie: `${this.cookies.join(";")}`
-      }
+      ...(includeCsrfToken &&
+        this.csrfToken && { "X-XSRF-TOKEN": this.csrfToken }),
+      ...(includeCookies &&
+        this.cookies && {
+          Cookie: `${this.cookies.join(";")}`,
+        }),
     };
   }
   createClient(clientOptions) {
     const options = {
       querySerializer: (query) => {
         return qs.stringify(query, { arrayFormat: "repeat" });
-      }
+      },
     };
     const client = (0, import_openapi_fetch.default)({
       ...options,
-      ...clientOptions
+      ...clientOptions,
     });
     const csrfToken = () => this.csrfToken;
     const cookies = () => this.cookies;
     function addAuthorizationHeader(options2) {
-      const updatedHeaders = options2?.headers ?? getRequestHeaders(csrfToken(), cookies());
+      const updatedHeaders =
+        options2?.headers ?? getRequestHeaders(csrfToken(), cookies());
       return {
         ...options2,
-        headers: updatedHeaders
+        headers: updatedHeaders,
       };
     }
     return {
       async GET(url, init) {
         const { data, error, response } = await client.GET(
           url,
-          addAuthorizationHeader(init)
+          addAuthorizationHeader(init),
         );
         if (data || emptyResponseStatuses.includes(response?.status)) {
           return { data, response };
@@ -150,7 +158,17 @@ var ApiService = class {
       async PUT(url, init) {
         const { data, error, response } = await client.PUT(
           url,
-          addAuthorizationHeader(init)
+          addAuthorizationHeader(init),
+        );
+        if (data || emptyResponseStatuses.includes(response?.status)) {
+          return { data, response };
+        }
+        throw createError(error, response);
+      },
+      async PATCH(url, init) {
+        const { data, error, response } = await client.PATCH(
+          url,
+          addAuthorizationHeader(init),
         );
         if (data || emptyResponseStatuses.includes(response?.status)) {
           return { data, response };
@@ -160,7 +178,7 @@ var ApiService = class {
       async POST(url, init) {
         const { data, error, response } = await client.POST(
           url,
-          addAuthorizationHeader(init)
+          addAuthorizationHeader(init),
         );
         if (data || emptyResponseStatuses.includes(response?.status)) {
           return { data, response };
@@ -170,13 +188,13 @@ var ApiService = class {
       async DELETE(url, init) {
         const { data, error, response } = await client.DELETE(
           url,
-          addAuthorizationHeader(init)
+          addAuthorizationHeader(init),
         );
         if (data || emptyResponseStatuses.includes(response?.status)) {
           return { data, response };
         }
         throw createError(error, response);
-      }
+      },
     };
   }
   setBaseUrl(baseUrl) {
@@ -205,7 +223,9 @@ var AccountAPI = class {
     };
     this.getAntiForgeryToken = async () => {
       try {
-        const { data, response } = await this.apiService.getOpenApiClient().GET("/api/Account/AntiForgeryToken");
+        const { data, response } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Account/AntiForgeryToken");
         const token = data.requestVerificationToken;
         const cookie = response.headers.get("set-cookie");
         if (!this.apiService.getCookies()?.length) {
@@ -220,7 +240,9 @@ var AccountAPI = class {
     };
     this.loginByEmailAndPassword = async (body) => {
       try {
-        const { data, response } = await this.apiService.getOpenApiClient().POST("/api/Account/Login", { body });
+        const { data, response } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Account/Login", { body });
         const cookies = response.headers.get("set-cookie");
         this.apiService.setCookies([...this.apiService.getCookies(), cookies]);
         await this.getAntiForgeryToken();
@@ -235,7 +257,9 @@ var AccountAPI = class {
       try {
         const bodyData = { ...body };
         if (!bodyData.language) bodyData.language = "en";
-        const { data, response } = await this.apiService.getOpenApiClient().POST("/api/Account/LoginAdmin", { body: bodyData });
+        const { data, response } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Account/LoginAdmin", { body: bodyData });
         const dataObject = data;
         const code = dataObject?.code;
         if (code) {
@@ -253,7 +277,9 @@ var AccountAPI = class {
     };
     this.getUserInfo = async () => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Account/Info");
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Account/Info");
         return data;
       } catch (error) {
         console.error("Error getting user info:", error);
@@ -265,11 +291,13 @@ var AccountAPI = class {
         const bodyData = {
           type: body.deviceType ?? 5 /* iOS */,
           userID: body.userId,
-          id: body.fcmToken
+          id: body.fcmToken,
         };
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Devices", {
-          body: bodyData
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Devices", {
+            body: bodyData,
+          });
         return data;
       } catch (error) {
         console.error("Error creating device:", error);
@@ -279,7 +307,7 @@ var AccountAPI = class {
     this.logout = async (query) => {
       try {
         await this.apiService.getOpenApiClient().POST("/api/Account/Logout", {
-          params: { query }
+          params: { query },
         });
         this.apiService.setCookies([]);
         await this.getAntiForgeryToken();
@@ -298,7 +326,9 @@ var ChecklistsAPI = class {
   constructor(apiService) {
     this.getChecklists = async (query) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Checklists", { params: { query } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Checklists", { params: { query } });
         return data;
       } catch (error) {
         console.error("Error fetching checklists:", error);
@@ -307,9 +337,11 @@ var ChecklistsAPI = class {
     };
     this.getChecklistItems = async (checklistId) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Checklists/{checklistID}/items", {
-          params: { path: { checklistID: checklistId } }
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Checklists/{checklistID}/items", {
+            params: { path: { checklistID: checklistId } },
+          });
         return data;
       } catch (error) {
         console.error("Error fetching checklist items:", error);
@@ -318,10 +350,12 @@ var ChecklistsAPI = class {
     };
     this.setChecklistItemState = async (checklistId, itemId, completeState) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Checklists/{checklistID}/items/{itemID}", {
-          params: { path: { checklistID: checklistId, itemID: itemId } },
-          body: { complete: completeState }
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Checklists/{checklistID}/items/{itemID}", {
+            params: { path: { checklistID: checklistId, itemID: itemId } },
+            body: { complete: completeState },
+          });
         return data;
       } catch (error) {
         console.error("Error updating checklist item status:", error);
@@ -346,7 +380,9 @@ var GroupsAPI = class {
     };
     this.registerGroup = async (body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Admin/Groups/Register", { body });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Groups/Register", { body });
         return data;
       } catch (error) {
         console.error("Error registering group:", error);
@@ -355,10 +391,12 @@ var GroupsAPI = class {
     };
     this.addGroupMember = async (id, body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Admin/Groups/{id}/addMember", {
-          params: { path: { id } },
-          body
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Groups/{id}/addMember", {
+            params: { path: { id } },
+            body,
+          });
         return data;
       } catch (error) {
         console.error("Error registering group:", error);
@@ -367,9 +405,11 @@ var GroupsAPI = class {
     };
     this.addMultipleGroupMembers = async (body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Admin/Groups/addMembers", {
-          body
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Groups/addMembers", {
+            body,
+          });
         return data;
       } catch (error) {
         console.error("Error registering group:", error);
@@ -378,10 +418,12 @@ var GroupsAPI = class {
     };
     this.deleteGroup = async (id) => {
       try {
-        await this.apiService.getOpenApiClient().DELETE("/api/Admin/Groups/{id}/delete", {
-          params: { path: { id } },
-          parseAs: "text"
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .DELETE("/api/Admin/Groups/{id}/delete", {
+            params: { path: { id } },
+            parseAs: "text",
+          });
       } catch (error) {
         console.error("Error registering group:", error);
         return error;
@@ -392,7 +434,7 @@ var GroupsAPI = class {
         if (!groupsIds.length) return;
         await this.apiService.getOpenApiClient().DELETE("/api/Admin/Groups", {
           body: groupsIds,
-          parseAs: "text"
+          parseAs: "text",
         });
       } catch (error) {
         console.error("Error registering group:", error);
@@ -402,7 +444,9 @@ var GroupsAPI = class {
     //We can use it also like this -> query?: QueryParameters<'/api/Groups', 'get'>
     this.getGroups = async (query) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Groups", { params: { query } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Groups", { params: { query } });
         return data;
       } catch (error) {
         console.error("Error fetching groups:", error);
@@ -411,7 +455,9 @@ var GroupsAPI = class {
     };
     this.getAdminPanelGroups = async (query) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Admin/Groups/All", { params: { query } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Admin/Groups/All", { params: { query } });
         return data?.groups ?? [];
       } catch (error) {
         console.error("Error fetching groups:", error);
@@ -420,7 +466,9 @@ var GroupsAPI = class {
     };
     this.getGroupById = async (id) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Groups/{id}", { params: { path: { id } } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Groups/{id}", { params: { path: { id } } });
         return data;
       } catch (error) {
         console.error("Error fetching group by id:", error);
@@ -430,7 +478,9 @@ var GroupsAPI = class {
     //We can use it also like this -> query?: QueryParameters<'/api/Groups/{id}/members', 'get'>
     this.getGroupMembers = async (id, query) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Groups/{id}/members", { params: { path: { id }, query } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Groups/{id}/members", { params: { path: { id }, query } });
         return data;
       } catch (error) {
         console.error("Error fetching group members:", error);
@@ -439,7 +489,9 @@ var GroupsAPI = class {
     };
     this.getGroupLocations = async (id) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Groups/{id}/locations", { params: { path: { id } } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Groups/{id}/locations", { params: { path: { id } } });
         return data;
       } catch (error) {
         console.error("Error fetching group locations:", error);
@@ -461,7 +513,9 @@ var LocationsAPI = class {
     };
     this.getLocations = async () => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Locations");
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Locations");
         return data;
       } catch (error) {
         console.error("Error fetching locations:", error);
@@ -470,7 +524,9 @@ var LocationsAPI = class {
     };
     this.getLocationById = async (id) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Locations/{id}", { params: { path: { id } } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Locations/{id}", { params: { path: { id } } });
         return data;
       } catch (error) {
         console.error("Error fetching location:", error);
@@ -479,7 +535,9 @@ var LocationsAPI = class {
     };
     this.createLocation = async (body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Locations", { body });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Locations", { body });
         return data;
       } catch (error) {
         console.error("Error creating location:", error);
@@ -495,9 +553,11 @@ var AlarmsAPI = class {
   constructor(apiService) {
     this.createEmergencyType = async (body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Admin/EmergencyTypes", {
-          body
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/EmergencyTypes", {
+            body,
+          });
         return data;
       } catch (error) {
         console.error("Error creating emergency type:", error);
@@ -506,7 +566,9 @@ var AlarmsAPI = class {
     };
     this.getEmergencyTypes = async () => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Account/EmergencyTypes");
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Account/EmergencyTypes");
         return data;
       } catch (error) {
         console.error("Error creating emergency type:", error);
@@ -515,9 +577,11 @@ var AlarmsAPI = class {
     };
     this.getEmergencyTypesByOrganizationId = async (id) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Admin/Organizations/{id}/EmergencyTypes", {
-          params: { path: { id } }
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Admin/Organizations/{id}/EmergencyTypes", {
+            params: { path: { id } },
+          });
         return data;
       } catch (error) {
         console.error("Error getting emergency types by organization:", error);
@@ -526,10 +590,12 @@ var AlarmsAPI = class {
     };
     this.deleteMultipleEmergencyTypes = async (emergencyTypesIds) => {
       try {
-        await this.apiService.getOpenApiClient().DELETE("/api/Admin/EmergencyTypes", {
-          body: emergencyTypesIds,
-          parseAs: "text"
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .DELETE("/api/Admin/EmergencyTypes", {
+            body: emergencyTypesIds,
+            parseAs: "text",
+          });
       } catch (error) {
         console.error("Error deleting emergency type:", error);
         return error;
@@ -547,7 +613,9 @@ var UsersAPI = class {
   constructor(apiService) {
     this.registerUser = async (body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Admin/Users/Register", { body });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Users/Register", { body });
         return data;
       } catch (error) {
         console.error("Error registering user:", error);
@@ -556,11 +624,13 @@ var UsersAPI = class {
     };
     this.changeUsersPassword = async (id, body) => {
       try {
-        await this.apiService.getOpenApiClient().POST("/api/Admin/Users/{id}/changePassword", {
-          body,
-          params: { path: { id } },
-          parseAs: "text"
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Users/{id}/changePassword", {
+            body,
+            params: { path: { id } },
+            parseAs: "text",
+          });
       } catch (error) {
         console.error("Error registering users:", error);
         return error;
@@ -571,7 +641,7 @@ var UsersAPI = class {
         const userData = await this.registerUser(body);
         if (userData?.id) {
           await this.changeUsersPassword(userData.id, {
-            password: body.password
+            password: body.password,
           });
         }
         return userData;
@@ -583,7 +653,7 @@ var UsersAPI = class {
     this.registerMultipleUsers = async (users) => {
       try {
         const result = await Promise.all(
-          users.map((user) => this.registerUserAndSetPassword(user))
+          users.map((user) => this.registerUserAndSetPassword(user)),
         );
         return result;
       } catch (error) {
@@ -593,7 +663,9 @@ var UsersAPI = class {
     };
     this.getUsers = async (query) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Users", { params: { query } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Users", { params: { query } });
         return data;
       } catch (error) {
         console.error("Error fetching users:", error);
@@ -602,7 +674,9 @@ var UsersAPI = class {
     };
     this.getUserById = async (id) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Users/{id}", { params: { path: { id } } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Users/{id}", { params: { path: { id } } });
         return data;
       } catch (error) {
         console.error("Error fetching user by id:", error);
@@ -611,7 +685,9 @@ var UsersAPI = class {
     };
     this.getAdminPanelUsers = async (query) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Admin/Users/accounts", { params: { query } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Admin/Users/accounts", { params: { query } });
         return data?.users ?? [];
       } catch (error) {
         console.error("Error fetching groups:", error);
@@ -620,11 +696,13 @@ var UsersAPI = class {
     };
     this.deleteUser = async (id, body) => {
       try {
-        await this.apiService.getOpenApiClient().DELETE("/api/Admin/Users/{id}/delete", {
-          body,
-          params: { path: { id } },
-          parseAs: "text"
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .DELETE("/api/Admin/Users/{id}/delete", {
+            body,
+            params: { path: { id } },
+            parseAs: "text",
+          });
       } catch (error) {
         console.error("Error deleting user:", error);
         return error;
@@ -633,10 +711,12 @@ var UsersAPI = class {
     this.deleteMultipleUsers = async (users) => {
       try {
         if (!users.length) return;
-        await this.apiService.getOpenApiClient().DELETE("/api/Admin/Users/delete", {
-          body: users,
-          parseAs: "text"
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .DELETE("/api/Admin/Users/delete", {
+            body: users,
+            parseAs: "text",
+          });
       } catch (error) {
         console.error("Error deleting users:", error);
         return error;
@@ -660,7 +740,9 @@ var OrganizationsAPI = class {
     };
     this.createOrganization = async (body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Admin/Organizations/Create", { body });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Organizations/Create", { body });
         return data;
       } catch (error) {
         console.error("Error creating organization:", error);
@@ -669,7 +751,9 @@ var OrganizationsAPI = class {
     };
     this.getOrganizationById = async (id) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Admin/Organizations/{id}", { params: { path: { id } } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Admin/Organizations/{id}", { params: { path: { id } } });
         return data;
       } catch (error) {
         console.error("Error getting organization by id:", error);
@@ -678,11 +762,13 @@ var OrganizationsAPI = class {
     };
     this.addUsersToOrganization = async (id, usersIds) => {
       try {
-        await this.apiService.getOpenApiClient().POST("/api/Admin/Organizations/{id}/AddUsers", {
-          params: { path: { id } },
-          body: usersIds,
-          parseAs: "text"
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Organizations/{id}/AddUsers", {
+            params: { path: { id } },
+            body: usersIds,
+            parseAs: "text",
+          });
       } catch (error) {
         console.error("Error adding users to organization:", error);
         return error;
@@ -690,10 +776,12 @@ var OrganizationsAPI = class {
     };
     this.removeUserFromSubOrganization = async (id, userId) => {
       try {
-        await this.apiService.getOpenApiClient().POST("/api/Admin/Organizations/{id}/RemoveUser/{userId}", {
-          params: { path: { id, userId } },
-          parseAs: "text"
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Organizations/{id}/RemoveUser/{userId}", {
+            params: { path: { id, userId } },
+            parseAs: "text",
+          });
       } catch (error) {
         console.error("Error removing user from organization:", error);
         return error;
@@ -701,11 +789,13 @@ var OrganizationsAPI = class {
     };
     this.removeMultipleUsersFromSubOrganization = async (id, usersIds) => {
       try {
-        await this.apiService.getOpenApiClient().POST("/api/Admin/Organizations/{id}/RemoveUsers", {
-          params: { path: { id } },
-          body: usersIds,
-          parseAs: "text"
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Admin/Organizations/{id}/RemoveUsers", {
+            params: { path: { id } },
+            body: usersIds,
+            parseAs: "text",
+          });
       } catch (error) {
         console.error("Error removing users from organization:", error);
         return error;
@@ -713,9 +803,11 @@ var OrganizationsAPI = class {
     };
     this.deleteOrganization = async (id) => {
       try {
-        await this.apiService.getOpenApiClient().DELETE("/api/Admin/Organizations/{id}/Delete", {
-          params: { path: { id } }
-        });
+        await this.apiService
+          .getOpenApiClient()
+          .DELETE("/api/Admin/Organizations/{id}/Delete", {
+            params: { path: { id } },
+          });
       } catch (error) {
         console.error("Error deleting organization:", error);
         return error;
@@ -735,21 +827,22 @@ var OrganizationsAPI = class {
         const alarmsAPI = new AlarmsAPI(this.apiService);
         const organizationGroups = await groupsAPI.getAdminPanelGroups({
           OrgId: id,
-          IncludeSuborgs: true
+          IncludeSuborgs: true,
         });
         const organizationUsers = await usersAPI.getAdminPanelUsers({
           organization: [id],
-          includeSuborgs: true
+          includeSuborgs: true,
         });
-        const organizationEmergencyTypes = await alarmsAPI.getEmergencyTypesByOrganizationId(id);
+        const organizationEmergencyTypes =
+          await alarmsAPI.getEmergencyTypesByOrganizationId(id);
         await usersAPI.deleteMultipleUsers(
-          organizationUsers.map((user) => ({ userId: user.id }))
+          organizationUsers.map((user) => ({ userId: user.id })),
         );
         await groupsAPI.deleteMultipleGroups(
-          organizationGroups.map((group) => group.id)
+          organizationGroups.map((group) => group.id),
         );
         await alarmsAPI.deleteMultipleEmergencyTypes(
-          organizationEmergencyTypes.map((type) => type.ID)
+          organizationEmergencyTypes.map((type) => type.ID),
         );
         await this.deleteOrganization(id);
       } catch (error) {
@@ -765,7 +858,9 @@ var LoneWorkerTimerAPI = class {
   constructor(apiService) {
     this.createLoneWorkerTimer = async (body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/PersonalAlarm", { body });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/PersonalAlarm", { body });
         return data;
       } catch (error) {
         console.error("Error creating lone-worker-timer:", error);
@@ -774,7 +869,9 @@ var LoneWorkerTimerAPI = class {
     };
     this.activateLoneWorkerTimer = async () => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/PersonalAlarm/SetOff");
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/PersonalAlarm/SetOff");
         return data;
       } catch (error) {
         console.error("Error activating lone-worker-timer:", error);
@@ -796,7 +893,9 @@ var MessagesAPI = class {
     };
     this.getMessages = async (query) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Messages", { params: { query } });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Messages", { params: { query } });
         return data;
       } catch (error) {
         console.error("Error fetching messages:", error);
@@ -805,7 +904,9 @@ var MessagesAPI = class {
     };
     this.postMessage = async (body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Messages", { body });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Messages", { body });
         return data;
       } catch (error) {
         console.error("Error posting message:", error);
@@ -814,12 +915,14 @@ var MessagesAPI = class {
     };
     this.getMessage = async (id, query) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Messages/{id}", {
-          params: {
-            path: { id },
-            query
-          }
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Messages/{id}", {
+            params: {
+              path: { id },
+              query,
+            },
+          });
         return data;
       } catch (error) {
         console.error("Error fetching message:", error);
@@ -828,10 +931,12 @@ var MessagesAPI = class {
     };
     this.postReply = async (messageId, body) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().POST("/api/Messages/{messageID}/reply", {
-          params: { path: { messageID: messageId } },
-          body
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .POST("/api/Messages/{messageID}/reply", {
+            params: { path: { messageID: messageId } },
+            body,
+          });
         return data;
       } catch (error) {
         console.error("Error posting reply:", error);
@@ -840,9 +945,11 @@ var MessagesAPI = class {
     };
     this.getMessageRecipients = async (messageId) => {
       try {
-        const { data } = await this.apiService.getOpenApiClient().GET("/api/Messages/{messageID}/recipients", {
-          params: { path: { messageID: messageId } }
-        });
+        const { data } = await this.apiService
+          .getOpenApiClient()
+          .GET("/api/Messages/{messageID}/recipients", {
+            params: { path: { messageID: messageId } },
+          });
         return data;
       } catch (error) {
         console.error("Error fetching message recipients:", error);
@@ -856,15 +963,16 @@ var MessagesAPI = class {
   }
 };
 // Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  AccountAPI,
-  AlarmsAPI,
-  ApiService,
-  ChecklistsAPI,
-  GroupsAPI,
-  LocationsAPI,
-  LoneWorkerTimerAPI,
-  MessagesAPI,
-  OrganizationsAPI,
-  UsersAPI
-});
+0 &&
+  (module.exports = {
+    AccountAPI,
+    AlarmsAPI,
+    ApiService,
+    ChecklistsAPI,
+    GroupsAPI,
+    LocationsAPI,
+    LoneWorkerTimerAPI,
+    MessagesAPI,
+    OrganizationsAPI,
+    UsersAPI,
+  });

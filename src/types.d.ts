@@ -1,7 +1,7 @@
-import { components, paths } from './schemas.ts';
+import { components, paths } from "./schemas.ts";
 
-export type DataModel<T> = components['schemas'][T &
-  keyof components['schemas']];
+export type DataModel<T> = components["schemas"][T &
+  keyof components["schemas"]];
 
 export type PathModel<T, U> = paths[T & keyof paths][U &
   keyof paths[T & keyof paths]];
@@ -12,7 +12,7 @@ export type BodyModel<T, U> = paths[T & keyof paths][U &
 export type ParametersOfType<
   Path extends keyof paths,
   Method extends keyof paths[Path],
-  ParamType extends 'path' | 'query', // Constrain ParamType to keys of parameters
+  ParamType extends "path" | "query", // Constrain ParamType to keys of parameters
 > = paths[Path][Method] extends { parameters: { [K in ParamType]?: infer P } }
   ? P
   : never;
@@ -21,9 +21,9 @@ export type ParametersOfType<
 export type PathParameters<
   Path extends keyof paths,
   Method extends keyof paths[Path],
-> = ParametersOfType<Path, Method, 'path'>;
+> = ParametersOfType<Path, Method, "path">;
 
 export type QueryParameters<
   Path extends keyof paths,
   Method extends keyof paths[Path],
-> = ParametersOfType<Path, Method, 'query'>;
+> = ParametersOfType<Path, Method, "query">;

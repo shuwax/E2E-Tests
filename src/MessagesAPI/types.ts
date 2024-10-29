@@ -3,7 +3,7 @@ import {
   MessageType,
   ReplyPurpose,
   ReplyType,
-} from './enums';
+} from "./enums";
 
 export interface GetMessagesQuery {
   search: string;

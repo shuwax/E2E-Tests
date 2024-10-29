@@ -1,6 +1,6 @@
-import { ApiService } from '../ApiService/index.js';
-import { DataModel } from '../types.js';
-import { CreateEmergencyTypeModel } from './types.js';
+import { ApiService } from "../ApiService/index.js";
+import { DataModel } from "../types.js";
+import { CreateEmergencyTypeModel } from "./types.js";
 
 export class AlarmsAPI {
   private apiService: ApiService;
@@ -15,49 +15,49 @@ export class AlarmsAPI {
 
   createEmergencyType = async (
     body: CreateEmergencyTypeModel,
-  ): Promise<DataModel<'EmergencyTypeViewModel'>> => {
+  ): Promise<DataModel<"EmergencyTypeViewModel">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/EmergencyTypes', {
+        .POST("/api/Admin/EmergencyTypes", {
           body,
         });
 
       return data;
     } catch (error) {
-      console.error('Error creating emergency type:', error);
+      console.error("Error creating emergency type:", error);
       return error;
     }
   };
 
   getEmergencyTypes = async (): Promise<
-    DataModel<'EmergencyTypeViewModel'>[]
+    DataModel<"EmergencyTypeViewModel">[]
   > => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Account/EmergencyTypes');
+        .GET("/api/Account/EmergencyTypes");
 
       return data;
     } catch (error) {
-      console.error('Error creating emergency type:', error);
+      console.error("Error creating emergency type:", error);
       return error;
     }
   };
 
   getEmergencyTypesByOrganizationId = async (
     id: number,
-  ): Promise<DataModel<'EmergencyTypeViewModel'>[]> => {
+  ): Promise<DataModel<"EmergencyTypeViewModel">[]> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Admin/Organizations/{id}/EmergencyTypes', {
+        .GET("/api/Admin/Organizations/{id}/EmergencyTypes", {
           params: { path: { id } },
         });
 
       return data;
     } catch (error) {
-      console.error('Error getting emergency types by organization:', error);
+      console.error("Error getting emergency types by organization:", error);
       return error;
     }
   };
@@ -66,12 +66,12 @@ export class AlarmsAPI {
     try {
       await this.apiService
         .getOpenApiClient()
-        .DELETE('/api/Admin/EmergencyTypes', {
+        .DELETE("/api/Admin/EmergencyTypes", {
           body: emergencyTypesIds,
-          parseAs: 'text',
+          parseAs: "text",
         });
     } catch (error) {
-      console.error('Error deleting emergency type:', error);
+      console.error("Error deleting emergency type:", error);
       return error;
     }
   };

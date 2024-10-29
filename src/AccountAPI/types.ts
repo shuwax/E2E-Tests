@@ -1,4 +1,4 @@
-import { DeviceType } from '../common/common.types';
+import { DeviceType } from "../common/common.types";
 
 export interface LoginByEmailAndPasswordModel {
   email: string;

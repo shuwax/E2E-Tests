@@ -1,13 +1,13 @@
-import { ApiService } from '../ApiService/index.js';
-import { paths } from '../schemas.js';
-import { DataModel, PathParameters, QueryParameters } from '../types.js';
+import { ApiService } from "../ApiService/index.js";
+import { paths } from "../schemas.js";
+import { DataModel, PathParameters, QueryParameters } from "../types.js";
 import {
   AddGroupMemberModel,
   GetAdminPanelGroupsQuery,
   GetGroupMembersQuery,
   GetGroupsQuery,
   RegisterGroupModel,
-} from './types.js';
+} from "./types.js";
 
 export class GroupsAPI {
   private apiService: ApiService;
@@ -26,15 +26,15 @@ export class GroupsAPI {
 
   registerGroup = async (
     body: RegisterGroupModel,
-  ): Promise<DataModel<'GroupViewModel'>> => {
+  ): Promise<DataModel<"GroupViewModel">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Groups/Register', { body });
+        .POST("/api/Admin/Groups/Register", { body });
 
       return data;
     } catch (error) {
-      console.error('Error registering group:', error);
+      console.error("Error registering group:", error);
       return error;
     }
   };
@@ -42,35 +42,35 @@ export class GroupsAPI {
   addGroupMember = async (
     id: number,
     body: AddGroupMemberModel,
-  ): Promise<DataModel<'UserAndGroupViewModel'>> => {
+  ): Promise<DataModel<"UserAndGroupViewModel">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Groups/{id}/addMember', {
+        .POST("/api/Admin/Groups/{id}/addMember", {
           params: { path: { id } },
           body,
         });
 
       return data;
     } catch (error) {
-      console.error('Error registering group:', error);
+      console.error("Error registering group:", error);
       return error;
     }
   };
 
   addMultipleGroupMembers = async (
     body: AddGroupMemberModel[],
-  ): Promise<DataModel<'UserAndGroupViewModel'>> => {
+  ): Promise<DataModel<"UserAndGroupViewModel">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Groups/addMembers', {
+        .POST("/api/Admin/Groups/addMembers", {
           body,
         });
 
       return data;
     } catch (error) {
-      console.error('Error registering group:', error);
+      console.error("Error registering group:", error);
       return error;
     }
   };
@@ -79,12 +79,12 @@ export class GroupsAPI {
     try {
       await this.apiService
         .getOpenApiClient()
-        .DELETE('/api/Admin/Groups/{id}/delete', {
+        .DELETE("/api/Admin/Groups/{id}/delete", {
           params: { path: { id } },
-          parseAs: 'text',
+          parseAs: "text",
         });
     } catch (error) {
-      console.error('Error registering group:', error);
+      console.error("Error registering group:", error);
       return error;
     }
   };
@@ -93,12 +93,12 @@ export class GroupsAPI {
     try {
       if (!groupsIds.length) return;
 
-      await this.apiService.getOpenApiClient().DELETE('/api/Admin/Groups', {
+      await this.apiService.getOpenApiClient().DELETE("/api/Admin/Groups", {
         body: groupsIds,
-        parseAs: 'text',
+        parseAs: "text",
       });
     } catch (error) {
-      console.error('Error registering group:', error);
+      console.error("Error registering group:", error);
       return error;
     }
   };
@@ -106,45 +106,45 @@ export class GroupsAPI {
   //We can use it also like this -> query?: QueryParameters<'/api/Groups', 'get'>
   getGroups = async (
     query?: GetGroupsQuery,
-  ): Promise<DataModel<'GroupViewModelExtended'>[]> => {
+  ): Promise<DataModel<"GroupViewModelExtended">[]> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Groups', { params: { query } });
+        .GET("/api/Groups", { params: { query } });
 
       return data;
     } catch (error) {
-      console.error('Error fetching groups:', error);
+      console.error("Error fetching groups:", error);
       return error;
     }
   };
 
   getAdminPanelGroups = async (
     query?: GetAdminPanelGroupsQuery,
-  ): Promise<DataModel<'GroupViewModelExtended'>[]> => {
+  ): Promise<DataModel<"GroupViewModelExtended">[]> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Admin/Groups/All', { params: { query } });
+        .GET("/api/Admin/Groups/All", { params: { query } });
 
       return data?.groups ?? [];
     } catch (error) {
-      console.error('Error fetching groups:', error);
+      console.error("Error fetching groups:", error);
       return error;
     }
   };
 
   getGroupById = async (
     id: number,
-  ): Promise<DataModel<'GroupViewModelExtended'>> => {
+  ): Promise<DataModel<"GroupViewModelExtended">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Groups/{id}', { params: { path: { id } } });
+        .GET("/api/Groups/{id}", { params: { path: { id } } });
 
       return data;
     } catch (error) {
-      console.error('Error fetching group by id:', error);
+      console.error("Error fetching group by id:", error);
       return error;
     }
   };
@@ -153,30 +153,30 @@ export class GroupsAPI {
   getGroupMembers = async (
     id: number,
     query?: GetGroupMembersQuery,
-  ): Promise<DataModel<'GroupMemberViewModel'>[]> => {
+  ): Promise<DataModel<"GroupMemberViewModel">[]> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Groups/{id}/members', { params: { path: { id }, query } });
+        .GET("/api/Groups/{id}/members", { params: { path: { id }, query } });
 
       return data;
     } catch (error) {
-      console.error('Error fetching group members:', error);
+      console.error("Error fetching group members:", error);
       return error;
     }
   };
 
   getGroupLocations = async (
     id: number,
-  ): Promise<DataModel<'LocationViewModel'>[]> => {
+  ): Promise<DataModel<"LocationViewModel">[]> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Groups/{id}/locations', { params: { path: { id } } });
+        .GET("/api/Groups/{id}/locations", { params: { path: { id } } });
 
       return data;
     } catch (error) {
-      console.error('Error fetching group locations:', error);
+      console.error("Error fetching group locations:", error);
       return error;
     }
   };

@@ -1,12 +1,12 @@
-import { ApiService } from '../ApiService/index.js';
-import { DataModel, PathParameters, QueryParameters } from '../types.js';
+import { ApiService } from "../ApiService/index.js";
+import { DataModel, PathParameters, QueryParameters } from "../types.js";
 import {
   ChangeUsersPasswordModel,
   DeleteUserModel,
   GetAdminPanelUsersQuery,
   GetUsersQuery,
   RegisterUserModel,
-} from './types.js';
+} from "./types.js";
 
 export class UsersAPI {
   private apiService: ApiService;
@@ -21,15 +21,15 @@ export class UsersAPI {
 
   registerUser = async (
     body: RegisterUserModel,
-  ): Promise<DataModel<'UserViewModelExtended'>> => {
+  ): Promise<DataModel<"UserViewModelExtended">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Users/Register', { body });
+        .POST("/api/Admin/Users/Register", { body });
 
       return data;
     } catch (error) {
-      console.error('Error registering user:', error);
+      console.error("Error registering user:", error);
       return error;
     }
   };
@@ -38,20 +38,20 @@ export class UsersAPI {
     try {
       await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Users/{id}/changePassword', {
+        .POST("/api/Admin/Users/{id}/changePassword", {
           body,
           params: { path: { id } },
-          parseAs: 'text',
+          parseAs: "text",
         });
     } catch (error) {
-      console.error('Error registering users:', error);
+      console.error("Error registering users:", error);
       return error;
     }
   };
 
   registerUserAndSetPassword = async (
     body: RegisterUserModel,
-  ): Promise<DataModel<'UserViewModelExtended'>> => {
+  ): Promise<DataModel<"UserViewModelExtended">> => {
     try {
       const userData = await this.registerUser(body);
 
@@ -62,14 +62,14 @@ export class UsersAPI {
       }
       return userData;
     } catch (error) {
-      console.error('Error registering user and setting password:', error);
+      console.error("Error registering user and setting password:", error);
       return error;
     }
   };
 
   registerMultipleUsers = async (
     users: RegisterUserModel[],
-  ): Promise<DataModel<'UserViewModelExtended'>[]> => {
+  ): Promise<DataModel<"UserViewModelExtended">[]> => {
     try {
       const result = await Promise.all(
         users.map((user) => this.registerUserAndSetPassword(user)),
@@ -77,52 +77,52 @@ export class UsersAPI {
 
       return result;
     } catch (error) {
-      console.error('Error registering users:', error);
+      console.error("Error registering users:", error);
       return error;
     }
   };
 
   getUsers = async (
     query?: GetUsersQuery,
-  ): Promise<DataModel<'UserViewModel'>[]> => {
+  ): Promise<DataModel<"UserViewModel">[]> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Users', { params: { query } });
+        .GET("/api/Users", { params: { query } });
 
       return data;
     } catch (error) {
-      console.error('Error fetching users:', error);
+      console.error("Error fetching users:", error);
       return error;
     }
   };
 
   getUserById = async (
     id: number,
-  ): Promise<DataModel<'UserViewModelExtended'>> => {
+  ): Promise<DataModel<"UserViewModelExtended">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Users/{id}', { params: { path: { id } } });
+        .GET("/api/Users/{id}", { params: { path: { id } } });
 
       return data;
     } catch (error) {
-      console.error('Error fetching user by id:', error);
+      console.error("Error fetching user by id:", error);
       return error;
     }
   };
 
   getAdminPanelUsers = async (
     query?: GetAdminPanelUsersQuery,
-  ): Promise<DataModel<'UserMemberViewModel'>[]> => {
+  ): Promise<DataModel<"UserMemberViewModel">[]> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Admin/Users/accounts', { params: { query } });
+        .GET("/api/Admin/Users/accounts", { params: { query } });
 
       return data?.users ?? [];
     } catch (error) {
-      console.error('Error fetching groups:', error);
+      console.error("Error fetching groups:", error);
       return error;
     }
   };
@@ -131,13 +131,13 @@ export class UsersAPI {
     try {
       await this.apiService
         .getOpenApiClient()
-        .DELETE('/api/Admin/Users/{id}/delete', {
+        .DELETE("/api/Admin/Users/{id}/delete", {
           body,
           params: { path: { id } },
-          parseAs: 'text',
+          parseAs: "text",
         });
     } catch (error) {
-      console.error('Error deleting user:', error);
+      console.error("Error deleting user:", error);
       return error;
     }
   };
@@ -148,12 +148,12 @@ export class UsersAPI {
 
       await this.apiService
         .getOpenApiClient()
-        .DELETE('/api/Admin/Users/delete', {
+        .DELETE("/api/Admin/Users/delete", {
           body: users,
-          parseAs: 'text',
+          parseAs: "text",
         });
     } catch (error) {
-      console.error('Error deleting users:', error);
+      console.error("Error deleting users:", error);
       return error;
     }
   };

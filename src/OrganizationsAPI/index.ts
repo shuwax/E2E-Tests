@@ -1,9 +1,9 @@
-import { AlarmsAPI } from '../AlarmsAPI/index.js';
-import { ApiService } from '../ApiService/index.js';
-import { GroupsAPI } from '../GroupsAPI/index.js';
-import { DataModel } from '../types.js';
-import { UsersAPI } from '../UsersAPI/index.js';
-import { OrganizationCreateModel } from './types.js';
+import { AlarmsAPI } from "../AlarmsAPI/index.js";
+import { ApiService } from "../ApiService/index.js";
+import { GroupsAPI } from "../GroupsAPI/index.js";
+import { DataModel } from "../types.js";
+import { UsersAPI } from "../UsersAPI/index.js";
+import { OrganizationCreateModel } from "./types.js";
 
 export class OrganizationsAPI {
   private apiService: ApiService;
@@ -22,29 +22,29 @@ export class OrganizationsAPI {
 
   createOrganization = async (
     body: OrganizationCreateModel,
-  ): Promise<DataModel<'OrganizationViewModel'>> => {
+  ): Promise<DataModel<"OrganizationViewModel">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Organizations/Create', { body });
+        .POST("/api/Admin/Organizations/Create", { body });
 
       return data;
     } catch (error) {
-      console.error('Error creating organization:', error);
+      console.error("Error creating organization:", error);
       return error;
     }
   };
 
   getOrganizationById = async (
     id: number,
-  ): Promise<DataModel<'OrganizationViewModel'>> => {
+  ): Promise<DataModel<"OrganizationViewModel">> => {
     try {
       const { data } = await this.apiService
         .getOpenApiClient()
-        .GET('/api/Admin/Organizations/{id}', { params: { path: { id } } });
+        .GET("/api/Admin/Organizations/{id}", { params: { path: { id } } });
       return data;
     } catch (error) {
-      console.error('Error getting organization by id:', error);
+      console.error("Error getting organization by id:", error);
       return error;
     }
   };
@@ -53,13 +53,13 @@ export class OrganizationsAPI {
     try {
       await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Organizations/{id}/AddUsers', {
+        .POST("/api/Admin/Organizations/{id}/AddUsers", {
           params: { path: { id } },
           body: usersIds,
-          parseAs: 'text',
+          parseAs: "text",
         });
     } catch (error) {
-      console.error('Error adding users to organization:', error);
+      console.error("Error adding users to organization:", error);
       return error;
     }
   };
@@ -68,12 +68,12 @@ export class OrganizationsAPI {
     try {
       await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Organizations/{id}/RemoveUser/{userId}', {
+        .POST("/api/Admin/Organizations/{id}/RemoveUser/{userId}", {
           params: { path: { id, userId } },
-          parseAs: 'text',
+          parseAs: "text",
         });
     } catch (error) {
-      console.error('Error removing user from organization:', error);
+      console.error("Error removing user from organization:", error);
       return error;
     }
   };
@@ -85,13 +85,13 @@ export class OrganizationsAPI {
     try {
       await this.apiService
         .getOpenApiClient()
-        .POST('/api/Admin/Organizations/{id}/RemoveUsers', {
+        .POST("/api/Admin/Organizations/{id}/RemoveUsers", {
           params: { path: { id } },
           body: usersIds,
-          parseAs: 'text',
+          parseAs: "text",
         });
     } catch (error) {
-      console.error('Error removing users from organization:', error);
+      console.error("Error removing users from organization:", error);
       return error;
     }
   };
@@ -100,11 +100,11 @@ export class OrganizationsAPI {
     try {
       await this.apiService
         .getOpenApiClient()
-        .DELETE('/api/Admin/Organizations/{id}/Delete', {
+        .DELETE("/api/Admin/Organizations/{id}/Delete", {
           params: { path: { id } },
         });
     } catch (error) {
-      console.error('Error deleting organization:', error);
+      console.error("Error deleting organization:", error);
       return error;
     }
   };
@@ -143,7 +143,7 @@ export class OrganizationsAPI {
       );
       await this.deleteOrganization(id);
     } catch (error) {
-      console.error('Error force deleting organization:', error);
+      console.error("Error force deleting organization:", error);
     }
   };
 }
