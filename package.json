@@ -1,0 +1,42 @@
+{
+  "name": "@cosafe/api-test-factory",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/cosafe/api-test-factory",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "npm run format && tsup src/index.ts --format cjs,esm --dts ",
+    "start": "npm run format && tsup src/test-locally.ts --format cjs,esm --dts && node --env-file=.env dist/test-locally.js",
+    "test": "jest",
+    "dev": "ts-node-dev src/e2e-setup.ts",
+    "format": "prettier --write .",
+    "lint": "eslint . ",
+    "lint:fix": "eslint . --fix "
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "esbuild": "^0.24.0",
+    "js-cookie": "^3.0.5",
+    "openapi-fetch": "^0.12.2",
+    "openapi-typescript-helpers": "^0.0.13",
+    "qs": "^6.13.0",
+    "tsup": "^8.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@types/node": "^20.16.5",
+    "@types/qs": "^6.9.16",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
+    "openapi-typescript": "^7.4.1",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.7.0"
+  }
+}
